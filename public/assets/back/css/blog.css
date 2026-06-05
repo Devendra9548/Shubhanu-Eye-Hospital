@@ -1,0 +1,25 @@
+.blog-table tr, .blog-table td, .blog-table th, .blog-table tbody {
+  padding: 15px;
+}
+.blog-table thead tr, .blog-table thead td, .blog-table thead th {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+#addBlog label {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+#addBlog input, #addBlog select, #addBlog textarea {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 8px 15px;
+  font-size: 15px;
+}
+#addBlog .modal-content {
+  background: #f9f9f9;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}/*# sourceMappingURL=blog.css.map */
