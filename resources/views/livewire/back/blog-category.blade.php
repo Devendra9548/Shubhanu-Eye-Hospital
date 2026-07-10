@@ -1,4 +1,4 @@
-@section('title', 'Blogs - Dashboard')
+@section('title', 'Blogs Category - Dashboard')
 @prepend('head-script')
 <link rel="stylesheet" type="text/css" href="/assets/back/css/rte_theme_default.css">
 <link rel="stylesheet" href="/assets/back/css/blog.css" />
@@ -6,9 +6,7 @@
 <div>
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="left d-flex justify-content-start align-items-center">
-            <h2>Blogs</h2>
-            <a href="javascript:void(0)" class="btn btn-secondary ms-2" data-bs-toggle="modal"
-                data-bs-target="#addBlog">+ Add Blog</a>
+            <h2>Blogs Category</h2>
         </div>
         <div class="right d-flex">
             <form action="#" class="search-form">
