@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Jomolhari|Source+Sans+Pro&display=swap");
+:root {
+  --cube-width: 24rem;
+  --cube-height: 19rem;
+  --cube-bgcolor: #fff;
+  --cube-color: #333;
+  --trans-duration: .6s;
+}
+
+@media only screen and (max-width:1400px)
+{
+  :root {
+    --cube-width: 20rem;
+    --cube-height: 17rem;
+}
+}
+
+.first-section img {
+  max-width: 100%;
+}
+
+.first-section .wrapper {
+  position: relative;
+  height: var(--card-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section .row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section .row__item {
+  flex: 0 0 auto;
+  width: var(--card-width);
+  height: var(--card-height);
+}
+
+.first-section .row__item + .row__item {
+  margin-left: 2rem;
+}
+
+/************ CUBE STYLES ************/
+.first-section .container {
+  width: var(--cube-width);
+  height: var(--cube-height);
+  perspective: 200rem;
+  position: relative;
+}
+
+.first-section .container .cube {
+  width: var(--cube-width);
+  height: var(--cube-height);
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform var(--trans-duration);
+}
+
+.first-section .container:hover .cube {
+  width: var(--cube-width);
+  height: var(--cube-height);
+  transform-style: preserve-3d;
+  transform: rotateY(-90deg);
+  transition: transform var(--trans-duration);
+}
+
+.first-section .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--cube-bgcolor);
+  color: var(--cube-color);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: flex;
+}
+
+.first-section .front {
+  transform: rotateY(0deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+.first-section .right {
+  transform: rotateY(90deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+/************ CARD STYLES ************/
+.first-section .card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.first-section .card__image {
+  position: relative;
+}
+
+.first-section .card__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+}
+
+.first-section .card__content > * {
+  margin-bottom: 1rem;
+}
+
+.first-section .card__author {
+  transition: color var(--trans-duration);
+  font-size: 1.4rem;
+}
+
+.first-section .card__description {
+  transition: opacity var(--trans-duration);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-section .card__icon-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.first-section .card__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.first-section .card__icon svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  fill: #666;
+}
+
+.first-section .right .card__title {
+  font-weight: bold;
+}
+
+.first-section .right .card__author {
+  color: #ec5252;
+  font-weight: bold;
+}/*# sourceMappingURL=card-anime.css.map */

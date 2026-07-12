@@ -18,7 +18,7 @@ return new class extends Migration
             $table->longText('description');
             $table->string('file');
             $table->unsignedBigInteger('category');
-            $table->foreign('category')->references('id')->on('blog_categories');
+            $table->foreign('category')->references('id')->on('blogs_categories');
             $table->timestamps();
         });
     }

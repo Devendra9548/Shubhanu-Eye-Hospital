@@ -5,11 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Model
+class PageSeo extends Model
 {
     use HasFactory;
-    public function blogseo()
-    {
-        return $this->hasMany(BlogSeo::class);
-    }
 }

@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Model
+class EnquireLead extends Model
 {
     use HasFactory;
-    public function blogseo()
-    {
-        return $this->hasMany(BlogSeo::class);
-    }
+    public $table = 'enquire_leads';
+    public $timestamps = false;
 }

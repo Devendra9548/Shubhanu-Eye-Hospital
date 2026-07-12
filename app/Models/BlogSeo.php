@@ -5,13 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class BlogCategory extends Model
+class BlogSeo extends Model
 {
     use HasFactory;
-    public $table = 'blogs_categories';
+    public $table = 'blog_seo';
     public $timestamps = false;
-    public function category_blog_seo()
+    protected $fillable = ['canonical','file','blogid'];
+
+    public function blog()
     {
-        return $this->hasMany(category_blog_seo::class);
+        return $this->hasMany(Blog::class);
     }
+
 }

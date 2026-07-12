@@ -1,0 +1,84 @@
+.hero-section {
+  overflow: hidden;
+  position: relative;
+}
+.hero-section .slide:nth-child(1) .slide__inner {
+  background-image: url(/assets/front/imgs/banners/1.jpg);
+}
+.hero-section .slide:nth-child(2) .slide__inner {
+  background-image: url(/assets/front/imgs/banners/2.jpg);
+}
+.hero-section .slide:nth-child(3) .slide__inner {
+  background-image: url(/assets/front/imgs/banners/1.jpg);
+}
+.hero-section .slide:nth-child(4) .slide__inner {
+  background-image: url(/assets/front/imgs/banners/2.jpg);
+}
+.hero-section .slide:nth-child(5) .slide__inner {
+  background-image: url(/assets/front/imgs/banners/1.jpg);
+}
+
+.first-section {
+  background: #eaf7ff;
+}
+.first-section h2 {
+  font-size: 45px;
+  font-weight: 800;
+}
+.first-section h2 span {
+  color: #24748c;
+}
+.first-section ul {
+  list-style: none !important;
+  padding: 0px !important;
+}
+.first-section .wrapper {
+  margin-top: 50px;
+}
+.first-section .card__title {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  color: #000 !important;
+  transition: font-size var(--trans-duration);
+  text-transform: capitalize;
+}
+.first-section .card__description .heading {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #24748c !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  text-transform: capitalize;
+}
+.first-section .card__description p {
+  font-size: 16px !important;
+  font-family: "Lato", sans-serif !important;
+  margin-bottom: 10px !important;
+  color: #000 !important;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider__control-line {
+    left: 15px;
+    top: 50%;
+    width: 3px;
+  }
+  .slider__control {
+    top: 50%;
+    left: 10%;
+    width: 44px;
+    height: 44px;
+  }
+  .slider__control--right {
+    left: auto;
+    right: 10px;
+  }
+  .slider__control--right .slider__control-line {
+    left: 28px;
+  }
+  .slide {
+    width: 100vmax;
+    height: 115vmax;
+  }
+}/*# sourceMappingURL=home.css.map */
