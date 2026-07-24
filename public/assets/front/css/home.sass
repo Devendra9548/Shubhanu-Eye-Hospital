@@ -10,7 +10,7 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
     overflow: hidden
     position: relative
     .slide:nth-child(1) .slide__inner
-        background-image: url(/assets/front/imgs/banners/1.jpg)
+        background-image: url(/assets/front/imgs/banners/1.webp)
     .slide:nth-child(2) .slide__inner
         background-image: url(/assets/front/imgs/banners/2.jpg)
     .slide:nth-child(3) .slide__inner
@@ -21,7 +21,14 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
         background-image: url(/assets/front/imgs/banners/1.jpg)
 
 .first-section
-    background: #eaf7ff
+    background-image: url(/assets/front/imgs/eye-banner-1.webp)
+    background-size: cover
+    background-position: center center
+    background-attachment: fixed
+    margin-top: -70px
+    .bg-layer
+        padding-top: 120px
+        background: #eaf7ffeb
     h2
         font-size: 45px
         font-weight: 800
@@ -52,8 +59,23 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
             margin-bottom: 10px !important
             color: #000 !important
             text-transform: capitalize
-        
+    .card__image
+        img
+            width: 100%
+
 @media only screen and (max-width:768px)
+    .hero-section
+        .slide:nth-child(1) .slide__inner
+            background-image: url(/assets/front/imgs/banners/1-mb.webp)
+        .slide:nth-child(2) .slide__inner
+            background-image: url(/assets/front/imgs/banners/2.jpg)
+        .slide:nth-child(3) .slide__inner
+            background-image: url(/assets/front/imgs/banners/1.jpg)
+        .slide:nth-child(4) .slide__inner
+            background-image: url(/assets/front/imgs/banners/2.jpg)
+        .slide:nth-child(5) .slide__inner
+            background-image: url(/assets/front/imgs/banners/1.jpg)
+
     .slider__control-line
         left: 15px
         top: 50%
@@ -72,3 +94,40 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
     .slide
         width: 100vmax
         height: 115vmax
+    .slider
+        height: 60vh
+    .slide__inner
+        position: absolute
+        left: 50%
+        top: 67%
+        width: 100vw
+        height: 61vh
+        margin-left: -50vw
+        margin-top: -50vh
+        background-size: cover
+        background-position: center center
+
+@media only screen and (max-width:768px) and (max-height: 700px)
+    .slider
+        height: 77vh
+    .slide__inner
+        top: 60%
+        height: 77vh
+
+@media only screen and (max-width:768px) and (max-height: 600px)
+    .slider
+        height: 80vh
+    .slide__inner
+        top: 56%
+        height: 80vh
+    .slide
+        height: 164vmax
+
+@media only screen and (max-width:768px) and (max-height: 550px)
+    .slider
+        height: 94vh
+    .slide__inner
+        top: 52%
+        height: 95vh
+    .slide
+        height: 164vmax
