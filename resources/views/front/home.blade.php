@@ -5,6 +5,11 @@
 <link rel="stylesheet" href="/assets/front/css/card-anime.css">
 <link rel="stylesheet" href="/assets/front/css/slider.css">
 <link rel="stylesheet" href="/assets/front/css/home.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+</style>
+
 @endsection
 @section('body')
 <section class="hero-section">
@@ -57,6 +62,7 @@
         </div>
     </div>
 </section>
+
 <div class="dvwave-section">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" preserveAspectRatio="none"
         style="display:block;width:100%;height:120px;">
@@ -363,37 +369,436 @@
     </div>
 </section>
 
-<section class="shcta-section">
-    <div class="container">
-        <div class="shcta-wrapper">
-            <div class="shcta-content">
-                <span class="shcta-badge">
-                    <i class="fas fa-eye"></i> Trusted Eye Care
-                </span>
+<section class="eyecta-sec">
 
-                <h2 class="shcta-title">
-                    Experience Clear Vision with
-                    <span>Expert Eye Specialists</span>
+    <div class="eyecta-box">
+
+        <div class="eyecta-badge">
+            <i class="fa-regular fa-eye"></i> Trusted Eye Care Since Years
+        </div>
+
+        <h2 class="eyecta-title">
+            More than <span>15,000</span> Surgeries
+            <br>
+            <strong><i>Between 2 Expert Surgeons</i></strong>
+        </h2>
+
+        <!-- <p class="eyecta-desc">
+            Restoring vision with advanced technology, experienced surgeons,
+            and compassionate care. Your eyesight deserves nothing but the best.
+        </p> -->
+
+        <div class="eyecta-btns">
+            <a href="#appointment" class="eyecta-btn eyecta-btn-primary">
+                <i class="fa-regular fa-calendar-days"></i> Book Appointment
+            </a>
+
+            <a href="tel:+919068991180" class="eyecta-btn eyecta-btn-outline">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="eye-about py-5">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+
+            <!-- Left -->
+            <div class="col-lg-6">
+
+                <span class="eye-bg-title">WHO WE ARE?</span>
+
+                <h2 class="fw-bold mb-4">
+                    We Are a Leading Eye Care Hospital
                 </h2>
 
-                <p class="shcta-text">
-                    More than <strong>15,000 successful surgeries</strong> performed with
-                    advanced technology and compassionate care. Book your consultation today.
+                <p class="mb-4">
+                    Riti Eye Care Hospital was founded in 2014 with a vision to provide world-class eye care services to
+                    our community. Over the years, we have grown into a leading institution for comprehensive eye care,
+                    serving thousands of patients every year. Our commitment to excellence has made us a trusted name in
+                    eye health.
                 </p>
-            </div>
 
-            <div class="shcta-buttons">
-                <a href="tel:+919876543210" class="shcta-btn shcta-primary">
-                    <i class="fas fa-phone-alt"></i> Call Now
+                <h4 class="mb-4">Our Specialized Services:</h4>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="eye-list">
+                            <li>Advanced Cataract Surgery</li>
+                            <li>Cornea Transplantation</li>
+                            <li>Pterygium Excision</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <ul class="eye-list">
+                            <li>Glaucoma Surgery</li>
+                            <li>Yag Laser</li>
+                            <li>Riti Opticals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#" class="eye-btn mt-3">
+                    Read More
                 </a>
 
-                <a href="#appointment" class="shcta-btn shcta-secondary">
-                    <i class="fas fa-calendar-check"></i> Book Appointment
-                </a>
             </div>
+
+            <!-- Right -->
+            <div class="col-lg-6">
+
+                <div class="eye-img">
+
+                    <img src="/assets/front/imgs/right-side-man.webp" class="img-fluid" alt="Doctor">
+
+                    <div class="eye-exp">
+                        <h2>12+</h2>
+                        <p>Years of Experience in This Field</p>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 </section>
+
+<section class="tsw-section py-5">
+
+    <div class="container">
+
+        <div class="tsw-heading text-center">
+
+            <span class="tsw-subtitle">
+                TESTIMONIALS
+            </span>
+
+            <h2 class="tsw-title">
+                What Our Patients Say
+            </h2>
+
+            <p class="tsw-description">
+                Real experiences from people who trusted us with their vision
+            </p>
+
+        </div>
+
+        <div class="swiper tsw-slider">
+
+            <div class="swiper-wrapper">
+
+                <!-- Card 1 -->
+
+                <div class="swiper-slide">
+
+                    <div class="tsw-card">
+
+                        <div class="tsw-quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p class="tsw-review">
+
+                            "Riti Eye Care Hospital transformed my life.
+                            The team's expertise and care made my eye surgery
+                            experience completely stress-free."
+
+                        </p>
+
+                        <div class="tsw-stars">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <div class="tsw-user">
+
+                            <div class="tsw-user-image">
+
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+
+                            </div>
+
+                            <div class="tsw-user-info">
+
+                                <h5>Sonika Yadav</h5>
+
+                                <span>Mumbai</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tsw-line"></div>
+
+                        <span class="tsw-badge">
+                            Cataract Surgery
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="swiper-slide">
+
+                    <div class="tsw-card">
+
+                        <div class="tsw-quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p class="tsw-review">
+
+                            "From the moment I walked in, I knew I was in
+                            good hands. The facility is world-class and
+                            the doctors are incredibly knowledgeable."
+
+                        </p>
+
+                        <div class="tsw-stars">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <div class="tsw-user">
+
+                            <div class="tsw-user-image">
+
+                                <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
+
+                            </div>
+
+                            <div class="tsw-user-info">
+
+                                <h5>Abhishek Verma</h5>
+
+                                <span>Delhi</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tsw-line"></div>
+
+                        <span class="tsw-badge">
+                            Glaucoma Treatment
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="swiper-slide">
+
+                    <div class="tsw-card">
+
+                        <div class="tsw-quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p class="tsw-review">
+
+                            "Professional, caring, and thorough.
+                            My cataract surgery was quick and painless.
+                            The follow-up care was exceptional."
+
+                        </p>
+
+                        <div class="tsw-stars">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <div class="tsw-user">
+
+                            <div class="tsw-user-image">
+
+                                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+
+                            </div>
+
+                            <div class="tsw-user-info">
+
+                                <h5>Farhan Ahmad</h5>
+
+                                <span>Hyderabad</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tsw-line"></div>
+
+                        <span class="tsw-badge">
+                            Cataract Surgery
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="swiper-slide">
+
+                    <div class="tsw-card">
+
+                        <div class="tsw-quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p class="tsw-review">
+
+                            "Excellent doctors, friendly staff and
+                            modern facilities. Everything from
+                            consultation to surgery was smooth."
+
+                        </p>
+
+                        <div class="tsw-stars">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <div class="tsw-user">
+
+                            <div class="tsw-user-image">
+
+                                <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="">
+
+                            </div>
+
+                            <div class="tsw-user-info">
+
+                                <h5>Pooja Sharma</h5>
+
+                                <span>Lucknow</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tsw-line"></div>
+
+                        <span class="tsw-badge">
+                            Retina Treatment
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 5 -->
+
+                <div class="swiper-slide">
+
+                    <div class="tsw-card">
+
+                        <div class="tsw-quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+
+                        <p class="tsw-review">
+
+                            "Highly recommended. The doctors explained
+                            everything clearly and made me feel
+                            comfortable throughout my treatment."
+
+                        </p>
+
+                        <div class="tsw-stars">
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                        <div class="tsw-user">
+
+                            <div class="tsw-user-image">
+
+                                <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="">
+
+                            </div>
+
+                            <div class="tsw-user-info">
+
+                                <h5>Rahul Kapoor</h5>
+
+                                <span>Jaipur</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tsw-line"></div>
+
+                        <span class="tsw-badge">
+                            LASIK Surgery
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <div class="tsw-navigation">
+
+            <div class="tsw-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <div class="tsw-play">
+                <i class="fa-solid fa-pause"></i>
+            </div>
+
+            <div class="tsw-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -470,5 +875,69 @@
     });
 
 })();
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const testimonialSwiper = new Swiper(".tsw-slider", {
+        loop: true,
+        speed: 800,
+        spaceBetween: 30,
+        centeredSlides: true,
+        grabCursor: true,
+        watchOverflow: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        navigation: {
+            nextEl: ".tsw-next",
+            prevEl: ".tsw-prev",
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        breakpoints: {
+
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+
+            576: {
+                slidesPerView: 1.2,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 25
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
+    const playBtn = document.querySelector(".tsw-play");
+    let playing = true;
+    playBtn.addEventListener("click", function() {
+        if (playing) {
+            testimonialSwiper.autoplay.stop();
+            this.innerHTML = '<i class="fa-solid fa-play"></i>';
+        } else {
+            testimonialSwiper.autoplay.start();
+            this.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        }
+        playing = !playing;
+    });
+});
 </script>
 @endsection

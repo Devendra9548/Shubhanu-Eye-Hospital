@@ -12,8 +12,16 @@
 }
 
 .footer-logo {
-  margin-bottom: 40px;
-  margin-top: -110px;
+  margin-bottom: 30px;
+  margin-top: -123px;
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #eaf7ff;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 .footer-logo img {

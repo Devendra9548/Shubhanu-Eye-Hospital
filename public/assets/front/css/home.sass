@@ -26,6 +26,11 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
     background-position: center center
     background-attachment: fixed
     margin-top: -70px
+    .cube .face
+        border-radius: 12px
+        overflow: hidden
+        box-shadow: 0px 0px 6px 6px #00000008
+
     .bg-layer
         padding-top: 120px
         background: #eaf7ffeb
@@ -131,3 +136,524 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
         height: 95vh
     .slide
         height: 164vmax
+
+.eyecta-sec
+    background: linear-gradient(135deg, #08617e, #0c7b9b) !important
+    overflow: hidden
+    position: relative
+    padding: 60px 0px
+
+.eyecta-box
+    text-align: center !important
+    position: relative !important
+    background-image: url(/assets/front/imgs/352405737_11413225.webp)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: right
+
+.eyecta-box:before
+    content: "" !important
+    position: absolute !important
+    width: 180px !important
+    height: 180px !important
+    border-radius: 50% !important
+    background: rgb(195 192 192 / 12%) !important
+    top: -120px !important
+    left: -60px !important
+
+.eyecta-box:after
+    content: "" !important
+    position: absolute !important
+    width: 220px !important
+    height: 220px !important
+    border-radius: 50% !important
+    background: rgb(195 192 192 / 12%) !important
+    right: -85px !important
+    bottom: -85px !important
+
+.eyecta-badge
+    display: inline-block !important
+    background: #eaf8fc !important
+    color: #08617e !important
+    padding: 10px 22px !important
+    border-radius: 40px !important
+    font-size: 15px !important
+    font-weight: 600 !important
+    margin-bottom: 25px !important
+    i
+        color: #0a708f !important
+
+.eyecta-title
+    font-size: 48px !important
+    font-weight: 700 !important
+    line-height: 1.2 !important
+    color: #e5e5e5 !important
+    margin-bottom: 20px !important
+    font-family: $fontPlusJakartaSans !important
+
+.eyecta-title span
+    color: #ffefd3 !important
+    font-size: 64px !important
+    font-weight: 800 !important
+
+.eyecta-title strong i
+    display: block !important
+    margin-top: 10px !important
+    color: #fff !important
+    font-size: 30px !important
+    font-weight: 700 !important
+    font-family: $fontOpenSans !important
+    margin-bottom: 30px !important
+
+.eyecta-desc
+    max-width: 650px !important
+    margin: 0 auto 40px !important
+    color: #666 !important
+    font-size: 18px !important
+    line-height: 1.8 !important
+
+.eyecta-btns
+    display: flex !important
+    justify-content: center !important
+    gap: 18px !important
+    flex-wrap: wrap !important
+
+.eyecta-btn
+    text-decoration: none !important
+    padding: 15px 34px !important
+    border-radius: 50px !important
+    font-weight: 600 !important
+    transition: .3s !important
+
+.eyecta-btn-primary
+    background: #ffffff !important
+    color: #0b7695 !important
+    i
+        color: #0b708e
+        margin-right: 10px
+        font-size: 18px
+
+.eyecta-btn-primary:hover
+    background: #ffffff !important
+
+.eyecta-btn-outline
+    border: 2px solid #ffffff !important
+    color: #ffffff !important
+    i
+        color: #fff
+        margin-right: 10px
+        font-size: 18px
+
+.eyecta-btn-outline:hover
+    background: #08617e !important
+    color: #fff !important
+
+@media(max-width:768px)
+
+    .eyecta-box
+        padding: 50px 25px !important
+
+    .eyecta-title
+        font-size: 34px !important
+
+    .eyecta-title span
+        font-size: 46px !important
+
+    .eyecta-title strong
+        font-size: 24px !important
+
+    .eyecta-desc
+        font-size: 16px !important
+
+    .eyecta-btn
+        width: 100% !important
+
+.eye-about
+    position: relative
+    overflow: hidden
+    background: #fff
+    padding: 90px 0
+
+.eye-about h2
+    font-size: 46px
+    font-weight: 700
+    color: #111
+    position: relative
+    z-index: 2
+
+.eye-about p
+    color: #666
+    line-height: 1.9
+    font-size: 16px
+
+.eye-bg-title
+    position: absolute
+    top: 30px
+    left: 0
+    width: 100%
+    text-align: center
+    font-size: 138px
+    font-weight: 800
+    color: #eef7f8
+    letter-spacing: 5px
+    text-transform: uppercase
+    user-select: none
+    z-index: 0
+    line-height: 1
+
+.eye-list
+    list-style: none
+    margin: 0
+    padding: 0
+
+.eye-list li
+    position: relative
+    padding-left: 28px
+    margin-bottom: 20px
+    color: #333
+
+.eye-list li:before
+    content: "✓"
+    position: absolute
+    left: 0
+    color: #0d7d84
+    font-size: 18px
+    font-weight: bold
+
+.eye-btn
+    display: inline-block
+    padding: 15px 38px
+    border: 2px solid #111
+    color: #111
+    font-weight: 700
+    text-transform: uppercase
+    text-decoration: none
+    letter-spacing: 1px
+    transition: .3s
+    position: relative
+
+.eye-btn:hover
+    background: #08617e
+    border-color: #08617e
+    color: #fff
+
+.eye-img
+    position: relative
+    text-align: center
+
+.eye-img img
+    max-width: 100%
+    position: relative
+    z-index: 2
+
+.eye-img:before, .eye-img:after
+    content: ""
+    position: absolute
+    width: 180px
+    height: 180px
+    background-image: radial-gradient(#16bfd0 1.8px, transparent 1.8px)
+    background-size: 12px 12px
+    opacity: .35
+    z-index: 1
+
+.eye-img:before
+    top: 50px
+    right: 30px
+
+.eye-img:after
+    bottom: 30px
+    left: 10px
+
+.eye-exp
+    position: absolute
+    left: 40px
+    bottom: 20px
+    background: rgba(8,97,126,.92)
+    color: #fff
+    padding: 25px 35px
+    z-index: 3
+    max-width: 320px
+
+.eye-exp h2
+    margin: 0
+    font-size: 58px
+    color: #fff
+    line-height: 1
+
+.eye-exp p
+    color: #fff
+    margin: 10px 0 0
+    font-size: 20px
+    font-weight: 600
+
+@media(max-width:991px)
+
+    .eye-about
+        padding: 70px 0
+
+    .eye-bg-title
+        font-size: 58px
+
+    .eye-about h2
+        font-size: 34px
+
+    .eye-img
+        margin-top: 40px
+
+    .eye-exp
+        position: relative
+        left: 0
+        bottom: 0
+        margin: 20px auto 0
+
+@media(max-width:576px)
+
+    .eye-bg-title
+        font-size: 40px
+
+    .eye-about h2
+        font-size: 28px
+
+    .eye-exp h2
+        font-size: 42px
+
+    .eye-exp p
+        font-size: 17px
+
+.tsw-section
+    position: relative !important
+    background: #ffffff !important
+    overflow: hidden !important
+
+.tsw-heading
+    margin-bottom: 60px !important
+
+.tsw-subtitle
+    display: inline-block !important
+    font-size: 14px !important
+    font-weight: 700 !important
+    letter-spacing: 2px !important
+    color: #08617e !important
+    text-transform: uppercase !important
+    margin-bottom: 15px !important
+
+.tsw-title
+    font-size: 48px !important
+    font-weight: 700 !important
+    color: #16233b !important
+    margin-bottom: 15px !important
+    line-height: 1.2 !important
+
+.tsw-description
+    font-size: 18px !important
+    color: #6d7485 !important
+    max-width: 650px !important
+    margin: auto !important
+    line-height: 1.8 !important
+
+.tsw-slider
+    overflow: hidden !important
+    padding: 10px 5px 30px !important
+
+.tsw-slider .swiper-slide
+    height: auto !important
+
+.tsw-card
+
+    background: #fff !important
+    border-radius: 22px !important
+    border-top: 5px solid #08617e !important
+    padding: 32px !important
+    height: 100% !important
+    display: flex !important
+    flex-direction: column !important
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08) !important
+    transition: .4s ease !important
+
+.tsw-card:hover
+    transform: translateY(-8px) !important
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12) !important
+
+.tsw-quote
+    font-size: 60px !important
+    color: #d5ebe8 !important
+    line-height: 1 !important
+    margin-bottom: 20px !important
+
+.tsw-review
+    color: #35435d !important
+    font-size: 18px !important
+    line-height: 1.9 !important
+    margin-bottom: 25px !important
+    flex-grow: 1 !important
+
+.tsw-stars
+    color: #ffc107 !important
+    font-size: 16px !important
+    margin-bottom: 24px !important
+
+.tsw-quote i
+    color: #999 !important
+
+.tsw-next:hover i, .tsw-prev:hover i
+    color: #fff !important
+
+.tsw-play i
+    color: #fff !important
+
+.tsw-stars i
+    margin-right: 3px !important
+    color: #ffc107 !important
+
+.tsw-user
+    display: flex !important
+    align-items: center !important
+    margin-bottom: 22px !important
+
+.tsw-user-image
+    width: 60px !important
+    height: 60px !important
+    margin-right: 15px !important
+
+.tsw-user-image img
+    width: 100% !important
+    height: 100% !important
+    border-radius: 50% !important
+    object-fit: cover !important
+    border: 3px solid #08617e !important
+
+.tsw-user-info h5
+    font-size: 20px !important
+    font-weight: 600 !important
+    margin: 0 !important
+    color: #16233b !important
+
+.tsw-user-info span
+    color: #7d8597 !important
+    font-size: 15px !important
+
+.tsw-line
+    width: 100% !important
+    height: 1px !important
+    background: #ececec !important
+    margin-bottom: 18px !important
+
+.tsw-badge
+    display: inline-flex !important
+    align-items: center !important
+    justify-content: center !important
+    background: #edf8f5 !important
+    color: #08617e !important
+    border-radius: 30px !important
+    padding: 8px 18px !important
+    font-size: 14px !important
+    font-weight: 600 !important
+    width: max-content !important
+
+.tsw-navigation
+    display: flex !important
+    justify-content: center !important
+    align-items: center !important
+    gap: 18px !important
+    margin-top: 55px !important
+
+.tsw-prev, .tsw-next, .tsw-play
+    width: 54px !important
+    height: 54px !important
+    border-radius: 50% !important
+    display: flex !important
+    align-items: center !important
+    justify-content: center !important
+    cursor: pointer !important
+    transition: .35s !important
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .12) !important
+
+.tsw-prev, .tsw-next
+    background: #fff !important
+    color: #08617e !important
+
+.tsw-prev:hover, .tsw-next:hover
+    background: #08617e !important
+    color: #fff !important
+
+.tsw-play
+    background: #08617e !important
+    color: #fff !important
+
+.tsw-navigation i
+    font-size: 18px !important
+
+.tsw-slider .swiper-slide
+    transition: .35s ease !important
+
+.tsw-slider .swiper-slide-active .tsw-card
+    transform: translateY(-6px) !important
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .14) !important
+
+.tsw-slider .swiper-pagination
+    position: relative !important
+    margin-top: 35px !important
+
+.tsw-slider .swiper-pagination-bullet
+    width: 12px !important
+    height: 12px !important
+    background: #b8c4cf !important
+    opacity: 1 !important
+
+.tsw-slider .swiper-pagination-bullet-active
+    width: 28px !important
+    border-radius: 30px !important
+    background: #08617e !important
+
+@media(max-width:1199px)
+
+    .tsw-title
+
+        font-size: 42px !important
+
+    .tsw-card
+
+        padding: 28px !important
+
+@media(max-width:991px)
+
+    .tsw-title
+
+        font-size: 36px !important
+
+    .tsw-description
+
+        font-size: 16px !important
+
+    .tsw-review
+
+        font-size: 16px !important
+
+    .tsw-user-info h5
+
+        font-size: 18px !important
+
+@media(max-width:767px)
+
+    .tsw-heading
+        margin-bottom: 40px !important
+
+    .tsw-title
+        font-size: 30px !important
+
+    .tsw-description
+        font-size: 15px !important
+
+    .tsw-card
+        padding: 24px !important
+
+    .tsw-review
+        line-height: 1.8 !important
+
+    .tsw-navigation
+        gap: 12px !important
+        margin-top: 35px !important
+
+    .tsw-prev, .tsw-next, .tsw-play
+        width: 46px !important
+        height: 46px !important
