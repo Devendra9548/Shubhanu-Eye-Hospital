@@ -154,4 +154,18 @@
 .first-section .right .card__author {
   color: #ec5252;
   font-weight: bold;
-}/*# sourceMappingURL=card-anime.css.map */
+}
+
+
+@media only screen and (max-width: 768px)
+{
+  :root {
+    --cube-width: 22rem;
+    --cube-height: 17.5rem;
+}
+
+}
+
+
+
+

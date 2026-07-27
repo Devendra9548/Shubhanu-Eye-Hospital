@@ -7,7 +7,66 @@
 <link rel="stylesheet" href="/assets/front/css/home.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 <style>
+.shbapp-section
+{
+    background: #267590;
+    padding-top: 10px;
+}
+
+.shbapp-form {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.shbapp-image{
+    text-align: center;
+}
+
+.shbapp-image img{
+   width: 80% !important;
+}
+
+.shbapp-control {
+    height: 58px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 0 18px;
+    font-size: 15px;
+    color: #555;
+    background: #fff;
+    box-shadow: none;
+    transition: .35s;
+}
+
+.shbapp-control:focus {
+    border-color: #1d7bf2;
+    box-shadow: none;
+
+}
+
+.shbapp-control::placeholder {
+
+    color: #8d8d8d;
+
+}
+
+.shbapp-textarea {
+
+    min-height: 160px;
+    resize: none;
+    padding-top: 16px;
+
+}
+
+.shbapp-form select {
+
+    cursor: pointer;
+
+}
+
+
 </style>
 
 @endsection
@@ -16,13 +75,6 @@
     <div class="slider">
         <div class="slider__slides">
             <div class="slide s--active">
-                <div class="slide__inner">
-                    <div class="slide__content">
-
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
                 <div class="slide__inner">
                     <div class="slide__content">
 
@@ -480,6 +532,246 @@
     </div>
 </section>
 
+<section class="shbadv-section py-5">
+    <div class="container position-relative">
+        <h2 class="shbadv-bg-text">Advantages</h2>
+        <div class="text-center mb-5 position-relative">
+            <h2 class="shbadv-title">The Heart and Science <span>of Ophthalmology</span></h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="shbadv-card">
+
+                    <div class="shbadv-icon">
+                        <i class="fa-regular fa-handshake"></i>
+                    </div>
+
+                    <h4>Covid Ready</h4>
+
+                    <p>
+                        Every patient deserves safe, reliable care. We maintain strict hygiene standards, follow
+                        advanced safety protocols, and provide a clean, comfortable environment for every visit. with
+                        trusted experts.
+                    </p>
+
+                    <ul class="list-unstyled shbadv-list">
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            COVID Vaccinated Staff
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Sanitized Treatment Rooms
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Advanced Safety Protocols
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Contactless Patient Registration
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Regular Surface Disinfection
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Safe Patient Environment
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Temperature Screening Daily
+                        </li>
+
+                    </ul>
+
+                    <div class="group-bts d-flex align-items-center">
+                        <div class="shb-video-btn me-3" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/NSoIVaaDN0s?autoplay=1">
+                            <i class="fa-brands fa-youtube"></i>
+                            Watch Video
+                        </div>
+                        <a href="#" class="shbadv-read">
+                            Read More <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="shbadv-card">
+
+                    <div class="shbadv-icon">
+                        <i class="fa-regular fa-file-lines"></i>
+                    </div>
+
+                    <h4>Outpatient Procedures</h4>
+
+                    <p>
+                        Our outpatient services provide comprehensive eye examinations, advanced diagnostic testing,
+                        personalized consultations, and efficient treatment planning for accurate diagnosis and
+                        exceptional patient care.
+                    </p>
+
+                    <ul class="list-unstyled shbadv-list">
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Comprehensive Eye Examination
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Vision Acuity Testing
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Accurate Refraction Assessment
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Slit Lamp Examination
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Digital Retina Evaluation
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Eye Pressure Testing
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Personalized Treatment Planning
+                        </li>
+
+                    </ul>
+
+                    <div class="group-bts d-flex align-items-center">
+                        <div class="shb-video-btn me-3" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/2I33akej3G4?autoplay=1">
+                            <i class="fa-brands fa-youtube"></i>
+                            Watch Video
+                        </div>
+                        <a href="#" class="shbadv-read">
+                            Read More <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="shbadv-card">
+
+                    <div class="shbadv-icon"><i class="fa-regular fa-map"></i></div>
+                    <h4>Interstate Travelers</h4>
+                    <p>
+                        We provide seamless eye care for interstate travelers with expert consultations, advanced
+                        treatments, minimal waiting time, and personalized support for a comfortable healthcare
+                        experience.
+                    </p>
+
+                    <ul class="list-unstyled shbadv-list">
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Priority Appointments
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Expert Eye Specialists
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Minimal Waiting Time
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Advanced Diagnostic Technology
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Personalized Patient Assistance
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Comfortable Travel Support
+                        </li>
+
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            World Class Facilities
+                        </li>
+
+                    </ul>
+
+                    <div class="group-bts d-flex align-items-center">
+                        <div class="shb-video-btn me-3" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/2I33akej3G4?autoplay=1">
+                            <i class="fa-brands fa-youtube"></i>
+                            Watch Video
+                        </div>
+                        <a href="#" class="shbadv-read">
+                            Read More <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="modal fade" id="videoModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Watch Video
+                </h5>
+
+                <button class="btn-close" data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body p-0">
+
+                <div class="ratio ratio-16x9">
+
+                    <iframe id="ytVideo" src="" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 <section class="tsw-section py-5">
 
     <div class="container">
@@ -680,9 +972,118 @@
 
 </section>
 
+<section class="shbapp-section">
+    <div class="container">
+        <div class="row align-items-end mt-5">
+            <!-- Left -->
+            <div class="col-lg-6">
+                <h2 class="shbapp-title"> We Are Always Ready To Help You. <span>Book An Appointment</span></h2>
+                <form class="shbapp-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control shbapp-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control shbapp-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control shbapp-control" placeholder="Phone">
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select shbapp-control">
+                                <option selected>Department</option>
+                                <option>Cataract</option>
+                                <option>Retina</option>
+                                <option>LASIK</option>
+                                <option>Glaucoma</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                             <select class="form-select shbapp-control">
+                                <option selected>Doctor</option>
+                                <option>Dr. Shubhanu</option>
+                                <option>Dr. Rakesh</option>
+                                <option>Dr. Pooja</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                             <input type="datetime-local" class="form-control shbapp-control">
+                        </div>
+
+                        <div class="col-12">
+
+                            <textarea class="form-control shbapp-control shbapp-textarea"
+                                placeholder="Write Your Message Here......"></textarea>
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <div class="d-lg-flex align-items-center">
+
+                                <button type="submit" class="btn shbapp-btn">
+
+                                    Book An Appointment
+
+                                </button>
+
+                                <span class="shbapp-note">
+
+                                    ( We will be confirm by an SMS )
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- Right Image -->
+
+            <div class="col-lg-6">
+
+                <div class="shbapp-image">
+
+                    <img src="/assets/front/imgs/bottom-doctor.png" class="img-fluid" alt="Doctors">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script>
+const videoModal = document.getElementById('videoModal');
+const iframe = document.getElementById('ytVideo');
+
+videoModal.addEventListener('show.bs.modal', function(event) {
+
+    const button = event.relatedTarget;
+    const video = button.getAttribute('data-video');
+
+    iframe.src = video;
+
+});
+
+videoModal.addEventListener('hidden.bs.modal', function() {
+
+    iframe.src = "";
+
+});
+</script>
 
 <script>
 (function() {
@@ -822,4 +1223,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
 @endsection

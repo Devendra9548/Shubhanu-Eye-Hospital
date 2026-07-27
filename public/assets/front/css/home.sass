@@ -12,13 +12,11 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
     .slide:nth-child(1) .slide__inner
         background-image: url(/assets/front/imgs/banners/1.webp)
     .slide:nth-child(2) .slide__inner
-        background-image: url(/assets/front/imgs/banners/2.jpg)
+        background-image: url(/assets/front/imgs/banners/3.webp)
     .slide:nth-child(3) .slide__inner
-        background-image: url(/assets/front/imgs/banners/1.jpg)
+        background-image: url(/assets/front/imgs/banners/4.webp)
     .slide:nth-child(4) .slide__inner
-        background-image: url(/assets/front/imgs/banners/2.jpg)
-    .slide:nth-child(5) .slide__inner
-        background-image: url(/assets/front/imgs/banners/1.jpg)
+        background-image: url(/assets/front/imgs/banners/5.webp)
 
 .first-section
     background-image: url(/assets/front/imgs/eye-banner-1.webp)
@@ -75,18 +73,138 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
             width: 100%
             height: 235px
 
+.shbadv-section
+    position: relative !important
+    background: #fff !important
+    overflow: hidden !important
+    padding: 100px 0 !important
+    .shbadv-card
+        border: 2px solid #0001
+        padding: 30px
+        box-shadow: 0px 0px 5px 2px #0002
+        margin: 5px
+        transform: translate(0px, 0px)
+        transition: all 200ms ease-in-out
+        border-radius: 15px
+        h4
+            color: #343434
+            font-size: 24px
+            font-weight: bold
+        p
+            margin-bottom: 10px !important
+        p, li
+            color: #767676
+        li
+            font-style: italic
+        &:hover
+            border-color: #24748c42
+            box-shadow: 0px 0px 5px 2px #24748cba
+            transform: translate(0px, -15px)
+            transition: all 200ms ease-in-out
+        .shbadv-icon
+            i
+                font-size: 40px
+                margin-bottom: 20px
+                color: $brandcolor
+        a
+            font-weight: bold
+            color: $brandcolor
+            border: 1px solid #24748c
+            display: block
+            padding: 8px 15px
+            border-radius: 5px
+            &:hover
+                background: $brandcolor !important
+                color: #fff !important
+                i
+                    color: #fff !important
+        ul
+            li
+                i
+                    font-size: 14px
+                    margin-right: 5px
+                    margin-bottom: 10px
+                    color: $brandcolor
+        .shbadv-read
+            i
+                color: $brandcolor
+                margin-left: 10px
+
+.shb-video-btn
+    background: $brandcolor !important
+    border: 1px solid $brandcolor
+    color: #fff
+    display: block
+    cursor: pointer
+    z-index: 20
+    padding: 10px 15px !important
+    padding: 8px 15px !important
+    border-radius: 5px
+
+.shb-video-btn i
+    font-size: 18px
+    color: #fff
+    margin-right: 5px
+
+.shb-video-btn:hover
+    background: #FF0000 !important
+    border: 1px solid #FF0000 
+    color: #fff
+
+.shbadv-bg-text
+    position: absolute !important
+    top: 15px !important
+    left: 50% !important
+    transform: translateX(-50%) !important
+    font-size: 110px !important
+    font-weight: 800 !important
+    color: #f2f3f7 !important
+    white-space: nowrap !important
+    line-height: 1 !important
+    z-index: 0 !important
+    user-select: none !important
+    pointer-events: none !important
+
+.shbadv-title
+    position: relative !important
+    z-index: 2 !important
+    font-size: 54px !important
+    font-weight: 800 !important
+    margin-bottom: 10px !important
+    width: 60%
+    margin: auto
+    span
+        color: $brandcolor
+
 @media only screen and (max-width:768px)
     .hero-section
         .slide:nth-child(1) .slide__inner
             background-image: url(/assets/front/imgs/banners/1-mb.webp)
         .slide:nth-child(2) .slide__inner
-            background-image: url(/assets/front/imgs/banners/2.jpg)
+            background-image: url(/assets/front/imgs/banners/3-mb.webp)
         .slide:nth-child(3) .slide__inner
-            background-image: url(/assets/front/imgs/banners/1.jpg)
+            background-image: url(/assets/front/imgs/banners/4-mb.webp)
         .slide:nth-child(4) .slide__inner
-            background-image: url(/assets/front/imgs/banners/2.jpg)
-        .slide:nth-child(5) .slide__inner
-            background-image: url(/assets/front/imgs/banners/1.jpg)
+            background-image: url(/assets/front/imgs/banners/5-mb.webp)
+
+    .first-section .row
+        margin: 0px !important
+    .first-section .container .cube
+        width: 100%
+    .first-section .card__image img
+        width: 100%
+        height: 220px
+        object-fit: cover
+    .first-section .card__title
+        font-size: 18px
+    .first-section .row__item
+        padding: 0px !important
+    .first-section .wrapper
+        margin-top: 2rem
+
+    .first-section .row__item + .row__item
+        margin-left: 0rem
+        margin-top: 2rem
 
     .slider__control-line
         left: 15px
