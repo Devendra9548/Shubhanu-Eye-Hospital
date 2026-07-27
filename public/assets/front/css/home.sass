@@ -44,13 +44,18 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
         padding: 0px !important
     .wrapper
         margin-top: 50px
+
+    .front .card__content
+        background: linear-gradient(328deg, #24748c, #24748ca1)
     .card__title
         font-size: 20px
         font-family: $fontManrope
-        font-weight: bold
-        color: #000 !important
+        font-weight: 600
+        color: #fff !important
         transition: font-size var(--trans-duration)
         text-transform: capitalize
+        i
+            color: #fff
     .card__description
         .heading
             font-size: 18px !important
@@ -65,8 +70,10 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
             color: #000 !important
             text-transform: capitalize
     .card__image
+        margin: 0px
         img
             width: 100%
+            height: 235px
 
 @media only screen and (max-width:768px)
     .hero-section

@@ -86,7 +86,9 @@
                                         <img src="/assets/front/imgs/1/3.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Retinal surgery & Injection</div>
+                                        <div class="card__title">Retinal surgery & Injection <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
+
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +118,8 @@
                                         <img src="/assets/front/imgs/1/4.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Lid surgery</div>
+                                        <div class="card__title">Lid surgery <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +149,8 @@
                                         <img src="/assets/front/imgs/1/5.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Orbital surgery</div>
+                                        <div class="card__title">Orbital surgery <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +184,8 @@
                                         <img src="/assets/front/imgs/1/6.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Eye Tumors</div>
+                                        <div class="card__title">Eye Tumors <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +216,8 @@
                                         <img src="/assets/front/imgs/1/7.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Treatment of Watering Eyes</div>
+                                        <div class="card__title">Treatment of Watering Eyes <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +249,8 @@
                                         <img src="/assets/front/imgs/1/8.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Ocular Emergencies</div>
+                                        <div class="card__title">Ocular Emergencies <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -279,7 +286,8 @@
                                         <img src="/assets/front/imgs/1/9.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Neuro-Ophthalmology</div>
+                                        <div class="card__title">Neuro-Ophthalmology <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -311,7 +319,8 @@
                                         <img src="/assets/front/imgs/1/10.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Artificial / Prosthetic eyes</div>
+                                        <div class="card__title">Artificial / Prosthetic eyes <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -342,7 +351,8 @@
                                         <img src="/assets/front/imgs/1/11.png" alt="">
                                     </figure>
                                     <div class="card__content">
-                                        <div class="card__title">Thyroid Eye Disease</div>
+                                        <div class="card__title">Thyroid Eye Disease <i
+                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -412,14 +422,16 @@
                 <span class="eye-bg-title">WHO WE ARE?</span>
 
                 <h2 class="fw-bold mb-4">
-                    We Are a Leading Eye Care Hospital
+                    Leading Eye Care Hospital Committed to Your Vision
                 </h2>
 
                 <p class="mb-4">
-                    Riti Eye Care Hospital was founded in 2014 with a vision to provide world-class eye care services to
-                    our community. Over the years, we have grown into a leading institution for comprehensive eye care,
-                    serving thousands of patients every year. Our commitment to excellence has made us a trusted name in
-                    eye health.
+                    At Shubanu Eye Hospital – The Best Eye Hospital owns a fleet of modern equipment’s right from
+                    diagnostics to state of the art operation theater. We have built a reputation of providing technical
+                    excellence and cutting edge technology which enables our Doctors to perform complex surgeries with
+                    increased precision, control and safety resulting in faster recovery and comfort for our patients.
+                    We take pride in using the best technology available
+                    for all our patients
                 </p>
 
                 <h4 class="mb-4">Our Specialized Services:</h4>
@@ -427,17 +439,17 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <ul class="eye-list">
-                            <li>Advanced Cataract Surgery</li>
-                            <li>Cornea Transplantation</li>
-                            <li>Pterygium Excision</li>
+                            <li>High Standard of Ophthalmology</li>
+                            <li>Committed Ophthalmology Team</li>
+                            <li>Modern Ophthalmology Equipment</li>
                         </ul>
                     </div>
 
                     <div class="col-sm-6">
                         <ul class="eye-list">
-                            <li>Glaucoma Surgery</li>
-                            <li>Yag Laser</li>
-                            <li>Riti Opticals</li>
+                            <li>Cutting Edge Technology</li>
+                            <li>Expert Doctors</li>
+                            <li>Quality Eye Care</li>
                         </ul>
                     </div>
                 </div>
@@ -471,135 +483,74 @@
 <section class="tsw-section py-5">
 
     <div class="container">
-
         <div class="tsw-heading text-center">
-
-            <span class="tsw-subtitle">
-                TESTIMONIALS
-            </span>
-
-            <h2 class="tsw-title">
-                What Our Patients Say
-            </h2>
-
-            <p class="tsw-description">
-                Real experiences from people who trusted us with their vision
-            </p>
+            <span class="tsw-subtitle">TESTIMONIALS</span>
+            <h2 class="tsw-title">What Our Patients Say<h2>
+                    <p class="tsw-description">Hear from Patients Who Chose Us for Their Eye Care</p>
 
         </div>
-
         <div class="swiper tsw-slider">
-
             <div class="swiper-wrapper">
 
                 <!-- Card 1 -->
-
                 <div class="swiper-slide">
-
                     <div class="tsw-card">
-
                         <div class="tsw-quote">
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
-
                         <p class="tsw-review">
-
-                            "Riti Eye Care Hospital transformed my life.
-                            The team's expertise and care made my eye surgery
-                            experience completely stress-free."
-
+                            "Most reliable Hospital in Haldwani. Doctors and staff are very cordial and take care of the
+                            patients very well. I went for a seasonal allergy and the treatment suggested by doctor
+                            worked very well. I would like to thank Mr. Bharat who is very friendly and very helpful."
                         </p>
-
                         <div class="tsw-stars">
-
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-
                         </div>
-
                         <div class="tsw-user">
-
                             <div class="tsw-user-image">
-
-                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
-
+                                <img src="/assets/front/imgs/male.png" alt="">
                             </div>
-
                             <div class="tsw-user-info">
-
-                                <h5>Sonika Yadav</h5>
-
-                                <span>Mumbai</span>
-
+                                <h5>– Narender Rautela</h5>
+                                <span>Customer</span>
                             </div>
-
                         </div>
-
                         <div class="tsw-line"></div>
-
-                        <span class="tsw-badge">
-                            Cataract Surgery
-                        </span>
-
+                        <span class="tsw-badge">Cataract Surgery</span>
                     </div>
-
                 </div>
 
                 <!-- Card 2 -->
-
                 <div class="swiper-slide">
-
                     <div class="tsw-card">
-
                         <div class="tsw-quote">
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
-
-                        <p class="tsw-review">
-
-                            "From the moment I walked in, I knew I was in
-                            good hands. The facility is world-class and
-                            the doctors are incredibly knowledgeable."
-
-                        </p>
-
+                        <p class="tsw-review">"Dr. Bhanu Pangtey is one of the most renowned retina surgeon in the whole
+                            of Kumaon And Dr.
+                            Shubha Pangtey is one of the most renowned Oculoplasty surgeon in the whole of Kumaon."</p>
                         <div class="tsw-stars">
-
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-
                         </div>
-
                         <div class="tsw-user">
-
                             <div class="tsw-user-image">
-
-                                <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
-
+                                <img src="/assets/front/imgs/female.png" alt="">
                             </div>
-
                             <div class="tsw-user-info">
-
-                                <h5>Abhishek Verma</h5>
-
-                                <span>Delhi</span>
-
+                                <h5>– Manju Arya</h5>
+                                <span>Customer</span>
                             </div>
-
                         </div>
-
                         <div class="tsw-line"></div>
-
-                        <span class="tsw-badge">
-                            Glaucoma Treatment
-                        </span>
-
+                        <span class="tsw-badge">Glaucoma Treatment</span>
                     </div>
 
                 </div>
@@ -607,23 +558,14 @@
                 <!-- Card 3 -->
 
                 <div class="swiper-slide">
-
                     <div class="tsw-card">
-
                         <div class="tsw-quote">
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
-
-                        <p class="tsw-review">
-
-                            "Professional, caring, and thorough.
-                            My cataract surgery was quick and painless.
-                            The follow-up care was exceptional."
-
-                        </p>
-
+                        <p class="tsw-review">"optometrist sanjeev gangwar is best employ in shubhanu eye hospital he
+                            guide me that what
+                            is best care of eye he suddgest me lensses quality and treatment"</p>
                         <div class="tsw-stars">
-
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -633,141 +575,81 @@
                         </div>
 
                         <div class="tsw-user">
-
                             <div class="tsw-user-image">
-
-                                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
-
+                                <img src="/assets/front/imgs/male.png" alt="">
                             </div>
-
                             <div class="tsw-user-info">
-
-                                <h5>Farhan Ahmad</h5>
-
-                                <span>Hyderabad</span>
+                                <h5>– Pradhuman Gangwar</h5>
+                                <span>Customer</span>
 
                             </div>
-
                         </div>
-
                         <div class="tsw-line"></div>
-
                         <span class="tsw-badge">
                             Cataract Surgery
                         </span>
-
                     </div>
-
                 </div>
 
                 <!-- Card 4 -->
-
                 <div class="swiper-slide">
-
                     <div class="tsw-card">
-
                         <div class="tsw-quote">
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
-
                         <p class="tsw-review">
-
-                            "Excellent doctors, friendly staff and
-                            modern facilities. Everything from
-                            consultation to surgery was smooth."
-
+                            "Most reliable Hospital in Haldwani. Doctors and staff are very cordial and take care of the
+                            patients very well. I went for a seasonal allergy and the treatment suggested by doctor
+                            worked very well. I would like to thank Mr. Bharat who is very friendly and very helpful."
                         </p>
-
                         <div class="tsw-stars">
-
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-
                         </div>
-
                         <div class="tsw-user">
-
                             <div class="tsw-user-image">
-
-                                <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="">
-
+                                <img src="/assets/front/imgs/male.png" alt="">
                             </div>
-
                             <div class="tsw-user-info">
-
-                                <h5>Pooja Sharma</h5>
-
-                                <span>Lucknow</span>
-
+                                <h5>– Narender Rautela</h5>
+                                <span>Customer</span>
                             </div>
-
                         </div>
-
                         <div class="tsw-line"></div>
-
-                        <span class="tsw-badge">
-                            Retina Treatment
-                        </span>
-
+                        <span class="tsw-badge">Cataract Surgery</span>
                     </div>
-
                 </div>
 
                 <!-- Card 5 -->
-
                 <div class="swiper-slide">
-
                     <div class="tsw-card">
-
                         <div class="tsw-quote">
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
-
-                        <p class="tsw-review">
-
-                            "Highly recommended. The doctors explained
-                            everything clearly and made me feel
-                            comfortable throughout my treatment."
-
-                        </p>
-
+                        <p class="tsw-review">"Dr. Bhanu Pangtey is one of the most renowned retina surgeon in the whole
+                            of Kumaon And Dr.
+                            Shubha Pangtey is one of the most renowned Oculoplasty surgeon in the whole of Kumaon."</p>
                         <div class="tsw-stars">
-
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-
                         </div>
-
                         <div class="tsw-user">
-
                             <div class="tsw-user-image">
-
-                                <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="">
-
+                                <img src="/assets/front/imgs/female.png" alt="">
                             </div>
-
                             <div class="tsw-user-info">
-
-                                <h5>Rahul Kapoor</h5>
-
-                                <span>Jaipur</span>
-
+                                <h5>– Manju Arya</h5>
+                                <span>Customer</span>
                             </div>
-
                         </div>
-
                         <div class="tsw-line"></div>
-
-                        <span class="tsw-badge">
-                            LASIK Surgery
-                        </span>
-
+                        <span class="tsw-badge">Glaucoma Treatment</span>
                     </div>
 
                 </div>
