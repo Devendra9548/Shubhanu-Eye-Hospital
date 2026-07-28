@@ -851,3 +851,737 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
     .tsw-prev, .tsw-next, .tsw-play
         width: 46px !important
         height: 46px !important
+
+.zbg-blog-section
+    background: #fff
+    position: relative
+    overflow: hidden
+
+.zbg-blog-subtitle
+    display: inline-block
+    font-size: 14px
+    font-weight: 700
+    letter-spacing: 1px
+    text-transform: uppercase
+    color: #0c4b8d
+    margin-bottom: 12px
+
+.zbg-blog-title
+    font-size: 46px
+    font-weight: 800
+    color: #0c3d79
+    margin-bottom: 18px
+    text-transform: uppercase
+    line-height: 1.2
+
+.zbg-blog-divider
+    width: 70px
+    height: 2px
+    background: #0c4b8d
+    margin: 0 auto
+
+.zbg-blog-item
+    display: flex
+    align-items: flex-start
+    gap: 28px
+    transition: .35s
+
+.zbg-blog-item:hover
+    transform: translateY(-6px)
+
+.zbg-blog-thumb
+    flex: 0 0 280px
+    max-width: 280px
+
+.zbg-blog-thumb img
+    width: 100%
+    height: 190px
+    object-fit: cover
+    border-radius: 8px
+    display: block
+    transition: .4s
+
+.zbg-blog-item:hover .zbg-blog-thumb img
+    transform: scale(1.05)
+
+.zbg-blog-content
+    flex: 1
+
+.zbg-blog-post-title
+    margin: 0 0 12px
+    font-size: 36px
+    line-height: 1.25
+    font-weight: 700
+
+.zbg-blog-post-title a
+    color: #0b3f7a
+    text-decoration: none
+    transition: .3s
+
+.zbg-blog-post-title a:hover
+    color: #08617e
+
+.zbg-blog-meta
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 8px
+    font-size: 14px
+    color: #8d96a5
+    margin-bottom: 18px
+
+.zbg-blog-dot
+    font-size: 12px
+    color: #8d96a5
+
+.zbg-blog-content p
+    margin: 0
+    color: #6f7d91
+    font-size: 18px
+    line-height: 1.8
+
+@media(max-width:1199px)
+
+    .zbg-blog-thumb
+        flex: 0 0 240px
+        max-width: 240px
+
+    .zbg-blog-thumb img
+        height: 170px
+
+    .zbg-blog-post-title
+        font-size: 30px
+
+@media(max-width:991px)
+
+    .zbg-blog-item
+        flex-direction: column
+
+    .zbg-blog-thumb
+        width: 100%
+        max-width: 100%
+
+    .zbg-blog-thumb img
+        width: 100%
+        height: 250px
+
+    .zbg-blog-title
+        font-size: 38px
+
+    .zbg-blog-post-title
+        font-size: 28px
+
+@media(max-width:767px)
+
+    .zbg-blog-title
+        font-size: 30px
+
+    .zbg-blog-thumb img
+        height: 220px
+
+    .zbg-blog-post-title
+        font-size: 24px
+
+    .zbg-blog-content p
+        font-size: 16px
+
+@media(max-width:575px)
+
+    .zbg-blog-thumb img
+        height: 200px
+
+    .zbg-blog-title
+        font-size: 26px
+
+    .zbg-blog-post-title
+        font-size: 22px
+
+.esec-section
+    position: relative
+    overflow: hidden
+    background: #f8fbff
+    padding: 90px 0
+
+.esec-section::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 220px
+    height: 220px
+    background: rgba(8, 97, 126, .05)
+    border-radius: 50%
+    filter: blur(60px)
+
+.esec-subtitle
+    display: block
+    font-size: 90px
+    font-weight: 800
+    color: #edf2f7
+    line-height: 1
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: -25px
+    user-select: none
+    z-index: 0
+
+.esec-title
+    position: relative
+    z-index: 2
+    font-size: 54px !important
+    font-weight: 800 !important
+    margin-bottom: 15px
+    span
+        color: $brandcolor
+
+.esec-title-line
+    width: 80px
+    height: 4px
+    margin: auto
+    border-radius: 30px
+    background: $brandcolor
+    position: relative
+    overflow: hidden
+
+.esec-title-line::after
+    content: ""
+    position: absolute
+    left: -40px
+    top: 0
+    width: 40px
+    height: 100%
+    background: #fff
+    animation: esec-lineMove 2.5s linear infinite
+
+@keyframes esec-lineMove
+    100%
+        left: 100%
+
+.esec-description
+    color: #6c757d
+    max-width: 720px
+    margin: auto
+
+.esec-main-wrapper
+    margin-top: 70px
+
+.esec-image-box
+    overflow: hidden
+    border-radius: 8px
+    position: relative
+    box-shadow: 0 0px 45px #00000029
+
+.esec-image-box img
+    transition: .7s
+    display: block
+    height: 500px
+    object-fit: contain
+    object-position: top
+
+.esec-vertical-text
+    position: absolute
+    left: -70px
+    top: 50%
+    transform: translateY(-50%)
+    width: 70px
+    height: 82%
+    background: #fff
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 3
+
+.esec-vertical-text span
+    writing-mode: vertical-rl
+    transform: rotate(180deg)
+    font-size: 20px
+    font-weight: 600
+    color: $brandcolor
+    text-align: center
+    line-height: 1.5
+    font-family: $fontlato
+
+.esec-vertical-text span::after
+    content: ""
+    color: $brandcolor
+
+.esec-vertical-text strong
+    color: $brandcolor
+
+.esec-content-card
+    background: #fff
+    padding: 55px
+    border-radius: 10px
+    box-shadow: 0 18px 55px rgba(0, 0, 0, .08)
+    transition: .4s
+    position: relative
+    overflow: hidden
+
+.esec-content-card:hover
+    transform: translateY(-8px)
+
+.esec-content-card::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 6px
+    height: 100%
+    background: $brandcolor
+
+.esec-card-title
+    color: $brandcolor
+    line-height: 1.35
+    margin-bottom: 25px
+    font-weight: bold
+    font-size: 26px
+
+.esec-content-card i
+    color: $brandcolor
+    margin-top: 5px
+    font-size: 9px
+    background: #24748c
+    color: #fff
+    border-radius: 100%
+    padding: 4px
+    font-weight: bold
+    margin-right: 5px
+
+.esec-content-card
+    table
+        tr
+            td
+                padding: 8px 0px
+            td:nth-child(1)
+                width: 192px !important
+                font-weight: bold !important
+                color: #000
+                display: flex
+                justify-content: start
+                align-items: start
+
+.esec-btn
+    background: $brandcolor !important
+    color: #fff !important
+    border-radius: 50px
+    padding: 15px 34px
+    font-weight: 600
+    position: relative
+    overflow: hidden
+    transition: .4s
+    display: inline-block
+    text-align: left
+    margin-top: 20px
+
+.esec-btn:hover
+
+    color: #fff
+    transform: translateY(-3px)
+    background: $brandcolor
+
+.esec-btn::before
+
+    content: ""
+    position: absolute
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100%
+    background: rgba(255, 255, 255, .25)
+    transform: skewX(-30deg)
+    transition: .7s
+
+.esec-btn:hover::before
+    left: 130%
+
+.esec-main-wrapper-2
+    .esec-vertical-text
+        right: -70px
+        left: auto
+    .esec-vertical-text span
+        transform: rotate(0deg)
+    .esec-content-card-2::before
+        background: transparent !important
+    .esec-content-card-2
+        border-right: 5px solid $brandcolor !important
+
+
+@media(max-width:991px)
+
+    .esec-subtitle
+        display: none
+
+    .esec-title
+        font-size: 32px
+
+    .esec-content-card
+        margin-top: 40px
+        padding: 35px
+
+    .esec-card-title
+        font-size: 28px
+
+    .esec-vertical-text
+        display: none
+
+@media(max-width:767px)
+
+    .esec-section
+        padding: 70px 0
+
+    .esec-title
+        font-size: 28px
+
+    .esec-card-title
+        font-size: 24px
+
+    .esec-content-card
+        padding: 25px
+
+    .esec-btn
+        width: 100%
+        text-align: center
+
+.eqshow-section
+    position: relative
+    padding: 100px 0
+    background: #f8fbff
+    overflow: hidden
+
+.eqshow-section::before
+    content: ""
+    position: absolute
+    width: 650px
+    height: 650px
+    background: radial-gradient(circle, #08617e15 0%, transparent 70%)
+    top: -220px
+    left: -180px
+    border-radius: 50%
+
+.eqshow-section::after
+    content: ""
+    position: absolute
+    width: 500px
+    height: 500px
+    background: radial-gradient(circle, #0dcaf015 0%, transparent 70%)
+    bottom: -200px
+    right: -180px
+    border-radius: 50%
+
+.eqshow-bg-text
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: -35px
+    font-size: 110px
+    font-weight: 800
+    color: #edf3f7
+    white-space: nowrap
+    pointer-events: none
+    user-select: none
+    z-index: 0
+
+.eqshow-subtitle
+    display: block
+    color: #08617e
+    font-size: 18px
+    letter-spacing: 1px
+    font-weight: 600
+    margin-bottom: 10px
+    position: relative
+    z-index: 2
+
+.eqshow-title
+    font-size: 48px
+    font-weight: 700
+    color: #22304a
+    position: relative
+    z-index: 2
+
+.eqshow-divider
+    width: 70px
+    height: 4px
+    background: #08617e
+    border-radius: 30px
+    margin: 18px auto
+    position: relative
+    overflow: hidden
+
+.eqshow-divider::before
+    content: ""
+    position: absolute
+    left: -35px
+    top: 0
+    width: 35px
+    height: 100%
+    background: #fff
+    animation: eqshowLine 2s linear infinite
+
+@keyframes eqshowLine
+    to
+        left: 110%
+
+.eqshow-desc
+    color: #6b7280
+    max-width: 700px
+    margin: auto
+
+.eqshow-image-area
+    position: relative
+    text-align: center
+    min-height: 520px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.eqshow-glow
+    position: absolute
+    width: 420px
+    height: 420px
+    background: radial-gradient(circle, #0dcaf030 0%, transparent 70%)
+    border-radius: 50%
+    animation: eqshowGlow 4s ease-in-out infinite
+
+@keyframes eqshowGlow
+
+    0%,
+    100%
+        transform: scale(1)
+        opacity: .7
+
+    50%
+        transform: scale(1.12)
+        opacity: 1
+
+.eqshow-image-area img
+    max-width: 85%
+    position: relative
+    z-index: 2
+    animation: eqshowFloat 5s ease-in-out infinite
+    transition: .5s
+    filter: drop-shadow(0 25px 40px rgba(0, 0, 0, .15))
+
+.eqshow-image-area:hover img
+    transform: scale(1.05)
+
+@keyframes eqshowFloat
+
+    0%,
+    100%
+        transform: translateY(0)
+
+    50%
+        transform: translateY(-18px)
+
+.eqshow-content
+
+    background: rgba(255, 255, 255, .75)
+    backdrop-filter: blur(12px)
+    border-radius: 20px
+    padding: 45px
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .08)
+    border: 1px solid rgba(255, 255, 255, .5)
+
+.eqshow-tag
+
+    display: inline-block
+    padding: 8px 18px
+    background: #08617e
+    color: #fff
+    border-radius: 50px
+    font-size: 14px
+    margin-bottom: 20px
+
+.eqshow-content h3
+
+    font-size: 38px
+    font-weight: 700
+    color: #22304a
+    margin-bottom: 20px
+
+.eqshow-content p
+
+    color: #6b7280
+    line-height: 1.9
+    margin-bottom: 30px
+
+.eqshow-features
+    display: flex
+    flex-direction: column
+    gap: 18px
+
+.eqshow-feature
+
+    display: flex
+    align-items: center
+    gap: 15px
+    font-weight: 500
+    color: #3d4b63
+    transition: .35s
+
+.eqshow-feature:hover
+
+    transform: translateX(10px)
+
+.eqshow-feature i
+
+    width: 34px
+    height: 34px
+    background: #08617e
+    color: #fff
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 15px
+
+.eqshow-btn
+
+    background: #08617e
+    color: #fff
+    border-radius: 50px
+    padding: 14px 34px
+    font-weight: 600
+    transition: .35s
+    overflow: hidden
+    position: relative
+
+.eqshow-btn:hover
+
+    background: #0a7fa3
+    color: #fff
+    transform: translateY(-3px)
+
+.eqshow-nav
+
+    display: flex
+    gap: 18px
+    overflow-x: auto
+    padding: 10px 5px
+    scrollbar-width: none
+
+.eqshow-nav::-webkit-scrollbar
+    display: none
+
+.eqshow-item
+
+    min-width: 130px
+    border: none
+    background: #fff
+    border-radius: 18px
+    padding: 18px 12px
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08)
+    transition: .35s
+    cursor: pointer
+    text-align: center
+    flex-shrink: 0
+
+.eqshow-item img
+
+    width: 65px
+    height: 65px
+    object-fit: contain
+    transition: .4s
+
+.eqshow-item span
+
+    display: block
+    margin-top: 12px
+    font-weight: 600
+    color: #22304a
+    font-size: 15px
+
+.eqshow-item:hover
+
+    transform: translateY(-8px)
+
+.eqshow-item:hover img
+
+    transform: scale(1.12) rotate(5deg)
+
+.eqshow-item.active
+
+    background: #08617e
+
+.eqshow-item.active span
+
+    color: #fff
+
+.eqshow-progress
+
+    width: 100%
+    height: 4px
+    background: #dbe6ec
+    border-radius: 20px
+    margin-top: 30px
+    overflow: hidden
+
+.eqshow-progress-bar
+
+    display: block
+    width: 25%
+    height: 100%
+    background: #08617e
+    border-radius: 20px
+    transition: .5s
+
+@media(max-width:991px)
+
+    .eqshow-bg-text
+        display: none
+
+    .eqshow-title
+        font-size: 36px
+
+    .eqshow-image-area
+        min-height: 380px
+
+    .eqshow-content
+        padding: 30px
+
+    .eqshow-content h3
+        font-size: 30px
+
+@media(max-width:767px)
+
+    .eqshow-title
+        font-size: 30px
+
+    .eqshow-content
+        padding: 25px
+
+    .eqshow-content h3
+        font-size: 24px
+
+    .eqshow-item
+        min-width: 110px
+
+    .eqshow-item img
+        width: 50px
+        height: 50px
+
+    .eqshow-btn
+        width: 100%
+
+.eqshow-content h3, .eqshow-content p, .eqshow-features, #eqshowMainImage
+    transition: .45s ease
+
+.eqshow-item.active
+    transform: translateY(-12px)
+    box-shadow: 0 20px 45px rgba(8, 97, 126, .35)
+
+.eqshow-item.active img
+    transform: scale(1.1)
+
+.eqshow-item.active::before
+    content: ""
+    position: absolute
+    inset: 0
+    border: 2px solid rgba(255, 255, 255, .2)
+    border-radius: 18px
+
+.eqshow-item
+    position: relative

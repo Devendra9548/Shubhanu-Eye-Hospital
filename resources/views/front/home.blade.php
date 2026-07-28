@@ -7,1032 +7,7 @@
 <link rel="stylesheet" href="/assets/front/css/home.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 <style>
-/*==============================
-    BLOG SECTION
-==============================*/
-
-.zbg-blog-section{
-    background:#fff;
-    position:relative;
-    overflow:hidden;
-}
-
-.zbg-blog-subtitle{
-    display:inline-block;
-    font-size:14px;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:#0c4b8d;
-    margin-bottom:12px;
-}
-
-.zbg-blog-title{
-    font-size:46px;
-    font-weight:800;
-    color:#0c3d79;
-    margin-bottom:18px;
-    text-transform:uppercase;
-    line-height:1.2;
-}
-
-.zbg-blog-divider{
-    width:70px;
-    height:2px;
-    background:#0c4b8d;
-    margin:0 auto;
-}
-
-
-/*==============================
-    BLOG ITEM
-==============================*/
-
-.zbg-blog-item{
-    display:flex;
-    align-items:flex-start;
-    gap:28px;
-    transition:.35s;
-}
-
-.zbg-blog-item:hover{
-    transform:translateY(-6px);
-}
-
-
-/*==============================
-    IMAGE
-==============================*/
-
-.zbg-blog-thumb{
-    flex:0 0 280px;
-    max-width:280px;
-}
-
-.zbg-blog-thumb img{
-    width:100%;
-    height:190px;
-    object-fit:cover;
-    border-radius:8px;
-    display:block;
-    transition:.4s;
-}
-
-.zbg-blog-item:hover .zbg-blog-thumb img{
-    transform:scale(1.05);
-}
-
-
-/*==============================
-    CONTENT
-==============================*/
-
-.zbg-blog-content{
-    flex:1;
-}
-
-.zbg-blog-post-title{
-    margin:0 0 12px;
-    font-size:36px;
-    line-height:1.25;
-    font-weight:700;
-}
-
-.zbg-blog-post-title a{
-    color:#0b3f7a;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.zbg-blog-post-title a:hover{
-    color:#08617e;
-}
-
-.zbg-blog-meta{
-    display:flex;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:8px;
-    font-size:14px;
-    color:#8d96a5;
-    margin-bottom:18px;
-}
-
-.zbg-blog-dot{
-    font-size:12px;
-    color:#8d96a5;
-}
-
-.zbg-blog-content p{
-    margin:0;
-    color:#6f7d91;
-    font-size:18px;
-    line-height:1.8;
-}
-
-
-/*==============================
-    RESPONSIVE
-==============================*/
-
-@media(max-width:1199px){
-
-    .zbg-blog-thumb{
-        flex:0 0 240px;
-        max-width:240px;
-    }
-
-    .zbg-blog-thumb img{
-        height:170px;
-    }
-
-    .zbg-blog-post-title{
-        font-size:30px;
-    }
-
-}
-
-@media(max-width:991px){
-
-    .zbg-blog-item{
-        flex-direction:column;
-    }
-
-    .zbg-blog-thumb{
-        width:100%;
-        max-width:100%;
-    }
-
-    .zbg-blog-thumb img{
-        width:100%;
-        height:250px;
-    }
-
-    .zbg-blog-title{
-        font-size:38px;
-    }
-
-    .zbg-blog-post-title{
-        font-size:28px;
-    }
-
-}
-
-@media(max-width:767px){
-
-    .zbg-blog-title{
-        font-size:30px;
-    }
-
-    .zbg-blog-thumb img{
-        height:220px;
-    }
-
-    .zbg-blog-post-title{
-        font-size:24px;
-    }
-
-    .zbg-blog-content p{
-        font-size:16px;
-    }
-
-}
-
-@media(max-width:575px){
-
-    .zbg-blog-thumb img{
-        height:200px;
-    }
-
-    .zbg-blog-title{
-        font-size:26px;
-    }
-
-    .zbg-blog-post-title{
-        font-size:22px;
-    }
-
-}
-
-
-
-/*==================================================
-    Eye Specialist Section
-==================================================*/
-
-.esec-section{
-    position:relative;
-    overflow:hidden;
-    background:#f8fbff;
-    padding:90px 0;
-}
-
-/* Background Shape */
-
-.esec-section::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:50%;
-    transform:translateX(-50%);
-    width:220px;
-    height:220px;
-    background:rgba(8,97,126,.05);
-    border-radius:50%;
-    filter:blur(60px);
-}
-
-.esec-subtitle{
-    display:block;
-    font-size:90px;
-    font-weight:800;
-    color:#edf2f7;
-    line-height:1;
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    margin-top:-25px;
-    user-select:none;
-    z-index:0;
-}
-
-.esec-title{
-    position:relative;
-    z-index:2;
-    font-size:42px;
-    font-weight:700;
-    color:#123c72;
-    margin-bottom:15px;
-}
-
-.esec-title-line{
-    width:80px;
-    height:4px;
-    margin:auto;
-    border-radius:30px;
-    background:#14c38e;
-    position:relative;
-    overflow:hidden;
-}
-
-.esec-title-line::after{
-    content:"";
-    position:absolute;
-    left:-40px;
-    top:0;
-    width:40px;
-    height:100%;
-    background:#fff;
-    animation:esec-lineMove 2.5s linear infinite;
-}
-
-@keyframes esec-lineMove{
-    100%{
-        left:100%;
-    }
-}
-
-.esec-description{
-    color:#6c757d;
-    max-width:720px;
-    margin:auto;
-}
-
-/*==============================
-Left Side
-==============================*/
-
-.esec-main-wrapper{
-    margin-top:70px;
-}
-
-.esec-image-box{
-    overflow:hidden;
-    border-radius:8px;
-    position:relative;
-    box-shadow:0 18px 45px rgba(0,0,0,.08);
-}
-
-.esec-image-box img{
-    transition:.7s;
-    display:block;
-}
-
-.esec-image-box:hover img{
-    transform:scale(1.08);
-}
-
-/* Floating Animation */
-
-.esec-image-box{
-    animation:esecFloat 5s ease-in-out infinite;
-}
-
-@keyframes esecFloat{
-
-    0%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(-12px);
-    }
-
-    100%{
-        transform:translateY(0px);
-    }
-
-}
-
-/* Vertical Text */
-
-.esec-vertical-text{
-    position:absolute;
-    left:-70px;
-    top:50%;
-    transform:translateY(-50%);
-    width:70px;
-    height:82%;
-    background:#fff;
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:3;
-}
-
-.esec-vertical-text span{
-
-    writing-mode:vertical-rl;
-    transform:rotate(180deg);
-    font-size:22px;
-    font-weight:600;
-    color:#0b3d77;
-    text-align:center;
-    line-height:1.5;
-
-}
-
-.esec-vertical-text span::after{
-    content:"";
-    color:#14c38e;
-}
-
-.esec-vertical-text strong{
-    color:#14c38e;
-}
-
-/*==============================
-Right Card
-==============================*/
-
-.esec-content-card{
-
-    background:#fff;
-    padding:55px;
-    border-radius:10px;
-    box-shadow:0 18px 55px rgba(0,0,0,.08);
-    transition:.4s;
-    position:relative;
-    overflow:hidden;
-
-}
-
-.esec-content-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.esec-content-card::before{
-
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:6px;
-    height:100%;
-    background:#14c38e;
-
-}
-
-.esec-card-title{
-
-    font-size:38px;
-    font-weight:700;
-    color:#143d74;
-    line-height:1.35;
-    margin-bottom:25px;
-
-}
-
-.esec-card-title span{
-
-    color:#14c38e;
-
-}
-
-.esec-card-text{
-
-    color:#6f7d8a;
-    line-height:1.9;
-    margin-bottom:35px;
-
-}
-
-/*==============================
-List
-==============================*/
-
-.esec-list li{
-
-    display:flex;
-    align-items:flex-start;
-    gap:15px;
-    margin-bottom:18px;
-    color:#394657;
-    font-size:17px;
-    transition:.35s;
-
-}
-
-.esec-list li:hover{
-
-    transform:translateX(8px);
-
-}
-
-.esec-list i{
-
-    color:#14c38e;
-    margin-top:5px;
-    font-size:18px;
-
-}
-
-/*==============================
-Button
-==============================*/
-
-.esec-btn{
-
-    background:#123c72;
-    color:#fff;
-    border-radius:50px;
-    padding:15px 34px;
-    font-weight:600;
-    position:relative;
-    overflow:hidden;
-    transition:.4s;
-
-}
-
-.esec-btn:hover{
-
-    color:#fff;
-    transform:translateY(-3px);
-    background:#14c38e;
-
-}
-
-.esec-btn::before{
-
-    content:"";
-    position:absolute;
-    top:0;
-    left:-100%;
-    width:100%;
-    height:100%;
-    background:rgba(255,255,255,.25);
-    transform:skewX(-30deg);
-    transition:.7s;
-
-}
-
-.esec-btn:hover::before{
-
-    left:130%;
-
-}
-
-/*==============================
-Responsive
-==============================*/
-
-@media(max-width:991px){
-
-    .esec-subtitle{
-        display:none;
-    }
-
-    .esec-title{
-        font-size:32px;
-    }
-
-    .esec-content-card{
-        margin-top:40px;
-        padding:35px;
-    }
-
-    .esec-card-title{
-        font-size:28px;
-    }
-
-    .esec-vertical-text{
-        display:none;
-    }
-
-}
-
-@media(max-width:767px){
-
-    .esec-section{
-        padding:70px 0;
-    }
-
-    .esec-title{
-        font-size:28px;
-    }
-
-    .esec-card-title{
-        font-size:24px;
-    }
-
-    .esec-content-card{
-        padding:25px;
-    }
-
-    .esec-btn{
-        width:100%;
-        text-align:center;
-    }
-
-}
-
-
-/*====================================================
-        Equipment Showcase Section
-====================================================*/
-
-.eqshow-section{
-    position:relative;
-    padding:100px 0;
-    background:#f8fbff;
-    overflow:hidden;
-}
-
-/* Background */
-
-.eqshow-section::before{
-    content:"";
-    position:absolute;
-    width:650px;
-    height:650px;
-    background:radial-gradient(circle,#08617e15 0%,transparent 70%);
-    top:-220px;
-    left:-180px;
-    border-radius:50%;
-}
-
-.eqshow-section::after{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:radial-gradient(circle,#0dcaf015 0%,transparent 70%);
-    bottom:-200px;
-    right:-180px;
-    border-radius:50%;
-}
-
-/* Heading */
-
-.eqshow-bg-text{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    top:-35px;
-    font-size:110px;
-    font-weight:800;
-    color:#edf3f7;
-    white-space:nowrap;
-    pointer-events:none;
-    user-select:none;
-    z-index:0;
-}
-
-.eqshow-subtitle{
-    display:block;
-    color:#08617e;
-    font-size:18px;
-    letter-spacing:1px;
-    font-weight:600;
-    margin-bottom:10px;
-    position:relative;
-    z-index:2;
-}
-
-.eqshow-title{
-    font-size:48px;
-    font-weight:700;
-    color:#22304a;
-    position:relative;
-    z-index:2;
-}
-
-.eqshow-divider{
-    width:70px;
-    height:4px;
-    background:#08617e;
-    border-radius:30px;
-    margin:18px auto;
-    position:relative;
-    overflow:hidden;
-}
-
-.eqshow-divider::before{
-    content:"";
-    position:absolute;
-    left:-35px;
-    top:0;
-    width:35px;
-    height:100%;
-    background:#fff;
-    animation:eqshowLine 2s linear infinite;
-}
-
-@keyframes eqshowLine{
-    to{
-        left:110%;
-    }
-}
-
-.eqshow-desc{
-    color:#6b7280;
-    max-width:700px;
-    margin:auto;
-}
-
-/*====================================================
-        Image Area
-====================================================*/
-
-.eqshow-image-area{
-    position:relative;
-    text-align:center;
-    min-height:520px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.eqshow-glow{
-    position:absolute;
-    width:420px;
-    height:420px;
-    background:radial-gradient(circle,#0dcaf030 0%,transparent 70%);
-    border-radius:50%;
-    animation:eqshowGlow 4s ease-in-out infinite;
-}
-
-@keyframes eqshowGlow{
-
-    0%,100%{
-        transform:scale(1);
-        opacity:.7;
-    }
-
-    50%{
-        transform:scale(1.12);
-        opacity:1;
-    }
-
-}
-
-.eqshow-image-area img{
-    max-width:85%;
-    position:relative;
-    z-index:2;
-    animation:eqshowFloat 5s ease-in-out infinite;
-    transition:.5s;
-    filter:drop-shadow(0 25px 40px rgba(0,0,0,.15));
-}
-
-.eqshow-image-area:hover img{
-    transform:scale(1.05);
-}
-
-@keyframes eqshowFloat{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-18px);
-    }
-
-}
-
-/*====================================================
-        Content
-====================================================*/
-
-.eqshow-content{
-
-    background:rgba(255,255,255,.75);
-    backdrop-filter:blur(12px);
-    border-radius:20px;
-    padding:45px;
-    box-shadow:0 20px 60px rgba(0,0,0,.08);
-    border:1px solid rgba(255,255,255,.5);
-
-}
-
-.eqshow-tag{
-
-    display:inline-block;
-    padding:8px 18px;
-    background:#08617e;
-    color:#fff;
-    border-radius:50px;
-    font-size:14px;
-    margin-bottom:20px;
-
-}
-
-.eqshow-content h3{
-
-    font-size:38px;
-    font-weight:700;
-    color:#22304a;
-    margin-bottom:20px;
-
-}
-
-.eqshow-content p{
-
-    color:#6b7280;
-    line-height:1.9;
-    margin-bottom:30px;
-
-}
-
-/*====================================================
-        Features
-====================================================*/
-
-.eqshow-features{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-}
-
-.eqshow-feature{
-
-    display:flex;
-    align-items:center;
-    gap:15px;
-    font-weight:500;
-    color:#3d4b63;
-    transition:.35s;
-
-}
-
-.eqshow-feature:hover{
-
-    transform:translateX(10px);
-
-}
-
-.eqshow-feature i{
-
-    width:34px;
-    height:34px;
-    background:#08617e;
-    color:#fff;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:15px;
-
-}
-
-/*====================================================
-        Button
-====================================================*/
-
-.eqshow-btn{
-
-    background:#08617e;
-    color:#fff;
-    border-radius:50px;
-    padding:14px 34px;
-    font-weight:600;
-    transition:.35s;
-    overflow:hidden;
-    position:relative;
-
-}
-
-.eqshow-btn:hover{
-
-    background:#0a7fa3;
-    color:#fff;
-    transform:translateY(-3px);
-
-}
-
-/*====================================================
-        Bottom Navigation
-====================================================*/
-
-.eqshow-nav{
-
-    display:flex;
-    gap:18px;
-    overflow-x:auto;
-    padding:10px 5px;
-    scrollbar-width:none;
-
-}
-
-.eqshow-nav::-webkit-scrollbar{
-    display:none;
-}
-
-.eqshow-item{
-
-    min-width:130px;
-    border:none;
-    background:#fff;
-    border-radius:18px;
-    padding:18px 12px;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    cursor:pointer;
-    text-align:center;
-    flex-shrink:0;
-
-}
-
-.eqshow-item img{
-
-    width:65px;
-    height:65px;
-    object-fit:contain;
-    transition:.4s;
-
-}
-
-.eqshow-item span{
-
-    display:block;
-    margin-top:12px;
-    font-weight:600;
-    color:#22304a;
-    font-size:15px;
-
-}
-
-.eqshow-item:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.eqshow-item:hover img{
-
-    transform:scale(1.12) rotate(5deg);
-
-}
-
-.eqshow-item.active{
-
-    background:#08617e;
-
-}
-
-.eqshow-item.active span{
-
-    color:#fff;
-
-}
-
-/*====================================================
-        Progress
-====================================================*/
-
-.eqshow-progress{
-
-    width:100%;
-    height:4px;
-    background:#dbe6ec;
-    border-radius:20px;
-    margin-top:30px;
-    overflow:hidden;
-
-}
-
-.eqshow-progress-bar{
-
-    display:block;
-    width:25%;
-    height:100%;
-    background:#08617e;
-    border-radius:20px;
-    transition:.5s;
-
-}
-
-/*====================================================
-        Responsive
-====================================================*/
-
-@media(max-width:991px){
-
-    .eqshow-bg-text{
-        display:none;
-    }
-
-    .eqshow-title{
-        font-size:36px;
-    }
-
-    .eqshow-image-area{
-        min-height:380px;
-    }
-
-    .eqshow-content{
-        padding:30px;
-    }
-
-    .eqshow-content h3{
-        font-size:30px;
-    }
-
-}
-
-@media(max-width:767px){
-
-    .eqshow-title{
-        font-size:30px;
-    }
-
-    .eqshow-content{
-        padding:25px;
-    }
-
-    .eqshow-content h3{
-        font-size:24px;
-    }
-
-    .eqshow-item{
-        min-width:110px;
-    }
-
-    .eqshow-item img{
-        width:50px;
-        height:50px;
-    }
-
-    .eqshow-btn{
-        width:100%;
-    }
-
-}
-
-
-.eqshow-content h3,
-.eqshow-content p,
-.eqshow-features,
-#eqshowMainImage{
-    transition:.45s ease;
-}
-
-.eqshow-item.active{
-    transform:translateY(-12px);
-    box-shadow:0 20px 45px rgba(8,97,126,.35);
-}
-
-.eqshow-item.active img{
-    transform:scale(1.1);
-}
-
-.eqshow-item.active::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    border:2px solid rgba(255,255,255,.2);
-    border-radius:18px;
-}
-
-.eqshow-item{
-    position:relative;
-}
 
 </style>
 
@@ -1445,7 +420,7 @@ Responsive
                 </h2>
 
                 <p class="mb-4">
-                    At Shubanu Eye Hospital – The Best Eye Hospital owns a fleet of modern equipment’s right from
+                    At Shubanu Eye Hospital - The Best Eye Hospital owns a fleet of modern equipment’s right from
                     diagnostics to state of the art operation theater. We have built a reputation of providing technical
                     excellence and cutting edge technology which enables our Doctors to perform complex surgeries with
                     increased precision, control and safety resulting in faster recovery and comfort for our patients.
@@ -1739,96 +714,113 @@ Responsive
 
 </div>
 
-<!--==============================
-    Eye Specialist Section Start
-===============================-->
 <section class="esec-section py-5">
     <div class="container">
-
-        <!-- Heading -->
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
                 <span class="esec-subtitle">Our Experts</span>
-
-                <h2 class="esec-title">
-                    Service Experts Eye Special.
-                </h2>
-
+                <h2 class="esec-title">Service Experts <span>Eye Special</span>.</h2>
                 <div class="esec-title-line"></div>
-
-                <p class="esec-description mt-3">
-                    At Optrica we value our patients' overall health and encourage
-                    our patients to visit their primary care doctor annually.
-                </p>
+                <p class="esec-description mt-3">At Optrica we value our patients' overall health and encourage
+                    our patients to visit their primary care doctor annually.</p>
             </div>
         </div>
-
-        <!-- Content -->
         <div class="row align-items-center mt-5 g-0 esec-main-wrapper">
-
-            <!-- Left -->
             <div class="col-lg-6 position-relative">
-
-                <!-- Vertical Label -->
                 <div class="esec-vertical-text">
-                    <span>
-                        Get The Right Optometrist Care Book With Our Doctors.
-                    </span>
+                    <span>Get The Right Optometrist Care Book With Our Doctors.</span>
                 </div>
-
-                <!-- Doctor Image -->
                 <div class="esec-image-box">
-                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
-                        class="img-fluid w-100"
+                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png" class="img-fluid w-100"
                         alt="Eye Specialist">
                 </div>
-
             </div>
-
-            <!-- Right -->
             <div class="col-lg-6">
-
                 <div class="esec-content-card">
-
-                    <h3 class="esec-card-title">
-                        Eye Care Services For Adults
-                        And Children's
-                        <span>Clinic</span>
-                    </h3>
-
-                    <p class="esec-card-text">
-                        You are nothing without your set eyes care set in
-                        consectetur elit, do eiusmod tempor incididunt ut labore
-                        dolore aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip.
-                    </p>
-
-                    <!-- List -->
-                    <ul class="esec-list list-unstyled">
-
-                        <li>
-                            <i class="fas fa-check"></i>
-                            Drawing up an individual treatment program for patient.
-                        </li>
-
-                        <li>
-                            <i class="fas fa-check"></i>
-                            Performing all operations &amp; procedures in professional level.
-                        </li>
-
-                        <li>
-                            <i class="fas fa-check"></i>
-                            Compliance of medical equipment international standards.
-                        </li>
-
-                    </ul>
-
+                    <h3 class="esec-card-title">Dr. Bhanu Pratap Singh Pangtey</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fas fa-check"></i> Specialty:</td>
+                            <td>Vitreoretinal Surgeon</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check"></i> Areas of Expertise:</td>
+                            <td>Vitreoretina, Retinopathy of Prematurity, Uvea related disorder</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fas fa-check"></i>Certifications:</td>
+                            <td>Vitreo retinal society - India , European Vitreoretinal Society, All India Ophthalmogy
+                                Society.</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check"></i> Years of Practice:</td>
+                            <td>15 Years</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check"></i> Medical Education:</td>
+                            <td>MS (OPHTHAL), FVRS, FICO</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check"></i> Working Time:</td>
+                            <td>Mon-Fri 09:00 - 18:00</td>
+                        </tr>
+                    </table>
                     <a href="#" class="btn esec-btn">
                         Book Appointment
                     </a>
 
                 </div>
 
+            </div>
+
+        </div>
+        <div class="row align-items-center mt-5 g-0 esec-main-wrapper esec-main-wrapper-2">
+            <div class="col-lg-6">
+                <div class="esec-content-card esec-content-card-2">
+                    <h3 class="esec-card-title">Dr. Shubha Raguram Pangtey</h3>
+                    <table>
+                        <tr>
+                            <td>Specialty:</td>
+                            <td>Ophthalmologist</td>
+                        </tr>
+                        <tr>
+                            <td>Areas of Expertise:</td>
+                            <td>Orbit, Oculoplastic and ocular Oncology and cataracts</td>
+                        </tr>
+                        <tr>
+                            <td>Certifications:</td>
+                            <td>All India Ophthalmologist Society, Oculoplasty Society Of India, Tamil Nadu Society Of
+                                Ophthalmologist, Uttarakhand Ophthalmological Society</td>
+                        </tr>
+                        <tr>
+                            <td>Years of Practice:</td>
+                            <td>15Years</td>
+                        </tr>
+                        <tr>
+                            <td>Medical Education:</td>
+                            <td>MBBS , MS ophthalmology<br>
+                                Fellow orbit Oculoplasty and ocular oncology</td>
+                        </tr>
+                        <tr>
+                            <td>Working Time:</td>
+                            <td>Mon-Fri 09:00 – 18:00</td>
+                        </tr>
+                    </table>
+                    <a href="#" class="btn esec-btn">
+                        Book Appointment
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="col-lg-6 position-relative">
+                <div class="esec-vertical-text">
+                    <span>Get The Right Optometrist Care Book With Our Doctors.</span>
+                </div>
+                <div class="esec-image-box">
+                    <img src="/assets/front/imgs/doctors/dr.-shubha-raguram-pangtey.png" class="img-fluid w-100"
+                        alt="Eye Specialist">
+                </div>
             </div>
 
         </div>
@@ -1885,11 +877,7 @@ Responsive
                     <span class="eqshow-glow"></span>
 
                     <!-- Equipment Image -->
-                    <img
-                        id="eqshowMainImage"
-                        src="assets/images/equipment/oct.png"
-                        class="img-fluid"
-                        alt="Equipment">
+                    <img id="eqshowMainImage" src="assets/images/equipment/oct.png" class="img-fluid" alt="Equipment">
 
                 </div>
 
@@ -1955,9 +943,7 @@ Responsive
 
                     <!-- Item -->
 
-                    <button
-                        class="eqshow-item active"
-                        data-index="0">
+                    <button class="eqshow-item active" data-index="0">
 
                         <img src="assets/images/equipment/oct.png" alt="">
 
@@ -1965,9 +951,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="1">
+                    <button class="eqshow-item" data-index="1">
 
                         <img src="assets/images/equipment/fundus.png" alt="">
 
@@ -1975,9 +959,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="2">
+                    <button class="eqshow-item" data-index="2">
 
                         <img src="assets/images/equipment/laser.png" alt="">
 
@@ -1985,9 +967,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="3">
+                    <button class="eqshow-item" data-index="3">
 
                         <img src="assets/images/equipment/retina.png" alt="">
 
@@ -1995,9 +975,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="4">
+                    <button class="eqshow-item" data-index="4">
 
                         <img src="assets/images/equipment/slitlamp.png" alt="">
 
@@ -2005,9 +983,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="5">
+                    <button class="eqshow-item" data-index="5">
 
                         <img src="assets/images/equipment/phaco.png" alt="">
 
@@ -2015,9 +991,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="6">
+                    <button class="eqshow-item" data-index="6">
 
                         <img src="assets/images/equipment/topography.png" alt="">
 
@@ -2025,9 +999,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="7">
+                    <button class="eqshow-item" data-index="7">
 
                         <img src="assets/images/equipment/yaglaser.png" alt="">
 
@@ -2035,9 +1007,7 @@ Responsive
 
                     </button>
 
-                    <button
-                        class="eqshow-item"
-                        data-index="8">
+                    <button class="eqshow-item" data-index="8">
 
                         <img src="assets/images/equipment/microscope.png" alt="">
 
@@ -2098,7 +1068,7 @@ Responsive
                                 <img src="/assets/front/imgs/male.png" alt="">
                             </div>
                             <div class="tsw-user-info">
-                                <h5>– Narender Rautela</h5>
+                                <h5>- Narender Rautela</h5>
                                 <span>Customer</span>
                             </div>
                         </div>
@@ -2128,7 +1098,7 @@ Responsive
                                 <img src="/assets/front/imgs/female.png" alt="">
                             </div>
                             <div class="tsw-user-info">
-                                <h5>– Manju Arya</h5>
+                                <h5>- Manju Arya</h5>
                                 <span>Customer</span>
                             </div>
                         </div>
@@ -2162,7 +1132,7 @@ Responsive
                                 <img src="/assets/front/imgs/male.png" alt="">
                             </div>
                             <div class="tsw-user-info">
-                                <h5>– Pradhuman Gangwar</h5>
+                                <h5>- Pradhuman Gangwar</h5>
                                 <span>Customer</span>
 
                             </div>
@@ -2197,7 +1167,7 @@ Responsive
                                 <img src="/assets/front/imgs/male.png" alt="">
                             </div>
                             <div class="tsw-user-info">
-                                <h5>– Narender Rautela</h5>
+                                <h5>- Narender Rautela</h5>
                                 <span>Customer</span>
                             </div>
                         </div>
@@ -2227,7 +1197,7 @@ Responsive
                                 <img src="/assets/front/imgs/female.png" alt="">
                             </div>
                             <div class="tsw-user-info">
-                                <h5>– Manju Arya</h5>
+                                <h5>- Manju Arya</h5>
                                 <span>Customer</span>
                             </div>
                         </div>
@@ -2287,8 +1257,7 @@ Responsive
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800" alt="">
                         </a>
                     </div>
 
@@ -2322,8 +1291,7 @@ Responsive
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800" alt="">
                         </a>
                     </div>
 
@@ -2357,8 +1325,7 @@ Responsive
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800" alt="">
                         </a>
                     </div>
 
@@ -2392,8 +1359,7 @@ Responsive
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800" alt="">
                         </a>
                     </div>
 
@@ -2473,7 +1439,8 @@ Responsive
                             </div>
                             <div class="col-12">
                                 <div class="d-lg-flex align-items-center">
-                                    <button type="submit" class="btn shbapp-btn">Book An Appointment <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <button type="submit" class="btn shbapp-btn">Book An Appointment <i
+                                            class="fa-solid fa-arrow-right-long"></i></button>
                                     <span class="shbapp-note">( We will be confirm by an SMS )</span>
                                 </div>
                             </div>
@@ -2653,10 +1620,9 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
 
-    const equipments = [
-        {
+    const equipments = [{
             image: "assets/images/equipment/oct.png",
             title: "Topcon OCT Maestro 2",
             desc: "High precision OCT imaging system for retina, optic nerve and macula analysis with AI-assisted scanning.",
@@ -2801,7 +1767,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             featureBox.innerHTML = "";
 
-            equipments[index].features.forEach(function(feature){
+            equipments[index].features.forEach(function(feature) {
 
                 featureBox.innerHTML += `
                     <div class="eqshow-feature">
@@ -2817,7 +1783,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             animateIn();
 
-        },300);
+        }, 300);
 
         current = index;
 
@@ -2825,11 +1791,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    function nextEquipment(){
+    function nextEquipment() {
 
         current++;
 
-        if(current >= equipments.length){
+        if (current >= equipments.length) {
             current = 0;
         }
 
@@ -2837,33 +1803,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    function startAuto(){
+    function startAuto() {
 
         clearInterval(timer);
 
-        timer = setInterval(nextEquipment,5000);
+        timer = setInterval(nextEquipment, 5000);
 
     }
 
-    function startProgress(){
+    function startProgress() {
 
         clearInterval(progressTimer);
 
         progress.style.transition = "none";
         progress.style.width = "0%";
 
-        setTimeout(function(){
+        setTimeout(function() {
 
             progress.style.transition = "width 5s linear";
             progress.style.width = "100%";
 
-        },50);
+        }, 50);
 
     }
 
-    items.forEach(function(button){
+    items.forEach(function(button) {
 
-        button.addEventListener("click",function(){
+        button.addEventListener("click", function() {
 
             showEquipment(parseInt(this.dataset.index));
 
@@ -2873,10 +1839,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    image.style.transition=".45s";
-    title.style.transition=".45s";
-    desc.style.transition=".45s";
-    featureBox.style.transition=".45s";
+    image.style.transition = ".45s";
+    title.style.transition = ".45s";
+    desc.style.transition = ".45s";
+    featureBox.style.transition = ".45s";
 
     showEquipment(0);
 
