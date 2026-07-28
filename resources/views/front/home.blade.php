@@ -9,63 +9,1030 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style>
-.shbapp-section
-{
-    background: #267590;
-    padding-top: 10px;
+/*==============================
+    BLOG SECTION
+==============================*/
+
+.zbg-blog-section{
+    background:#fff;
+    position:relative;
+    overflow:hidden;
 }
 
-.shbapp-form {
-    margin-top: 20px;
-    margin-bottom: 60px;
+.zbg-blog-subtitle{
+    display:inline-block;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#0c4b8d;
+    margin-bottom:12px;
 }
 
-.shbapp-image{
-    text-align: center;
+.zbg-blog-title{
+    font-size:46px;
+    font-weight:800;
+    color:#0c3d79;
+    margin-bottom:18px;
+    text-transform:uppercase;
+    line-height:1.2;
 }
 
-.shbapp-image img{
-   width: 80% !important;
+.zbg-blog-divider{
+    width:70px;
+    height:2px;
+    background:#0c4b8d;
+    margin:0 auto;
 }
 
-.shbapp-control {
-    height: 58px;
-    border: 1px solid #e7e7e7;
-    border-radius: 4px;
-    padding: 0 18px;
-    font-size: 15px;
-    color: #555;
-    background: #fff;
-    box-shadow: none;
-    transition: .35s;
+
+/*==============================
+    BLOG ITEM
+==============================*/
+
+.zbg-blog-item{
+    display:flex;
+    align-items:flex-start;
+    gap:28px;
+    transition:.35s;
 }
 
-.shbapp-control:focus {
-    border-color: #1d7bf2;
-    box-shadow: none;
+.zbg-blog-item:hover{
+    transform:translateY(-6px);
+}
+
+
+/*==============================
+    IMAGE
+==============================*/
+
+.zbg-blog-thumb{
+    flex:0 0 280px;
+    max-width:280px;
+}
+
+.zbg-blog-thumb img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+    border-radius:8px;
+    display:block;
+    transition:.4s;
+}
+
+.zbg-blog-item:hover .zbg-blog-thumb img{
+    transform:scale(1.05);
+}
+
+
+/*==============================
+    CONTENT
+==============================*/
+
+.zbg-blog-content{
+    flex:1;
+}
+
+.zbg-blog-post-title{
+    margin:0 0 12px;
+    font-size:36px;
+    line-height:1.25;
+    font-weight:700;
+}
+
+.zbg-blog-post-title a{
+    color:#0b3f7a;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.zbg-blog-post-title a:hover{
+    color:#08617e;
+}
+
+.zbg-blog-meta{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px;
+    font-size:14px;
+    color:#8d96a5;
+    margin-bottom:18px;
+}
+
+.zbg-blog-dot{
+    font-size:12px;
+    color:#8d96a5;
+}
+
+.zbg-blog-content p{
+    margin:0;
+    color:#6f7d91;
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+/*==============================
+    RESPONSIVE
+==============================*/
+
+@media(max-width:1199px){
+
+    .zbg-blog-thumb{
+        flex:0 0 240px;
+        max-width:240px;
+    }
+
+    .zbg-blog-thumb img{
+        height:170px;
+    }
+
+    .zbg-blog-post-title{
+        font-size:30px;
+    }
 
 }
 
-.shbapp-control::placeholder {
+@media(max-width:991px){
 
-    color: #8d8d8d;
+    .zbg-blog-item{
+        flex-direction:column;
+    }
+
+    .zbg-blog-thumb{
+        width:100%;
+        max-width:100%;
+    }
+
+    .zbg-blog-thumb img{
+        width:100%;
+        height:250px;
+    }
+
+    .zbg-blog-title{
+        font-size:38px;
+    }
+
+    .zbg-blog-post-title{
+        font-size:28px;
+    }
 
 }
 
-.shbapp-textarea {
+@media(max-width:767px){
 
-    min-height: 160px;
-    resize: none;
-    padding-top: 16px;
+    .zbg-blog-title{
+        font-size:30px;
+    }
+
+    .zbg-blog-thumb img{
+        height:220px;
+    }
+
+    .zbg-blog-post-title{
+        font-size:24px;
+    }
+
+    .zbg-blog-content p{
+        font-size:16px;
+    }
 
 }
 
-.shbapp-form select {
+@media(max-width:575px){
 
-    cursor: pointer;
+    .zbg-blog-thumb img{
+        height:200px;
+    }
+
+    .zbg-blog-title{
+        font-size:26px;
+    }
+
+    .zbg-blog-post-title{
+        font-size:22px;
+    }
 
 }
 
+
+
+/*==================================================
+    Eye Specialist Section
+==================================================*/
+
+.esec-section{
+    position:relative;
+    overflow:hidden;
+    background:#f8fbff;
+    padding:90px 0;
+}
+
+/* Background Shape */
+
+.esec-section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:220px;
+    height:220px;
+    background:rgba(8,97,126,.05);
+    border-radius:50%;
+    filter:blur(60px);
+}
+
+.esec-subtitle{
+    display:block;
+    font-size:90px;
+    font-weight:800;
+    color:#edf2f7;
+    line-height:1;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    margin-top:-25px;
+    user-select:none;
+    z-index:0;
+}
+
+.esec-title{
+    position:relative;
+    z-index:2;
+    font-size:42px;
+    font-weight:700;
+    color:#123c72;
+    margin-bottom:15px;
+}
+
+.esec-title-line{
+    width:80px;
+    height:4px;
+    margin:auto;
+    border-radius:30px;
+    background:#14c38e;
+    position:relative;
+    overflow:hidden;
+}
+
+.esec-title-line::after{
+    content:"";
+    position:absolute;
+    left:-40px;
+    top:0;
+    width:40px;
+    height:100%;
+    background:#fff;
+    animation:esec-lineMove 2.5s linear infinite;
+}
+
+@keyframes esec-lineMove{
+    100%{
+        left:100%;
+    }
+}
+
+.esec-description{
+    color:#6c757d;
+    max-width:720px;
+    margin:auto;
+}
+
+/*==============================
+Left Side
+==============================*/
+
+.esec-main-wrapper{
+    margin-top:70px;
+}
+
+.esec-image-box{
+    overflow:hidden;
+    border-radius:8px;
+    position:relative;
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+
+.esec-image-box img{
+    transition:.7s;
+    display:block;
+}
+
+.esec-image-box:hover img{
+    transform:scale(1.08);
+}
+
+/* Floating Animation */
+
+.esec-image-box{
+    animation:esecFloat 5s ease-in-out infinite;
+}
+
+@keyframes esecFloat{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Vertical Text */
+
+.esec-vertical-text{
+    position:absolute;
+    left:-70px;
+    top:50%;
+    transform:translateY(-50%);
+    width:70px;
+    height:82%;
+    background:#fff;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:3;
+}
+
+.esec-vertical-text span{
+
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-size:22px;
+    font-weight:600;
+    color:#0b3d77;
+    text-align:center;
+    line-height:1.5;
+
+}
+
+.esec-vertical-text span::after{
+    content:"";
+    color:#14c38e;
+}
+
+.esec-vertical-text strong{
+    color:#14c38e;
+}
+
+/*==============================
+Right Card
+==============================*/
+
+.esec-content-card{
+
+    background:#fff;
+    padding:55px;
+    border-radius:10px;
+    box-shadow:0 18px 55px rgba(0,0,0,.08);
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.esec-content-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.esec-content-card::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:6px;
+    height:100%;
+    background:#14c38e;
+
+}
+
+.esec-card-title{
+
+    font-size:38px;
+    font-weight:700;
+    color:#143d74;
+    line-height:1.35;
+    margin-bottom:25px;
+
+}
+
+.esec-card-title span{
+
+    color:#14c38e;
+
+}
+
+.esec-card-text{
+
+    color:#6f7d8a;
+    line-height:1.9;
+    margin-bottom:35px;
+
+}
+
+/*==============================
+List
+==============================*/
+
+.esec-list li{
+
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:18px;
+    color:#394657;
+    font-size:17px;
+    transition:.35s;
+
+}
+
+.esec-list li:hover{
+
+    transform:translateX(8px);
+
+}
+
+.esec-list i{
+
+    color:#14c38e;
+    margin-top:5px;
+    font-size:18px;
+
+}
+
+/*==============================
+Button
+==============================*/
+
+.esec-btn{
+
+    background:#123c72;
+    color:#fff;
+    border-radius:50px;
+    padding:15px 34px;
+    font-weight:600;
+    position:relative;
+    overflow:hidden;
+    transition:.4s;
+
+}
+
+.esec-btn:hover{
+
+    color:#fff;
+    transform:translateY(-3px);
+    background:#14c38e;
+
+}
+
+.esec-btn::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.25);
+    transform:skewX(-30deg);
+    transition:.7s;
+
+}
+
+.esec-btn:hover::before{
+
+    left:130%;
+
+}
+
+/*==============================
+Responsive
+==============================*/
+
+@media(max-width:991px){
+
+    .esec-subtitle{
+        display:none;
+    }
+
+    .esec-title{
+        font-size:32px;
+    }
+
+    .esec-content-card{
+        margin-top:40px;
+        padding:35px;
+    }
+
+    .esec-card-title{
+        font-size:28px;
+    }
+
+    .esec-vertical-text{
+        display:none;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .esec-section{
+        padding:70px 0;
+    }
+
+    .esec-title{
+        font-size:28px;
+    }
+
+    .esec-card-title{
+        font-size:24px;
+    }
+
+    .esec-content-card{
+        padding:25px;
+    }
+
+    .esec-btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+
+/*====================================================
+        Equipment Showcase Section
+====================================================*/
+
+.eqshow-section{
+    position:relative;
+    padding:100px 0;
+    background:#f8fbff;
+    overflow:hidden;
+}
+
+/* Background */
+
+.eqshow-section::before{
+    content:"";
+    position:absolute;
+    width:650px;
+    height:650px;
+    background:radial-gradient(circle,#08617e15 0%,transparent 70%);
+    top:-220px;
+    left:-180px;
+    border-radius:50%;
+}
+
+.eqshow-section::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,#0dcaf015 0%,transparent 70%);
+    bottom:-200px;
+    right:-180px;
+    border-radius:50%;
+}
+
+/* Heading */
+
+.eqshow-bg-text{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:-35px;
+    font-size:110px;
+    font-weight:800;
+    color:#edf3f7;
+    white-space:nowrap;
+    pointer-events:none;
+    user-select:none;
+    z-index:0;
+}
+
+.eqshow-subtitle{
+    display:block;
+    color:#08617e;
+    font-size:18px;
+    letter-spacing:1px;
+    font-weight:600;
+    margin-bottom:10px;
+    position:relative;
+    z-index:2;
+}
+
+.eqshow-title{
+    font-size:48px;
+    font-weight:700;
+    color:#22304a;
+    position:relative;
+    z-index:2;
+}
+
+.eqshow-divider{
+    width:70px;
+    height:4px;
+    background:#08617e;
+    border-radius:30px;
+    margin:18px auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.eqshow-divider::before{
+    content:"";
+    position:absolute;
+    left:-35px;
+    top:0;
+    width:35px;
+    height:100%;
+    background:#fff;
+    animation:eqshowLine 2s linear infinite;
+}
+
+@keyframes eqshowLine{
+    to{
+        left:110%;
+    }
+}
+
+.eqshow-desc{
+    color:#6b7280;
+    max-width:700px;
+    margin:auto;
+}
+
+/*====================================================
+        Image Area
+====================================================*/
+
+.eqshow-image-area{
+    position:relative;
+    text-align:center;
+    min-height:520px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.eqshow-glow{
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:radial-gradient(circle,#0dcaf030 0%,transparent 70%);
+    border-radius:50%;
+    animation:eqshowGlow 4s ease-in-out infinite;
+}
+
+@keyframes eqshowGlow{
+
+    0%,100%{
+        transform:scale(1);
+        opacity:.7;
+    }
+
+    50%{
+        transform:scale(1.12);
+        opacity:1;
+    }
+
+}
+
+.eqshow-image-area img{
+    max-width:85%;
+    position:relative;
+    z-index:2;
+    animation:eqshowFloat 5s ease-in-out infinite;
+    transition:.5s;
+    filter:drop-shadow(0 25px 40px rgba(0,0,0,.15));
+}
+
+.eqshow-image-area:hover img{
+    transform:scale(1.05);
+}
+
+@keyframes eqshowFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+}
+
+/*====================================================
+        Content
+====================================================*/
+
+.eqshow-content{
+
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:45px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    border:1px solid rgba(255,255,255,.5);
+
+}
+
+.eqshow-tag{
+
+    display:inline-block;
+    padding:8px 18px;
+    background:#08617e;
+    color:#fff;
+    border-radius:50px;
+    font-size:14px;
+    margin-bottom:20px;
+
+}
+
+.eqshow-content h3{
+
+    font-size:38px;
+    font-weight:700;
+    color:#22304a;
+    margin-bottom:20px;
+
+}
+
+.eqshow-content p{
+
+    color:#6b7280;
+    line-height:1.9;
+    margin-bottom:30px;
+
+}
+
+/*====================================================
+        Features
+====================================================*/
+
+.eqshow-features{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.eqshow-feature{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-weight:500;
+    color:#3d4b63;
+    transition:.35s;
+
+}
+
+.eqshow-feature:hover{
+
+    transform:translateX(10px);
+
+}
+
+.eqshow-feature i{
+
+    width:34px;
+    height:34px;
+    background:#08617e;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+
+}
+
+/*====================================================
+        Button
+====================================================*/
+
+.eqshow-btn{
+
+    background:#08617e;
+    color:#fff;
+    border-radius:50px;
+    padding:14px 34px;
+    font-weight:600;
+    transition:.35s;
+    overflow:hidden;
+    position:relative;
+
+}
+
+.eqshow-btn:hover{
+
+    background:#0a7fa3;
+    color:#fff;
+    transform:translateY(-3px);
+
+}
+
+/*====================================================
+        Bottom Navigation
+====================================================*/
+
+.eqshow-nav{
+
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    padding:10px 5px;
+    scrollbar-width:none;
+
+}
+
+.eqshow-nav::-webkit-scrollbar{
+    display:none;
+}
+
+.eqshow-item{
+
+    min-width:130px;
+    border:none;
+    background:#fff;
+    border-radius:18px;
+    padding:18px 12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    cursor:pointer;
+    text-align:center;
+    flex-shrink:0;
+
+}
+
+.eqshow-item img{
+
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    transition:.4s;
+
+}
+
+.eqshow-item span{
+
+    display:block;
+    margin-top:12px;
+    font-weight:600;
+    color:#22304a;
+    font-size:15px;
+
+}
+
+.eqshow-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.eqshow-item:hover img{
+
+    transform:scale(1.12) rotate(5deg);
+
+}
+
+.eqshow-item.active{
+
+    background:#08617e;
+
+}
+
+.eqshow-item.active span{
+
+    color:#fff;
+
+}
+
+/*====================================================
+        Progress
+====================================================*/
+
+.eqshow-progress{
+
+    width:100%;
+    height:4px;
+    background:#dbe6ec;
+    border-radius:20px;
+    margin-top:30px;
+    overflow:hidden;
+
+}
+
+.eqshow-progress-bar{
+
+    display:block;
+    width:25%;
+    height:100%;
+    background:#08617e;
+    border-radius:20px;
+    transition:.5s;
+
+}
+
+/*====================================================
+        Responsive
+====================================================*/
+
+@media(max-width:991px){
+
+    .eqshow-bg-text{
+        display:none;
+    }
+
+    .eqshow-title{
+        font-size:36px;
+    }
+
+    .eqshow-image-area{
+        min-height:380px;
+    }
+
+    .eqshow-content{
+        padding:30px;
+    }
+
+    .eqshow-content h3{
+        font-size:30px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .eqshow-title{
+        font-size:30px;
+    }
+
+    .eqshow-content{
+        padding:25px;
+    }
+
+    .eqshow-content h3{
+        font-size:24px;
+    }
+
+    .eqshow-item{
+        min-width:110px;
+    }
+
+    .eqshow-item img{
+        width:50px;
+        height:50px;
+    }
+
+    .eqshow-btn{
+        width:100%;
+    }
+
+}
+
+
+.eqshow-content h3,
+.eqshow-content p,
+.eqshow-features,
+#eqshowMainImage{
+    transition:.45s ease;
+}
+
+.eqshow-item.active{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(8,97,126,.35);
+}
+
+.eqshow-item.active img{
+    transform:scale(1.1);
+}
+
+.eqshow-item.active::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius:18px;
+}
+
+.eqshow-item{
+    position:relative;
+}
 
 </style>
 
@@ -772,6 +1739,330 @@
 
 </div>
 
+<!--==============================
+    Eye Specialist Section Start
+===============================-->
+<section class="esec-section py-5">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <span class="esec-subtitle">Our Experts</span>
+
+                <h2 class="esec-title">
+                    Service Experts Eye Special.
+                </h2>
+
+                <div class="esec-title-line"></div>
+
+                <p class="esec-description mt-3">
+                    At Optrica we value our patients' overall health and encourage
+                    our patients to visit their primary care doctor annually.
+                </p>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="row align-items-center mt-5 g-0 esec-main-wrapper">
+
+            <!-- Left -->
+            <div class="col-lg-6 position-relative">
+
+                <!-- Vertical Label -->
+                <div class="esec-vertical-text">
+                    <span>
+                        Get The Right Optometrist Care Book With Our Doctors.
+                    </span>
+                </div>
+
+                <!-- Doctor Image -->
+                <div class="esec-image-box">
+                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                        class="img-fluid w-100"
+                        alt="Eye Specialist">
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-6">
+
+                <div class="esec-content-card">
+
+                    <h3 class="esec-card-title">
+                        Eye Care Services For Adults
+                        And Children's
+                        <span>Clinic</span>
+                    </h3>
+
+                    <p class="esec-card-text">
+                        You are nothing without your set eyes care set in
+                        consectetur elit, do eiusmod tempor incididunt ut labore
+                        dolore aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip.
+                    </p>
+
+                    <!-- List -->
+                    <ul class="esec-list list-unstyled">
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Drawing up an individual treatment program for patient.
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Performing all operations &amp; procedures in professional level.
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Compliance of medical equipment international standards.
+                        </li>
+
+                    </ul>
+
+                    <a href="#" class="btn esec-btn">
+                        Book Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!--==============================
+    Eye Specialist Section End
+===============================-->
+
+
+<!--=========================================
+    Equipment Showcase Section Start
+==========================================-->
+<section class="eqshow-section py-5">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+
+                <span class="eqshow-bg-text">
+                    Equipment
+                </span>
+
+                <span class="eqshow-subtitle">
+                    Advanced Eye Technology
+                </span>
+
+                <h2 class="eqshow-title">
+                    Our Advanced Equipment
+                </h2>
+
+                <div class="eqshow-divider"></div>
+
+                <p class="eqshow-desc">
+                    We use the latest ophthalmology technology to provide
+                    accurate diagnosis and advanced treatment for every patient.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Main Showcase -->
+        <div class="row align-items-center mt-5 gy-5">
+
+            <!-- Left Image -->
+            <div class="col-lg-6">
+
+                <div class="eqshow-image-area">
+
+                    <!-- Glow -->
+                    <span class="eqshow-glow"></span>
+
+                    <!-- Equipment Image -->
+                    <img
+                        id="eqshowMainImage"
+                        src="assets/images/equipment/oct.png"
+                        class="img-fluid"
+                        alt="Equipment">
+
+                </div>
+
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-lg-6">
+
+                <div class="eqshow-content">
+
+                    <span class="eqshow-tag">
+                        Premium Eye Technology
+                    </span>
+
+                    <h3 id="eqshowTitle">
+                        Topcon OCT Maestro 2
+                    </h3>
+
+                    <p id="eqshowDescription">
+                        High precision OCT imaging system designed to capture
+                        retina, optic nerve and macula scans with excellent
+                        clarity and speed.
+                    </p>
+
+                    <!-- Features -->
+
+                    <div class="eqshow-features">
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            AI Assisted Imaging
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Ultra Fast Scan
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            High Resolution Images
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn eqshow-btn mt-4">
+                        Explore Equipment
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Equipment Navigation -->
+
+        <div class="row mt-5">
+
+            <div class="col-12">
+
+                <div class="eqshow-nav">
+
+                    <!-- Item -->
+
+                    <button
+                        class="eqshow-item active"
+                        data-index="0">
+
+                        <img src="assets/images/equipment/oct.png" alt="">
+
+                        <span>OCT</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="1">
+
+                        <img src="assets/images/equipment/fundus.png" alt="">
+
+                        <span>Fundus</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="2">
+
+                        <img src="assets/images/equipment/laser.png" alt="">
+
+                        <span>Laser</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="3">
+
+                        <img src="assets/images/equipment/retina.png" alt="">
+
+                        <span>Retina</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="4">
+
+                        <img src="assets/images/equipment/slitlamp.png" alt="">
+
+                        <span>Slit Lamp</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="5">
+
+                        <img src="assets/images/equipment/phaco.png" alt="">
+
+                        <span>Phaco</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="6">
+
+                        <img src="assets/images/equipment/topography.png" alt="">
+
+                        <span>Topography</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="7">
+
+                        <img src="assets/images/equipment/yaglaser.png" alt="">
+
+                        <span>YAG Laser</span>
+
+                    </button>
+
+                    <button
+                        class="eqshow-item"
+                        data-index="8">
+
+                        <img src="assets/images/equipment/microscope.png" alt="">
+
+                        <span>Microscope</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Progress -->
+        <div class="eqshow-progress">
+            <span class="eqshow-progress-bar"></span>
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+    Equipment Showcase Section End
+==========================================-->
+
 <section class="tsw-section py-5">
 
     <div class="container">
@@ -972,94 +2263,231 @@
 
 </section>
 
-<section class="shbapp-section">
+<section class="zbg-blog-section py-5">
     <div class="container">
-        <div class="row align-items-end mt-5">
-            <!-- Left -->
+
+        <!-- Section Heading -->
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <span class="zbg-blog-subtitle">RECENT POSTS</span>
+
+                <h2 class="zbg-blog-title">
+                    FROM OUR BLOG
+                </h2>
+
+                <div class="zbg-blog-divider"></div>
+            </div>
+        </div>
+
+        <div class="row g-5">
+
+            <!-- Blog Item -->
             <div class="col-lg-6">
-                <h2 class="shbapp-title"> We Are Always Ready To Help You. <span>Book An Appointment</span></h2>
-                <form class="shbapp-form">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control shbapp-control" placeholder="Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control shbapp-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control shbapp-control" placeholder="Phone">
-                        </div>
-                        <div class="col-md-6">
-                            <select class="form-select shbapp-control">
-                                <option selected>Department</option>
-                                <option>Cataract</option>
-                                <option>Retina</option>
-                                <option>LASIK</option>
-                                <option>Glaucoma</option>
-                            </select>
-                        </div>
+                <div class="zbg-blog-item">
 
-                        <div class="col-md-6">
-                             <select class="form-select shbapp-control">
-                                <option selected>Doctor</option>
-                                <option>Dr. Shubhanu</option>
-                                <option>Dr. Rakesh</option>
-                                <option>Dr. Pooja</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                             <input type="datetime-local" class="form-control shbapp-control">
+                    <div class="zbg-blog-thumb">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800"
+                                alt="">
+                        </a>
+                    </div>
+
+                    <div class="zbg-blog-content">
+
+                        <h3 class="zbg-blog-post-title">
+                            <a href="#">
+                                Should You Be Worried About Microplastics in Your Food?
+                            </a>
+                        </h3>
+
+                        <div class="zbg-blog-meta">
+                            <span>John Doe</span>
+                            <span class="zbg-blog-dot">•</span>
+                            <span>10 Jan, 2019</span>
                         </div>
 
-                        <div class="col-12">
-
-                            <textarea class="form-control shbapp-control shbapp-textarea"
-                                placeholder="Write Your Message Here......"></textarea>
-
-                        </div>
-
-                        <div class="col-12">
-
-                            <div class="d-lg-flex align-items-center">
-
-                                <button type="submit" class="btn shbapp-btn">
-
-                                    Book An Appointment
-
-                                </button>
-
-                                <span class="shbapp-note">
-
-                                    ( We will be confirm by an SMS )
-
-                                </span>
-
-                            </div>
-
-                        </div>
+                        <p>
+                            Plastic — it's in the air, sea and probably your body.
+                            Find out what microplastics are doing to your health...
+                        </p>
 
                     </div>
 
-                </form>
-
+                </div>
             </div>
 
-            <!-- Right Image -->
-
+            <!-- Blog Item -->
             <div class="col-lg-6">
+                <div class="zbg-blog-item">
 
-                <div class="shbapp-image">
+                    <div class="zbg-blog-thumb">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
+                                alt="">
+                        </a>
+                    </div>
 
-                    <img src="/assets/front/imgs/bottom-doctor.png" class="img-fluid" alt="Doctors">
+                    <div class="zbg-blog-content">
+
+                        <h3 class="zbg-blog-post-title">
+                            <a href="#">
+                                What to Expect During and After a Breast Biopsy
+                            </a>
+                        </h3>
+
+                        <div class="zbg-blog-meta">
+                            <span>William Petro</span>
+                            <span class="zbg-blog-dot">•</span>
+                            <span>03 Feb, 2019</span>
+                        </div>
+
+                        <p>
+                            We interview Dr Lim Siew Kuan to understand what to
+                            expect before, during and after a breast biopsy...
+                        </p>
+
+                    </div>
 
                 </div>
+            </div>
 
+            <!-- Blog Item -->
+            <div class="col-lg-6">
+                <div class="zbg-blog-item">
+
+                    <div class="zbg-blog-thumb">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800"
+                                alt="">
+                        </a>
+                    </div>
+
+                    <div class="zbg-blog-content">
+
+                        <h3 class="zbg-blog-post-title">
+                            <a href="#">
+                                How Heart Attack Signs Differ in Men & Women
+                            </a>
+                        </h3>
+
+                        <div class="zbg-blog-meta">
+                            <span>Sultan Sentu</span>
+                            <span class="zbg-blog-dot">•</span>
+                            <span>05 Mar, 2019</span>
+                        </div>
+
+                        <p>
+                            Is there gender equality in heart attacks?
+                            Here's what you need to know about the warning signs...
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Blog Item -->
+            <div class="col-lg-6">
+                <div class="zbg-blog-item">
+
+                    <div class="zbg-blog-thumb">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800"
+                                alt="">
+                        </a>
+                    </div>
+
+                    <div class="zbg-blog-content">
+
+                        <h3 class="zbg-blog-post-title">
+                            <a href="#">
+                                Prenatal Infections and How to Avoid Them
+                            </a>
+                        </h3>
+
+                        <div class="zbg-blog-meta">
+                            <span>Marry Com</span>
+                            <span class="zbg-blog-dot">•</span>
+                            <span>29 Jun, 2019</span>
+                        </div>
+
+                        <p>
+                            Prenatal infections can interfere with the health of
+                            both you and your baby, so it's important to take
+                            steps to prevent them...
+                        </p>
+
+                    </div>
+
+                </div>
             </div>
 
         </div>
 
     </div>
+</section>
 
+
+<section class="shbapp-section">
+    <div class="layercolor">
+        <div class="container">
+            <div class="row align-items-end mt-5">
+                <!-- Left -->
+                <div class="col-lg-6">
+                    <h2 class="shbapp-title"> We Are Always Ready To Help You. Book An Appointment</h2>
+                    <form class="shbapp-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control shbapp-control" placeholder="Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control shbapp-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control shbapp-control" placeholder="Phone">
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select shbapp-control">
+                                    <option selected>Department</option>
+                                    <option>Cataract</option>
+                                    <option>Retina</option>
+                                    <option>LASIK</option>
+                                    <option>Glaucoma</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <select class="form-select shbapp-control">
+                                    <option selected>Doctor</option>
+                                    <option>Dr. Shubhanu</option>
+                                    <option>Dr. Rakesh</option>
+                                    <option>Dr. Pooja</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="datetime-local" class="form-control shbapp-control">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control shbapp-control shbapp-textarea"
+                                    placeholder="Write Your Message Here......"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-lg-flex align-items-center">
+                                    <button type="submit" class="btn shbapp-btn">Book An Appointment <i class="fa-solid fa-arrow-right-long"></i></button>
+                                    <span class="shbapp-note">( We will be confirm by an SMS )</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shbapp-image">
+                        <img src="/assets/front/imgs/bottom-doctor.png" class="img-fluid" alt="Doctors">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -1224,4 +2652,236 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const equipments = [
+        {
+            image: "assets/images/equipment/oct.png",
+            title: "Topcon OCT Maestro 2",
+            desc: "High precision OCT imaging system for retina, optic nerve and macula analysis with AI-assisted scanning.",
+            features: [
+                "AI Assisted Imaging",
+                "Ultra Fast Scan",
+                "High Resolution Images"
+            ]
+        },
+        {
+            image: "assets/images/equipment/fundus.png",
+            title: "Fundus Camera",
+            desc: "Captures detailed retinal images for accurate diagnosis and long-term eye health monitoring.",
+            features: [
+                "Crystal Clear Retina Images",
+                "Non Contact Capture",
+                "Quick Patient Workflow"
+            ]
+        },
+        {
+            image: "assets/images/equipment/laser.png",
+            title: "Green Laser System",
+            desc: "Advanced laser technology for safe and effective retinal treatment procedures.",
+            features: [
+                "Precision Treatment",
+                "Fast Procedure",
+                "Minimal Recovery"
+            ]
+        },
+        {
+            image: "assets/images/equipment/retina.png",
+            title: "Retina Scanner",
+            desc: "Provides detailed retinal imaging for comprehensive eye examinations.",
+            features: [
+                "High Accuracy",
+                "3D Retina Mapping",
+                "Reliable Diagnosis"
+            ]
+        },
+        {
+            image: "assets/images/equipment/slitlamp.png",
+            title: "Digital Slit Lamp",
+            desc: "Detailed examination of the anterior and posterior segments of the eye.",
+            features: [
+                "Digital Imaging",
+                "Excellent Magnification",
+                "Comfortable Examination"
+            ]
+        },
+        {
+            image: "assets/images/equipment/phaco.png",
+            title: "Phaco Machine",
+            desc: "Modern cataract surgery machine ensuring precision and patient safety.",
+            features: [
+                "Micro Incision",
+                "Smooth Surgery",
+                "Rapid Recovery"
+            ]
+        },
+        {
+            image: "assets/images/equipment/topography.png",
+            title: "Corneal Topography",
+            desc: "Advanced corneal mapping technology for LASIK and keratoconus evaluation.",
+            features: [
+                "Color Mapping",
+                "High Precision",
+                "Fast Analysis"
+            ]
+        },
+        {
+            image: "assets/images/equipment/yaglaser.png",
+            title: "YAG Laser",
+            desc: "Reliable laser solution for posterior capsulotomy and glaucoma treatment.",
+            features: [
+                "Non-Invasive",
+                "Quick Procedure",
+                "Excellent Outcomes"
+            ]
+        },
+        {
+            image: "assets/images/equipment/microscope.png",
+            title: "Operating Microscope",
+            desc: "Premium surgical microscope providing exceptional optical clarity.",
+            features: [
+                "HD Visualization",
+                "Advanced Optics",
+                "Superior Surgical Precision"
+            ]
+        }
+    ];
+
+    const image = document.getElementById("eqshowMainImage");
+    const title = document.getElementById("eqshowTitle");
+    const desc = document.getElementById("eqshowDescription");
+    const featureBox = document.querySelector(".eqshow-features");
+    const items = document.querySelectorAll(".eqshow-item");
+    const progress = document.querySelector(".eqshow-progress-bar");
+
+    let current = 0;
+    let timer;
+    let progressTimer;
+
+    function animateOut() {
+
+        image.style.opacity = 0;
+        image.style.transform = "translateX(-40px)";
+
+        title.style.opacity = 0;
+        title.style.transform = "translateY(20px)";
+
+        desc.style.opacity = 0;
+        desc.style.transform = "translateY(20px)";
+
+        featureBox.style.opacity = 0;
+        featureBox.style.transform = "translateY(20px)";
+    }
+
+    function animateIn() {
+
+        image.style.opacity = 1;
+        image.style.transform = "translateX(0)";
+
+        title.style.opacity = 1;
+        title.style.transform = "translateY(0)";
+
+        desc.style.opacity = 1;
+        desc.style.transform = "translateY(0)";
+
+        featureBox.style.opacity = 1;
+        featureBox.style.transform = "translateY(0)";
+    }
+
+    function showEquipment(index) {
+
+        animateOut();
+
+        setTimeout(() => {
+
+            image.src = equipments[index].image;
+            title.textContent = equipments[index].title;
+            desc.textContent = equipments[index].desc;
+
+            featureBox.innerHTML = "";
+
+            equipments[index].features.forEach(function(feature){
+
+                featureBox.innerHTML += `
+                    <div class="eqshow-feature">
+                        <i class="fa-solid fa-circle-check"></i>
+                        ${feature}
+                    </div>
+                `;
+
+            });
+
+            items.forEach(btn => btn.classList.remove("active"));
+            items[index].classList.add("active");
+
+            animateIn();
+
+        },300);
+
+        current = index;
+
+        startProgress();
+
+    }
+
+    function nextEquipment(){
+
+        current++;
+
+        if(current >= equipments.length){
+            current = 0;
+        }
+
+        showEquipment(current);
+
+    }
+
+    function startAuto(){
+
+        clearInterval(timer);
+
+        timer = setInterval(nextEquipment,5000);
+
+    }
+
+    function startProgress(){
+
+        clearInterval(progressTimer);
+
+        progress.style.transition = "none";
+        progress.style.width = "0%";
+
+        setTimeout(function(){
+
+            progress.style.transition = "width 5s linear";
+            progress.style.width = "100%";
+
+        },50);
+
+    }
+
+    items.forEach(function(button){
+
+        button.addEventListener("click",function(){
+
+            showEquipment(parseInt(this.dataset.index));
+
+            startAuto();
+
+        });
+
+    });
+
+    image.style.transition=".45s";
+    title.style.transition=".45s";
+    desc.style.transition=".45s";
+    featureBox.style.transition=".45s";
+
+    showEquipment(0);
+
+    startAuto();
+
+});
+</script>
 @endsection

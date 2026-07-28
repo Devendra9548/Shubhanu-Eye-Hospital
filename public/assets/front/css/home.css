@@ -203,6 +203,99 @@
   color: #24748c;
 }
 
+.shbapp-section {
+  background-image: url(/assets/front/imgs/eye-banner-2.webp);
+  background-size: cover;
+  background-position: center center;
+}
+.shbapp-section .layercolor {
+  background: rgba(38, 117, 144, 0.8901960784);
+  padding-top: 10px;
+}
+
+.shbapp-section h2 {
+  font-size: 36px !important;
+  font-weight: 900 !important;
+  margin-bottom: 10px !important;
+  color: #fff !important;
+}
+
+.shbapp-form {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.shbapp-form button {
+  background: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 13px;
+  border: 2px solid #fff;
+}
+.shbapp-form button i {
+  color: #fff;
+  margin-left: 5px;
+}
+.shbapp-form button:hover {
+  background: #fff;
+  color: #24748c;
+}
+.shbapp-form button:hover i {
+  color: #24748c;
+}
+
+.shbapp-image {
+  text-align: center;
+}
+
+.shbapp-image img {
+  width: 80% !important;
+}
+
+.shbapp-control {
+  height: 58px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 0 18px;
+  font-size: 15px;
+  color: #555;
+  background: #fff;
+  box-shadow: none;
+  transition: 0.35s;
+}
+
+.shbapp-control:focus {
+  border-color: #1d7bf2;
+  box-shadow: none;
+}
+
+.shbapp-control::-moz-placeholder {
+  color: #8d8d8d;
+}
+
+.shbapp-control:-ms-input-placeholder {
+  color: #8d8d8d;
+}
+
+.shbapp-control::placeholder {
+  color: #8d8d8d;
+}
+
+.shbapp-textarea {
+  min-height: 160px;
+  resize: none;
+  padding-top: 16px;
+}
+
+.shbapp-form select {
+  cursor: pointer;
+}
+
+.shbapp-note {
+  color: #fff;
+  font-size: 15px;
+}
+
 @media only screen and (max-width: 768px) {
   .hero-section .slide:nth-child(1) .slide__inner {
     background-image: url(/assets/front/imgs/banners/1-mb.webp);
