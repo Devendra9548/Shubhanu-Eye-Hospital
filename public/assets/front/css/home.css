@@ -1010,12 +1010,12 @@
 }
 
 .zbg-blog-title {
-  font-size: 46px;
-  font-weight: 800;
-  color: #0c3d79;
-  margin-bottom: 18px;
-  text-transform: uppercase;
-  line-height: 1.2;
+  font-size: 54px !important;
+  font-weight: 800 !important;
+  margin-bottom: 15px;
+}
+.zbg-blog-title span {
+  color: #24748c;
 }
 
 .zbg-blog-divider {
@@ -1030,10 +1030,6 @@
   align-items: flex-start;
   gap: 28px;
   transition: 0.35s;
-}
-
-.zbg-blog-item:hover {
-  transform: translateY(-6px);
 }
 
 .zbg-blog-thumb {
@@ -1051,29 +1047,30 @@
   transition: 0.4s;
 }
 
-.zbg-blog-item:hover .zbg-blog-thumb img {
-  transform: scale(1.05);
-}
-
 .zbg-blog-content {
   flex: 1;
 }
 
 .zbg-blog-post-title {
   margin: 0 0 12px;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.25;
   font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Lato", sans-serif;
 }
 
 .zbg-blog-post-title a {
-  color: #0b3f7a;
+  color: #24748c;
   text-decoration: none;
   transition: 0.3s;
 }
-
 .zbg-blog-post-title a:hover {
-  color: #08617e;
+  text-decoration: underline;
 }
 
 .zbg-blog-meta {
@@ -1081,9 +1078,12 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  font-size: 14px;
+  font-size: 15px;
   color: #8d96a5;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
+}
+.zbg-blog-meta span {
+  font-size: 14px;
 }
 
 .zbg-blog-dot {
@@ -1093,9 +1093,15 @@
 
 .zbg-blog-content p {
   margin: 0;
-  color: #6f7d91;
-  font-size: 18px;
-  line-height: 1.8;
+  color: #252525;
+  font-size: 16px !important;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Lato", sans-serif;
 }
 
 @media (max-width: 1199px) {
@@ -1588,33 +1594,10 @@
   max-width: 85%;
   position: relative;
   z-index: 2;
-  -webkit-animation: eqshowFloat 5s ease-in-out infinite;
-          animation: eqshowFloat 5s ease-in-out infinite;
   transition: 0.5s;
   filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.15));
 }
 
-.eqshow-image-area:hover img {
-  transform: scale(1.05);
-}
-
-@-webkit-keyframes eqshowFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-18px);
-  }
-}
-
-@keyframes eqshowFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-18px);
-  }
-}
 .eqshow-content {
   background: rgba(255, 255, 255, 0.75);
   -webkit-backdrop-filter: blur(12px);
@@ -1636,22 +1619,23 @@
 }
 
 .eqshow-content h3 {
-  font-size: 38px;
-  font-weight: 700;
-  color: #22304a;
+  font-size: 24px;
+  font-weight: 800;
+  color: #24748c;
   margin-bottom: 20px;
 }
 
 .eqshow-content p {
   color: #6b7280;
-  line-height: 1.9;
+  line-height: 1.3;
   margin-bottom: 30px;
 }
 
 .eqshow-features {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 6px;
+  margin-top: 10px;
 }
 
 .eqshow-feature {
@@ -1663,14 +1647,10 @@
   transition: 0.35s;
 }
 
-.eqshow-feature:hover {
-  transform: translateX(10px);
-}
-
 .eqshow-feature i {
-  width: 34px;
-  height: 34px;
-  background: #08617e;
+  width: 14px;
+  height: 14px;
+  background: #24748c;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -1679,29 +1659,13 @@
   font-size: 15px;
 }
 
-.eqshow-btn {
-  background: #08617e;
-  color: #fff;
-  border-radius: 50px;
-  padding: 14px 34px;
-  font-weight: 600;
-  transition: 0.35s;
-  overflow: hidden;
-  position: relative;
-}
-
-.eqshow-btn:hover {
-  background: #0a7fa3;
-  color: #fff;
-  transform: translateY(-3px);
-}
-
 .eqshow-nav {
   display: flex;
-  gap: 18px;
+  gap: 12px;
   overflow-x: auto;
   padding: 10px 5px;
   scrollbar-width: none;
+  justify-content: center;
 }
 
 .eqshow-nav::-webkit-scrollbar {
@@ -1709,7 +1673,7 @@
 }
 
 .eqshow-item {
-  min-width: 130px;
+  min-width: 100px;
   border: none;
   background: #fff;
   border-radius: 18px;
@@ -1722,8 +1686,8 @@
 }
 
 .eqshow-item img {
-  width: 65px;
-  height: 65px;
+  width: 35px;
+  height: 35px;
   -o-object-fit: contain;
      object-fit: contain;
   transition: 0.4s;
@@ -1734,7 +1698,7 @@
   margin-top: 12px;
   font-weight: 600;
   color: #22304a;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .eqshow-item:hover {
@@ -1804,9 +1768,6 @@
   .eqshow-item img {
     width: 50px;
     height: 50px;
-  }
-  .eqshow-btn {
-    width: 100%;
   }
 }
 .eqshow-content h3, .eqshow-content p, .eqshow-features, #eqshowMainImage {

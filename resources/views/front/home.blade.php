@@ -714,6 +714,39 @@
 
 </div>
 
+<section class="eyecta-sec">
+
+    <div class="eyecta-box">
+
+        <div class="eyecta-badge">
+            <i class="fa-regular fa-eye"></i> Trusted Eye Care Since Years
+        </div>
+
+        <h2 class="eyecta-title">
+            More than <span>15,000</span> Surgeries
+            <br>
+            <strong><i>Between 2 Expert Surgeons</i></strong>
+        </h2>
+
+        <!-- <p class="eyecta-desc">
+            Restoring vision with advanced technology, experienced surgeons,
+            and compassionate care. Your eyesight deserves nothing but the best.
+        </p> -->
+
+        <div class="eyecta-btns">
+            <a href="#appointment" class="eyecta-btn eyecta-btn-primary">
+                <i class="fa-regular fa-calendar-days"></i> Book Appointment
+            </a>
+
+            <a href="tel:+919068991180" class="eyecta-btn eyecta-btn-outline">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
 <section class="esec-section py-5">
     <div class="container">
         <div class="row justify-content-center">
@@ -827,211 +860,173 @@
 
     </div>
 </section>
-<!--==============================
-    Eye Specialist Section End
-===============================-->
 
-
-<!--=========================================
-    Equipment Showcase Section Start
-==========================================-->
 <section class="eqshow-section py-5">
-
     <div class="container">
-
-        <!-- Heading -->
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-
-                <span class="eqshow-bg-text">
-                    Equipment
-                </span>
-
-                <span class="eqshow-subtitle">
-                    Advanced Eye Technology
-                </span>
-
-                <h2 class="eqshow-title">
-                    Our Advanced Equipment
-                </h2>
-
+                <span class="eqshow-bg-text">Equipment</span>
+                <span class="eqshow-subtitle">Advanced Eye Technology</span>
+                <h2 class="eqshow-title">Our Advanced Equipment</h2>
                 <div class="eqshow-divider"></div>
-
-                <p class="eqshow-desc">
-                    We use the latest ophthalmology technology to provide
-                    accurate diagnosis and advanced treatment for every patient.
-                </p>
-
+                <p class="eqshow-desc">We use the latest ophthalmology technology to provide
+                    accurate diagnosis and advanced treatment for every patient.</p>
             </div>
         </div>
 
-        <!-- Main Showcase -->
-        <div class="row align-items-center mt-5 gy-5">
-
-            <!-- Left Image -->
-            <div class="col-lg-6">
-
-                <div class="eqshow-image-area">
-
-                    <!-- Glow -->
-                    <span class="eqshow-glow"></span>
-
-                    <!-- Equipment Image -->
-                    <img id="eqshowMainImage" src="assets/images/equipment/oct.png" class="img-fluid" alt="Equipment">
-
-                </div>
-
-            </div>
-
-            <!-- Right Content -->
-            <div class="col-lg-6">
-
-                <div class="eqshow-content">
-
-                    <span class="eqshow-tag">
-                        Premium Eye Technology
-                    </span>
-
-                    <h3 id="eqshowTitle">
-                        Topcon OCT Maestro 2
-                    </h3>
-
-                    <p id="eqshowDescription">
-                        High precision OCT imaging system designed to capture
-                        retina, optic nerve and macula scans with excellent
-                        clarity and speed.
-                    </p>
-
-                    <!-- Features -->
-
-                    <div class="eqshow-features">
-
-                        <div class="eqshow-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            AI Assisted Imaging
-                        </div>
-
-                        <div class="eqshow-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            Ultra Fast Scan
-                        </div>
-
-                        <div class="eqshow-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            High Resolution Images
-                        </div>
-
-                    </div>
-
-                    <a href="#" class="btn eqshow-btn mt-4">
-                        Explore Equipment
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Equipment Navigation -->
-
-        <div class="row mt-5">
-
+        <div class="row">
             <div class="col-12">
-
                 <div class="eqshow-nav">
-
-                    <!-- Item -->
-
                     <button class="eqshow-item active" data-index="0">
-
-                        <img src="assets/images/equipment/oct.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/1.webp" alt="">
                         <span>OCT</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="1">
-
-                        <img src="assets/images/equipment/fundus.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/2.webp" alt="">
                         <span>Fundus</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="2">
-
-                        <img src="assets/images/equipment/laser.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/3.webp" alt="">
                         <span>Laser</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="3">
-
-                        <img src="assets/images/equipment/retina.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/4.webp" alt="">
                         <span>Retina</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="4">
-
-                        <img src="assets/images/equipment/slitlamp.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/5.webp" alt="">
                         <span>Slit Lamp</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="5">
-
-                        <img src="assets/images/equipment/phaco.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/1.webp" alt="">
                         <span>Phaco</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="6">
-
-                        <img src="assets/images/equipment/topography.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/2.webp" alt="">
                         <span>Topography</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="7">
-
-                        <img src="assets/images/equipment/yaglaser.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/3.webp" alt="">
                         <span>YAG Laser</span>
-
                     </button>
-
                     <button class="eqshow-item" data-index="8">
-
-                        <img src="assets/images/equipment/microscope.png" alt="">
-
+                        <img src="/assets/front/imgs/equipment/4.webp" alt="">
                         <span>Microscope</span>
-
                     </button>
-
                 </div>
 
             </div>
 
         </div>
+        <div class="row align-items-center mt-2 gy-5">
+            <div class="col-lg-6">
+                <div class="eqshow-image-area">
+                    <span class="eqshow-glow"></span>
+                    <img id="eqshowMainImage" src="/assets/front/imgs/equipment/1.webp" class="img-fluid"
+                        alt="Equipment">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="eqshow-content">
+                    <h3 id="eqshowTitle">Topcon OCT Maestro</h3>
+                    <p id="eqshowDescription">
+                        At Shubhanu we are equipped with the latest technology equipment – The OMS-90 Operation
+                        Microscope is the new standard in versatile microsurgery. It features a water-repellent coated
+                        objective lens, new coaxial illumination, a PD adjustment knob, and a five-step magnification.
+                    </p>
+                    <div class="eqshow-features">
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            New coaxial illumination
+                        </div>
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            New coaxial illumination
+                        </div>
 
-        <!-- Progress -->
-        <div class="eqshow-progress">
-            <span class="eqshow-progress-bar"></span>
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Stain-proof coated objective lens
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Parallel binocular tube
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            PD adjustment knob
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Built-in yellow filter
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Focal length of 200mm
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Compact base ensures optimal use of limited operating room floor space
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Wide assortment of optional accessories
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Shown with optional XY translator
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    
+
+    </div>
+
+</section>
+
+<section class="eyecta-sec">
+
+    <div class="eyecta-box">
+
+        <div class="eyecta-badge">
+            <i class="fa-regular fa-eye"></i> Trusted Eye Care Since Years
+        </div>
+
+        <h2 class="eyecta-title">
+            More than <span>15,000</span> Surgeries
+            <br>
+            <strong><i>Between 2 Expert Surgeons</i></strong>
+        </h2>
+
+        <!-- <p class="eyecta-desc">
+            Restoring vision with advanced technology, experienced surgeons,
+            and compassionate care. Your eyesight deserves nothing but the best.
+        </p> -->
+
+        <div class="eyecta-btns">
+            <a href="#appointment" class="eyecta-btn eyecta-btn-primary">
+                <i class="fa-regular fa-calendar-days"></i> Book Appointment
+            </a>
+
+            <a href="tel:+919068991180" class="eyecta-btn eyecta-btn-outline">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
         </div>
 
     </div>
 
 </section>
-<!--=========================================
-    Equipment Showcase Section End
-==========================================-->
 
 <section class="tsw-section py-5">
 
@@ -1236,22 +1231,17 @@
 <section class="zbg-blog-section py-5">
     <div class="container">
 
-        <!-- Section Heading -->
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <span class="zbg-blog-subtitle">RECENT POSTS</span>
+                <span class="zbg-blog-subtitle text-uppercase">Recent Posts</span>
 
-                <h2 class="zbg-blog-title">
-                    FROM OUR BLOG
-                </h2>
+                <h2 class="zbg-blog-title">From Our <span>Blog</span></h2>
 
                 <div class="zbg-blog-divider"></div>
             </div>
         </div>
 
         <div class="row g-5">
-
-            <!-- Blog Item -->
             <div class="col-lg-6">
                 <div class="zbg-blog-item">
 
@@ -1277,7 +1267,8 @@
 
                         <p>
                             Plastic — it's in the air, sea and probably your body.
-                            Find out what microplastics are doing to your health...
+                            Find out what microplastics are doing to your health,
+                            Find out what microplastics are doing to your health
                         </p>
 
                     </div>
@@ -1311,7 +1302,8 @@
 
                         <p>
                             We interview Dr Lim Siew Kuan to understand what to
-                            expect before, during and after a breast biopsy...
+                            expect before, during and after a breast biopsy,
+                            expect before, during and after a breast biopsy.
                         </p>
 
                     </div>
@@ -1345,7 +1337,8 @@
 
                         <p>
                             Is there gender equality in heart attacks?
-                            Here's what you need to know about the warning signs...
+                            Here's what you need to know about the warning signs,
+                            expect before, during and after a breast biopsy,
                         </p>
 
                     </div>
@@ -1380,7 +1373,7 @@
                         <p>
                             Prenatal infections can interfere with the health of
                             both you and your baby, so it's important to take
-                            steps to prevent them...
+                            steps to prevent them,expect before, during and after a breast biopsy,
                         </p>
 
                     </div>
@@ -1623,27 +1616,41 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
 
     const equipments = [{
-            image: "assets/images/equipment/oct.png",
-            title: "Topcon OCT Maestro 2",
-            desc: "High precision OCT imaging system for retina, optic nerve and macula analysis with AI-assisted scanning.",
+            image: "/assets/front/imgs/equipment/1.webp",
+            title: "Topcon OCT Maestro",
+            desc: "At Shubhanu we are equipped with the latest technology equipment – The OMS-90 Operation Microscope is the new standard in versatile microsurgery. It features a water-repellent coated objective lens, new coaxial illumination, a PD adjustment knob, and a five-step magnification.",
             features: [
-                "AI Assisted Imaging",
-                "Ultra Fast Scan",
-                "High Resolution Images"
+                "New coaxial illumination",
+                "New coaxial illumination",
+                "Stain-proof coated objective lens",
+                "Parallel binocular tube",
+                "PD adjustment knob",
+                "Built-in yellow filter",
+                "Focal length of 200mm",
+                "Compact base ensures optimal use of limited operating room floor space",
+                "Wide assortment of optional accessories",
+                "Shown with optional XY translator"
             ]
         },
         {
-            image: "assets/images/equipment/fundus.png",
-            title: "Fundus Camera",
-            desc: "Captures detailed retinal images for accurate diagnosis and long-term eye health monitoring.",
+            image: "/assets/front/imgs/equipment/2.webp",
+            title: "Topcon OCT Maestro",
+            desc: "At Shubhanu we are equipped with the latest technology equipment – The OMS-90 Operation Microscope is the new standard in versatile microsurgery. It features a water-repellent coated objective lens, new coaxial illumination, a PD adjustment knob, and a five-step magnification.",
             features: [
-                "Crystal Clear Retina Images",
-                "Non Contact Capture",
-                "Quick Patient Workflow"
+                "New coaxial illumination",
+                "New coaxial illumination",
+                "Stain-proof coated objective lens",
+                "Parallel binocular tube",
+                "PD adjustment knob",
+                "Built-in yellow filter",
+                "Focal length of 200mm",
+                "Compact base ensures optimal use of limited operating room floor space",
+                "Wide assortment of optional accessories",
+                "Shown with optional XY translator"
             ]
         },
         {
-            image: "assets/images/equipment/laser.png",
+            image: "/assets/front/imgs/equipment/3.webp",
             title: "Green Laser System",
             desc: "Advanced laser technology for safe and effective retinal treatment procedures.",
             features: [
@@ -1653,7 +1660,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "assets/images/equipment/retina.png",
+            image: "/assets/front/imgs/equipment/4.webp",
             title: "Retina Scanner",
             desc: "Provides detailed retinal imaging for comprehensive eye examinations.",
             features: [
@@ -1663,7 +1670,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "assets/images/equipment/slitlamp.png",
+            image: "/assets/front/imgs/equipment/5.webp",
             title: "Digital Slit Lamp",
             desc: "Detailed examination of the anterior and posterior segments of the eye.",
             features: [
@@ -1673,7 +1680,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "assets/images/equipment/phaco.png",
+            image: "/assets/front/imgs/equipment/1.webp",
             title: "Phaco Machine",
             desc: "Modern cataract surgery machine ensuring precision and patient safety.",
             features: [
@@ -1683,7 +1690,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "assets/images/equipment/topography.png",
+            image: "/assets/front/imgs/equipment/2.webp",
             title: "Corneal Topography",
             desc: "Advanced corneal mapping technology for LASIK and keratoconus evaluation.",
             features: [
@@ -1693,7 +1700,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "assets/images/equipment/yaglaser.png",
+            image: "/assets/front/imgs/equipment/3.webp",
             title: "YAG Laser",
             desc: "Reliable laser solution for posterior capsulotomy and glaucoma treatment.",
             features: [
@@ -1703,7 +1710,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "assets/images/equipment/microscope.png",
+            image: "/assets/front/imgs/equipment/4.webp",
             title: "Operating Microscope",
             desc: "Premium surgical microscope providing exceptional optical clarity.",
             features: [
@@ -1756,19 +1763,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function showEquipment(index) {
-
         animateOut();
-
         setTimeout(() => {
-
             image.src = equipments[index].image;
             title.textContent = equipments[index].title;
             desc.textContent = equipments[index].desc;
-
             featureBox.innerHTML = "";
-
             equipments[index].features.forEach(function(feature) {
-
                 featureBox.innerHTML += `
                     <div class="eqshow-feature">
                         <i class="fa-solid fa-circle-check"></i>
@@ -1807,7 +1808,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         clearInterval(timer);
 
-        timer = setInterval(nextEquipment, 5000);
+        timer = setInterval(nextEquipment, 5000000);
 
     }
 
