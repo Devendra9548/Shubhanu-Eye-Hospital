@@ -8,7 +8,39 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <style>
+.hero-section .slide:nth-child(1) .slide__inner {
+    background-image: url(/assets/front/imgs/banners/6.webp)!important;
+}
 
+.hero-section .slide:nth-child(2) .slide__inner {
+    background-image: url(/assets/front/imgs/banners/7.webp)!important;
+}
+
+.hero-section .slide:nth-child(3) .slide__inner {
+    background-image: url(/assets/front/imgs/banners/8.webp)!important;
+}
+
+.hero-section .slide:nth-child(4) .slide__inner {
+    background-image: url(/assets/front/imgs/banners/6.webp)!important;
+}
+
+@media only screen and (max-width:768px) {
+    .hero-section .slide:nth-child(1) .slide__inner {
+        background-image: url(/assets/front/imgs/banners/6-mb.webp)!important;
+    }
+
+    .hero-section .slide:nth-child(2) .slide__inner {
+        background-image: url(/assets/front/imgs/banners/7-mb.webp)!important;
+    }
+
+    .hero-section .slide:nth-child(3) .slide__inner {
+        background-image: url(/assets/front/imgs/banners/8-mb.webp)!important;
+    }
+
+    .hero-section .slide:nth-child(4) .slide__inner {
+        background-image: url(/assets/front/imgs/banners/6-mb.webp)!important;
+    }
+}
 </style>
 
 @endsection
@@ -987,9 +1019,9 @@
                 </div>
             </div>
         </div>
-        
 
-    
+
+
 
     </div>
 
