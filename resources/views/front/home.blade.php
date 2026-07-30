@@ -421,11 +421,6 @@
             <strong><i>Between 2 Expert Surgeons</i></strong>
         </h2>
 
-        <!-- <p class="eyecta-desc">
-            Restoring vision with advanced technology, experienced surgeons,
-            and compassionate care. Your eyesight deserves nothing but the best.
-        </p> -->
-
         <div class="eyecta-btns">
             <a href="#appointment" class="eyecta-btn eyecta-btn-primary">
                 <i class="fa-regular fa-calendar-days"></i> Book Appointment
