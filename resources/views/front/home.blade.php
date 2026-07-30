@@ -89,6 +89,7 @@
     </div>
 </section>
 
+{{-- 
 <div class="dvwave-section">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" preserveAspectRatio="none"
         style="display:block;width:100%;height:120px;">
@@ -404,6 +405,7 @@
         </div>
     </div>
 </section>
+--}}
 
 <section class="eyecta-sec">
 

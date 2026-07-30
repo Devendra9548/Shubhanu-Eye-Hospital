@@ -2,10 +2,6 @@
   width: 88% !important;
 }
 
-.topbar, .topbar .container-fluid {
-  background-color: #24748c !important;
-}
-
 .topbar {
   position: relative !important;
   top: 0px;
@@ -14,42 +10,69 @@
 .topbar .row {
   height: auto !important;
 }
-.topbar p, .topbar i {
-  color: #fff !important;
-}
 .topbar p {
   font-size: 14px !important;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500 !important;
 }
-.topbar .social-info-left i {
-  font-size: 14px !important;
+.topbar .left-img img {
+  height: 35px;
+  margin-right: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.topbar .right .heading {
+  font-weight: bold !important;
 }
 
 .active {
+  color: #fff !important;
+}
+
+.ds-header, .ds-header .container-fluid {
+  background: #24748c !important;
+}
+
+.ds-header .p-menu i {
+  color: #fff !important;
+}
+.ds-header .p-menu ul li a {
+  color: #000 !important;
+}
+.ds-header .globalbtn {
+  background: rgba(181, 181, 181, 0.2784313725) !important;
+  padding: 12px 25px !important;
+}
+.ds-header .globalbtn i {
+  color: #fff !important;
+}
+.ds-header .globalbtn:hover {
+  background: #fff !important;
+  color: #24748c !important;
+}
+.ds-header .globalbtn:hover i {
   color: #24748c !important;
 }
 
 header {
   position: -webkit-sticky;
   position: sticky;
-  background: #fff;
   top: 0px;
   width: 100%;
   left: 0px;
   z-index: 9;
   margin-bottom: 0px;
-  box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.14);
 }
 header a {
   font-family: "Manrope", sans-serif !important;
+  color: #fff !important;
 }
 header li {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 header .row {
-  height: 90px;
+  height: 70px;
 }
 
 #CtSpinner {
@@ -77,7 +100,6 @@ header .container-fluid {
 }
 
 header a, header i, header p {
-  color: #453d3d !important;
   font-size: 1.125rem;
   font-weight: 600;
 }
@@ -135,15 +157,19 @@ header a, header i, header p {
 }
 
 header a:hover {
-  color: #000 !important;
+  color: #fff !important;
+}
+
+.logo img {
+  width: 195px;
 }
 
 @media only screen and (max-width: 1300px) {
   .navb ul li:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 35px;
   }
   .logo img {
-    width: 200px;
+    width: 185px;
   }
 }
 @media only screen and (max-width: 768px) {

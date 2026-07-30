@@ -9,43 +9,63 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
 .container-fluid
     width: 88% !important
 
-.topbar, .topbar .container-fluid
-    background-color: $brandcolor !important
-
 .topbar
     position: relative !important
     top: 0px
     height: auto
     .row
         height: auto !important
-    p,i
-        color: #fff !important
     p
         font-size: 14px !important
         font-family: $fontPlusJakartaSans
         font-weight: 500 !important
-    .social-info-left i
-        font-size: 14px !important
+    .left-img
+        img
+            height: 35px
+            margin-right: 20px
+            object-fit: contain
+    .right
+        .heading
+            font-weight: bold !important
 
 .active
-    color: $brandcolor !important
+    color: #fff !important
+
+.ds-header, .ds-header .container-fluid
+    background: $brandcolor !important
+
+.ds-header
+    .p-menu
+        i
+            color: #fff !important
+        ul li a
+            color: #000 !important
+    .globalbtn
+        background: #b5b5b547 !important
+        padding: 12px 25px !important
+        i
+            color: #fff !important
+        &:hover
+            background: #fff !important
+            color: $brandcolor !important
+            i
+                color: $brandcolor !important
 
 header
     position: sticky
-    background: #fff
     top: 0px
     width: 100%
     left: 0px
     z-index: 9
     margin-bottom: 0px
-    box-shadow: 0px 2px 12px 4px rgb(0 0 0 / 14%)
     a
         font-family: $fontManrope !important
+        color: #fff !important
     li
         margin-bottom: 0px
         padding-bottom: 0px
     .row
-        height: 90px
+        height: 70px
 
 #CtSpinner
     display: none
@@ -67,7 +87,6 @@ header .container-fluid
     background: #Ffff !important
 
 header a, header i, header p 
-    color: $pcolor !important
     font-size: 1.125rem
     font-weight: 600
 
@@ -117,19 +136,23 @@ header a, header i, header p
 header
     a
         &:hover
-            color: #000 !important
+            color: #fff !important
+
+.logo
+    img
+        width: 195px
 
 @media only screen and (max-width:1300px)
     .navb ul li:not(:last-child)
-        margin-right: 25px
+        margin-right: 35px
     .logo
         img
-            width: 200px
+            width: 185px
 
 @media only screen and (max-width:768px)
     .topbar
-        display: none 
-        
+        display: none
+
     #mbnav
         display: none
 
