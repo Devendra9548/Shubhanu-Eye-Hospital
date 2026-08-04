@@ -42,4 +42,18 @@ class frontendController extends Controller
         $gseo = GlobalSeo::find(1);
         return view('front.about', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
+
+    function blogs(){
+        $pageseo = PageSeo::where('pagename', 'blog')->get();
+        $homepageseo = PageSeo::where('pagename', 'blog')->get();
+        $gseo = GlobalSeo::find(1);
+        return view('front.blogs', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
+
+    function gallery(){
+        $pageseo = PageSeo::where('pagename', 'gallery')->get();
+        $homepageseo = PageSeo::where('pagename', 'gallery')->get();
+        $gseo = GlobalSeo::find(1);
+        return view('front.gallery', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
 }

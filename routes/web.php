@@ -22,6 +22,8 @@ use App\Livewire\Back\Users;
 
 Route::get('/', [frontendController::class, 'home'])->name('home');
 Route::get('about', [frontendController::class, 'about'])->name('about');
+Route::get('gallery', [frontendController::class, 'gallery'])->name('gallery');
+Route::get('blog', [frontendController::class, 'blogs'])->name('blogs');
 
 
 Route::prefix('ds-admin')->group(function(){
