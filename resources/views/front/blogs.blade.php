@@ -16,9 +16,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+    .blog-desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .blog-title{
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .active, .active span{
+        color: #000 !important;
+    }
+
     body {
         background: #f5f7fb;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .section-title {
@@ -47,7 +64,7 @@
     }
 
     .blog-img {
-        height: 230px;
+        height: 250px;
         object-fit: cover;
         width: 100%;
     }
@@ -80,10 +97,21 @@
     }
 
     .read-btn {
-        border-radius: 50px;
-        padding: 10px 24px;
+        border-radius: 12px;
+        padding: 6px 15px;
+        background: #24748c;
+        color: #fff;
+        display: inline-block;
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+    .read-btn:hover {
+        background: #24748c;
+        color: #fff;
+        opacity: 1;
     }
 
+    
     @media(max-width:767px) {
 
         .section-title {
@@ -103,7 +131,7 @@
 
     <section class="py-5">
 
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="text-center mb-5">
 
@@ -118,250 +146,31 @@
             <div class="row g-4">
 
                 <!-- Blog -->
-
-                <div class="col-lg-4 col-md-6">
-
+                @foreach($blog as $item)
+                <div class="col-12 col-md-4">
                     <div class="blog-card h-100">
-
-                        <img src="https://picsum.photos/600/400?random=1" class="blog-img">
+                        <img src="/blogs/{{ $item->file }}" class="blog-img" width="100%" alt="{{ $item->title }}">
 
                         <div class="p-4">
-
-                            <span class="category">Technology</span>
-
-                            <div class="blog-date mt-3">
-                                📅 03 August 2026
-                            </div>
-
-                            <h3 class="blog-title">
-                                Top 10 Web Design Trends in 2026
-                            </h3>
-
+                            <div class="blog-date">{{ $item->created_at->format('d F Y') }}</div>
+                            <h3 class="blog-title">{{ $item->title }}</h3>
                             <p class="blog-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
-                                turpis sed purus facilisis gravida. Curabitur sed sem ut justo varius
-                                mattis.
+                                {{ substr($item->shortdesc, 0, 550) }}
                             </p>
-
-                            <a href="#" class="btn btn-primary read-btn">
-                                Read More →
-                            </a>
-
+                            <a href="/blog/{{ $item->slug }}" class="btn globalbtn read-btn">Read More →</a>
                         </div>
-
                     </div>
-
                 </div>
-
-                <!-- Blog -->
-
-                <div class="col-lg-4 col-md-6">
-
-                    <div class="blog-card h-100">
-
-                        <img src="https://picsum.photos/600/400?random=2" class="blog-img">
-
-                        <div class="p-4">
-
-                            <span class="category bg-success">Laravel</span>
-
-                            <div class="blog-date mt-3">
-                                📅 29 July 2026
-                            </div>
-
-                            <h3 class="blog-title">
-                                Laravel 12 New Features You Should Know
-                            </h3>
-
-                            <p class="blog-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
-                                felis ac magna dignissim, eget pulvinar risus interdum.
-                            </p>
-
-                            <a href="#" class="btn btn-primary read-btn">
-                                Read More →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Blog -->
-
-                <div class="col-lg-4 col-md-6">
-
-                    <div class="blog-card h-100">
-
-                        <img src="https://picsum.photos/600/400?random=3" class="blog-img">
-
-                        <div class="p-4">
-
-                            <span class="category bg-danger">Bootstrap</span>
-
-                            <div class="blog-date mt-3">
-                                📅 18 July 2026
-                            </div>
-
-                            <h3 class="blog-title">
-                                Build Responsive Websites Faster
-                            </h3>
-
-                            <p class="blog-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-                                Suspendisse potenti. Vivamus consequat vitae erat sit amet tincidunt.
-                            </p>
-
-                            <a href="#" class="btn btn-primary read-btn">
-                                Read More →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Blog -->
-
-                <div class="col-lg-4 col-md-6">
-
-                    <div class="blog-card h-100">
-
-                        <img src="https://picsum.photos/600/400?random=4" class="blog-img">
-
-                        <div class="p-4">
-
-                            <span class="category bg-warning text-dark">SEO</span>
-
-                            <div class="blog-date mt-3">
-                                📅 15 July 2026
-                            </div>
-
-                            <h3 class="blog-title">
-                                Improve Your Website SEO Easily
-                            </h3>
-
-                            <p class="blog-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                                porttitor, elit quis gravida feugiat, purus ligula pulvinar arcu.
-                            </p>
-
-                            <a href="#" class="btn btn-primary read-btn">
-                                Read More →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Blog -->
-
-                <div class="col-lg-4 col-md-6">
-
-                    <div class="blog-card h-100">
-
-                        <img src="https://picsum.photos/600/400?random=5" class="blog-img">
-
-                        <div class="p-4">
-
-                            <span class="category bg-dark">Programming</span>
-
-                            <div class="blog-date mt-3">
-                                📅 10 July 2026
-                            </div>
-
-                            <h3 class="blog-title">
-                                Why Clean Code Matters
-                            </h3>
-
-                            <p class="blog-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat
-                                volutpat. Cras volutpat elit sed ligula viverra feugiat.
-                            </p>
-
-                            <a href="#" class="btn btn-primary read-btn">
-                                Read More →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Blog -->
-
-                <div class="col-lg-4 col-md-6">
-
-                    <div class="blog-card h-100">
-
-                        <img src="https://picsum.photos/600/400?random=6" class="blog-img">
-
-                        <div class="p-4">
-
-                            <span class="category bg-info text-dark">AI</span>
-
-                            <div class="blog-date mt-3">
-                                📅 05 July 2026
-                            </div>
-
-                            <h3 class="blog-title">
-                                How AI is Transforming Web Development
-                            </h3>
-
-                            <p class="blog-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna
-                                eget nisl consequat bibendum sit amet quis augue.
-                            </p>
-
-                            <a href="#" class="btn btn-primary read-btn">
-                                Read More →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                @endforeach
 
             </div>
 
             <!-- Pagination -->
 
             <div class="mt-5">
-
-                <nav>
-
-                    <ul class="pagination justify-content-center">
-
-                        <li class="page-item disabled">
-                            <a class="page-link">Previous</a>
-                        </li>
-
-                        <li class="page-item active">
-                            <a class="page-link">1</a>
-                        </li>
-
-                        <li class="page-item">
-                            <a class="page-link">2</a>
-                        </li>
-
-                        <li class="page-item">
-                            <a class="page-link">3</a>
-                        </li>
-
-                        <li class="page-item">
-                            <a class="page-link">Next</a>
-                        </li>
-
-                    </ul>
-
-                </nav>
-
+                <div class="mt-4">
+                    {{ $blog->links() }}
+                </div>
             </div>
 
         </div>
@@ -380,4 +189,8 @@
         </div>
     </div>
 </section>
+
 @endsection
+
+
+

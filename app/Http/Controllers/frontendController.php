@@ -47,7 +47,8 @@ class frontendController extends Controller
         $pageseo = PageSeo::where('pagename', 'blog')->get();
         $homepageseo = PageSeo::where('pagename', 'blog')->get();
         $gseo = GlobalSeo::find(1);
-        return view('front.blogs', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+        $blog = Blog::latest()->paginate(9);
+        return view('front.blogs', ['blog'=>$blog, 'pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
 
     function gallery(){

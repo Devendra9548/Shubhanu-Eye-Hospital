@@ -3,11 +3,13 @@
 namespace App\Livewire\Back;
 
 use Livewire\Component;
+use App\Models\Blog;
 
 class Blogs extends Component
 {
     public function render()
     {
-        return view('livewire.back.blogs')->layout('layouts.back');
+        $dbs=Blog::latest('id')->get();
+        return view('livewire.back.blogs', compact('dbs'))->layout('layouts.back');
     }
 }

@@ -32,10 +32,11 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($dbs as $dbs)
             <tr>
-                <td>#1</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
+                <td>#{{$dbs->id}}</td>
+                <td>{{$dbs->title}}</td>
+                <td>{{$dbs->id}}</td>
                 <td>Dev</td>
                 <td>3 June, 03:15pm, 2026</td>
                 <td>
@@ -55,126 +56,8 @@
                     </a>
                 </td>
             </tr>
+            @endforeach
 
-            <tr>
-                <td>#2</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
         </tbody>
     </table>
 

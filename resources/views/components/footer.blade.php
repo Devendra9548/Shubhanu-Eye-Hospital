@@ -50,7 +50,7 @@
                 <h5>INFORMATION</h5>
 
                 <ul>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="{{route('blogs')}}">Blog</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
