@@ -45,10 +45,26 @@ class frontendController extends Controller
 
     function blogs(){
         $pageseo = PageSeo::where('pagename', 'blog')->get();
-        $homepageseo = PageSeo::where('pagename', 'blog')->get();
+        $homepageseo = PageSeo::where('pagename', 'blog')->first();
         $gseo = GlobalSeo::find(1);
         $blog = Blog::latest()->paginate(9);
         return view('front.blogs', ['blog'=>$blog, 'pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
+
+    function contact(){
+        $pageseo = PageSeo::where('pagename', 'contact-us')->get();
+        $homepageseo = PageSeo::where('pagename', 'contact-us')->first();
+        $gseo = GlobalSeo::find(1);
+        return view('front.contact', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
+
+    function singleblog($slug){
+        $gseo = GlobalSeo::find(1);
+        $blog = Blog::where('slug', $slug)->get();
+        $allblog = Blog::latest()->paginate(9);
+        $pageseo = PageSeo::where('pagename', $slug)->get();
+        $homepageseo = PageSeo::where('pagename', $slug)->get();
+        return view('front.single-blog', ['allblog'=>$allblog, 'blog'=>$blog, 'pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
 
     function gallery(){

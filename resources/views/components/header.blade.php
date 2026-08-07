@@ -81,7 +81,7 @@
                             </li>
                             <li><a href="{{route('gallery')}}">Gallery</a></li>
                             <li><a href="javascript:void(0)">Case Studies</a></li>
-                            <li><a href="javascript:void(0)">Contact Us</a></li>
+                            <li><a href="{{route('contact')}}">Contact Us</a></li>
                         </ul>
 
                     </nav>

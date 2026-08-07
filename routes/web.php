@@ -11,19 +11,12 @@ use App\Livewire\Back\Profile;
 use App\Livewire\Back\Settings;
 use App\Livewire\Back\Users;
 
-// Route::get('/', function () {
-//     return view('construction');
-// });
-
-// Route::get('/home', function () {
-//     return view('welcome');
-// });
-
-
 Route::get('/', [frontendController::class, 'home'])->name('home');
 Route::get('about', [frontendController::class, 'about'])->name('about');
+Route::get('contact-us', [frontendController::class, 'contact'])->name('contact');
 Route::get('gallery', [frontendController::class, 'gallery'])->name('gallery');
 Route::get('blog', [frontendController::class, 'blogs'])->name('blogs');
+Route::get('blog/{slug}', [frontendController::class, 'singleblog'])->name('singleblog');
 
 
 Route::prefix('ds-admin')->group(function(){

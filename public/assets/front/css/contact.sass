@@ -1,0 +1,149 @@
+$hcolor: #000
+$pcolor: #453d3d
+$brandcolor: #24748c
+$fontManrope: "Manrope", sans-serif
+$fontlato: "Lato", sans-serif
+$fontOpenSans: "Open Sans", sans-serif
+$fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
+
+.contact-sec
+    background: #fff
+    input, textarea, select
+        border: 1px solid #33333385
+    form
+        button
+            background: $brandcolor !important
+            color: #fff !important
+
+.contact-sec-title
+    font-size: 42px
+    font-weight: 700
+    color: $brandcolor
+    line-height: 1.3
+    margin-bottom: 18px
+
+.contact-sec-divider
+    width: 90px
+    height: 4px
+    background: $brandcolor
+    margin: 0 auto 20px
+    border-radius: 30px
+
+.contact-sec-subtitle
+    color: #7b7b7b
+    font-size: 15px
+    max-width: 650px
+    margin: auto
+    line-height: 1.8
+
+.contact-sec-box
+    background: #fff
+    border-top: 3px solid $brandcolor
+    padding: 38px
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08)
+    height: 100%
+
+.contact-sec-heading
+    font-size: 22px
+    font-weight: 700
+    color: #1d2746
+    margin-bottom: 30px
+
+.contact-sec-input
+    border-radius: 0
+    min-height: 52px
+    border: 1px solid #e5e5e5
+    box-shadow: none
+    font-size: 15px
+
+.contact-sec-input:focus
+    border-color: $brandcolor
+    box-shadow: none
+
+textarea.contact-sec-input
+    min-height: 170px
+    resize: none
+
+.contact-sec-btn
+    background: #8bc34a
+    color: #fff
+    border-radius: 0
+    padding: 13px 32px
+    font-weight: 600
+
+.contact-sec-btn:hover
+    background: #72ab34
+    color: #fff
+
+.contact-sec-info
+    display: flex
+    align-items: flex-start
+    gap: 18px
+    margin-bottom: 32px
+
+.contact-sec-icon
+    width: 48px
+    height: 48px
+    border: 1px solid #e8e8e8
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $brandcolor
+    font-size: 18px
+    flex-shrink: 0
+
+.contact-sec-info h5
+    font-size: 19px
+    color: #1d2746
+    margin-bottom: 8px
+    font-weight: 600
+
+.contact-sec-info p
+    margin: 0
+    color: #777
+    line-height: 1.8
+    font-size: 15px
+
+.contact-sec-social
+    display: flex
+    gap: 15px
+    margin-top: 8px
+
+.contact-sec-social a
+    color: #666
+    font-size: 17px
+    transition: .3s
+
+.contact-sec-social a:hover
+    color: $brandcolor
+
+@media (max-width:991px)
+
+    .contact-sec-title
+        font-size: 34px
+
+    .contact-sec-heading
+        font-size: 26px
+
+    .contact-sec-box
+        padding: 30px
+
+@media (max-width:767px)
+
+    .contact-sec
+        padding: 60px 0
+
+    .contact-sec-title
+        font-size: 28px
+
+    .contact-sec-heading
+        font-size: 24px
+
+    .contact-sec-box
+        padding: 22px
+
+    .contact-sec-info
+        gap: 15px
+
+    .contact-sec-btn
+        width: 100%

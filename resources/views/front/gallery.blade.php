@@ -1,695 +1,450 @@
 @extends('templates.front.main')
 @section('customcss')
-<link rel="stylesheet" href="/assets/css/front/home.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
 <title>Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
 <style>
-/*=========================
-    Gallery Section
-=========================*/
-
-.eq-gallery-section {
+.gl3d-gallery-section {
     position: relative;
+    background: #f8f9fb;
     overflow: hidden;
-    background: #fff;
-    z-index: 1;
 }
 
-/* Floating Background */
-
-.eq-gallery-section::before {
+.gl3d-gallery-section::before {
     content: "";
     position: absolute;
-    width: 420px;
-    height: 420px;
-    background: linear-gradient(135deg, #0d6efd, #58d4ff);
-    opacity: .08;
-    border-radius: 50%;
-    top: -180px;
-    left: -150px;
-    filter: blur(70px);
-    animation: eqFloat1 10s ease-in-out infinite;
-}
-
-.eq-gallery-section::after {
-    content: "";
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    background: linear-gradient(135deg, #00d084, #0d6efd);
-    opacity: .08;
-    border-radius: 50%;
-    bottom: -180px;
-    right: -120px;
-    filter: blur(70px);
-    animation: eqFloat2 11s ease-in-out infinite;
-}
-
-@keyframes eqFloat1 {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(35px);
-    }
-
-}
-
-@keyframes eqFloat2 {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-40px);
-    }
-
-}
-
-
-/*=========================
-    Heading
-=========================*/
-
-.eq-gallery-tag {
-
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 18px;
-    border-radius: 100px;
-    background: #eef6ff;
-    color: #0d6efd;
-    font-weight: 600;
-    letter-spacing: .5px;
-    font-size: 14px;
-
-}
-
-.eq-gallery-title {
-
-    font-size: 44px;
-    font-weight: 700;
-    margin-bottom: 18px;
-    color: #1d1d1d;
-
-}
-
-.eq-gallery-desc {
-
-    max-width: 700px;
-    margin: auto;
-    color: #777;
-    line-height: 1.8;
-
-}
-
-
-/*=========================
-    Filter Buttons
-=========================*/
-
-.eq-gallery-filter {
-
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-
-}
-
-.eq-gallery-filter button {
-
-    border: none;
-    background: #fff;
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: .35s;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
-    cursor: pointer;
-
-}
-
-.gslide img{
-    width:100% !important;
-    height:100vh !important;
-    object-fit: cover !important;
-}
-
-.eq-gallery-filter button:hover {
-
-    transform: translateY(-4px);
-    color: #0d6efd;
-
-}
-
-.eq-gallery-filter button.active {
-
-    background: #0d6efd;
-    color: #fff;
-    box-shadow: 0 15px 35px rgba(13, 110, 253, .35);
-
-}
-
-
-/*=========================
-    Gallery Card
-=========================*/
-
-.eq-gallery-card {
-
-    display: block;
-    position: relative;
-    overflow: hidden;
-    border-radius: 24px;
-    box-shadow: 0 25px 45px rgba(0, 0, 0, .10);
-    transition: .45s;
-    background: #fff;
-
-}
-
-.eq-gallery-card img {
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 1s;
-    display: block;
-
-}
-
-
-/* Different Heights */
-
-.eq-gallery-grid .col-lg-6 .eq-gallery-card {
-
+    width: 500px;
     height: 500px;
-
+    background: #0d6efd10;
+    border-radius: 50%;
+    top: -200px;
+    left: -150px;
+    filter: blur(120px);
 }
 
-.eq-gallery-grid .col-lg-4 .eq-gallery-card {
-
-    height: 320px;
-
-}
-
-.eq-gallery-grid .col-lg-3 .eq-gallery-card {
-
-    height: 240px;
-
-}
-
-
-/* Hover */
-
-.eq-gallery-card:hover {
-
-    transform: translateY(-12px);
-
-}
-
-.eq-gallery-card:hover img {
-
-    transform: scale(1.12) rotate(2deg);
-
+.gl3d-gallery-section::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #6610f210;
+    border-radius: 50%;
+    right: -150px;
+    bottom: -200px;
+    filter: blur(120px);
 }
 
 
-/*=========================
-    Overlay
-=========================*/
+.gl3d-gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .08);
+    transition: .45s;
+}
 
-.eq-gallery-overlay {
+.gl3d-gallery-item img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    transition: .6s ease;
+    display: block;
+}
 
+.gl3d-gallery-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, .82),
-            rgba(0, 0, 0, .08));
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-
-    padding: 35px;
-    opacity: 0;
-    transition: .45s;
-
-}
-
-.eq-gallery-card:hover .eq-gallery-overlay {
-
-    opacity: 1;
-
-}
-
-.eq-gallery-overlay div {
-
-    transform: translateY(40px);
-    transition: .45s;
-
-}
-
-.eq-gallery-card:hover .eq-gallery-overlay div {
-
-    transform: translateY(0);
-
-}
-
-.eq-gallery-overlay i {
-
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(10, 15, 30, .28);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.gl3d-open-btn {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffff;
+    color: #111827;
+    font-size: 26px;
+    cursor: pointer;
+    transform: scale(.5);
+    transition: .35s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.gl3d-gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .18);
+}
+
+.gl3d-gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gl3d-gallery-item:hover .gl3d-gallery-overlay {
+    opacity: 1;
+}
+
+.gl3d-gallery-item:hover .gl3d-open-btn {
+    transform: scale(1);
+}
+
+
+.gl3d-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .35s;
+    z-index: 99999;
+}
+
+.gl3d-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gl3d-image-wrapper {
+    max-width: 92%;
+    max-height: 85vh;
+    overflow: hidden;
+}
+
+.gl3d-image-wrapper img {
+    max-width: 100%;
+    max-height: 85vh;
+    transition: .3s;
+    cursor: grab;
+    user-select: none;
+}
+
+
+.gl3d-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
     background: #fff;
-    color: #0d6efd;
-    font-size: 20px;
-    margin-bottom: 18px;
-
-}
-
-.eq-gallery-overlay h5 {
-
-    color: #fff;
-    margin: 0;
+    cursor: pointer;
     font-size: 22px;
-    font-weight: 600;
-
 }
 
 
-/*=========================
-    Floating Animation
-=========================*/
-
-.gallery-item {
-
-    animation: eqGalleryFloat 6s ease-in-out infinite;
-
+.gl3d-prev, .gl3d-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    font-size: 22px;
 }
 
-.gallery-item:nth-child(2) {
-
-    animation-delay: .5s;
-
+.gl3d-prev {
+    left: 30px;
 }
 
-.gallery-item:nth-child(3) {
-
-    animation-delay: 1s;
-
-}
-
-.gallery-item:nth-child(4) {
-
-    animation-delay: 1.5s;
-
-}
-
-.gallery-item:nth-child(5) {
-
-    animation-delay: 2s;
-
-}
-
-.gallery-item:nth-child(6) {
-
-    animation-delay: 2.5s;
-
-}
-
-@keyframes eqGalleryFloat {
-
-    0%,
-    100% {
-
-        transform: translateY(0px);
-
-    }
-
-    50% {
-
-        transform: translateY(-10px);
-
-    }
-
+.gl3d-next {
+    right: 30px;
 }
 
 
-/*=========================
-    Responsive
-=========================*/
+.gl3d-zoom-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.gl3d-zoom-controls button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.gl3d-close:hover, .gl3d-prev:hover, .gl3d-next:hover, .gl3d-zoom-controls button:hover, .gl3d-open-btn:hover {
+    background: #0d6efd;
+    color: #fff;
+}
 
 @media(max-width:991px) {
-
-    .eq-gallery-title {
-
-        font-size: 34px;
-
+    .gl3d-main-title {
+        font-size: 38px;
     }
 
-    .eq-gallery-grid .eq-gallery-card {
+    .gl3d-gallery-item img {
+        height: 280px;
+    }
 
-        height: 300px !important;
+    #galleryWrapper .col-lg-4:nth-child(2n) img {
+        height: 340px;
+    }
 
+    #galleryWrapper .col-lg-4:nth-child(3n) img {
+        height: 250px;
     }
 
 }
 
 @media(max-width:767px) {
-
-    .eq-gallery-title {
-
-        font-size: 28px;
-
+    .gl3d-main-title {
+        font-size: 30px;
     }
 
-    .eq-gallery-filter {
-
-        gap: 10px;
-
+    .gl3d-gallery-item {
+        border-radius: 16px;
     }
 
-    .eq-gallery-filter button {
+    .gl3d-gallery-item img {
+        height: 220px;
+    }
 
-        padding: 10px 18px;
-        font-size: 14px;
+    #galleryWrapper .col-lg-4:nth-child(2n) img {
+        height: 280px;
+    }
 
+    #galleryWrapper .col-lg-4:nth-child(3n) img {
+        height: 220px;
+    }
+
+    .gl3d-prev, .gl3d-next {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .gl3d-close {
+        width: 45px;
+        height: 45px;
+    }
+
+    .gl3d-open-btn {
+        width: 58px;
+        height: 58px;
+        font-size: 20px;
+    }
+
+    .gl3d-zoom-controls button {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
     }
 
 }
 </style>
 @endsection
+
 @section('body')
-<section class="eq-gallery-section py-5">
-    <div class="container">
 
-        <div class="text-center mb-5">
+@php
 
-            <span class="eq-gallery-tag">
-                Gallery
-            </span>
+$galleryImages = [];
 
-            <h2 class="eq-gallery-title mt-3">
-                Experience Our World Through Images
-            </h2>
+for($i = 1; $i <= 12; $i++){ $galleryImages[]=asset("assets/front/imgs/gallery/{$i}.jpg"); } @endphp 
+   <section class="gl3d-gallery-section py-5 pb-5">
+    <div class="container-fluid pb-5">
+        <!-- Gallery -->
+        <div class="row g-4" id="galleryWrapper">
+            @foreach($galleryImages as $index => $image)
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="gl3d-gallery-item">
+                    <img src="{{ $image }}" alt="Gallery Image {{ $index+1 }}" class="img-fluid gl3d-gallery-image"
+                        loading="lazy">
+                    <!-- Hover -->
+                    <div class="gl3d-gallery-overlay" data-index="{{ $index }}" data-image="{{ $image }}">
+                        <button class="gl3d-open-btn" type="button" aria-label="Open Image">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+    </section>
 
-            <p class="eq-gallery-desc">
-                Explore our hospital facilities, advanced equipment,
-                expert doctors, successful treatments, and patient care moments.
-            </p>
 
+
+    <div class="gl3d-lightbox" id="gl3dLightbox">
+        <button class="gl3d-close" id="gl3dClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="gl3d-prev" id="gl3dPrev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <button class="gl3d-next" id="gl3dNext">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+
+        <div class="gl3d-image-wrapper">
+            <img src="" id="gl3dPreview" alt="">
         </div>
 
-        <!-- Filter Buttons -->
 
-        <div class="eq-gallery-filter">
-
-            <button class="active" data-filter="all">
-                All
-            </button>
-
-            <button data-filter="hospital">
-                Hospital
-            </button>
-
-            <button data-filter="doctor">
-                Doctors
-            </button>
-
-            <button data-filter="equipment">
-                Equipment
-            </button>
-
-            <button data-filter="patients">
-                Patients
-            </button>
-
-        </div>
-
-
-        <div class="row g-4 eq-gallery-grid mb-5">
-
-            <div class="col-lg-4 col-md-6 gallery-item patients">
-
-                <a href="https://picsum.photos/900/700?random=1" class="eq-gallery-card glightbox" data-type="image">
-
-                    <img width="100%" src="https://picsum.photos/900/700?random=1" class="img-fluid" alt="">
-
-                    <div class="eq-gallery-overlay">
-
-                        <div>
-
-                            <i class="fa-solid fa-expand"></i>
-
-                            <h5>Patients</h5>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <div class="col-lg-4 col-md-6 gallery-item equipment">
-
-                <a href="https://picsum.photos/900/700?random=1" class="eq-gallery-card glightbox" data-type="image">
-
-                    <img width="100%" src="https://picsum.photos/900/700?random=1" class="img-fluid" alt="">
-
-                    <div class="eq-gallery-overlay">
-
-                        <div>
-
-                            <i class="fa-solid fa-expand"></i>
-
-                            <h5>Eye Machine</h5>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <div class="col-lg-4 col-md-12 gallery-item hospital">
-
-                <a href="https://picsum.photos/900/700?random=1" class="eq-gallery-card glightbox" data-type="image">
-
-                    <img width="100%" src="https://picsum.photos/900/700?random=1" class="img-fluid" alt="">
-
-                    <div class="eq-gallery-overlay">
-
-                        <div>
-
-                            <i class="fa-solid fa-expand"></i>
-
-                            <h5>Reception</h5>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item patients">
-
-                <a href="https://picsum.photos/900/700?random=1" class="eq-gallery-card glightbox" data-type="image">
-
-                    <img width="100%" src="https://picsum.photos/900/700?random=1" class="img-fluid" alt="">
-
-                    <div class="eq-gallery-overlay">
-
-                        <div>
-
-                            <i class="fa-solid fa-expand"></i>
-
-                            <h5>Patients</h5>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <div class="col-lg-4 col-md-6 gallery-item equipment">
-
-                <a href="https://picsum.photos/900/700?random=1" class="eq-gallery-card glightbox" data-type="image">
-
-                    <img width="100%" src="https://picsum.photos/900/700?random=1" class="img-fluid" alt="">
-
-                    <div class="eq-gallery-overlay">
-
-                        <div>
-
-                            <i class="fa-solid fa-expand"></i>
-
-                            <h5>Eye Machine</h5>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <div class="col-lg-4 col-md-12 gallery-item hospital">
-
-                <a href="https://picsum.photos/900/700?random=1" class="eq-gallery-card glightbox" data-type="image">
-
-                    <img width="100%" src="https://picsum.photos/900/700?random=1" class="img-fluid" alt="">
-
-                    <div class="eq-gallery-overlay">
-
-                        <div>
-
-                            <i class="fa-solid fa-expand"></i>
-
-                            <h5>Reception</h5>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-        </div>
 
     </div>
-</section>
-<script>
-const lightbox = GLightbox({
-    selector: '.glightbox'
-});
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const galleryItems = document.querySelectorAll(".gl3d-gallery-overlay");
+        const lightbox = document.getElementById("gl3dLightbox");
+        const preview = document.getElementById("gl3dPreview");
+        const closeBtn = document.getElementById("gl3dClose");
+        const prevBtn = document.getElementById("gl3dPrev");
+        const nextBtn = document.getElementById("gl3dNext");
+        const zoomIn = document.getElementById("zoomIn");
+        const zoomOut = document.getElementById("zoomOut");
+        const zoomReset = document.getElementById("zoomReset");
+        let currentIndex = 0;
+        let scale = 1;
+        let images = [];
+        galleryItems.forEach((item) => {
+            images.push(item.dataset.image);
+        });
 
-const observer = new MutationObserver(() => {
-    document.querySelectorAll('.gslide img').forEach(img => {
-        img.style.width = '100%';
-        img.style.height = '100vh';
-        img.style.objectFit = 'cover';
-    });
-});
+        function showImage(index) {
+            currentIndex = index;
+            preview.src = images[index];
+            scale = 1;
+            updateZoom();
+        }
 
-observer.observe(document.body, {
-    childList: true,
-    subtree: true
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    const galleryItems = document.querySelectorAll(".gallery-item");
-    galleryItems.forEach((item, index) => {
-        item.style.opacity = "0";
-        
-        item.style.transform = "translateY(80px) scale(.95)";
-        item.style.transition =
-            "opacity .8s ease, transform .8s cubic-bezier(.17,.67,.35,1.3)";
-        item.style.transitionDelay = (index * 0.12) + "s";
-    });
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0) scale(1)";
-                observer.unobserve(entry.target);
+        function updateZoom() {
+            preview.style.transform = `scale(${scale})`;
+        }
+
+        galleryItems.forEach((item) => {
+            item.addEventListener("click", () => {
+                lightbox.classList.add("active");
+                document.body.style.overflow = "hidden";
+                showImage(parseInt(item.dataset.index));
+            });
+        });
+
+        closeBtn.addEventListener("click", closeLightbox);
+        function closeLightbox() {
+            lightbox.classList.remove("active");
+            document.body.style.overflow = "";
+            scale = 1;
+            updateZoom();
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex++;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            showImage(currentIndex);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            }
+            showImage(currentIndex);
+        });
+
+        zoomIn.addEventListener("click", () => {
+            scale += 0.2;
+            if (scale > 5) {
+                scale = 5;
+            }
+
+            updateZoom();
+
+        });
+
+
+
+        zoomOut.addEventListener("click", () => {
+            scale -= 0.2;
+            if (scale < 1) {
+                scale = 1;
+            }
+            updateZoom();
+
+        });
+
+        zoomReset.addEventListener("click", () => {
+            scale = 1;
+            updateZoom();
+        });
+
+        preview.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            if (e.deltaY < 0) {
+                scale += 0.15;
+            } else {
+                scale -= 0.15;
+            }
+            if (scale < 1) {
+                scale = 1;
+            }
+            if (scale > 5) {
+                scale = 5;
+            }
+            updateZoom();
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (!lightbox.classList.contains("active")) return;
+            if (e.key === "Escape") {
+                closeLightbox();
+            }
+            if (e.key === "ArrowRight") {
+                nextBtn.click();
+            }
+
+            if (e.key === "ArrowLeft") {
+                prevBtn.click();
+            }
+
+            if (e.key === "+") {
+                zoomIn.click();
+            }
+
+            if (e.key === "-") {
+                zoomOut.click();
+            }
+
+        });
+
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
             }
         });
-    }, {
-        threshold: .15
-    });
-    galleryItems.forEach(item => observer.observe(item));
-    const buttons = document.querySelectorAll(".eq-gallery-filter button");
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            buttons.forEach(btn => btn.classList.remove("active"));
-            this.classList.add("active");
-            let filter = this.dataset.filter;
-            galleryItems.forEach(item => {
-                if (filter === "all" || item.classList.contains(filter)) {
-                    item.style.display = "";
-                    setTimeout(() => {
-                        item.style.opacity = "1";
-                        item.style.transform = "scale(1)";
-                    }, 100);
-                } else {
-                    item.style.opacity = "0";
-                    item.style.transform = "scale(.8)";
-                    setTimeout(() => {
-                        item.style.display = "none";
-                    }, 300);
-                }
-            });
-        });
-    });
-    const cards = document.querySelectorAll(".eq-gallery-card");
-    cards.forEach(card => {
-        card.addEventListener("mousemove", function(e) {
-            const rect = this.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateY = (x - centerX) / 18;
-            const rotateX = (centerY - y) / 18;
-            this.style.transform =
-                `perspective(1000px)
-                 rotateX(${rotateX}deg)
-                 rotateY(${rotateY}deg)
-                 translateY(-10px)
-                 scale(1.03)`;
-        });
-        card.addEventListener("mouseleave", function() {
-            this.style.transform =
-                "perspective(1000px) rotateX(0) rotateY(0) translateY(0) scale(1)";
-        });
-    });
 
-    const section = document.querySelector(".eq-gallery-section");
-    if (section) {
-        section.addEventListener("mousemove", function(e) {
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-            galleryItems.forEach((item, index) => {
-                const speed = (index % 5 + 1) * 4;
-                item.style.transform +=
-                    ` translate(${(x-.5)*speed}px, ${(y-.5)*speed}px)`;
-            });
+        preview.addEventListener("dragstart", (e) => {
+            e.preventDefault();
         });
-    }
-
-    if (typeof GLightbox !== "undefined") {
-        GLightbox({
-            selector: ".glightbox",
-            touchNavigation: true,
-            loop: true,
-            zoomable: true,
-            autoplayVideos: true
-        });
-    }
-});
-</script>
-@endsection
+    });
+    </script>
+    @endsection
