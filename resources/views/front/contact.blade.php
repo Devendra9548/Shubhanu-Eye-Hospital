@@ -5,7 +5,7 @@
 @endsection
 @section('body')
 <section class="contact-sec py-5">
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row">
             <div class="col-lg-8 mx-auto text-center mb-5">

@@ -58,6 +58,14 @@ class frontendController extends Controller
         return view('front.contact', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
 
+    function casestudies(){
+        $pageseo = PageSeo::where('pagename', 'case-studies')->get();
+        $homepageseo = PageSeo::where('pagename', 'case-studies')->first();
+        $gseo = GlobalSeo::find(1);
+        $allblog = Blog::latest()->paginate(6);
+        return view('front.case-studies', ['allblog'=>$allblog, 'pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
+
     function singleblog($slug){
         $gseo = GlobalSeo::find(1);
         $blog = Blog::where('slug', $slug)->get();

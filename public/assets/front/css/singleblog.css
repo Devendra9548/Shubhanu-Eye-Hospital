@@ -34,6 +34,15 @@
 .main-blog .left-clm strong {
   color: #000;
 }
+.main-blog .left-clm p {
+  margin-bottom: 12px !important;
+}
+.main-blog .left-clm ol {
+  padding-left: 16px !important;
+}
+.main-blog .left-clm ol li {
+  margin-bottom: 12px !important;
+}
 .main-blog .right-clm {
   padding: 0px 20px !important;
   margin: 0px 0px 0px 15px;

@@ -79,9 +79,9 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="{{route('gallery')}}">Gallery</a></li>
-                            <li><a href="javascript:void(0)">Case Studies</a></li>
-                            <li><a href="{{route('contact')}}">Contact Us</a></li>
+                            <li><a href="{{route('gallery')}}" class="{{ request()->routeIs('gallery') ? 'active' : '' }}">Gallery</a></li>
+                            <li><a href="{{route('casestudies')}}" class="{{ request()->routeIs('casestudies') ? 'active' : '' }}">Case Studies</a></li>
+                            <li><a href="{{route('contact')}}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact Us</a></li>
                         </ul>
 
                     </nav>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <a href="#" class="globalbtn"><i class="fa-regular fa-calendar-days me-2"></i> Book an Appointment</a>
+                    <a href="javascript:void(0)" id="showBookAppointment" class="globalbtn"><i class="fa-regular fa-calendar-days me-2"></i> Book an Appointment</a>
                 </div>
             </div>
         </div>

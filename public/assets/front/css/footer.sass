@@ -1,3 +1,11 @@
+$hcolor: #000
+$pcolor: #453d3d
+$brandcolor: #24748c
+$fontManrope: "Manrope", sans-serif
+$fontlato: "Lato", sans-serif
+$fontOpenSans: "Open Sans", sans-serif
+$fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
+
 .footer
     background: #f6e9e6
     background: #eaf7ff
@@ -128,7 +136,60 @@
     p, a
         color: #fff !important
 
-/* Responsive */
+#bookAppointment
+    display: none
+
+.book-an-appointment
+    background: #000000e6 !important
+    padding: 20px
+    position: fixed
+    top: 0px
+    left: 0px
+    z-index: 1000
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    .inner-rows
+        width: 900px
+        display: flex
+        justify-content: center
+        background: #fff
+        .both-clms
+            width: 50% !important
+        .left-clm
+            img
+                height: 600px
+                object-fit: cover
+                object-position: top
+        .right-clm
+            position: relative
+            padding: 30px
+            h2
+                margin-bottom: 20px
+            input, select, textarea
+                border: 1px solid #0005
+            button
+                background: $brandcolor
+                padding: 10px 20px !important
+                font-weight: bold
+                font-size: 16px
+                font-family: $fontlato !important
+                letter-spacing: 1px
+                &:hover
+                    background: #000 !important
+                    border-color: #000 !important
+                i
+                    color: #fff !important
+                    margin-right: 5px
+
+            #closebookAppointmentbtn
+                position: absolute
+                top: 10px
+                right: 10px
+                i
+                    font-size: 20px
 
 @media (max-width:991px)
 
@@ -190,3 +251,14 @@
     .footer-box p,
     .footer-box li
         font-size: 14px
+
+@media only screen and (max-width:768px)
+    .book-an-appointment
+        .inner-rows
+            width: 100%
+            display: block
+            .both-clms
+                width: 100% !important
+            .left-clm
+                display: none
+        

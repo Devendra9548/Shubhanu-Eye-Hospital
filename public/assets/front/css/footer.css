@@ -156,7 +156,74 @@
   color: #fff !important;
 }
 
-/* Responsive */
+#bookAppointment {
+  display: none;
+}
+
+.book-an-appointment {
+  background: rgba(0, 0, 0, 0.9019607843) !important;
+  padding: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-an-appointment .inner-rows {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+.book-an-appointment .inner-rows .both-clms {
+  width: 50% !important;
+}
+.book-an-appointment .inner-rows .left-clm img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.book-an-appointment .inner-rows .right-clm {
+  position: relative;
+  padding: 30px;
+}
+.book-an-appointment .inner-rows .right-clm h2 {
+  margin-bottom: 20px;
+}
+.book-an-appointment .inner-rows .right-clm input, .book-an-appointment .inner-rows .right-clm select, .book-an-appointment .inner-rows .right-clm textarea {
+  border: 1px solid rgba(0, 0, 0, 0.3333333333);
+}
+.book-an-appointment .inner-rows .right-clm button {
+  background: #24748c;
+  padding: 10px 20px !important;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Lato", sans-serif !important;
+  letter-spacing: 1px;
+}
+.book-an-appointment .inner-rows .right-clm button:hover {
+  background: #000 !important;
+  border-color: #000 !important;
+}
+.book-an-appointment .inner-rows .right-clm button i {
+  color: #fff !important;
+  margin-right: 5px;
+}
+.book-an-appointment .inner-rows .right-clm #closebookAppointmentbtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.book-an-appointment .inner-rows .right-clm #closebookAppointmentbtn i {
+  font-size: 20px;
+}
+
 @media (max-width: 991px) {
   .footer {
     padding: 45px 0;
@@ -216,5 +283,17 @@
   .footer-box p,
 .footer-box li {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .book-an-appointment .inner-rows {
+    width: 100%;
+    display: block;
+  }
+  .book-an-appointment .inner-rows .both-clms {
+    width: 100% !important;
+  }
+  .book-an-appointment .inner-rows .left-clm {
+    display: none;
   }
 }/*# sourceMappingURL=footer.css.map */

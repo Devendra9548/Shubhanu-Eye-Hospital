@@ -1,0 +1,282 @@
+$hcolor: #000
+$pcolor: #453d3d
+$brandcolor: #24748c
+$fontManrope: "Manrope", sans-serif
+$fontlato: "Lato", sans-serif
+$fontOpenSans: "Open Sans", sans-serif
+$fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
+
+.ec-about-section
+    position: relative
+    background: #fff
+    overflow: hidden
+
+.ec-about-badge
+    display: inline-flex
+    align-items: center
+    gap: 8px
+    background: #f3f6fb
+    color: #0d245b
+    padding: 10px 18px
+    border-radius: 50px
+    font-size: 15px
+    font-weight: 600
+    margin-bottom: 25px
+
+.ec-about-badge i
+    font-size: 9px
+    color: #0d245b
+
+.ec-about-title
+    font-size: 50px
+    line-height: 1.2
+    font-weight: 400
+    color: #000
+    margin-bottom: 30px
+    letter-spacing: -2px
+
+.ec-about-title span
+    color: $brandcolor
+    font-family: Georgia, serif
+    font-style: italic
+    font-weight: 400
+
+.ec-about-desc
+    position: relative
+    color: #555
+    font-size: 22px
+    line-height: 1.8
+
+.ec-about-desc::first-letter
+    color: $brandcolor
+    font-size: 24px
+    font-weight: bold !important
+
+.ec-dropcap
+    position: absolute
+    left: 0
+    top: -8px
+    color: #62b8ea
+    font-size: 72px
+    font-weight: 300
+    line-height: 1
+
+.ec-eye-img
+    max-width: 170px
+
+.ec-feature-list
+    list-style: none
+    padding: 0
+    margin: 0
+
+.ec-feature-list li
+    display: flex
+    align-items: center
+    gap: 15px
+    font-size: 16px
+    color: #4b4b4b
+    margin-bottom: 15px
+
+.ec-feature-list li i
+    color: $brandcolor
+    font-size: 20px
+
+.ec-image-wrapper
+    position: relative
+
+.ec-main-image
+    width: 92%
+    margin-left: auto
+    border-radius: 35px
+    overflow: hidden
+    height: 500px
+    object-fit: cover
+    object-position: center
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .10)
+
+.ec-main-image img
+    width: 100%
+    height: 100%
+    display: block
+    object-fit: cover
+
+.ec-small-image
+    position: absolute
+    right: -60px
+    bottom: -60px
+    width: 45%
+    border-radius: 30px
+    overflow: hidden
+    background: #fff
+    padding: 12px
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .12)
+
+.ec-small-image img
+    width: 100%
+    display: block
+    border-radius: 22px
+
+.ec-image-wrapper::before
+    content: ""
+    position: absolute
+    width: 220px
+    height: 220px
+    background: #f4f7fb
+    border-radius: 50%
+    left: -70px
+    top: -40px
+    z-index: -1
+
+.ec-main-image,
+.ec-small-image
+    transition: .4s
+
+.ec-small-image:hover
+    transform: translateY(-6px)
+
+@media(min-width:1400px)
+
+    .ec-about-title
+        font-size: 76px
+
+@media (max-width:1199px)
+
+    .ec-about-title
+        font-size: 56px
+        letter-spacing: -1px
+
+    .ec-about-desc
+        font-size: 18px
+        line-height: 1.8
+
+    .ec-feature-list li
+        font-size: 20px
+
+    .ec-image-wrapper
+        min-height: 600px
+
+@media (max-width:991px)
+
+    .ec-about-section
+        padding: 80px 0
+
+    .ec-about-title
+        font-size: 48px
+
+    .ec-about-desc
+        font-size: 18px
+        padding-left: 42px
+
+    .ec-dropcap
+        font-size: 60px
+
+    .ec-image-wrapper
+        margin-top: 60px
+        min-height: auto
+
+    .ec-main-image
+        width: 100%
+
+    .ec-small-image
+        width: 38%
+        right: 15px
+        bottom: -40px
+
+@media (max-width:767px)
+
+    .ec-about-section
+        padding: 60px 0
+
+    .ec-about-badge
+        font-size: 14px
+        padding: 8px 16px
+
+    .ec-about-title
+        font-size: 38px
+        line-height: 1.2
+        margin-bottom: 20px
+
+    .ec-about-desc
+        padding-left: 34px
+        font-size: 16px
+        line-height: 1.8
+
+    .ec-dropcap
+        font-size: 48px
+        top: -4px
+
+    .ec-eye-img
+        max-width: 130px
+        margin-bottom: 25px
+
+    .ec-feature-list li
+        font-size: 17px
+        margin-bottom: 18px
+
+    .ec-feature-list li i
+        font-size: 16px
+
+    .ec-image-wrapper
+        margin-top: 45px
+        padding-bottom: 100px
+
+    .ec-main-image
+        width: 100%
+        border-radius: 25px
+
+    .ec-small-image
+        width: 42%
+        right: 10px
+        bottom: 0
+        padding: 8px
+        border-radius: 20px
+
+@media (max-width:575px)
+    .ec-about-title
+        font-size: 32px
+
+    .ec-about-desc
+        font-size: 15px
+        padding-left: 28px
+
+    .ec-dropcap
+        font-size: 40px
+
+    .ec-eye-img
+        max-width: 110px
+
+    .ec-feature-list
+        margin-top: 20px
+
+    .ec-feature-list li
+        font-size: 15px
+        gap: 10px
+        margin-bottom: 15px
+
+    .ec-image-wrapper
+        padding-bottom: 80px
+
+    .ec-main-image
+        border-radius: 20px
+
+    .ec-small-image
+        width: 48%
+        right: 5px
+        bottom: 0
+        border-radius: 16px
+        padding: 6px
+
+.ec-about-badge, .ec-about-title, .ec-about-desc, .ec-feature-list li, .ec-main-image, .ec-small-image, .ec-eye-img
+    transition: all .35s ease
+
+.ec-main-image img, .ec-small-image img
+    transition: transform .5s ease
+
+.ec-main-image:hover img, .ec-small-image:hover img
+    transform: scale(1.06)
+
+.ec-feature-list li:hover
+    transform: translateX(6px)
+
+.ec-eye-img:hover
+    transform: rotate(-6deg) scale(1.05)

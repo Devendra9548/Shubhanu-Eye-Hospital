@@ -63,6 +63,14 @@ p {
   background: #000;
 }
 
+.badge-section {
+  background: #eaf7ff !important;
+  padding: 20px 0px;
+}
+.badge-section a {
+  color: #000 !important;
+}
+
 @media only screen and (max-width: 768px) {
   .globalbtn {
     font-size: 16px !important;

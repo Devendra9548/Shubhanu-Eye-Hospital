@@ -1,7 +1,7 @@
 @extends('templates.front.main')
 @section('customcss')
-<link rel="stylesheet" href="/assets/css/front/home.css">
 <title>Blog | Shubhanu Eye Hospital</title>
+
 @endsection
 @section('body')
 
