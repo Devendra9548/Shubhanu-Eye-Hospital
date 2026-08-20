@@ -46,6 +46,26 @@ $fontPoppins: "Poppins", sans-serif
     overflow: hidden
     position: relative
 
+.our-instagram-section
+    padding: 50px 0px !important
+    h2
+        margin-bottom: 30px !important
+    iframe
+        width: 100% !important
+        max-width: 100% !important
+        min-width: 100% !important
+    img
+        height: 409px !important
+        -o-object-fit: cover !important
+        margin-top: 0px !important
+        width: 100% !important
+        border-radius: 0px !important
+    .service-card
+        border-radius: 0px !important
+        padding: 0px !important
+        border-radius: 12px !important
+        overflow: hidden
+
 .doctor-section
     .slick-list
         padding-right: 290px !important
@@ -63,20 +83,27 @@ $fontPoppins: "Poppins", sans-serif
         width: 37px !important
         right: 10px !important
         text-align: left !important
-        left: auto !important
+        left: 20px !important
     .slick-prev
         right: 50px!important
+    .slick-next
+        left: 60px !important
 
 .small-title
     color: #000
     font-weight: 600
+    display: flex
+    justify-content: start
+    align-items: center
 
 .doctor-section h2
-    font-size: 52px
+    font-size: 42px
     font-weight: 700
-    width: 50%
+    width: 45%
     color: #000
     margin-top: 15px
+    margin-left: auto
+    text-align: end
 
 .doctor-card
     background: #fff
@@ -120,12 +147,13 @@ $fontPoppins: "Poppins", sans-serif
 
 .doctor-info h5
     margin: 0
-    font-size: 13px
+    font-size: 15px
+    font-weight: bold
     color: #000
 
 .doctor-info p
     margin: 0
-    font-size: 11px !important
+    font-size: 13px !important
 
 .profile-btn
     position: absolute
@@ -137,15 +165,22 @@ $fontPoppins: "Poppins", sans-serif
 
 .info-box
     background: #f8f8f8
-    padding: 20px
     border-radius: 15px
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    i
+        background: transparent !important
+        color: #000 !important
+        font-size: 25px
+        margin-right: 10px
 
 .info-box strong
     display: block
+    font-size: 13px
 
 .info-box span
     display: block
-    margin-top: 5px
 
 .appointment-btn
     display: block
@@ -159,9 +194,10 @@ $fontPoppins: "Poppins", sans-serif
 
 .doctor-content
     h3
-        font-size: 20px
+        font-size: 22px
         font-weight: bold
         color: #000
+        margin-bottom: 12px
 
 @media (max-width:768px)
     .doctor-section h2
@@ -232,7 +268,7 @@ $fontPoppins: "Poppins", sans-serif
 
 .our-services
     h2
-        font-size: 52px
+        font-size: 42px
         font-weight: 700
         color: #000
         margin-bottom: 30px
@@ -625,7 +661,8 @@ $fontPoppins: "Poppins", sans-serif
     position: relative
     overflow: hidden
     background: #fff
-    padding: 90px 0
+    padding: 0px
+    padding-bottom: 50px
 
 .eye-about h2
     font-size: 46px
@@ -1415,26 +1452,6 @@ $fontPoppins: "Poppins", sans-serif
     background: #f8fbff
     overflow: hidden
 
-.eqshow-section::before
-    content: ""
-    position: absolute
-    width: 650px
-    height: 650px
-    background: radial-gradient(circle, #08617e15 0%, transparent 70%)
-    top: -220px
-    left: -180px
-    border-radius: 50%
-
-.eqshow-section::after
-    content: ""
-    position: absolute
-    width: 500px
-    height: 500px
-    background: radial-gradient(circle, #0dcaf015 0%, transparent 70%)
-    bottom: -200px
-    right: -180px
-    border-radius: 50%
-
 .eqshow-bg-text
     position: absolute
     left: 50%
@@ -1491,7 +1508,7 @@ $fontPoppins: "Poppins", sans-serif
 .eqshow-desc
     color: #6b7280
     max-width: 700px
-    margin: auto
+    margin-bottom: 20px!important
 
 .eqshow-image-area
     position: relative
@@ -1586,7 +1603,7 @@ $fontPoppins: "Poppins", sans-serif
     display: flex
     gap: 12px
     overflow-x: auto
-    padding: 10px 5px
+    padding: 10px 0px
     scrollbar-width: none
     justify-content: center
 
@@ -1708,3 +1725,232 @@ $fontPoppins: "Poppins", sans-serif
 
 .eqshow-item
     position: relative
+
+.dvc-doctors-section
+    padding: 70px 0
+    background: #ffffff
+    font-family: "Poppins", sans-serif
+
+.dvc-section-header
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-bottom: 42px
+    h2
+        font-size: 42px
+        font-weight: 700
+        color: #000
+        margin-top: 15px
+    i
+        background: #24748c !important
+        border-radius: 100%
+        color: #fff
+        padding: 5px
+        font-size: 12px
+        margin-right: 5px
+
+.dvc-see-all-btn
+    display: inline-flex
+    align-items: center
+    gap: 9px
+    padding: 10px 18px
+    border: 1px solid $brandcolor
+    border-radius: 30px
+    color: $brandcolor
+    text-decoration: none
+    font-size: 16px
+    font-weight: 600
+    transition: all 0.25s ease
+
+.dvc-see-all-btn span
+    font-size: 18px
+    line-height: 1
+
+.dvc-see-all-btn:hover
+    background: $brandcolor
+    border-color: $brandcolor
+    color: #ffffff
+    span
+        color: #fff !important
+
+.dvc-doctor-card
+    text-align: center
+    background: #ffffff
+    border: 1px solid #f0f3f5
+    padding: 10px 14px 20px
+    box-shadow: 0 4px 18px rgba(20, 55, 90, 0.04)
+    transition: box-shadow 0.25s ease
+
+.dvc-doctor-card:hover
+    box-shadow: 0 7px 25px rgba(20, 55, 90, 0.10)
+
+.dvc-doctor-image
+    width: 100%
+    height: 160px
+    background: #e9f7fd
+    overflow: hidden
+    margin-bottom: 14px
+
+.dvc-doctor-image img
+    width: 100%
+    height: 100%
+    display: block
+    object-fit: cover
+    object-position: top
+
+.dvc-doctor-card h3
+    color: $brandcolor
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 4px
+
+.dvc-doctor-card p
+    color: #3e3e3e
+    font-size: 15px !important
+    margin-bottom: 10px !important
+
+.dvc-appointment-btn
+    display: inline-block
+    background: $brandcolor
+    color: #ffffff
+    text-decoration: none
+    font-size: 15px
+    line-height: 1
+    font-weight: 500
+    padding: 12px 20px
+    border-radius: 20px
+    transition: background 0.25s ease
+
+.dvc-appointment-btn:hover
+    background: #000 !important
+    color: #ffffff
+
+.dvc-appointment-box
+    background: #ffffff
+    border-radius: 7px
+    overflow: hidden
+    box-shadow: 0 5px 25px rgba(23, 61, 112, 0.08)
+    height: 100%
+
+.dvc-appointment-heading
+    background: $brandcolor
+    color: #ffffff
+    padding: 19px 23px
+    font-size: 25px
+    font-weight: 600
+
+.dvc-appointment-box form
+    padding: 14px 18px 18px
+
+.dvc-form-group
+    margin-bottom: 13px
+
+.dvc-form-group label
+    display: block
+    color: #000
+    font-size: 15px
+    font-weight: bold
+    margin-bottom: 5px
+    margin-top: 20px
+
+.dvc-form-group label span
+    color: #111111
+    margin-left: 2px
+
+.dvc-form-control
+    width: 100%
+    height: 39px
+    border: 1px solid #939393
+    border-radius: 8px
+    background: #ffffff
+    color: #555555
+    font-size: 16px
+    padding: 8px 12px
+    outline: none
+    box-shadow: none
+    transition: border-color 0.2s ease
+
+.dvc-form-control:focus
+    border-color: #38aee5
+    box-shadow: none
+
+.dvc-form-control::placeholder
+    color: #a7a7a7
+
+.dvc-book-btn
+    width: 100%
+    height: 40px
+    border: 0
+    border-radius: 8px
+    background: $brandcolor !important
+    color: #ffffff
+    font-size: 16px
+    font-weight: 500
+    cursor: pointer
+    margin-top: 3px
+    transition: background 0.25s ease
+
+.dvc-book-btn:hover
+    background: #000 !important
+
+@media (max-width: 1199.98px)
+
+    .dvc-section-title
+        font-size: 32px
+
+    .dvc-doctor-image
+        height: 120px
+
+    .dvc-appointment-heading
+        font-size: 22px
+
+@media (max-width: 991.98px)
+
+    .dvc-section-header
+        align-items: center
+
+    .dvc-section-title
+        font-size: 30px
+
+    .dvc-appointment-box
+        margin-top: 15px
+
+    .dvc-doctor-image
+        height: 160px
+
+@media (max-width: 767.98px)
+
+    .dvc-doctors-section
+        padding: 50px 0
+
+    .dvc-section-header
+        display: block
+        margin-bottom: 30px
+
+    .dvc-section-title
+        font-size: 27px
+
+    .dvc-see-all-btn
+        margin-top: 15px
+
+    .dvc-doctor-image
+        height: 180px
+
+@media (max-width: 575.98px)
+
+    .dvc-section-title
+        font-size: 24px
+
+    .dvc-section-subtitle
+        margin-left: 75px
+
+    .dvc-section-subtitle::before
+        width: 70px
+        left: -77px
+
+    .dvc-doctor-image
+        height: 200px
+
+    .dvc-appointment-heading
+        font-size: 21px
+        padding: 17px 18px
