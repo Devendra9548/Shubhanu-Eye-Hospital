@@ -3,48 +3,51 @@
 <link rel="stylesheet" href="/assets/css/front/home.css">
 <title>Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
 <link rel="stylesheet" href="/assets/front/css/card-anime.css">
-<link rel="stylesheet" href="/assets/front/css/slider.css">
+
 <link rel="stylesheet" href="/assets/front/css/home.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 <style>
 .hero-section .slide:nth-child(1) .slide__inner {
-    background-image: url(/assets/front/imgs/banners/6.webp)!important;
+    background-image: url(/assets/front/imgs/banners/6.webp) !important;
 }
 
 .hero-section .slide:nth-child(2) .slide__inner {
-    background-image: url(/assets/front/imgs/banners/7.webp)!important;
+    background-image: url(/assets/front/imgs/banners/7.webp) !important;
 }
 
 .hero-section .slide:nth-child(3) .slide__inner {
-    background-image: url(/assets/front/imgs/banners/8.webp)!important;
+    background-image: url(/assets/front/imgs/banners/8.webp) !important;
 }
 
 .hero-section .slide:nth-child(4) .slide__inner {
-    background-image: url(/assets/front/imgs/banners/6.webp)!important;
+    background-image: url(/assets/front/imgs/banners/6.webp) !important;
 }
 
 @media only screen and (max-width:768px) {
     .hero-section .slide:nth-child(1) .slide__inner {
-        background-image: url(/assets/front/imgs/banners/6-mb.webp)!important;
+        background-image: url(/assets/front/imgs/banners/6-mb.webp) !important;
     }
 
     .hero-section .slide:nth-child(2) .slide__inner {
-        background-image: url(/assets/front/imgs/banners/7-mb.webp)!important;
+        background-image: url(/assets/front/imgs/banners/7-mb.webp) !important;
     }
 
     .hero-section .slide:nth-child(3) .slide__inner {
-        background-image: url(/assets/front/imgs/banners/8-mb.webp)!important;
+        background-image: url(/assets/front/imgs/banners/8-mb.webp) !important;
     }
 
     .hero-section .slide:nth-child(4) .slide__inner {
-        background-image: url(/assets/front/imgs/banners/6-mb.webp)!important;
+        background-image: url(/assets/front/imgs/banners/6-mb.webp) !important;
     }
 }
 </style>
 
 @endsection
 @section('body')
+{{-- 
 <section class="hero-section">
     <div class="slider">
         <div class="slider__slides">
@@ -88,6 +91,25 @@
         </div>
     </div>
 </section>
+--}}
+
+<section class="first-hero-section">
+    <picture>
+        <source media="(max-width: 767px)" srcset="/assets/front/imgs/banners/6-mb.webp">
+        <source media="(min-width: 768px)" srcset="/assets/front/imgs/banners/6.webp">
+        <img src="/assets/front/imgs/banners/6.webp" alt="Banner" width="100%">
+    </picture>
+    <picture>
+        <source media="(max-width: 767px)" srcset="/assets/front/imgs/banners/7-mb.webp">
+        <source media="(min-width: 768px)" srcset="/assets/front/imgs/banners/7.webp">
+        <img src="/assets/front/imgs/banners/7.webp" alt="Banner" width="100%">
+    </picture>
+    <picture>
+        <source media="(max-width: 767px)" srcset="/assets/front/imgs/banners/8-mb.webp">
+        <source media="(min-width: 768px)" srcset="/assets/front/imgs/banners/8.webp">
+        <img src="/assets/front/imgs/banners/8.webp" alt="Banner" width="100%">
+    </picture>
+</section>
 
 {{-- 
 <div class="dvwave-section">
@@ -98,343 +120,318 @@
         </path>
     </svg>
 </div>
-
-<section class="first-section">
-    <div class="bg-layer pb-5">
-        <h2 class="text-center">Our <span>Services</span></h2>
-        <div class="wrapper">
-            <ul class="row">
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/3.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Retinal surgery & Injection <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Retinal surgery & Injection</p>
-                                            <p>Advanced retinal surgery and precision eye injections effectively treat
-                                                retinal diseases, helping preserve vision, prevent complications, and
-                                                support long-term eye health with expert care.
-                                            </p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/4.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Lid surgery <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Lid surgery</p>
-                                            <p>Lid surgery corrects drooping, damaged, or abnormal eyelids, improving
-                                                vision, restoring natural appearance, and enhancing both eye function
-                                                and
-                                                overall facial aesthetics. </p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/5.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Orbital surgery <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Orbital surgery</p>
-                                            <p>Orbital surgery treats disorders affecting the eye socket, including
-                                                tumors, fractures, and thyroid eye disease, restoring function,
-                                                protecting
-                                                vision, and improving appearance.</p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="wrapper">
-            <ul class="row">
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/6.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Eye Tumors <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Eye Tumors</p>
-                                            <p>Comprehensive eye tumor treatment ensures early diagnosis and advanced
-                                                care,
-                                                helping preserve vision, protect surrounding eye structures, and improve
-                                                long-term patient outcomes.</p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/7.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Treatment of Watering Eyes <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Treatment of Watering Eyes</p>
-                                            <p>Advanced treatment for watering eyes addresses blocked tear ducts and
-                                                other
-                                                underlying causes, providing lasting relief, improved comfort, and
-                                                healthier
-                                                eye function.</p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/8.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Ocular Emergencies <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Ocular Emergencies</p>
-                                            <p>Prompt treatment for ocular emergencies ensures rapid diagnosis and
-                                                expert
-                                                care, protecting vision, preventing complications, and supporting
-                                                faster,
-                                                successful recovery.</p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="wrapper">
-            <ul class="row">
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/9.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Neuro-Ophthalmology <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Neuro-Ophthalmology</p>
-                                            <p>Neuro-ophthalmology diagnoses and treats vision problems caused by brain
-                                                and
-                                                nerve disorders, ensuring accurate care, timely intervention, and
-                                                improved
-                                                visual outcomes.</p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/10.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Artificial / Prosthetic eyes <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Artificial / Prosthetic eyes</p>
-                                            <p>Artificial and prosthetic eyes restore natural appearance after eye loss,
-                                                improving confidence, facial symmetry, comfort, and overall quality of
-                                                life.
-                                            </p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="row__item">
-                    <div class="container">
-                        <div class="cube">
-                            <div class="face front">
-                                <div class="card">
-                                    <figure class="card__image">
-                                        <img src="/assets/front/imgs/1/11.png" alt="">
-                                    </figure>
-                                    <div class="card__content">
-                                        <div class="card__title">Thyroid Eye Disease <i
-                                                class="ms-2 fa-solid fa-arrow-right-long"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face right">
-                                <div class="card">
-                                    <div class="card__content">
-                                        <div class="card__description">
-                                            <p class="heading">Thyroid Eye Disease</p>
-                                            <p>Thyroid eye disease treatment reduces eye bulging, discomfort, and vision
-                                                problems through specialized care, improving comfort, appearance, and
-                                                long-term eye health.
-                                            </p>
-                                            <a href="#" class="globalbtn">Read More</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
 --}}
 
-<section class="eyecta-sec">
+<section class="info-cta-section bg-yellow">
+    <div class="container bg-blue">
+        <div class="d-flex justify-content-start">
+            <div class="left-clm">
+                <div class="dicon">+</div>
+                <div class="number">20</div>
+                <div class="text">Year of Experience</div>
+            </div>
+            <div class="right-clm">
+                <p class="title">Stronger <span>Footprints</span></p>
+                <p class="desc">Working Towards The Betterment, Everyday.</p>
+                <div class="d-flex inner-row mt-3">
+                    <div class="inner-clm">
+                        <p class="inner-number">20</p>
+                        <p class="inner-desc">Working Towards The Betterment, Everyday.</p>
+                    </div>
+                    <div class="inner-clm">
+                        <p class="inner-number">50+</p>
+                        <p class="inner-desc">Working Towards The Betterment, Everyday.</p>
+                    </div>
+                    <div class="inner-clm">
+                        <p class="inner-number">5000K+</p>
+                        <p class="inner-desc">Working Towards The Betterment, Everyday.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <div class="eyecta-box">
+<!-- Services
+Retinal Surgery & Injection
+Lid Surgery
+Orbital Surgery
+Eye Tumors
+Treatment of Watering Eyes
+Ocular Emergencies
+Neuro-Ophthalmology
+Artificial & Prosthetic eyes
+Thyroid Eye Disease 
+-->
 
-        <div class="eyecta-badge">
-            <i class="fa-regular fa-eye"></i> Trusted Eye Care Since Years
+<section class="our-services bg-yellow pb-5">
+    <div class="container">
+        <h2 class="text-end">Our Services</h2>
+        <div class="row slider">
+            <div class="col-12 col-md-4 service-card">
+                <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
+                <h3>Retinal Surgery & Injection</h3>
+                <p class="mb-3">Retinal surgery is a serious eye condition.</p>
+                <p class="highlight">Neuro-Ophthalmology</p>
+                <p class="highlight">Lid Surgery</p>
+                <p class="highlight">Orbital Surgery</p>
+                <p class="highlight">Eye Tumors</p>
+                <p class="highlight">Thyroid Eye Disease </p>
+                <p class="highlight"><a href="#">Read More</a></p>
+                <img src="/assets/front/imgs/1/3.png" alt="Artificial & Prosthetic eyes" width="100%">
+            </div>
+            <div class="col-12 col-md-4 service-card">
+                <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
+                <h3>Lid Surgery</h3>
+                <p class="mb-3">Retinal surgery is a serious eye condition.</p>
+                <p class="highlight">Retinal Surgery & Injection</p>
+                <p class="highlight">Lid Surgery</p>
+                <p class="highlight">Orbital Surgery</p>
+                <p class="highlight">Eye Tumors</p>
+                <p class="highlight">Treatment of Watering Eyes</p>
+                <p class="highlight">Ocular Emergencies</p>
+                <p class="highlight">Neuro-Ophthalmology</p>
+                <p class="highlight">Artificial & Prosthetic eyes</p>
+                <p class="highlight">Thyroid Eye Disease </p>
+                <img src="/assets/front/imgs/1/4.png" alt="Artificial & Prosthetic eyes" width="100%">
+            </div>
+            <div class="col-12 col-md-4 service-card">
+                <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
+                <h3>Orbital Surgery</h3>
+                <p class="mb-3">Retinal surgery is a serious eye condition.</p>
+                <p class="highlight">Retinal Surgery & Injection</p>
+                <p class="highlight">Lid Surgery</p>
+                <p class="highlight">Orbital Surgery</p>
+                <p class="highlight">Eye Tumors</p>
+                <p class="highlight">Treatment of Watering Eyes</p>
+                <p class="highlight">Ocular Emergencies</p>
+                <p class="highlight">Neuro-Ophthalmology</p>
+                <p class="highlight">Artificial & Prosthetic eyes</p>
+                <p class="highlight">Thyroid Eye Disease </p>
+                <img src="/assets/front/imgs/1/4.png" alt="Artificial & Prosthetic eyes" width="100%">
+            </div>
+            <div class="col-12 col-md-4 service-card">
+                <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
+                <h3>Artificial & Prosthetic eyes</h3>
+                <p class="mb-3">Retinal surgery is a serious eye condition.</p>
+                <p class="highlight">Retinal Surgery & Injection</p>
+                <p class="highlight">Lid Surgery</p>
+                <p class="highlight">Orbital Surgery</p>
+                <p class="highlight">Eye Tumors</p>
+                <p class="highlight">Treatment of Watering Eyes</p>
+                <p class="highlight">Ocular Emergencies</p>
+                <p class="highlight">Neuro-Ophthalmology</p>
+                <p class="highlight">Artificial & Prosthetic eyes</p>
+                <p class="highlight">Thyroid Eye Disease </p>
+                <img src="/assets/front/imgs/1/4.png" alt="Artificial & Prosthetic eyes" width="100%">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="doctor-section py-5">
+    <div class="container">
+        <div class="mb-5">
+            <span class="small-title">
+                <i class="fa-solid fa-binoculars"></i> Specialized Doctors
+            </span>
+            <h2 class="section-title">Dedicated doctors, committed to your care </h2>
         </div>
 
-        <h2 class="eyecta-title">
-            More than <span>15,000</span> Surgeries
-            <br>
-            <strong><i>Between 2 Expert Surgeons</i></strong>
-        </h2>
+        <div class="doctor-slider">
 
-        <div class="eyecta-btns">
-            <a href="#appointment" class="eyecta-btn eyecta-btn-primary">
-                <i class="fa-regular fa-calendar-days"></i> Book Appointment
-            </a>
+            <!-- Doctor 1 -->
 
-            <a href="tel:+919068991180" class="eyecta-btn eyecta-btn-outline">
-                <i class="fa-solid fa-phone"></i> Call Now
-            </a>
+            <div>
+
+                <div class="doctor-card">
+
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-lg-4">
+
+                            <div class="doctor-image">
+
+                                <img src="https://picsum.photos/500/600?1" class="img-fluid">
+
+                                <div class="doctor-info">
+
+                                    <div>
+
+                                        <h5>Dr. James Carter</h5>
+
+                                        <p>Cardiologist</p>
+
+                                    </div>
+
+                                    <button class="profile-btn">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8">
+
+                            <div class="doctor-content">
+
+                                <h3>
+                                    About Dr. James:
+                                </h3>
+
+                                <p>
+                                    Experienced in treating complex heart
+                                    conditions with a compassionate,
+                                    patient-first care approach.
+                                </p>
+
+                                <div class="row g-3 mt-3">
+
+                                    <div class="col-md-6">
+
+                                        <div class="info-box">
+
+                                            <strong>Specialty</strong>
+
+                                            <span>Cardiologist</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="info-box">
+
+                                            <strong>Experience</strong>
+
+                                            <span>12+ Years</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="info-box">
+
+                                            <strong>Hospital</strong>
+
+                                            <span>City Heart Clinic</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="info-box">
+
+                                            <strong>Availability</strong>
+
+                                            <span>Mon - Fri</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <a href="#" class="appointment-btn">
+
+                                    Book Appointment
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Duplicate slides -->
+
+            <div>
+                <div class="doctor-card">
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-lg-4">
+
+                            <div class="doctor-image">
+
+                                <img src="https://picsum.photos/500/600?2" class="img-fluid">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8">
+
+                            <div class="doctor-content">
+
+                                <h3>About Dr. Sarah:</h3>
+
+                                <p>
+                                    Expert dermatologist with years of
+                                    experience in skin care.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="doctor-card">
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-lg-4">
+
+                            <div class="doctor-image">
+
+                                <img src="https://picsum.photos/500/600?3" class="img-fluid">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8">
+
+                            <div class="doctor-content">
+
+                                <h3>About Dr. David:</h3>
+
+                                <p>
+                                    Neurology specialist focused on patient
+                                    recovery.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
 
 </section>
 
+{{-- 
 <section class="eye-about py-5">
     <div class="container py-5">
         <div class="row align-items-center g-5">
@@ -502,6 +499,7 @@
         </div>
     </div>
 </section>
+--}}
 
 <section class="shbadv-section py-5">
     <div class="container position-relative">
@@ -1880,4 +1878,61 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+$('.slider').slick({
+    centerMode: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 500000,
+    arrows: true,
+    infinite: true,
+
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+</script>
+
+<script>
+$('.doctor-slider').slick({
+    centerMode: true,
+    centerPadding: '150px',
+    slidesToShow: 1,
+    arrows: true,
+    infinite: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            centerPadding: '20px'
+        }
+    }]
+});
+</script>
+
+<script>
+$('.first-hero-section').slick({
+    slidesToShow: 1,
+    arrows: true,
+    infinite: true,
+    responsive: [{
+        breakpoint: 768,
+    }]
+});
+</script>
+
 @endsection

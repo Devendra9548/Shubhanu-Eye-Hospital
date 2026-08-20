@@ -5,65 +5,259 @@ $fontManrope: "Manrope", sans-serif
 $fontlato: "Lato", sans-serif
 $fontOpenSans: "Open Sans", sans-serif
 $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
+$fontPoppins: "Poppins", sans-serif
+
+.slick-arrow
+    z-index: 9 !important
+    position: absolute !important
+    top: -50px !important
+    width: 37px !important
+    left: 0px !important
+    text-align: left !important
+
+.slick-next
+    left: 40px !important
+
+.slick-next:before, .slick-prev:before
+    font-size: 30px !important
+    opacity: 1 !important
+    color: #24748c !important
+
+.slick-list
+    padding: 0px !important
+
+.first-hero-section
+    img
+        height: 82vh !important
+        object-fit: cover
+    .slick-arrow
+        z-index: 9 !important
+        position: absolute !important
+        top: 50% !important
+        width: 37px !important
+        left: 20px !important
+        text-align: left !important
+
+    .slick-next
+        right: 20px !important
+        left: auto!important
 
 .hero-section
     overflow: hidden
     position: relative
-    
-.first-section
-    background-image: url(/assets/front/imgs/eye-banner-1.webp)
-    background-size: cover
-    background-position: center center
-    background-attachment: fixed
-    margin-top: -70px
-    .cube .face
-        border-radius: 12px
-        overflow: hidden
-        box-shadow: 0px 0px 6px 6px #00000008
 
-    .bg-layer
-        padding-top: 120px
-        background: #eaf7ffeb
+.doctor-section
+    background: #f5f5f5
+    i
+        background: $brandcolor !important
+        border-radius: 100%
+        color: #fff
+        padding: 5px
+        font-size: 12px
+        margin-right: 5px
+    .slick-arrow
+        z-index: 9 !important
+        position: absolute !important
+        top: -50px !important
+        width: 37px !important
+        right: 10px !important
+        text-align: left !important
+        left: auto !important
+    .slick-prev
+        right: 50px!important
+
+.small-title
+    color: #000
+    font-weight: 600
+
+.doctor-section h2
+    font-size: 52px
+    font-weight: 700
+    width: 50%
+    color: #000
+    margin-top: 15px
+
+.doctor-card
+    background: #fff
+    border-radius: 25px
+    padding: 20px
+    margin: 0 15px
+
+.doctor-image
+    position: relative
+
+.doctor-image img
+    width: 100%
+    height: 420px
+    object-fit: cover
+    border-radius: 20px
+
+.doctor-info
+    position: absolute
+    bottom: 15px
+    left: 15px
+    right: 15px
+    background: #fff
+    border-radius: 50px
+    padding: 12px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.doctor-info h5
+    margin: 0
+    font-size: 18px
+
+.doctor-info p
+    margin: 0
+
+.profile-btn
+    width: 45px
+    height: 45px
+    border: none
+    border-radius: 50%
+    font-size: 20px
+
+.info-box
+    background: #f8f8f8
+    padding: 20px
+    border-radius: 15px
+
+.info-box strong
+    display: block
+
+.info-box span
+    display: block
+    margin-top: 5px
+
+.appointment-btn
+    display: block
+    text-align: center
+    text-decoration: none
+    margin-top: 25px
+    padding: 15px
+    border-radius: 50px
+    color: #fff
+    background: linear-gradient(90deg, #2fa6d7, #0b2f63)
+
+@media (max-width:768px)
+    .doctor-section h2
+        font-size: 36px
+
+    .doctor-image img
+        height: 300px
+
+.info-cta-section
+    padding: 70px 0px
+    .bg-blue
+        border-radius: 25px
+        padding: 30px
+    .left-clm
+        position: relative
+        padding: 0px 30px
+    .number
+        font-size: 200px
+        font-weight: bolder
+        color: yellow
+        line-height: 1
+        font-family: $fontPoppins !important
+    .text
+        font-size: 26px
+        word-spacing: 1px
+        letter-spacing: 1px
+        text-align: center
+    .dicon
+        background: #000
+        display: inline-block
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 32px
+        border-radius: 100%
+        float: right
+        line-height: 1
+        padding: 9px
+        position: absolute
+        right: 45px
+        top: 12px
+
+    p, div
+        color: #fff
+    .right-clm
+        border-left: 2px solid #fff
+        padding: 0px 30px!important
+        .title
+            font-size: 36px !important
+            font-family: $fontPlusJakartaSans
+            font-weight: bold
+            span
+                color: yellow !important
+        .inner-number
+            font-size: 70px !important
+            font-weight: bolder
+            line-height: 1
+            font-family: $fontPoppins !important
+        .inner-desc
+            border-left: 2px solid #fff !important
+            padding: 0px 15px
+            margin-top: 12px
+            width: 80%
+        .inner-clm
+            margin-top: 12px
+
+.our-services
     h2
-        font-size: 45px
-        font-weight: 800
-        span
-            color: $brandcolor
-    ul
-        list-style: none !important
-        padding: 0px !important
-    .wrapper
-        margin-top: 50px
-
-    .front .card__content
-        background: linear-gradient(328deg, #24748c, #24748ca1)
-    .card__title
-        font-size: 20px
-        font-family: $fontManrope
-        font-weight: 600
-        color: #fff !important
-        transition: font-size var(--trans-duration)
+        font-size: 52px
+        font-weight: 700
+        color: #000
+        margin-bottom: 30px
+    h3
+        color: #000 !important
+        font-weight: bold
+        font-size: 26px
+        font-family: $fontOpenSans
         text-transform: capitalize
+
+    .icon-top
+        background: $brandcolor !important
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 30px
+        height: 30px
+        margin-left: auto
+        margin-bottom: 10px
         i
+            color: #fff !important
+    .service-card
+        background: #fff
+        border-radius: 25px
+        padding: 12px
+        margin: 10px
+        .highlight
+            background: #24748c !important
             color: #fff
-    .card__description
-        .heading
-            font-size: 18px !important
-            font-weight: bold !important
-            color: $brandcolor !important
-            font-family: $fontPlusJakartaSans !important
-            text-transform: capitalize
-        p
-            font-size: 16px !important
-            font-family: $fontlato !important
-            margin-bottom: 10px !important
-            color: #000 !important
-            text-transform: capitalize
-    .card__image
-        margin: 0px
+            display: inline-block
+            padding: 8px 12px
+            border-radius: 100px
+            font-size: 14px!important
+            line-height: 1
+            margin: 5px 2px!important
+            a
+                color: #fff !important
+                text-decoration: none !important
+
         img
-            width: 100%
-            height: 235px
+            height: 300px
+            object-fit: cover
+            object-position: center
+            border: 1px solid #0002
+            border-radius: 25px
+            overflow: hidden
+            margin-top: 15px
 
 .shbadv-section
     position: relative !important
@@ -272,46 +466,6 @@ $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
         right: 10px
     .slider__control--right .slider__control-line
         left: 28px
-    .slide
-        width: 100vmax
-        height: 115vmax
-    .slider
-        height: 60vh
-    .slide__inner
-        position: absolute
-        left: 50%
-        top: 67%
-        width: 100vw
-        height: 61vh
-        margin-left: -50vw
-        margin-top: -50vh
-        background-size: cover
-        background-position: center center
-
-@media only screen and (max-width:768px) and (max-height: 700px)
-    .slider
-        height: 77vh
-    .slide__inner
-        top: 60%
-        height: 77vh
-
-@media only screen and (max-width:768px) and (max-height: 600px)
-    .slider
-        height: 80vh
-    .slide__inner
-        top: 56%
-        height: 80vh
-    .slide
-        height: 164vmax
-
-@media only screen and (max-width:768px) and (max-height: 550px)
-    .slider
-        height: 94vh
-    .slide__inner
-        top: 52%
-        height: 95vh
-    .slide
-        height: 164vmax
 
 .eyecta-sec
     background: linear-gradient(135deg, #08617e, #0c7b9b) !important

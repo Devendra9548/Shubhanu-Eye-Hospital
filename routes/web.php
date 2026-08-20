@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backendController;
 use App\Http\Controllers\frontendController;
+use App\Http\Controllers\InstagramController;
 use App\Livewire\Back\Dashboard;
 use App\Livewire\Back\Blogs;
 use App\Livewire\Back\BlogCategory;
@@ -19,6 +20,8 @@ Route::get('case-studies', [frontendController::class, 'casestudies'])->name('ca
 Route::get('blog', [frontendController::class, 'blogs'])->name('blogs');
 Route::get('blog/{slug}', [frontendController::class, 'singleblog'])->name('singleblog');
 
+Route::get('/instagram-feed', [InstagramController::class, 'feed'])
+    ->name('instagram.feed');
 
 Route::prefix('ds-admin')->group(function(){
   Route::get('/', [backendController::class, 'login'])->name('login');

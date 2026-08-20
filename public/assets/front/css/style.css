@@ -8,6 +8,14 @@ p, ul, li, span, a, i, strong, div, body {
   color: #453d3d;
 }
 
+.bg-blue {
+  background: #24748c !important;
+}
+
+.bg-yellow {
+  background: #f9f2eb !important;
+}
+
 body {
   background: #f7f7f7;
 }
