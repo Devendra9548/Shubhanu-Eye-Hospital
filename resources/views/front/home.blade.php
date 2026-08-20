@@ -184,53 +184,44 @@ Thyroid Eye Disease
                 <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
                 <h3>Lid Surgery</h3>
                 <p class="mb-3">Retinal surgery is a serious eye condition.</p>
-                <p class="highlight">Retinal Surgery & Injection</p>
+                <p class="highlight">Neuro-Ophthalmology</p>
                 <p class="highlight">Lid Surgery</p>
                 <p class="highlight">Orbital Surgery</p>
                 <p class="highlight">Eye Tumors</p>
-                <p class="highlight">Treatment of Watering Eyes</p>
-                <p class="highlight">Ocular Emergencies</p>
-                <p class="highlight">Neuro-Ophthalmology</p>
-                <p class="highlight">Artificial & Prosthetic eyes</p>
                 <p class="highlight">Thyroid Eye Disease </p>
+                <p class="highlight"><a href="#">Read More</a></p>
                 <img src="/assets/front/imgs/1/4.png" alt="Artificial & Prosthetic eyes" width="100%">
             </div>
             <div class="col-12 col-md-4 service-card">
                 <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
                 <h3>Orbital Surgery</h3>
                 <p class="mb-3">Retinal surgery is a serious eye condition.</p>
-                <p class="highlight">Retinal Surgery & Injection</p>
+                <p class="highlight">Neuro-Ophthalmology</p>
                 <p class="highlight">Lid Surgery</p>
                 <p class="highlight">Orbital Surgery</p>
                 <p class="highlight">Eye Tumors</p>
-                <p class="highlight">Treatment of Watering Eyes</p>
-                <p class="highlight">Ocular Emergencies</p>
-                <p class="highlight">Neuro-Ophthalmology</p>
-                <p class="highlight">Artificial & Prosthetic eyes</p>
                 <p class="highlight">Thyroid Eye Disease </p>
-                <img src="/assets/front/imgs/1/4.png" alt="Artificial & Prosthetic eyes" width="100%">
+                <p class="highlight"><a href="#">Read More</a></p>
+                <img src="/assets/front/imgs/1/5.png" alt="Artificial & Prosthetic eyes" width="100%">
             </div>
             <div class="col-12 col-md-4 service-card">
                 <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
                 <h3>Artificial & Prosthetic eyes</h3>
                 <p class="mb-3">Retinal surgery is a serious eye condition.</p>
-                <p class="highlight">Retinal Surgery & Injection</p>
+                <p class="highlight">Neuro-Ophthalmology</p>
                 <p class="highlight">Lid Surgery</p>
                 <p class="highlight">Orbital Surgery</p>
                 <p class="highlight">Eye Tumors</p>
-                <p class="highlight">Treatment of Watering Eyes</p>
-                <p class="highlight">Ocular Emergencies</p>
-                <p class="highlight">Neuro-Ophthalmology</p>
-                <p class="highlight">Artificial & Prosthetic eyes</p>
                 <p class="highlight">Thyroid Eye Disease </p>
-                <img src="/assets/front/imgs/1/4.png" alt="Artificial & Prosthetic eyes" width="100%">
+                <p class="highlight"><a href="#">Read More</a></p>
+                <img src="/assets/front/imgs/1/6.png" alt="Artificial & Prosthetic eyes" width="100%">
             </div>
         </div>
     </div>
 
 </section>
 
-<section class="doctor-section py-5">
+<section class="doctor-section bg-yellow py-5">
     <div class="container">
         <div class="mb-5">
             <span class="small-title">
@@ -238,189 +229,118 @@ Thyroid Eye Disease
             </span>
             <h2 class="section-title">Dedicated doctors, committed to your care </h2>
         </div>
-
         <div class="doctor-slider">
 
-            <!-- Doctor 1 -->
-
             <div>
-
                 <div class="doctor-card">
-
                     <div class="row g-4 align-items-center">
-
-                        <div class="col-lg-4">
-
+                        <div class="col-lg-5">
                             <div class="doctor-image">
-
-                                <img src="https://picsum.photos/500/600?1" class="img-fluid">
-
+                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png" class="img-fluid" width="100%">
                                 <div class="doctor-info">
-
+                                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png" alt="Dr. Bhanu Pratap Singh">
                                     <div>
-
-                                        <h5>Dr. James Carter</h5>
-
-                                        <p>Cardiologist</p>
-
+                                        <h5>Dr. Bhanu Pratap Singh</h5>
+                                        <p>Vitreoretinal Surgeon</p>
                                     </div>
-
-                                    <button class="profile-btn">
-                                        →
-                                    </button>
-
+                                    <a href="#" class="profile-btn"><i class="fa-brands fa-instagram"></i></a>
                                 </div>
-
                             </div>
-
                         </div>
-
-                        <div class="col-lg-8">
-
+                        <div class="col-lg-7">
                             <div class="doctor-content">
-
-                                <h3>
-                                    About Dr. James:
-                                </h3>
-
-                                <p>
-                                    Experienced in treating complex heart
+                                <h3>About Dr. Bhanu Pratap Singh Pangtey:</h3>
+                                <p>Experienced in treating complex heart
                                     conditions with a compassionate,
                                     patient-first care approach.
                                 </p>
-
                                 <div class="row g-3 mt-3">
-
                                     <div class="col-md-6">
-
                                         <div class="info-box">
-
                                             <strong>Specialty</strong>
-
                                             <span>Cardiologist</span>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-md-6">
-
                                         <div class="info-box">
-
                                             <strong>Experience</strong>
-
                                             <span>12+ Years</span>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-md-6">
-
                                         <div class="info-box">
-
                                             <strong>Hospital</strong>
-
                                             <span>City Heart Clinic</span>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-md-6">
-
                                         <div class="info-box">
-
                                             <strong>Availability</strong>
-
                                             <span>Mon - Fri</span>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                                 <a href="#" class="appointment-btn">
-
                                     Book Appointment
-
                                 </a>
-
                             </div>
-
                         </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Duplicate slides -->
-
-            <div>
-                <div class="doctor-card">
-                    <div class="row g-4 align-items-center">
-
-                        <div class="col-lg-4">
-
-                            <div class="doctor-image">
-
-                                <img src="https://picsum.photos/500/600?2" class="img-fluid">
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-8">
-
-                            <div class="doctor-content">
-
-                                <h3>About Dr. Sarah:</h3>
-
-                                <p>
-                                    Expert dermatologist with years of
-                                    experience in skin care.
-                                </p>
-
-                            </div>
-
-                        </div>
-
                     </div>
                 </div>
             </div>
-
             <div>
                 <div class="doctor-card">
                     <div class="row g-4 align-items-center">
-
-                        <div class="col-lg-4">
-
+                        <div class="col-lg-5">
                             <div class="doctor-image">
-
-                                <img src="https://picsum.photos/500/600?3" class="img-fluid">
-
+                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png" class="img-fluid">
+                                <div class="doctor-info">
+                                    <div>
+                                        <h5>Dr. Bhanu Pratap Singh</h5>
+                                        <p>Vitreoretinal Surgeon</p>
+                                    </div>
+                                    <button class="profile-btn">→</button>
+                                </div>
                             </div>
-
                         </div>
-
-                        <div class="col-lg-8">
-
+                        <div class="col-lg-7">
                             <div class="doctor-content">
-
-                                <h3>About Dr. David:</h3>
-
-                                <p>
-                                    Neurology specialist focused on patient
-                                    recovery.
+                                <h3>About Dr. Bhanu Pratap Singh Pangtey:</h3>
+                                <p>Experienced in treating complex heart
+                                    conditions with a compassionate,
+                                    patient-first care approach.
                                 </p>
-
+                                <div class="row g-3 mt-3">
+                                    <div class="col-md-6">
+                                        <div class="info-box">
+                                            <strong>Specialty</strong>
+                                            <span>Cardiologist</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-box">
+                                            <strong>Experience</strong>
+                                            <span>12+ Years</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-box">
+                                            <strong>Hospital</strong>
+                                            <span>City Heart Clinic</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-box">
+                                            <strong>Availability</strong>
+                                            <span>Mon - Fri</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="appointment-btn">
+                                    Book Appointment
+                                </a>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -1910,16 +1830,11 @@ $('.slider').slick({
 
 <script>
 $('.doctor-slider').slick({
-    centerMode: true,
-    centerPadding: '150px',
     slidesToShow: 1,
     arrows: true,
     infinite: true,
     responsive: [{
         breakpoint: 768,
-        settings: {
-            centerPadding: '20px'
-        }
     }]
 });
 </script>

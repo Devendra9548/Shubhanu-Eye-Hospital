@@ -45,8 +45,8 @@
   position: relative;
 }
 
-.doctor-section {
-  background: #f5f5f5;
+.doctor-section .slick-list {
+  padding-right: 290px !important;
 }
 .doctor-section i {
   background: #24748c !important;
@@ -96,9 +96,13 @@
 .doctor-image img {
   width: 100%;
   height: 420px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 20px;
+  -o-object-position: bottom;
+     object-position: bottom;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.0666666667);
 }
 
 .doctor-info {
@@ -107,28 +111,45 @@
   left: 15px;
   right: 15px;
   background: #fff;
-  border-radius: 50px;
-  padding: 12px 20px;
+  border-radius: 100px;
+  padding: 5px 7px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.07);
+}
+.doctor-info img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 100px;
+  -o-object-position: bottom;
+     object-position: bottom;
+  border: 1px solid #d9d9d9;
+  box-shadow: none !important;
+  margin-right: 10px;
 }
 
 .doctor-info h5 {
   margin: 0;
-  font-size: 18px;
+  font-size: 13px;
+  color: #000;
 }
 
 .doctor-info p {
   margin: 0;
+  font-size: 11px !important;
 }
 
 .profile-btn {
-  width: 45px;
-  height: 45px;
+  position: absolute;
+  right: 5px;
   border: none;
-  border-radius: 50%;
-  font-size: 20px;
+  border-radius: 100%;
+}
+.profile-btn i {
+  font-size: 20px !important;
 }
 
 .info-box {
@@ -155,6 +176,12 @@
   border-radius: 50px;
   color: #fff;
   background: linear-gradient(90deg, #2fa6d7, #0b2f63);
+}
+
+.doctor-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
 }
 
 @media (max-width: 768px) {
