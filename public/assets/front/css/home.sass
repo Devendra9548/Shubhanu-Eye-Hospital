@@ -6,6 +6,14 @@ $fontlato: "Lato", sans-serif
 $fontOpenSans: "Open Sans", sans-serif
 $fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
 $fontPoppins: "Poppins", sans-serif
+$fontKonkhmer: "Konkhmer Sleokchher", system-ui
+
+.two-clm-list
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 0px 70px
+    padding: 0px
+    padding-left: 16px
 
 .slick-arrow
     z-index: 9 !important
@@ -154,6 +162,11 @@ $fontPoppins: "Poppins", sans-serif
 .doctor-info p
     margin: 0
     font-size: 13px !important
+    line-height: 16px
+    margin-top: 4px
+
+.short-doctor-infor
+    width: 75% !important
 
 .profile-btn
     position: absolute
@@ -254,7 +267,7 @@ $fontPoppins: "Poppins", sans-serif
             span
                 color: yellow !important
         .inner-number
-            font-size: 70px !important
+            font-size: 50px !important
             font-weight: bolder
             line-height: 1
             font-family: $fontPoppins !important
@@ -262,9 +275,13 @@ $fontPoppins: "Poppins", sans-serif
             border-left: 2px solid #fff !important
             padding: 0px 15px
             margin-top: 12px
-            width: 80%
+            width: 90%
         .inner-clm
             margin-top: 12px
+            &:not(:first-child)
+                margin-left: 60px
+            &:nth-last-child(2)
+                margin-left: 0px
 
 .our-services
     h2
@@ -274,9 +291,9 @@ $fontPoppins: "Poppins", sans-serif
         margin-bottom: 30px
     h3
         color: #000 !important
-        font-weight: bold
-        font-size: 26px
-        font-family: $fontOpenSans
+        font-weight: 400
+        font-size: 32px
+        font-family: $fontKonkhmer
         text-transform: capitalize
 
     .icon-top
@@ -285,8 +302,8 @@ $fontPoppins: "Poppins", sans-serif
         display: flex
         justify-content: center
         align-items: center
-        width: 30px
-        height: 30px
+        width: 40px
+        height: 40px
         margin-left: auto
         margin-bottom: 10px
         i
@@ -295,16 +312,24 @@ $fontPoppins: "Poppins", sans-serif
         background: #fff
         border-radius: 25px
         padding: 12px
+        font-size: 16px !important
         margin: 10px
+        .text-clm
+            padding: 0px 10px
+        p
+            font-family: $fontPoppins
+            color: #000
+            margin-bottom: 30px!important
         .highlight
             background: #24748c !important
             color: #fff
             display: inline-block
             padding: 8px 12px
             border-radius: 100px
-            font-size: 14px!important
+            font-size: 12px!important
             line-height: 1
             margin: 5px 2px!important
+            font-weight: 400 !important
             a
                 color: #fff !important
                 text-decoration: none !important

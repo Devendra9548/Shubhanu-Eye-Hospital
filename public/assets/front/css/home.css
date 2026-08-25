@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.two-clm-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 70px;
+  padding: 0px;
+  padding-left: 16px;
+}
+
 .slick-arrow {
   z-index: 9 !important;
   position: absolute !important;
@@ -174,6 +182,12 @@
 .doctor-info p {
   margin: 0;
   font-size: 13px !important;
+  line-height: 16px;
+  margin-top: 4px;
+}
+
+.short-doctor-infor {
+  width: 75% !important;
 }
 
 .profile-btn {
@@ -292,7 +306,7 @@
   color: yellow !important;
 }
 .info-cta-section .right-clm .inner-number {
-  font-size: 70px !important;
+  font-size: 50px !important;
   font-weight: bolder;
   line-height: 1;
   font-family: "Poppins", sans-serif !important;
@@ -301,10 +315,16 @@
   border-left: 2px solid #fff !important;
   padding: 0px 15px;
   margin-top: 12px;
-  width: 80%;
+  width: 90%;
 }
 .info-cta-section .right-clm .inner-clm {
   margin-top: 12px;
+}
+.info-cta-section .right-clm .inner-clm:not(:first-child) {
+  margin-left: 60px;
+}
+.info-cta-section .right-clm .inner-clm:nth-last-child(2) {
+  margin-left: 0px;
 }
 
 .our-services h2 {
@@ -315,9 +335,9 @@
 }
 .our-services h3 {
   color: #000 !important;
-  font-weight: bold;
-  font-size: 26px;
-  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "Konkhmer Sleokchher", system-ui;
   text-transform: capitalize;
 }
 .our-services .icon-top {
@@ -326,8 +346,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-left: auto;
   margin-bottom: 10px;
 }
@@ -338,7 +358,16 @@
   background: #fff;
   border-radius: 25px;
   padding: 12px;
+  font-size: 16px !important;
   margin: 10px;
+}
+.our-services .service-card .text-clm {
+  padding: 0px 10px;
+}
+.our-services .service-card p {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-bottom: 30px !important;
 }
 .our-services .service-card .highlight {
   background: #24748c !important;
@@ -346,9 +375,10 @@
   display: inline-block;
   padding: 8px 12px;
   border-radius: 100px;
-  font-size: 14px !important;
+  font-size: 12px !important;
   line-height: 1;
   margin: 5px 2px !important;
+  font-weight: 400 !important;
 }
 .our-services .service-card .highlight a {
   color: #fff !important;
