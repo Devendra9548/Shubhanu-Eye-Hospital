@@ -1,10 +1,12 @@
-@charset "UTF-8";
 .two-clm-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0px 70px;
+  gap: 0px 35px;
   padding: 0px;
   padding-left: 16px;
+}
+.two-clm-list li {
+  color: #000 !important;
 }
 
 .slick-arrow {
@@ -56,6 +58,9 @@
 .our-instagram-section {
   padding: 50px 0px !important;
 }
+.our-instagram-section .slick-dots {
+  bottom: -55px !important;
+}
 .our-instagram-section h2 {
   margin-bottom: 30px !important;
 }
@@ -80,6 +85,7 @@
 
 .doctor-section .slick-list {
   padding-right: 290px !important;
+  padding-right: 170px !important;
 }
 .doctor-section i {
   background: #24748c !important;
@@ -114,20 +120,28 @@
 }
 
 .doctor-section h2 {
-  font-size: 42px;
-  font-weight: 700;
-  width: 45%;
+  font-size: 64px;
+  font-weight: 400;
   color: #000;
-  margin-top: 15px;
-  margin-left: auto;
-  text-align: end;
+  margin-bottom: 30px;
+  font-family: "Alexandria", sans-serif !important;
+  text-align: center;
+}
+.doctor-section h2 span {
+  display: block;
+  color: #000 !important;
+  font-size: 64px;
+  font-weight: 400;
+  font-family: "Alexandria", sans-serif !important;
+  text-align: center;
 }
 
 .doctor-card {
   background: #fff;
   border-radius: 25px;
   padding: 20px;
-  margin: 0 15px;
+  margin: 12px 15px;
+  box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.2666666667);
 }
 
 .doctor-image {
@@ -136,7 +150,7 @@
 
 .doctor-image img {
   width: 100%;
-  height: 420px;
+  height: 500px;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 20px;
@@ -217,10 +231,14 @@
 .info-box strong {
   display: block;
   font-size: 13px;
+  color: #333 !important;
+  font-weight: 400 !important;
 }
 
 .info-box span {
   display: block;
+  color: #000;
+  font-weight: bold;
 }
 
 .appointment-btn {
@@ -236,9 +254,11 @@
 
 .doctor-content h3 {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 400;
   color: #000;
   margin-bottom: 12px;
+  margin-top: 20px;
+  font-family: "Konkhmer Sleokchher", system-ui !important;
 }
 
 @media (max-width: 768px) {
@@ -324,14 +344,20 @@
   margin-left: 60px;
 }
 .info-cta-section .right-clm .inner-clm:nth-last-child(2) {
-  margin-left: 0px;
+  margin-left: 30px;
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #24748c !important;
 }
 
 .our-services h2 {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 400;
   color: #000;
   margin-bottom: 30px;
+  font-family: "Alexandria", sans-serif !important;
 }
 .our-services h3 {
   color: #000 !important;
@@ -813,134 +839,47 @@
 }
 
 .eye-about h2 {
-  font-size: 46px;
-  font-weight: 700;
-  color: #111;
+  font-size: 64px !important;
+  font-family: "Alexandria", sans-serif !important;
+  font-weight: 400 !important;
+  color: #000;
+  line-height: 77px !important;
   position: relative;
   z-index: 2;
+  margin-bottom: 0px !important;
 }
 
 .eye-about p {
-  color: #666;
-  line-height: 1.9;
-  font-size: 16px;
+  color: #000 !important;
+  font-size: 28px !important;
+  font-weight: 300 !important;
+  line-height: 42px !important;
+  font-family: "Alexandria", sans-serif !important;
+  margin-top: 10px;
 }
 
-.eye-bg-title {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 138px;
-  font-weight: 800;
-  color: #eef7f8;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  z-index: 0;
-  line-height: 1;
+.eye-about .lastline {
+  color: #24748C !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 42px !important;
+  margin-top: 20px;
 }
 
-.eye-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.eye-list li {
-  position: relative;
-  padding-left: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.eye-list li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #0d7d84;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.eye-btn {
-  display: inline-block;
-  padding: 15px 38px;
-  border: 2px solid #111;
-  color: #111;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-  transition: 0.3s;
-  position: relative;
-}
-
-.eye-btn:hover {
-  background: #08617e;
-  border-color: #08617e;
+.eye-icon {
+  background: #24748c;
   color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.eye-img {
-  position: relative;
-  text-align: center;
-}
-
-.eye-img img {
-  max-width: 100%;
-  position: relative;
-  z-index: 2;
-}
-
-.eye-img:before, .eye-img:after {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  background-image: radial-gradient(#16bfd0 1.8px, transparent 1.8px);
-  background-size: 12px 12px;
-  opacity: 0.35;
-  z-index: 1;
-}
-
-.eye-img:before {
-  top: 50px;
-  right: 30px;
-}
-
-.eye-img:after {
-  bottom: 30px;
-  left: 10px;
-}
-
-.eye-exp {
-  position: absolute;
-  left: 40px;
-  bottom: 20px;
-  background: rgba(8, 97, 126, 0.92);
-  color: #fff;
-  padding: 25px 35px;
-  z-index: 3;
-  max-width: 320px;
-}
-
-.eye-exp h2 {
-  margin: 0;
-  font-size: 58px;
-  color: #fff;
-  line-height: 1;
-}
-
-.eye-exp p {
-  color: #fff;
-  margin: 10px 0 0;
-  font-size: 20px;
-  font-weight: 600;
+.eye-icon i {
+  color: #fff !important;
+  font-size: 52px;
+  transform: rotate(322deg);
 }
 
 @media (max-width: 991px) {
@@ -1262,8 +1201,12 @@
 }
 
 .zbg-blog-title {
-  font-size: 54px !important;
-  font-weight: 800 !important;
+  font-size: 64px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: "Alexandria", sans-serif !important;
+  text-align: center;
   margin-bottom: 15px;
 }
 .zbg-blog-title span {
@@ -1734,11 +1677,22 @@
 }
 
 .eqshow-title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #22304a;
+  font-size: 64px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: "Alexandria", sans-serif !important;
+  text-align: center;
   position: relative;
   z-index: 2;
+}
+.eqshow-title span {
+  display: block;
+  font-size: 64px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Alexandria", sans-serif !important;
+  text-align: center;
 }
 
 .eqshow-divider {
@@ -1775,9 +1729,16 @@
   }
 }
 .eqshow-desc {
-  color: #6b7280;
-  max-width: 700px;
-  margin-bottom: 20px !important;
+  color: #000 !important;
+  font-size: 24px !important;
+  line-height: 42px !important;
+  font-weight: 300 !important;
+  font-family: "Alexandria", sans-serif !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .eqshow-image-area {
@@ -1850,15 +1811,23 @@
 
 .eqshow-content h3 {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 400;
   color: #24748c;
   margin-bottom: 20px;
+  font-family: "Konkhmer Sleokchher", system-ui !important;
 }
 
 .eqshow-content p {
-  color: #6b7280;
+  margin-bottom: 20px !important;
+  line-height: 1.5 !important;
+}
+
+.eqshow-content p, .eqshow-content div {
+  font-size: 16px !important;
+  color: #000 !important;
   line-height: 1.3;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .eqshow-features {

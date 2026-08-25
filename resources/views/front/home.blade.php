@@ -248,7 +248,7 @@
                     </div>
                     <div class="inner-clm">
                         <p class="inner-number">1,00,000+</p>
-                        <p class="inner-desc">Patients Treated</p>
+                        <p class="inner-desc">Patients <br>Treated</p>
                     </div>
                     <div class="inner-clm">
                         <p class="inner-number">50,000+</p>
@@ -262,7 +262,7 @@
 
 <section class="our-services bg-yellow pb-5">
     <div class="container">
-        <h2 class="text-end">Our Services</h2>
+        <h2 class="text-center">Our Services</h2>
         <div class="row slider">
             <div class="col-12 col-md-4 service-card">
                 <div class="text-clm">
@@ -347,60 +347,28 @@
 
 </section>
 
-<section class="eye-about bg-yellow">
-    <div class="container">
+<section class="eye-about py-5">
+    <div class="container py-5">
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <h2 class="fw-bold mb-4">Vision & Mission</h2>
-                <p class="mb-4">
-                    At Shubanu Eye Hospital - The Best Eye Hospital owns a fleet of modern equipment’s right from
-                    diagnostics to state of the art operation theater. We have built a reputation of providing technical
-                    excellence and cutting edge technology which enables our Doctors to perform complex surgeries with
-                    increased precision, control and safety resulting in faster recovery and comfort for our patients.
-                    We take pride in using the best technology available
-                    for all our patients
-                </p>
-                <h4 class="mb-4">Our Specialized Services:</h4>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="eye-list">
-                            <li>High Standard of Ophthalmology</li>
-                            <li>Committed Ophthalmology Team</li>
-                            <li>Modern Ophthalmology Equipment</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <ul class="eye-list">
-                            <li>Cutting Edge Technology</li>
-                            <li>Expert Doctors</li>
-                            <li>Quality Eye Care</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="#" class="eye-btn mt-3">Read More</a>
+                <p class="">Advanced eye care with a human touch.</p>
+                <p class="lastline">Preserving sight. Improving lives.</p>
             </div>
 
             <div class="col-lg-6">
-                <div class="eye-img">
-                    <img src="/assets/front/imgs/right-side-man.webp" class="img-fluid" alt="Doctor">
-                    <div class="eye-exp">
-                        <h2>12+</h2>
-                        <p>Years of Experience in This Field</p>
-                    </div>
+                <div class="eye-icon">
+                    <i class="fa-solid fa-arrow-right-long"></i>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="doctor-section bg-yellow py-5">
+<section class="doctor-section py-5">
     <div class="container">
         <div class="mb-5">
-            <!-- <span class="small-title">
-                <i class="fa-solid fa-binoculars"></i> Specialized Doctors
-            </span> -->
-            <h2 class="section-title">Dedicated doctors, committed to your care </h2>
+            <h2 class="section-title">Dedicated doctors, <span>committed to your care</span> </h2>
         </div>
         <div class="doctor-slider">
 
@@ -409,10 +377,10 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp"
                                     class="img-fluid" width="100%">
                                 <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp"
                                         alt="Dr. Bhanu Pratap Singh">
                                     <div class="short-doctor-infor">
                                         <h5>Dr. Bhanu Pratap Singh</h5>
@@ -429,7 +397,7 @@
                                     diagnosis and surgical management of complex retinal and
                                     vitreous disorders.
                                 </p>
-                                <div class="row g-3 mt-3">
+                                <div class="row g-3 mt-5">
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
@@ -508,10 +476,10 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr.-shubha-raguram-pangtey.png" class="img-fluid"
+                                <img src="/assets/front/imgs/doctors/dr-shubha-raguram-pangtey.webp" class="img-fluid"
                                     width="100%">
                                 <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr.-shubha-raguram-pangtey.png"
+                                    <img src="/assets/front/imgs/doctors/dr-shubha-raguram-pangtey.webp"
                                         alt="Dr. Shubha Raguram Pangtey">
                                     <div class="short-doctor-infor">
                                         <h5>Dr. Shubha Raguram</h5>
@@ -528,7 +496,7 @@
                                     Oncology, Neuro-Ophthalmology and Pediatric Eye Care, with expertise in managing
                                     complex eyelid, lacrimal, orbital and ocular tumour conditions.
                                 </p>
-                                <div class="row g-3 mt-3">
+                                <div class="row g-3 mt-5">
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
@@ -608,10 +576,10 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp"
                                     class="img-fluid" width="100%">
                                 <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                    <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp"
                                         alt="Dr. Shagun Sood">
                                     <div class="short-doctor-infor">
                                         <h5>Dr. Shagun Sood</h5>
@@ -628,7 +596,7 @@
                                     squint and refractive procedures, with extensive surgical
                                     experience across adult and pediatric eye care.
                                 </p>
-                                <div class="row g-3 mt-3">
+                                <div class="row g-3 mt-5">
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
@@ -707,10 +675,10 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp"
                                     class="img-fluid" width="100%">
                                 <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                    <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp"
                                         alt="Dr. Mohd Sufyan Danish">
                                     <div class="short-doctor-infor">
                                         <h5>Dr. Mohd Sufyan Danish</h5>
@@ -727,7 +695,7 @@
                                     diseases, cataract and refractive surgery, with extensive
                                     expertise in complex anterior segment procedures.
                                 </p>
-                                <div class="row g-3 mt-3">
+                                <div class="row g-3 mt-5">
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
@@ -806,10 +774,10 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp"
                                     class="img-fluid" width="100%">
                                 <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.png"
+                                    <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp"
                                         alt="Dr. Nabeel Firoz">
                                     <div class="short-doctor-infor">
                                         <h5>Dr. Nabeel Firoz</h5>
@@ -826,7 +794,7 @@
                                     surgery, medical retina and comprehensive eye care, with a
                                     special focus on retinal injections and laser procedures.
                                 </p>
-                                <div class="row g-3 mt-3">
+                                <div class="row g-3 mt-5">
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
@@ -907,7 +875,7 @@
 
 </section>
 
-<section class="eqshow-section bg-yellow py-5">
+<section class="eqshow-section py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -1029,11 +997,11 @@
 
 </section>
 
-<section class="our-services our-instagram-section bg-yellow pb-5">
+<section class="our-services our-instagram-section pb-5">
     <div class="container">
 
         <div class="our-instagram-title-wrap">
-            <h2 class="text-end">Instagram</h2>
+            <h2 class="text-center">Instagram</h2>
         </div>
 
         <div class="row our-instagram-slider">
@@ -1433,11 +1401,9 @@
 
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <span class="zbg-blog-subtitle text-uppercase">Recent Posts</span>
-
-                <h2 class="zbg-blog-title">From Our <span>Blog</span></h2>
-
-                <div class="zbg-blog-divider"></div>
+                <!-- <span class="zbg-blog-subtitle text-uppercase">Recent Posts</span> -->
+                <h2 class="zbg-blog-title">From Our Blog</h2>
+                <!-- <div class="zbg-blog-divider"></div> -->
             </div>
         </div>
 
@@ -2003,7 +1969,8 @@ $('.slider').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 500000,
-    arrows: true,
+    arrows: false,
+    dots: true,
     infinite: true,
 
     responsive: [{
@@ -2029,7 +1996,8 @@ $('.our-instagram-slider').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 500000,
-    arrows: true,
+    arrows: false,
+    dots: true,
     infinite: true,
 
     responsive: [{
@@ -2051,7 +2019,8 @@ $('.our-instagram-slider').slick({
 <script>
 $('.doctor-slider').slick({
     slidesToShow: 1,
-    arrows: true,
+    arrows: false,
+    dots: true,
     infinite: true,
     responsive: [{
         breakpoint: 768,
