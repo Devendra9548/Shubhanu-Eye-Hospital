@@ -278,17 +278,6 @@
             <div class="col-12 col-md-4 service-card">
                 <div class="text-clm">
                     <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Cataract & Lens Surgery</h3>
-                    <p class="mb-3">Advanced cataract treatment for clear and better-quality vision.</p>
-                    <p class="highlight">AI-Guided Cataract Surgery</p>
-                    <p class="highlight">Premium IOLs</p>
-                    <p class="highlight">MICS / Phaco Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/5.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
                     <h3>Orbit & Oculoplasty</h3>
                     <p class="mb-3">Specialized care for eyelid, tear duct and orbital conditions.</p>
                     <p class="highlight">Eyelid Surgery</p>
@@ -300,17 +289,6 @@
             <div class="col-12 col-md-4 service-card">
                 <div class="text-clm">
                     <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Glaucoma Care</h3>
-                    <p class="mb-3">Comprehensive care to detect and manage glaucoma at every stage.</p>
-                    <p class="highlight">Glaucoma Diagnosis</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Glaucoma Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/3.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
                     <h3>Cornea Care</h3>
                     <p class="mb-3">Specialized diagnosis and treatment for corneal diseases and disorders.</p>
                     <p class="highlight">Corneal Disorders</p>
@@ -318,6 +296,17 @@
                     <p class="highlight">Corneal Surgery</p>
                 </div>
                 <img src="/assets/front/imgs/1/7.png" alt="Artificial & Prosthetic eyes" width="100%">
+            </div>
+            <div class="col-12 col-md-4 service-card">
+                <div class="text-clm">
+                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
+                    <h3>Glaucoma Care</h3>
+                    <p class="mb-3">Comprehensive care to detect and manage glaucoma at every stage.</p>
+                    <p class="highlight">Glaucoma Diagnosis</p>
+                    <p class="highlight">Laser Treatment</p>
+                    <p class="highlight">Glaucoma Surgery</p>
+                </div>
+                <img src="/assets/front/imgs/1/3.png" alt="Artificial & Prosthetic eyes" width="100%">
             </div>
             <div class="col-12 col-md-4 service-card">
                 <div class="text-clm">
@@ -341,6 +330,17 @@
                     <p class="highlight">Emergency Eye Surgery</p>
                 </div>
                 <img src="/assets/front/imgs/1/9.png" alt="Artificial & Prosthetic eyes" width="100%">
+            </div>
+            <div class="col-12 col-md-4 service-card">
+                <div class="text-clm">
+                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
+                    <h3>Cataract & Lens Surgery</h3>
+                    <p class="mb-3">Advanced cataract treatment for clear and better-quality vision.</p>
+                    <p class="highlight">AI-Guided Cataract Surgery</p>
+                    <p class="highlight">Premium IOLs</p>
+                    <p class="highlight">MICS / Phaco Surgery</p>
+                </div>
+                <img src="/assets/front/imgs/1/5.png" alt="Artificial & Prosthetic eyes" width="100%">
             </div>
         </div>
     </div>
