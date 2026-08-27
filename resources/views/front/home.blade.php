@@ -889,44 +889,44 @@
             <div class="col-12">
                 <div class="eqshow-nav">
                     <button class="eqshow-item active" data-index="0">
-                        <img src="/assets/front/imgs/equipment/1.webp" alt="">
-                        <span>OCT</span>
+                        <img src="/assets/front/imgs/equipment/1-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Lumera</span>
                     </button>
                     <button class="eqshow-item" data-index="1">
-                        <img src="/assets/front/imgs/equipment/2.webp" alt="">
-                        <span>Fundus</span>
+                        <img src="/assets/front/imgs/equipment/2-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Lenstar</span>
                     </button>
                     <button class="eqshow-item" data-index="2">
-                        <img src="/assets/front/imgs/equipment/3.webp" alt="">
-                        <span>Laser</span>
+                        <img src="/assets/front/imgs/equipment/3-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Pentacam</span>
                     </button>
                     <button class="eqshow-item" data-index="3">
-                        <img src="/assets/front/imgs/equipment/4.webp" alt="">
-                        <span>Retina</span>
+                        <img src="/assets/front/imgs/equipment/4-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Centurion</span>
                     </button>
                     <button class="eqshow-item" data-index="4">
-                        <img src="/assets/front/imgs/equipment/5.webp" alt="">
-                        <span>Slit Lamp</span>
+                        <img src="/assets/front/imgs/equipment/5-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Constellation</span>
                     </button>
                     <button class="eqshow-item" data-index="5">
-                        <img src="/assets/front/imgs/equipment/1.webp" alt="">
-                        <span>Phaco</span>
+                        <img src="/assets/front/imgs/equipment/6-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Legion</span>
                     </button>
                     <button class="eqshow-item" data-index="6">
-                        <img src="/assets/front/imgs/equipment/2.webp" alt="">
-                        <span>Topography</span>
+                        <img src="/assets/front/imgs/equipment/7-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Maestro</span>
                     </button>
                     <button class="eqshow-item" data-index="7">
-                        <img src="/assets/front/imgs/equipment/3.webp" alt="">
-                        <span>YAG Laser</span>
+                        <img src="/assets/front/imgs/equipment/8-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Tomey</span>
                     </button>
                     <button class="eqshow-item" data-index="8">
-                        <img src="/assets/front/imgs/equipment/4.webp" alt="">
-                        <span>Microscope</span>
+                        <img src="/assets/front/imgs/equipment/9-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Eidon</span>
                     </button>
                     <button class="eqshow-item" data-index="9">
-                        <img src="/assets/front/imgs/equipment/4.webp" alt="">
-                        <span>Microscope</span>
+                        <img src="/assets/front/imgs/equipment/10-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Argos</span>
                     </button>
                 </div>
 
@@ -1413,7 +1413,7 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800" alt="">
+                            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800" alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1448,7 +1448,7 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800" alt="">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800" alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1483,7 +1483,7 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800" alt="">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800" alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1518,7 +1518,7 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800" alt="">
+                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800" alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1759,7 +1759,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "/assets/front/imgs/equipment/1.webp",
+            image: "/assets/front/imgs/equipment/6.webp",
             title: "Alcon LEGION Phaco System",
             desc: "A modern phacoemulsification system designed for efficient and controlled cataract surgery. It combines Alcon’s torsional ultrasound technology with responsive fluidics and an intuitive surgical interface.",
             features: [
@@ -1773,7 +1773,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "/assets/front/imgs/equipment/2.webp",
+            image: "/assets/front/imgs/equipment/7.webp",
             title: "Topcon Maestro2 OCT & OCT Angiography",
             desc: "An advanced multimodal retinal imaging system combining OCT, OCT Angiography and true-colour fundus photography in a single compact platform. It enables detailed evaluation of retinal structure and vascular flow without the need for contrast dye during OCT-A imaging.",
             features: [
@@ -1787,7 +1787,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "/assets/front/imgs/equipment/3.webp",
+            image: "/assets/front/imgs/equipment/8.webp",
             title: "TOMEY EM-4000 Specular Microscope",
             desc: "A non-contact diagnostic system designed for detailed analysis of corneal endothelial cells. It provides automated measurements and corneal thickness assessment, supporting evaluation before and after various eye surgeries.",
             features: [
@@ -1801,7 +1801,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "/assets/front/imgs/equipment/4.webp",
+            image: "/assets/front/imgs/equipment/9.webp",
             title: "iCare EIDON TrueColor Fundus Imaging System",
             desc: "An advanced confocal retinal imaging system capable of producing detailed, high-resolution TrueColor images of the retina. Its widefield technology enables visualization of both central and peripheral retinal structures, often without requiring pupil dilation.",
             features: [
@@ -1815,7 +1815,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
-            image: "/assets/front/imgs/equipment/4.webp",
+            image: "/assets/front/imgs/equipment/10.webp",
             title: "Alcon ARGOS Biometer with Image Guidance",
             desc: "A swept-source OCT biometry system designed for advanced cataract surgery planning and IOL power calculation. It captures detailed biometric measurements along with a reference image of the eye to support precise, image-guided surgical planning.",
             features: [
