@@ -34,11 +34,6 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
 }
 
-
-/* =========================================
-   CARD HEADER
-========================================= */
-
 .our-instagram-card-header {
     min-height: 62px !important;
     padding: 10px 13px !important;
@@ -94,10 +89,6 @@
     text-decoration: none !important;
 }
 
-
-/* =========================================
-   IMAGE
-========================================= */
 
 .our-instagram-image-wrap {
     position: relative !important;
@@ -221,6 +212,347 @@
     height: 500px;
     object-fit: cover;
     display: block;
+}
+
+.nxsvc-section {
+    position: relative;
+    padding: 100px 0;
+    background: #f6f3ed;
+    overflow: hidden;
+}
+
+/* Background decoration */
+
+.nxsvc-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(35, 132, 157, 0.07);
+    top: -180px;
+    right: -120px;
+    animation: nxsvcFloat 8s ease-in-out infinite;
+}
+
+.nxsvc-section::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 1px solid rgba(35, 132, 157, 0.12);
+    bottom: -130px;
+    left: -100px;
+    animation: nxsvcFloat 10s ease-in-out infinite reverse;
+}
+
+
+.nxsvc-heading-left {
+    position: relative;
+}
+
+.nxsvc-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #23849d;
+    margin-bottom: 12px;
+}
+
+.nxsvc-eyebrow::before {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background: #23849d;
+}
+
+.nxsvc-heading h2 {
+    margin: 0;
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: .95;
+    font-weight: 700;
+    letter-spacing: -3px;
+    color: #111;
+}
+
+.nxsvc-heading h2 span {
+    color: #23849d;
+}
+
+.nxsvc-heading>p {
+    max-width: 400px;
+    margin: 0 0 4px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.nxsvc-card {
+    position: relative;
+    background: #fff;
+    border-radius: 28px;
+    overflow: hidden;
+    min-height: 430px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .5s ease; 
+    margin: 0px 10px;
+}
+
+.nxsvc-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .10);
+    border-bottom: 5px solid #24748c;
+}
+
+.nxsvc-image {
+    height: 285px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.nxsvc-featured .nxsvc-image {
+    height: 360px;
+}
+
+.nxsvc-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition:
+        transform .8s cubic-bezier(.2, .8, .2, 1),
+        filter .6s ease;
+}
+
+.nxsvc-card:hover .nxsvc-image img {
+    transform: scale(1.08);
+    filter: saturate(1.08);
+}
+
+.nxsvc-card:hover i{
+    color: #fff !important;
+}
+
+/* Image gradient */
+
+.nxsvc-image-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, .05) 20%,
+            rgba(0, 0, 0, .58) 100%);
+    pointer-events: none;
+}
+
+.nxsvc-number {
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .18);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .3);
+    transition: .4s ease;
+}
+
+.nxsvc-card:hover .nxsvc-number {
+    background: #23849d;
+    transform: rotate(10deg) scale(1.08);
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.nxsvc-arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #111;
+    background: #fff;
+
+    text-decoration: none;
+
+    transform: translate(0, 0);
+    transition:
+        transform .4s ease,
+        background .4s ease,
+        color .4s ease;
+}
+
+.nxsvc-arrow i {
+    font-size: 14px;
+    transition: transform .4s ease;
+}
+
+.nxsvc-card:hover .nxsvc-arrow {
+    background: #23849d;
+    color: #fff;
+    transform: translate(4px, -4px);
+}
+
+.nxsvc-card:hover .nxsvc-arrow i {
+    transform: rotate(0deg);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.nxsvc-content {
+    padding: 25px 26px 28px;
+}
+
+.nxsvc-tag {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #23849d;
+    margin-bottom: 10px;
+}
+
+.nxsvc-content h3 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -.7px;
+}
+
+.nxsvc-featured .nxsvc-content h3 {
+    font-size: 34px;
+}
+
+.nxsvc-content p {
+    margin: 0;
+    color: #707070;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   PILLS
+========================================= */
+
+.nxsvc-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 18px;
+}
+
+.nxsvc-pills span {
+    padding: 7px 11px;
+    border-radius: 30px;
+    background: #eef7f9;
+    color: #23849d;
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+.nxsvc-card:hover .nxsvc-pills span {
+    background: #23849d;
+    color: #fff;
+}
+
+
+/* =========================================
+   FLOAT ANIMATION
+========================================= */
+
+@keyframes nxsvcFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(20px) rotate(8deg);
+    }
+}
+
+@media (max-width: 991px) {
+
+    .nxsvc-featured .nxsvc-image {
+        height: 330px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .nxsvc-section {
+        padding: 70px 0;
+    }
+
+
+    .nxsvc-heading {
+        margin-bottom: 35px;
+    }
+
+    .nxsvc-heading h2 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .nxsvc-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .nxsvc-featured {
+        grid-column: auto;
+    }
+
+    .nxsvc-image,
+    .nxsvc-featured .nxsvc-image {
+        height: 280px;
+    }
+
+    .nxsvc-content h3,
+    .nxsvc-featured .nxsvc-content h3 {
+        font-size: 26px;
+    }
+
+    .nxsvc-card {
+        min-height: auto;
+        border-radius: 22px;
+    }
+
 }
 </style>
 @endsection
@@ -811,44 +1143,44 @@
             <div class="col-12">
                 <div class="eqshow-nav">
                     <button class="eqshow-item active" data-index="0">
-                        <img src="/assets/front/imgs/equipment/2-mb.webp" alt="shubhanu eye hospital icon">
-                        <span>Lenstar</span>
+                        <img src="/assets/front/imgs/equipment/10-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Argos</span>
                     </button>
                     <button class="eqshow-item" data-index="1">
                         <img src="/assets/front/imgs/equipment/1-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Lumera</span>
                     </button>
                     <button class="eqshow-item" data-index="2">
+                        <img src="/assets/front/imgs/equipment/2-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Lenstar</span>
+                    </button>
+                    <button class="eqshow-item" data-index="3">
                         <img src="/assets/front/imgs/equipment/3-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Pentacam</span>
                     </button>
-                    <button class="eqshow-item" data-index="3">
+                    <button class="eqshow-item" data-index="4">
                         <img src="/assets/front/imgs/equipment/4-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Centurion</span>
                     </button>
-                    <button class="eqshow-item" data-index="4">
+                    <button class="eqshow-item" data-index="5">
                         <img src="/assets/front/imgs/equipment/5-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Constellation</span>
                     </button>
-                    <button class="eqshow-item" data-index="5">
+                    <button class="eqshow-item" data-index="6">
                         <img src="/assets/front/imgs/equipment/6-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Legion</span>
                     </button>
-                    <button class="eqshow-item" data-index="6">
+                    <button class="eqshow-item" data-index="7">
                         <img src="/assets/front/imgs/equipment/7-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Maestro</span>
                     </button>
-                    <button class="eqshow-item" data-index="7">
+                    <button class="eqshow-item" data-index="8">
                         <img src="/assets/front/imgs/equipment/8-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Tomey</span>
                     </button>
-                    <button class="eqshow-item" data-index="8">
+                    <button class="eqshow-item" data-index="9">
                         <img src="/assets/front/imgs/equipment/9-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Eidon</span>
-                    </button>
-                    <button class="eqshow-item" data-index="9">
-                        <img src="/assets/front/imgs/equipment/10-mb.webp" alt="shubhanu eye hospital icon">
-                        <span>Argos</span>
                     </button>
                 </div>
 
@@ -859,52 +1191,56 @@
             <div class="col-lg-6">
                 <div class="eqshow-image-area">
                     <span class="eqshow-glow"></span>
-                    <img id="eqshowMainImage" src="/assets/front/imgs/equipment/1.webp" class="img-fluid"
+                    <img id="eqshowMainImage" src="/assets/front/imgs/equipment/10.webp" class="img-fluid"
                         alt="Equipment">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="eqshow-content">
-                    <h3 id="eqshowTitle">LENSTAR 900 Optical Biometry System</h3>
+                    <h3 id="eqshowTitle">Alcon ARGOS Biometer with Image Guidance</h3>
                     <p id="eqshowDescription">
-                        An advanced optical biometry platform used for comprehensive eye measurements and precise
-                        cataract surgery planning. It measures multiple anatomical parameters of the eye and supports
-                        modern IOL power calculation methods.
+                     A swept-source OCT biometry system designed for advanced cataract surgery planning and IOL power calculation. It captures detailed biometric measurements along with a reference image of the eye to support precise, image-guided surgical planning.
                     </p>
                     <div class="eqshow-features">
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Optical Low-Coherence Reflectometry (OLCR)
+                            Swept-Source OCT biometry
                         </div>
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Precise axial length measurement
+                            Rapid biometric data acquisition
+                
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Corneal thickness and anterior chamber depth
+                            Segmented axial length measurement
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Lens thickness and white-to-white measurement
+                            Keratometry and anterior chamber measurements
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Dual-zone keratometry
+                            Advanced IOL power calculation
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Pupillometry
+                            Integrated Alcon Vision Planner
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Advanced IOL power calculation and cataract planning
+                            Image-guided astigmatism management
                         </div>
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Digital transfer of surgical planning data to compatible OR systems
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -928,15 +1264,11 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/Da4olhqJ734/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/Da4olhqJ734/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
                         <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/1.jpeg') }}"
-                            width="400"
-                            height="500">
+                            poster="{{ asset('/instagram/1.jpeg') }}" width="400" height="500">
                             <source src="{{ asset('/instagram/1.mp4') }}" type="video/mp4">
                         </video>
 
@@ -951,15 +1283,11 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DMsKo72I_ZV/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DMsKo72I_ZV/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
                         <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/2.jpeg') }}"
-                            width="400"
-                            height="500">
+                            poster="{{ asset('/instagram/2.jpeg') }}" width="400" height="500">
                             <source src="{{ asset('/instagram/2.mp4') }}" type="video/mp4">
                         </video>
 
@@ -974,15 +1302,11 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
                         <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/3.jpeg') }}"
-                            width="400"
-                            height="500">
+                            poster="{{ asset('/instagram/3.jpeg') }}" width="400" height="500">
                             <source src="{{ asset('/instagram/3.mp4') }}" type="video/mp4">
                         </video>
 
@@ -997,15 +1321,11 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DRPPSoQEXZd/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DRPPSoQEXZd/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
                         <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/4.jpeg') }}"
-                            width="400"
-                            height="500">
+                            poster="{{ asset('/instagram/4.jpeg') }}" width="400" height="500">
                             <source src="{{ asset('/instagram/4.mp4') }}" type="video/mp4">
                         </video>
 
@@ -1020,15 +1340,11 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DSH7lPECS1J/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DSH7lPECS1J/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
                         <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/5.jpeg') }}"
-                            width="400"
-                            height="500">
+                            poster="{{ asset('/instagram/5.jpeg') }}" width="400" height="500">
                             <source src="{{ asset('/instagram/5.mp4') }}" type="video/mp4">
                         </video>
 
@@ -1043,15 +1359,11 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DSMuoUOEwxd/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DSMuoUOEwxd/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
                         <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/6.jpeg') }}"
-                            width="400"
-                            height="500">
+                            poster="{{ asset('/instagram/6.jpeg') }}" width="400" height="500">
                             <source src="{{ asset('/instagram/6.mp4') }}" type="video/mp4">
                         </video>
 
@@ -1290,6 +1602,144 @@
     </div>
 </section>
 
+<section class="nxsvc-section">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="nxsvc-heading mb-4">
+            <div class="nxsvc-heading-left text-center">
+                <h2>Our <span>Services</span></h2>
+            </div>
+        </div>
+
+
+        <!-- Services -->
+        <div class="nxsvc-grid slider">
+            <article class="nxsvc-card">
+                <div class="nxsvc-image">
+                    <img src="/assets/front/imgs/1/4.png" alt="Orbit & Oculoplasty">
+                    <div class="nxsvc-image-overlay"></div>
+                    <span class="nxsvc-number">01</span>
+                    <a href="#" class="nxsvc-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="nxsvc-content">
+                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
+                    <h3>Orbit &amp; Oculoplasty</h3>
+                    <p>
+                        Specialized care for eyelid, tear duct
+                        and orbital conditions.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 02 -->
+            <article class="nxsvc-card">
+                <div class="nxsvc-image">
+                    <img src="/assets/front/imgs/1/6.png" alt="Orbit & Oculoplasty">
+                    <div class="nxsvc-image-overlay"></div>
+                    <span class="nxsvc-number">02</span>
+                    <a href="#" class="nxsvc-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="nxsvc-content">
+                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
+                    <h3>Orbit &amp; Oculoplasty</h3>
+                    <p>
+                        Specialized care for eyelid, tear duct
+                        and orbital conditions.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 03 -->
+            <article class="nxsvc-card">
+                <div class="nxsvc-image">
+                    <img src="/assets/front/imgs/1/7.png" alt="Cornea Care">
+                    <div class="nxsvc-image-overlay"></div>
+                    <span class="nxsvc-number">03</span>
+                    <a href="#" class="nxsvc-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="nxsvc-content">
+                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
+                    <h3>Cornea Care</h3>
+                    <p>
+                        Specialized diagnosis and treatment
+                        for corneal diseases and disorders.
+                    </p>
+                </div>
+            </article>
+
+
+            <!-- 04 -->
+            <article class="nxsvc-card">
+
+                <div class="nxsvc-image">
+                    <img src="/assets/front/imgs/1/3.png" alt="Cataract Care">
+
+                    <div class="nxsvc-image-overlay"></div>
+
+                    <span class="nxsvc-number">04</span>
+
+                    <a href="#" class="nxsvc-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="nxsvc-content">
+
+                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
+
+                    <h3>Cataract Care</h3>
+
+                    <p>
+                        Modern cataract evaluation and
+                        advanced surgical treatment.
+                    </p>
+
+                </div>
+            </article>
+
+
+            <!-- 05 -->
+            <article class="nxsvc-card">
+
+                <div class="nxsvc-image">
+                    <img src="/assets/front/imgs/1/8.png" alt="Glaucoma Care">
+
+                    <div class="nxsvc-image-overlay"></div>
+
+                    <span class="nxsvc-number">05</span>
+
+                    <a href="#" class="nxsvc-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="nxsvc-content">
+
+                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
+
+                    <h3>Glaucoma Care</h3>
+
+                    <p>
+                        Comprehensive diagnosis and management
+                        of glaucoma and eye pressure disorders.
+                    </p>
+
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -1363,18 +1813,20 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-    const equipments = [{
-            image: "/assets/front/imgs/equipment/2.webp",
-            title: "LENSTAR 900 Optical Biometry System",
-            desc: "An advanced optical biometry platform used for comprehensive eye measurements and precise cataract surgery planning. It measures multiple anatomical parameters of the eye and supports modern IOL power calculation methods.",
+    const equipments = [
+        {
+            image: "/assets/front/imgs/equipment/10.webp",
+            title: "Alcon ARGOS Biometer with Image Guidance",
+            desc: "A swept-source OCT biometry system designed for advanced cataract surgery planning and IOL power calculation. It captures detailed biometric measurements along with a reference image of the eye to support precise, image-guided surgical planning.",
             features: [
-                "Optical Low-Coherence Reflectometry (OLCR)",
-                "Precise axial length measurement",
-                "Corneal thickness and anterior chamber depth",
-                "Lens thickness and white-to-white measurement",
-                "Dual-zone keratometry",
-                "Pupillometry",
-                "Advanced IOL power calculation and cataract planning",
+                "Swept-Source OCT biometry",
+                "Rapid biometric data acquisition",
+                "Segmented axial length measurement",
+                "Keratometry and anterior chamber measurements",
+                "Advanced IOL power calculation",
+                "Integrated Alcon Vision Planner",
+                "Image-guided astigmatism management",
+                "Digital transfer of surgical planning data to compatible OR systems",
             ]
         },
         {
@@ -1389,6 +1841,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 "Compatible with ZEISS RESIGHT for retinal surgery",
                 "Optional intraoperative OCT integration",
                 "Designed for cataract, retina and other microsurgical procedures",
+            ]
+        },
+        {
+            image: "/assets/front/imgs/equipment/2.webp",
+            title: "LENSTAR 900 Optical Biometry System",
+            desc: "An advanced optical biometry platform used for comprehensive eye measurements and precise cataract surgery planning. It measures multiple anatomical parameters of the eye and supports modern IOL power calculation methods.",
+            features: [
+                "Optical Low-Coherence Reflectometry (OLCR)",
+                "Precise axial length measurement",
+                "Corneal thickness and anterior chamber depth",
+                "Lens thickness and white-to-white measurement",
+                "Dual-zone keratometry",
+                "Pupillometry",
+                "Advanced IOL power calculation and cataract planning",
             ]
         },
         {
@@ -1487,21 +1953,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 "Non-mydriatic imaging from small pupils",
                 "Automated alignment, focus and capture",
                 "Effective imaging even through some media opacities",
-            ]
-        },
-        {
-            image: "/assets/front/imgs/equipment/10.webp",
-            title: "Alcon ARGOS Biometer with Image Guidance",
-            desc: "A swept-source OCT biometry system designed for advanced cataract surgery planning and IOL power calculation. It captures detailed biometric measurements along with a reference image of the eye to support precise, image-guided surgical planning.",
-            features: [
-                "Swept-Source OCT biometry",
-                "Rapid biometric data acquisition",
-                "Segmented axial length measurement",
-                "Keratometry and anterior chamber measurements",
-                "Advanced IOL power calculation",
-                "Integrated Alcon Vision Planner",
-                "Image-guided astigmatism management",
-                "Digital transfer of surgical planning data to compatible OR systems",
             ]
         }
     ];
