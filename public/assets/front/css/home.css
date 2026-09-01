@@ -148,6 +148,22 @@
   position: relative;
 }
 
+.doctor-content {
+  height: 96%;
+  position: relative;
+}
+.doctor-content .row {
+  border: 1px solid rgba(0, 0, 0, 0.1333333333);
+  border-radius: 15px;
+  margin: 0px;
+  padding: 0px 10px;
+}
+.doctor-content .appointment-btn {
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+}
+
 .doctor-image img {
   width: 100%;
   height: 500px;
@@ -215,17 +231,29 @@
 }
 
 .info-box {
-  background: #f8f8f8;
   border-radius: 15px;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
+.info-box .iconbox {
+  background: #fff4f4;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
 .info-box i {
   background: transparent !important;
   color: #000 !important;
   font-size: 25px;
-  margin-right: 10px;
+  margin-right: 0px;
+}
+.info-box .content {
+  width: 65%;
 }
 
 .info-box strong {
@@ -348,8 +376,9 @@
 }
 
 .slick-dots li button:before {
-  font-size: 16px !important;
+  font-size: 12px !important;
   color: #24748c !important;
+  margin-top: 15px;
 }
 
 .our-services h2 {

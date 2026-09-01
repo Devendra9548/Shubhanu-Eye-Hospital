@@ -103,7 +103,7 @@
     position: relative !important;
     display: block !important;
     width: 100% !important;
-    aspect-ratio: 4 / 5 !important;
+    aspect-ratio: 4 / 6 !important;
     overflow: hidden !important;
     background: #f2f2f2 !important;
 }
@@ -374,7 +374,7 @@
 
             <div>
                 <div class="doctor-card">
-                    <div class="row g-4 align-items-center">
+                    <div class="row g-4">
                         <div class="col-lg-5">
                             <div class="doctor-image">
                                 <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp"
@@ -412,7 +412,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-award"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Experience</strong>
@@ -423,7 +423,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-user-graduate"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Qualification</strong>
@@ -434,7 +434,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-calendar-check"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Availability</strong>
@@ -442,25 +442,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Key Expertise</strong>
-                                                <span>
-                                                    <ul class="two-clm-list">
-                                                        <li>Retina & Vitreous Surgery </li>
-                                                        <li>ROP Management </li>
-                                                        <li>Intravitreal Injections </li>
-                                                        <li>Retinal Laser </li>
-                                                        <li>Complex Ocular Trauma</li>
-                                                    </ul>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <a href="#" class="appointment-btn">
                                     Book Appointment
@@ -473,7 +455,7 @@
 
             <div>
                 <div class="doctor-card">
-                    <div class="row g-4 align-items-center">
+                    <div class="row g-4">
                         <div class="col-lg-5">
                             <div class="doctor-image">
                                 <img src="/assets/front/imgs/doctors/dr-shubha-raguram-pangtey.webp" class="img-fluid"
@@ -496,7 +478,7 @@
                                     Oncology, Neuro-Ophthalmology and Pediatric Eye Care, with expertise in managing
                                     complex eyelid, lacrimal, orbital and ocular tumour conditions.
                                 </p>
-                                <div class="row g-3 mt-5">
+                                <div class="row g-3 mt-4">
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
@@ -511,7 +493,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-award"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Experience</strong>
@@ -522,7 +504,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-user-graduate"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Qualification</strong>
@@ -534,7 +516,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-eye"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Additional Expertise</strong>
@@ -542,25 +524,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Key Expertise</strong>
-                                                <span>
-                                                    <ul class="two-clm-list">
-                                                        <li>Oculoplastic & Eyelid Surgery </li>
-                                                        <li>Watering Eye & Lacrimal Surgery </li>
-                                                        <li>Orbital Disorders & Surgery </li>
-                                                        <li>Ocular Oncology </li>
-                                                        <li>Pediatric & Neuro-Ophthalmology</li>
-                                                    </ul>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <a href="#" class="appointment-btn">
                                     Book Appointment
@@ -573,14 +537,13 @@
 
             <div>
                 <div class="doctor-card">
-                    <div class="row g-4 align-items-center">
+                    <div class="row g-4">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp"
-                                    class="img-fluid" width="100%">
+                                <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp" class="img-fluid"
+                                    width="100%">
                                 <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp"
-                                        alt="Dr. Shagun Sood">
+                                    <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp" alt="Dr. Shagun Sood">
                                     <div class="short-doctor-infor">
                                         <h5>Dr. Shagun Sood</h5>
                                         <p>Visiting Consultant – Cataract, Squint & Refractive Surgery</p>
@@ -611,7 +574,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-award"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Experience</strong>
@@ -622,7 +585,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-user-graduate"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Qualification</strong>
@@ -633,7 +596,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-eye"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Advanced Training</strong>
@@ -641,25 +604,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Key Expertise</strong>
-                                                <span>
-                                                    <ul class="two-clm-list">
-                                                        <li>Phacoemulsification & Cataract Surgery </li>
-                                                        <li>Squint Surgery </li>
-                                                        <li>LASIK & Refractive Surgery </li>
-                                                        <li>Oculoplasty Procedures </li>
-                                                        <li>Retinal Laser Treatment</li>
-                                                    </ul>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <a href="#" class="appointment-btn">
                                     Book Appointment
@@ -672,11 +617,11 @@
 
             <div>
                 <div class="doctor-card">
-                    <div class="row g-4 align-items-center">
+                    <div class="row g-4">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp"
-                                    class="img-fluid" width="100%">
+                                <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp" class="img-fluid"
+                                    width="100%">
                                 <div class="doctor-info">
                                     <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp"
                                         alt="Dr. Mohd Sufyan Danish">
@@ -710,7 +655,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-award"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Experience</strong>
@@ -721,7 +666,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-user-graduate"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Qualification</strong>
@@ -732,7 +677,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-eye"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Advanced Training</strong>
@@ -740,25 +685,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Key Expertise</strong>
-                                                <span>
-                                                    <ul class="two-clm-list">
-                                                        <li>Corneal Transplant </li>
-                                                        <li>Phacoemulsification Cataract Surgery </li>
-                                                        <li>LASIK & Refractive Surgery </li>
-                                                        <li>Ocular Surface Procedures </li>
-                                                        <li>Complex Anterior Segment Surgery</li>
-                                                    </ul>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <a href="#" class="appointment-btn">
                                     Book Appointment
@@ -771,14 +698,13 @@
 
             <div>
                 <div class="doctor-card">
-                    <div class="row g-4 align-items-center">
+                    <div class="row g-4">
                         <div class="col-lg-5">
                             <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp"
-                                    class="img-fluid" width="100%">
+                                <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp" class="img-fluid"
+                                    width="100%">
                                 <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp"
-                                        alt="Dr. Nabeel Firoz">
+                                    <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp" alt="Dr. Nabeel Firoz">
                                     <div class="short-doctor-infor">
                                         <h5>Dr. Nabeel Firoz</h5>
                                         <p>Consultant – Cataract & Medical Retina</p>
@@ -794,7 +720,7 @@
                                     surgery, medical retina and comprehensive eye care, with a
                                     special focus on retinal injections and laser procedures.
                                 </p>
-                                <div class="row g-3 mt-5">
+                                <div class="row g-3 mt-4">
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
@@ -809,7 +735,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-award"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Experience</strong>
@@ -820,7 +746,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-user-graduate"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Qualification</strong>
@@ -831,7 +757,7 @@
                                     <div class="col-md-6">
                                         <div class="info-box">
                                             <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
+                                                <i class="fa-solid fa-eye"></i>
                                             </div>
                                             <div class="content">
                                                 <strong>Advanced Training</strong>
@@ -839,25 +765,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Key Expertise</strong>
-                                                <span>
-                                                    <ul class="two-clm-list">
-                                                        <li>Phacoemulsification Cataract Surgery </li>
-                                                        <li>Intravitreal Injections</li>
-                                                        <li>Retinal Laser Treatment </li>
-                                                        <li>Pterygium Surgery </li>
-                                                        <li>Medical Retina Management</li>
-                                                    </ul>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <a href="#" class="appointment-btn">
                                     Book Appointment
@@ -889,12 +797,12 @@
             <div class="col-12">
                 <div class="eqshow-nav">
                     <button class="eqshow-item active" data-index="0">
-                        <img src="/assets/front/imgs/equipment/1-mb.webp" alt="shubhanu eye hospital icon">
-                        <span>Lumera</span>
-                    </button>
-                    <button class="eqshow-item" data-index="1">
                         <img src="/assets/front/imgs/equipment/2-mb.webp" alt="shubhanu eye hospital icon">
                         <span>Lenstar</span>
+                    </button>
+                    <button class="eqshow-item" data-index="1">
+                        <img src="/assets/front/imgs/equipment/1-mb.webp" alt="shubhanu eye hospital icon">
+                        <span>Lumera</span>
                     </button>
                     <button class="eqshow-item" data-index="2">
                         <img src="/assets/front/imgs/equipment/3-mb.webp" alt="shubhanu eye hospital icon">
@@ -943,47 +851,45 @@
             </div>
             <div class="col-lg-6">
                 <div class="eqshow-content">
-                    <h3 id="eqshowTitle">ZEISS OPMI LUMERA 700</h3>
+                    <h3 id="eqshowTitle">LENSTAR 900 Optical Biometry System</h3>
                     <p id="eqshowDescription">
-                        A premium ophthalmic surgical microscope designed to
-                        provide exceptional visualization during complex eye
-                        surgeries. Its advanced optics and illumination help surgeons
-                        achieve enhanced clarity, depth perception and precision
-                        during anterior and posterior segment procedures.
+                        An advanced optical biometry platform used for comprehensive eye measurements and precise
+                        cataract surgery planning. It measures multiple anatomical parameters of the eye and supports
+                        modern IOL power calculation methods.
                     </p>
                     <div class="eqshow-features">
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Advanced ZEISS apochromatic optics
+                            Optical Low-Coherence Reflectometry (OLCR)
                         </div>
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Stereo Coaxial Illumination for enhanced red reflex
-                        </div>
-
-                        <div class="eqshow-feature">
-                            <i class="fa-solid fa-circle-check"></i>
-                            Motorized zoom and focusing
+                            Precise axial length measurement
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            High-definition surgical visualization
+                            Corneal thickness and anterior chamber depth
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Compatible with ZEISS RESIGHT for retinal surgery
+                            Lens thickness and white-to-white measurement
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Optional intraoperative OCT integration
+                            Dual-zone keratometry
                         </div>
 
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
-                            Designed for cataract, retina and other microsurgical procedures
+                            Pupillometry
+                        </div>
+
+                        <div class="eqshow-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Advanced IOL power calculation and cataract planning
                         </div>
                     </div>
                 </div>
@@ -1008,29 +914,6 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-
-                    <!-- Header -->
-                    <div class="our-instagram-card-header">
-
-                        <div class="our-instagram-profile">
-                            <div class="our-instagram-avatar">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-
-                            <div class="our-instagram-user-info">
-                                <strong>@shubhanueyehospital</strong>
-                                <span>Instagram</span>
-                            </div>
-                        </div>
-
-                        <a href="https://www.instagram.com/reel/Da4olhqJ734/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-more">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </a>
-
-                    </div>
-
-                    <!-- Image -->
                     <a href="https://www.instagram.com/reel/Da4olhqJ734/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
@@ -1040,129 +923,25 @@
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
-
                     </a>
-
-                    <!-- Actions -->
-                    <div class="our-instagram-actions">
-
-                        <div class="our-instagram-left-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="far fa-comment"></i>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-
-                        <i class="far fa-bookmark"></i>
-
-                    </div>
-
-                    <!-- Content -->
-                    <div class="our-instagram-content">
-
-                        <strong class="our-instagram-likes">
-                            Instagram Reel
-                        </strong>
-
-                        <p>
-                            Follow us on Instagram and stay connected with our latest updates.
-                        </p>
-
-                        <a href="https://www.instagram.com/reel/Da4olhqJ734/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-view">
-                            View on Instagram
-                        </a>
-
-                    </div>
-
                 </div>
             </div>
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-
-                    <div class="our-instagram-card-header">
-
-                        <div class="our-instagram-profile">
-                            <div class="our-instagram-avatar">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-
-                            <div class="our-instagram-user-info">
-                                <strong>@shubhanueyehospital</strong>
-                                <span>Instagram</span>
-                            </div>
-                        </div>
-
-                        <a href="https://www.instagram.com/reel/DMsKo72I_ZV/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-more">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </a>
-
-                    </div>
-
                     <a href="https://www.instagram.com/reel/DMsKo72I_ZV/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
-
                         <img src="{{ asset('/instagram/2.jpeg') }}" alt="Instagram Reel" loading="lazy" width="400"
                             height="500">
-
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
-
                     </a>
-
-                    <div class="our-instagram-actions">
-                        <div class="our-instagram-left-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="far fa-comment"></i>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-
-                        <i class="far fa-bookmark"></i>
-                    </div>
-
-                    <div class="our-instagram-content">
-                        <strong class="our-instagram-likes">
-                            Instagram Reel
-                        </strong>
-
-                        <p>
-                            Follow us on Instagram and stay connected with our latest updates.
-                        </p>
-
-                        <a href="https://www.instagram.com/reel/DMsKo72I_ZV/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-view">
-                            View on Instagram
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-
-                    <div class="our-instagram-card-header">
-
-                        <div class="our-instagram-profile">
-                            <div class="our-instagram-avatar">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-
-                            <div class="our-instagram-user-info">
-                                <strong>@shubhanueyehospital</strong>
-                                <span>Instagram</span>
-                            </div>
-                        </div>
-
-                        <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-more">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </a>
-
-                    </div>
-
                     <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
@@ -1172,60 +951,12 @@
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
-
                     </a>
-
-                    <div class="our-instagram-actions">
-                        <div class="our-instagram-left-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="far fa-comment"></i>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-
-                        <i class="far fa-bookmark"></i>
-                    </div>
-
-                    <div class="our-instagram-content">
-                        <strong class="our-instagram-likes">
-                            Instagram Reel
-                        </strong>
-
-                        <p>
-                            Follow us on Instagram and stay connected with our latest updates.
-                        </p>
-
-                        <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-view">
-                            View on Instagram
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-
-                    <div class="our-instagram-card-header">
-
-                        <div class="our-instagram-profile">
-                            <div class="our-instagram-avatar">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-
-                            <div class="our-instagram-user-info">
-                                <strong>@shubhanueyehospital</strong>
-                                <span>Instagram</span>
-                            </div>
-                        </div>
-
-                        <a href="https://www.instagram.com/reel/DRPPSoQEXZd/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-more">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </a>
-
-                    </div>
-
                     <a href="https://www.instagram.com/reel/DRPPSoQEXZd/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
@@ -1235,60 +966,12 @@
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
-
                     </a>
-
-                    <div class="our-instagram-actions">
-                        <div class="our-instagram-left-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="far fa-comment"></i>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-
-                        <i class="far fa-bookmark"></i>
-                    </div>
-
-                    <div class="our-instagram-content">
-                        <strong class="our-instagram-likes">
-                            Instagram Reel
-                        </strong>
-
-                        <p>
-                            Follow us on Instagram and stay connected with our latest updates.
-                        </p>
-
-                        <a href="https://www.instagram.com/reel/DRPPSoQEXZd/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-view">
-                            View on Instagram
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-
-                    <div class="our-instagram-card-header">
-
-                        <div class="our-instagram-profile">
-                            <div class="our-instagram-avatar">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-
-                            <div class="our-instagram-user-info">
-                                <strong>@shubhanueyehospital</strong>
-                                <span>Instagram</span>
-                            </div>
-                        </div>
-
-                        <a href="https://www.instagram.com/reel/DSH7lPECS1J/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-more">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </a>
-
-                    </div>
-
                     <a href="https://www.instagram.com/reel/DSH7lPECS1J/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
@@ -1298,60 +981,12 @@
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
-
                     </a>
-
-                    <div class="our-instagram-actions">
-                        <div class="our-instagram-left-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="far fa-comment"></i>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-
-                        <i class="far fa-bookmark"></i>
-                    </div>
-
-                    <div class="our-instagram-content">
-                        <strong class="our-instagram-likes">
-                            Instagram Reel
-                        </strong>
-
-                        <p>
-                            Follow us on Instagram and stay connected with our latest updates.
-                        </p>
-
-                        <a href="https://www.instagram.com/reel/DSH7lPECS1J/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-view">
-                            View on Instagram
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-
-                    <div class="our-instagram-card-header">
-
-                        <div class="our-instagram-profile">
-                            <div class="our-instagram-avatar">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-
-                            <div class="our-instagram-user-info">
-                                <strong>@shubhanueyehospital</strong>
-                                <span>Instagram</span>
-                            </div>
-                        </div>
-
-                        <a href="https://www.instagram.com/reel/DSMuoUOEwxd/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-more">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </a>
-
-                    </div>
-
                     <a href="https://www.instagram.com/reel/DSMuoUOEwxd/" target="_blank" rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
@@ -1361,34 +996,7 @@
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
-
                     </a>
-
-                    <div class="our-instagram-actions">
-                        <div class="our-instagram-left-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="far fa-comment"></i>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-
-                        <i class="far fa-bookmark"></i>
-                    </div>
-
-                    <div class="our-instagram-content">
-                        <strong class="our-instagram-likes">
-                            Instagram Reel
-                        </strong>
-
-                        <p>
-                            Follow us on Instagram and stay connected with our latest updates.
-                        </p>
-
-                        <a href="https://www.instagram.com/reel/DSMuoUOEwxd/" target="_blank" rel="noopener noreferrer"
-                            class="our-instagram-view">
-                            View on Instagram
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
@@ -1413,7 +1021,8 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800" alt="shubhanu eye hospital icon">
+                            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800"
+                                alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1448,7 +1057,8 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800" alt="shubhanu eye hospital icon">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
+                                alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1483,7 +1093,8 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800" alt="shubhanu eye hospital icon">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800"
+                                alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1518,7 +1129,8 @@
 
                     <div class="zbg-blog-thumb">
                         <a href="#">
-                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800" alt="shubhanu eye hospital icon">
+                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800"
+                                alt="shubhanu eye hospital icon">
                         </a>
                     </div>
 
@@ -1689,20 +1301,6 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
 
     const equipments = [{
-            image: "/assets/front/imgs/equipment/1.webp",
-            title: "ZEISS OPMI LUMERA 700",
-            desc: "A premium ophthalmic surgical microscope designed to provide exceptional visualization during complex eye surgeries. Its advanced optics and illumination help surgeons achieve enhanced clarity, depth perception and precision during anterior and posterior segment procedures.",
-            features: [
-                "Advanced ZEISS apochromatic optics",
-                "Stereo Coaxial Illumination for enhanced red reflex",
-                "Motorized zoom and focusing",
-                "High-definition surgical visualization",
-                "Compatible with ZEISS RESIGHT for retinal surgery",
-                "Optional intraoperative OCT integration",
-                "Designed for cataract, retina and other microsurgical procedures",
-            ]
-        },
-        {
             image: "/assets/front/imgs/equipment/2.webp",
             title: "LENSTAR 900 Optical Biometry System",
             desc: "An advanced optical biometry platform used for comprehensive eye measurements and precise cataract surgery planning. It measures multiple anatomical parameters of the eye and supports modern IOL power calculation methods.",
@@ -1714,6 +1312,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 "Dual-zone keratometry",
                 "Pupillometry",
                 "Advanced IOL power calculation and cataract planning",
+            ]
+        },
+        {
+            image: "/assets/front/imgs/equipment/1.webp",
+            title: "ZEISS OPMI LUMERA 700",
+            desc: "A premium ophthalmic surgical microscope designed to provide exceptional visualization during complex eye surgeries. Its advanced optics and illumination help surgeons achieve enhanced clarity, depth perception and precision during anterior and posterior segment procedures.",
+            features: [
+                "Advanced ZEISS apochromatic optics",
+                "Stereo Coaxial Illumination for enhanced red reflex",
+                "Motorized zoom and focusing",
+                "High-definition surgical visualization",
+                "Compatible with ZEISS RESIGHT for retinal surgery",
+                "Optional intraoperative OCT integration",
+                "Designed for cataract, retina and other microsurgical procedures",
             ]
         },
         {
