@@ -135,7 +135,7 @@
     align-items: center !important;
     justify-content: center !important;
     border-radius: 50% !important;
-    background: rgba(0, 0, 0, 0.65) !important;
+    background: rgb(36 116 140) !important;
     color: #ffffff !important;
     font-size: 13px !important;
     backdrop-filter: blur(5px) !important;
@@ -143,6 +143,7 @@
 
 .our-instagram-reel-icon i {
     margin-left: 2px !important;
+    color: #fff !important;
 }
 
 
@@ -207,6 +208,19 @@
 
 .our-instagram-view:hover {
     color: #00376b !important;
+}
+
+.our-instagram-image-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-instagram-image-wrap video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
 }
 </style>
 @endsection
@@ -914,88 +928,137 @@
 
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/Da4olhqJ734/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/Da4olhqJ734/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
-                        <img src="{{ asset('/instagram/1.jpeg') }}" alt="Instagram Reel" loading="lazy" width="400"
+                        <video autoplay muted loop playsinline preload="metadata"
+                            poster="{{ asset('/instagram/1.jpeg') }}"
+                            width="400"
                             height="500">
+                            <source src="{{ asset('/instagram/1.mp4') }}" type="video/mp4">
+                        </video>
 
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
+
                     </a>
                 </div>
             </div>
 
+
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DMsKo72I_ZV/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DMsKo72I_ZV/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
-                        <img src="{{ asset('/instagram/2.jpeg') }}" alt="Instagram Reel" loading="lazy" width="400"
+
+                        <video autoplay muted loop playsinline preload="metadata"
+                            poster="{{ asset('/instagram/2.jpeg') }}"
+                            width="400"
                             height="500">
+                            <source src="{{ asset('/instagram/2.mp4') }}" type="video/mp4">
+                        </video>
+
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
+
                     </a>
                 </div>
             </div>
 
+
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
-                        <img src="{{ asset('/instagram/3.jpeg') }}" alt="Instagram Reel" loading="lazy" width="400"
+                        <video autoplay muted loop playsinline preload="metadata"
+                            poster="{{ asset('/instagram/3.jpeg') }}"
+                            width="400"
                             height="500">
+                            <source src="{{ asset('/instagram/3.mp4') }}" type="video/mp4">
+                        </video>
 
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
+
                     </a>
                 </div>
             </div>
 
+
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DRPPSoQEXZd/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DRPPSoQEXZd/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
-                        <img src="{{ asset('/instagram/4.jpeg') }}" alt="Instagram Reel" loading="lazy" width="400"
+                        <video autoplay muted loop playsinline preload="metadata"
+                            poster="{{ asset('/instagram/4.jpeg') }}"
+                            width="400"
                             height="500">
+                            <source src="{{ asset('/instagram/4.mp4') }}" type="video/mp4">
+                        </video>
 
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
+
                     </a>
                 </div>
             </div>
 
+
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DSH7lPECS1J/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DSH7lPECS1J/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
-                        <img src="{{ asset('/instagram/5.jpeg') }}" alt="Instagram Reel" loading="lazy" width="400"
+                        <video autoplay muted loop playsinline preload="metadata"
+                            poster="{{ asset('/instagram/5.jpeg') }}"
+                            width="400"
                             height="500">
+                            <source src="{{ asset('/instagram/5.mp4') }}" type="video/mp4">
+                        </video>
 
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
+
                     </a>
                 </div>
             </div>
 
+
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DSMuoUOEwxd/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/reel/DSMuoUOEwxd/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="our-instagram-image-wrap">
 
-                        <img src="{{ asset('/instagram/6.jpeg') }}" alt="Instagram Reel" loading="lazy" width="400"
+                        <video autoplay muted loop playsinline preload="metadata"
+                            poster="{{ asset('/instagram/6.jpeg') }}"
+                            width="400"
                             height="500">
+                            <source src="{{ asset('/instagram/6.mp4') }}" type="video/mp4">
+                        </video>
 
                         <span class="our-instagram-reel-icon">
                             <i class="fas fa-play"></i>
                         </span>
+
                     </a>
                 </div>
             </div>
