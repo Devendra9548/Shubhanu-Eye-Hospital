@@ -7,554 +7,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-<style>
-.our-instagram-eyebrow i {
-    font-size: 18px !important;
-    color: #e1306c !important;
-}
-
-.our-instagram-slider {
-    margin-left: -10px !important;
-    margin-right: -10px !important;
-}
-
-.our-instagram-slide {
-    padding: 0 10px !important;
-}
-
-
-.our-instagram-card {
-    width: 100% !important;
-    max-width: 400px !important;
-    margin: 0 auto !important;
-    background: #ffffff !important;
-    border: 1px solid #dbdbdb !important;
-    border-radius: 14px !important;
-    overflow: hidden !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
-}
-
-.our-instagram-card-header {
-    min-height: 62px !important;
-    padding: 10px 13px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    background: #ffffff !important;
-}
-
-.our-instagram-profile {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-}
-
-.our-instagram-avatar {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 50% !important;
-    background: linear-gradient(135deg,
-            #833ab4 0%,
-            #fd1d1d 50%,
-            #fcb045 100%) !important;
-    color: #ffffff !important;
-    font-size: 19px !important;
-}
-
-.our-instagram-user-info {
-    display: flex !important;
-    flex-direction: column !important;
-    line-height: 1.2 !important;
-}
-
-.our-instagram-user-info strong {
-    font-size: 14px !important;
-    color: #171717 !important;
-    font-weight: 600 !important;
-}
-
-.our-instagram-user-info span {
-    margin-top: 3px !important;
-    font-size: 11px !important;
-    color: #8e8e8e !important;
-}
-
-.our-instagram-more {
-    color: #222222 !important;
-    font-size: 16px !important;
-    text-decoration: none !important;
-}
-
-
-.our-instagram-image-wrap {
-    position: relative !important;
-    display: block !important;
-    width: 100% !important;
-    aspect-ratio: 4 / 6 !important;
-    overflow: hidden !important;
-    background: #f2f2f2 !important;
-}
-
-.our-instagram-image-wrap img {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: transform 0.4s ease !important;
-}
-
-.our-instagram-image-wrap:hover img {
-    transform: scale(1.03) !important;
-}
-
-
-/* =========================================
-   REEL PLAY ICON
-========================================= */
-
-.our-instagram-reel-icon {
-    position: absolute !important;
-    top: 15px !important;
-    right: 15px !important;
-    width: 34px !important;
-    height: 34px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 50% !important;
-    background: rgb(36 116 140) !important;
-    color: #ffffff !important;
-    font-size: 13px !important;
-    backdrop-filter: blur(5px) !important;
-}
-
-.our-instagram-reel-icon i {
-    margin-left: 2px !important;
-    color: #fff !important;
-}
-
-
-/* =========================================
-   ACTION BUTTONS
-========================================= */
-
-.our-instagram-actions {
-    padding: 12px 14px 5px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    color: #222222 !important;
-}
-
-.our-instagram-left-actions {
-    display: flex !important;
-    align-items: center !important;
-    gap: 17px !important;
-}
-
-.our-instagram-actions i {
-    font-size: 20px !important;
-    cursor: pointer !important;
-    transition: transform 0.2s ease !important;
-}
-
-.our-instagram-actions i:hover {
-    transform: scale(1.12) !important;
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.our-instagram-content {
-    padding: 3px 14px 17px !important;
-}
-
-.our-instagram-likes {
-    display: block !important;
-    margin-bottom: 5px !important;
-    font-size: 13px !important;
-    color: #222222 !important;
-}
-
-.our-instagram-content p {
-    margin: 0 0 10px !important;
-    font-size: 13px !important;
-    line-height: 1.5 !important;
-    color: #333333 !important;
-}
-
-.our-instagram-view {
-    display: inline-block !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-    color: #0095f6 !important;
-    text-decoration: none !important;
-}
-
-.our-instagram-view:hover {
-    color: #00376b !important;
-}
-
-.our-instagram-image-wrap {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.our-instagram-image-wrap video {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
-}
-
-.nxsvc-section {
-    position: relative;
-    padding: 100px 0;
-    background: #f6f3ed;
-    overflow: hidden;
-}
-
-/* Background decoration */
-
-.nxsvc-section::before {
-    content: "";
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    background: rgba(35, 132, 157, 0.07);
-    top: -180px;
-    right: -120px;
-    animation: nxsvcFloat 8s ease-in-out infinite;
-}
-
-.nxsvc-section::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    border: 1px solid rgba(35, 132, 157, 0.12);
-    bottom: -130px;
-    left: -100px;
-    animation: nxsvcFloat 10s ease-in-out infinite reverse;
-}
-
-
-.nxsvc-heading-left {
-    position: relative;
-}
-
-.nxsvc-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #23849d;
-    margin-bottom: 12px;
-}
-
-.nxsvc-eyebrow::before {
-    content: "";
-    width: 32px;
-    height: 2px;
-    background: #23849d;
-}
-
-.nxsvc-heading h2 {
-    margin: 0;
-    font-size: clamp(42px, 5vw, 72px);
-    line-height: .95;
-    font-weight: 700;
-    letter-spacing: -3px;
-    color: #111;
-}
-
-.nxsvc-heading h2 span {
-    color: #23849d;
-}
-
-.nxsvc-heading>p {
-    max-width: 400px;
-    margin: 0 0 4px;
-    color: #666;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.nxsvc-card {
-    position: relative;
-    background: #fff;
-    border-radius: 28px;
-    overflow: hidden;
-    min-height: 430px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .5s ease; 
-    margin: 0px 10px;
-}
-
-.nxsvc-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, .10);
-    border-bottom: 5px solid #24748c;
-}
-
-.nxsvc-image {
-    height: 285px;
-    position: relative;
-    overflow: hidden;
-    position: relative;
-    overflow: hidden;
-}
-
-.nxsvc-featured .nxsvc-image {
-    height: 360px;
-}
-
-.nxsvc-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-
-    transition:
-        transform .8s cubic-bezier(.2, .8, .2, 1),
-        filter .6s ease;
-}
-
-.nxsvc-card:hover .nxsvc-image img {
-    transform: scale(1.08);
-    filter: saturate(1.08);
-}
-
-.nxsvc-card:hover i{
-    color: #fff !important;
-}
-
-/* Image gradient */
-
-.nxsvc-image-overlay {
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to bottom,
-            rgba(0, 0, 0, .05) 20%,
-            rgba(0, 0, 0, .58) 100%);
-    pointer-events: none;
-}
-
-.nxsvc-number {
-    position: absolute;
-    left: 22px;
-    bottom: 20px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, .18);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .3);
-    transition: .4s ease;
-}
-
-.nxsvc-card:hover .nxsvc-number {
-    background: #23849d;
-    transform: rotate(10deg) scale(1.08);
-}
-
-
-/* =========================================
-   ARROW
-========================================= */
-
-.nxsvc-arrow {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-
-    width: 48px;
-    height: 48px;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #111;
-    background: #fff;
-
-    text-decoration: none;
-
-    transform: translate(0, 0);
-    transition:
-        transform .4s ease,
-        background .4s ease,
-        color .4s ease;
-}
-
-.nxsvc-arrow i {
-    font-size: 14px;
-    transition: transform .4s ease;
-}
-
-.nxsvc-card:hover .nxsvc-arrow {
-    background: #23849d;
-    color: #fff;
-    transform: translate(4px, -4px);
-}
-
-.nxsvc-card:hover .nxsvc-arrow i {
-    transform: rotate(0deg);
-}
-
-
-/* =========================================
-   CONTENT
-========================================= */
-
-.nxsvc-content {
-    padding: 25px 26px 28px;
-}
-
-.nxsvc-tag {
-    display: block;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #23849d;
-    margin-bottom: 10px;
-}
-
-.nxsvc-content h3 {
-    margin: 0 0 10px;
-    font-size: 25px;
-    line-height: 1.15;
-    font-weight: 700;
-    color: #111;
-    letter-spacing: -.7px;
-}
-
-.nxsvc-featured .nxsvc-content h3 {
-    font-size: 34px;
-}
-
-.nxsvc-content p {
-    margin: 0;
-    color: #707070;
-    font-size: 14px;
-    line-height: 1.65;
-}
-
-
-/* =========================================
-   PILLS
-========================================= */
-
-.nxsvc-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 18px;
-}
-
-.nxsvc-pills span {
-    padding: 7px 11px;
-    border-radius: 30px;
-    background: #eef7f9;
-    color: #23849d;
-    font-size: 11px;
-    font-weight: 600;
-
-    transition: .3s ease;
-}
-
-.nxsvc-card:hover .nxsvc-pills span {
-    background: #23849d;
-    color: #fff;
-}
-
-
-/* =========================================
-   FLOAT ANIMATION
-========================================= */
-
-@keyframes nxsvcFloat {
-
-    0%,
-    100% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    50% {
-        transform: translateY(20px) rotate(8deg);
-    }
-}
-
-@media (max-width: 991px) {
-
-    .nxsvc-featured .nxsvc-image {
-        height: 330px;
-    }
-}
-
-
-@media (max-width: 575px) {
-
-    .nxsvc-section {
-        padding: 70px 0;
-    }
-
-
-    .nxsvc-heading {
-        margin-bottom: 35px;
-    }
-
-    .nxsvc-heading h2 {
-        font-size: 46px;
-        letter-spacing: -2px;
-    }
-
-    .nxsvc-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .nxsvc-featured {
-        grid-column: auto;
-    }
-
-    .nxsvc-image,
-    .nxsvc-featured .nxsvc-image {
-        height: 280px;
-    }
-
-    .nxsvc-content h3,
-    .nxsvc-featured .nxsvc-content h3 {
-        font-size: 26px;
-    }
-
-    .nxsvc-card {
-        min-height: auto;
-        border-radius: 22px;
-    }
-
-}
-</style>
 @endsection
 @section('body')
 
@@ -1608,7 +1060,7 @@
         <!-- Heading -->
         <div class="nxsvc-heading mb-4">
             <div class="nxsvc-heading-left text-center">
-                <h2>Our <span>Services</span></h2>
+                <h2>Our Services</h2>
             </div>
         </div>
 
@@ -1626,11 +1078,11 @@
                 </div>
                 <div class="nxsvc-content">
                     <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Orbit &amp; Oculoplasty</h3>
-                    <p>
-                        Specialized care for eyelid, tear duct
-                        and orbital conditions.
-                    </p>
+                    <h3>Retina & Vitreous Care</h3>
+                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
+                    <p class="highlight">Retina Surgery</p>
+                    <p class="highlight">Laser Treatment</p>
+                    <p class="highlight">Intravitreal Injections</p>
                 </div>
             </article>
 
@@ -1646,11 +1098,11 @@
                 </div>
                 <div class="nxsvc-content">
                     <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Orbit &amp; Oculoplasty</h3>
-                    <p>
-                        Specialized care for eyelid, tear duct
-                        and orbital conditions.
-                    </p>
+                    <h3>Retina & Vitreous Care</h3>
+                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
+                    <p class="highlight">Retina Surgery</p>
+                    <p class="highlight">Laser Treatment</p>
+                    <p class="highlight">Intravitreal Injections</p>
                 </div>
             </article>
 
@@ -1667,11 +1119,11 @@
                 </div>
                 <div class="nxsvc-content">
                     <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Cornea Care</h3>
-                    <p>
-                        Specialized diagnosis and treatment
-                        for corneal diseases and disorders.
-                    </p>
+                    <h3>Retina & Vitreous Care</h3>
+                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
+                    <p class="highlight">Retina Surgery</p>
+                    <p class="highlight">Laser Treatment</p>
+                    <p class="highlight">Intravitreal Injections</p>
                 </div>
             </article>
 
@@ -1692,15 +1144,12 @@
                 </div>
 
                 <div class="nxsvc-content">
-
                     <span class="nxsvc-tag">SPECIALIZED CARE</span>
-
-                    <h3>Cataract Care</h3>
-
-                    <p>
-                        Modern cataract evaluation and
-                        advanced surgical treatment.
-                    </p>
+                    <h3>Retina & Vitreous Care</h3>
+                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
+                    <p class="highlight">Retina Surgery</p>
+                    <p class="highlight">Laser Treatment</p>
+                    <p class="highlight">Intravitreal Injections</p>
 
                 </div>
             </article>
@@ -1724,13 +1173,11 @@
                 <div class="nxsvc-content">
 
                     <span class="nxsvc-tag">SPECIALIZED CARE</span>
-
-                    <h3>Glaucoma Care</h3>
-
-                    <p>
-                        Comprehensive diagnosis and management
-                        of glaucoma and eye pressure disorders.
-                    </p>
+                    <h3>Retina & Vitreous Care</h3>
+                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
+                    <p class="highlight">Retina Surgery</p>
+                    <p class="highlight">Laser Treatment</p>
+                    <p class="highlight">Intravitreal Injections</p>
 
                 </div>
             </article>
