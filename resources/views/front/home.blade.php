@@ -58,7 +58,94 @@
     </div>
 </section>
 
-<section class="our-services bg-yellow pb-5">
+<?php
+$services=[
+    [
+        "img" => "/assets/front/imgs/1/4.png",
+        "title" => "Specialized Care",
+        "name" => "Retina & Vitreous Care",
+        "para" => "Advanced diagnosis and treatment for retinal and vitreous disorders.",
+        "points" => ["Retina Surgery", "Laser Treatment", "Intravitreal Injections"]
+    ],
+    [
+        "img" => "/assets/front/imgs/1/6.png",
+        "title" => "Specialized Care",
+        "name" => "Orbit & Oculoplasty",
+        "para" => "Specialized care for eyelid, tear duct and orbital conditions.",
+        "points" => ["Eyelid Surgery", "Watering Eye Treatment", "Orbital Surgery"]
+    ],
+    [
+        "img" => "/assets/front/imgs/1/7.png",
+        "title" => "Specialized Care",
+        "name" => "Cornea Care",
+        "para" => "Specialized diagnosis and treatment for corneal diseases and disorders.",
+        "points" => ["Corneal Disorders", "Keratoconus & C3R", "Corneal Surgery"]
+    ],
+    [
+        "img" => "/assets/front/imgs/1/3.png",
+        "title" => "Specialized Care",
+        "name" => "Glaucoma Care",
+        "para" => "Comprehensive care to detect and manage glaucoma at every stage.",
+        "points" => ["Glaucoma Diagnosis", "Laser Treatment", "Glaucoma Surgery"]
+    ],
+    [
+        "img" => "/assets/front/imgs/1/8.png",
+        "title" => "Specialized Care",
+        "name" => "Squint Care",
+        "para" => "Expert evaluation and treatment for eye alignment problems in children and adults.",
+        "points" => ["Squint Evaluation", "Amblyopia Management", "Squint Surgery"]
+    ],
+    [
+        "img" => "/assets/front/imgs/1/9.png",
+        "title" => "Specialized Care",
+        "name" => "Eye Trauma & Emergency",
+        "para" => "Prompt and specialized care for urgent eye conditions and injuries.",
+        "points" => ["Eye Injuries", "Foreign Body & Chemical Injuries", "Emergency Eye Surgery"]
+    ],
+    [
+        "img" => "/assets/front/imgs/1/5.png",
+        "title" => "Specialized Care",
+        "name" => "Cataract & Lens Surgery",
+        "para" => "Advanced cataract treatment for clear and better-quality vision.",
+        "points" => ["AI-Guided Cataract Surgery", "Premium IOLs", "MICS / Phaco Surgery"]
+    ],
+];
+?>
+
+<section class="nxsvc-section">
+    <div class="container">
+        <div class="nxsvc-heading mb-4">
+            <div class="nxsvc-heading-left text-center">
+                <h2>Our Services</h2>
+            </div>
+        </div>
+        <div class="nxsvc-grid slider">
+            @foreach($services as $service)
+            <article class="nxsvc-card">
+                <div class="nxsvc-image">
+                    <img src="{{$service['img']}}" alt="Orbit & Oculoplasty">
+                    <div class="nxsvc-image-overlay"></div>
+                    <span class="nxsvc-number">0{{ $loop->iteration }}</span>
+                    <a href="#" class="nxsvc-arrow">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="nxsvc-content">
+                    <span class="nxsvc-tag">{{$service['title']}}</span>
+                    <h3>{{$service['name']}}</h3>
+                    <p class="mb-3">{{$service['para']}}</p>
+                    @foreach($service['points'] as $point)
+                    <p class="highlight">{{ $point }}</p>
+                    @endforeach
+                </div>
+            </article>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+<!-- <section class="our-services bg-yellow pb-5">
     <div class="container">
         <h2 class="text-center">Our Services</h2>
         <div class="row slider">
@@ -143,7 +230,7 @@
         </div>
     </div>
 
-</section>
+</section> -->
 
 <section class="eye-about py-5">
     <div class="container py-5">
@@ -831,14 +918,12 @@
     </div>
 </section>
 
-<section class="zbg-blog-section py-5">
+<section class="mb-5 zbg-blog-section py-5">
     <div class="container">
 
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <!-- <span class="zbg-blog-subtitle text-uppercase">Recent Posts</span> -->
                 <h2 class="zbg-blog-title">From Our Blog</h2>
-                <!-- <div class="zbg-blog-divider"></div> -->
             </div>
         </div>
 
@@ -991,11 +1076,69 @@
     </div>
 </section>
 
+<?php 
+$faqs=[
+    [
+        "ques" => "Should I book an appointment before my checkup?",
+        "ans" => "We like to make sure that & patients are not made to wait for long. Some consultations can take longer than normal or there may be a sudden emergency needing attention. Hence, yes, we request you to make prior appointments."
+    ],
+    [
+        "ques" => "This is my first visit to your clinic. Should I bring my old prescription glasses?",
+        "ans" => "Yes, please bring your glass / contact lens prescription and your old glasses and a list of your current medications or simply bring your medicines along. This helps us to understand your medical history. Here is a Step by Step Guide for a new patient."
+    ],
+    [
+        "ques" => "Will my eyes be dilated for the Eye check-up?",
+        "ans" => "For most ailments of the eye, dilating the eye helps in the diagnosis and hence your eyes have to be dilated. Dilatation drops will be applied to both your eyes, at intervals of ten minutes. While eyes are being dilated, you may experience mild discomfort after the first drop. Dilatation may take between 15-30 minutes and you can be comfortably seated in our lobby."
+    ],
+    [
+        "ques" => "Can I drive my car or ride a two-wheeler after dilation?",
+        "ans" => "After dilatation of the eyes, the pupil of the eye will stay slightly dilated for a couple of hours. So avoid driving vehicles after dilatation. It is always safe to have an attendant with you."
+    ],
+    [
+        "ques" => "I want to under go Cataract Surgery in Shubhanu Eye Hospital. What should I do?",
+        "ans" => "We will first evaluate your eyes. You will undergo a series of investigations and tests to see if surgery can be recommended to you. Next, we provide Counseling to prepare you for surgery and choose a new lens also called Intraocular Lens (IOL) for the implant. An IOL (Foldable) is a clear, plastic lens that requires no care and becomes a permanent part of your eye. You can select from a wide choice of IOLs based on physiological and occupational needs."
+    ],
+    [
+        "ques" => "Will I be given anesthesia before the Surgery?",
+        "ans" => "The surgery is an in-patient procedure and you will be given Local anesthesia / Topical anesthesia / General anesthesia."
+    ],
+    [
+        "ques" => "How long will the surgery take? Can I go home the same day?",
+        "ans" => "The whole procedure usually takes 30 minutes. You will be monitored in our recovery room for a couple of hours and then you will be discharged right away. With proper post operative care, you can get back to normal life in a week’s time."
+    ],
+]
+
+?>
+
+<section class="br-faq-section">
+    <div class="br-faq-wrapper">
+        <div class="br-faq-visual">
+            <div class="br-question-mark">?</div>
+        </div>
+        <div class="br-faq-content">
+            <h2 class="br-faq-title">FAQs</h2>
+            <div class="br-faq-list">
+                @foreach($faqs as $faq)
+                <div class="br-faq-item">
+                    <button class="br-faq-question">
+                        <span class="br-faq-icon">+</span>
+                        <span>{{$faq['ques']}}</span>
+                    </button>
+                    <div class="br-faq-answer">
+                        <p>{{$faq['ans']}}</p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
 <section class="shbapp-section">
     <div class="layercolor">
         <div class="container">
             <div class="row align-items-end mt-5">
-                <!-- Left -->
                 <div class="col-lg-6">
                     <h2 class="shbapp-title"> We Are Always Ready To Help You. Book An Appointment</h2>
                     <form class="shbapp-form">
@@ -1052,140 +1195,7 @@
             </div>
         </div>
     </div>
-</section>
-
-<section class="nxsvc-section">
-    <div class="container">
-
-        <!-- Heading -->
-        <div class="nxsvc-heading mb-4">
-            <div class="nxsvc-heading-left text-center">
-                <h2>Our Services</h2>
-            </div>
-        </div>
-
-
-        <!-- Services -->
-        <div class="nxsvc-grid slider">
-            <article class="nxsvc-card">
-                <div class="nxsvc-image">
-                    <img src="/assets/front/imgs/1/4.png" alt="Orbit & Oculoplasty">
-                    <div class="nxsvc-image-overlay"></div>
-                    <span class="nxsvc-number">01</span>
-                    <a href="#" class="nxsvc-arrow">
-                        <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="nxsvc-content">
-                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Retina & Vitreous Care</h3>
-                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
-                    <p class="highlight">Retina Surgery</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Intravitreal Injections</p>
-                </div>
-            </article>
-
-            <!-- 02 -->
-            <article class="nxsvc-card">
-                <div class="nxsvc-image">
-                    <img src="/assets/front/imgs/1/6.png" alt="Orbit & Oculoplasty">
-                    <div class="nxsvc-image-overlay"></div>
-                    <span class="nxsvc-number">02</span>
-                    <a href="#" class="nxsvc-arrow">
-                        <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="nxsvc-content">
-                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Retina & Vitreous Care</h3>
-                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
-                    <p class="highlight">Retina Surgery</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Intravitreal Injections</p>
-                </div>
-            </article>
-
-
-            <!-- 03 -->
-            <article class="nxsvc-card">
-                <div class="nxsvc-image">
-                    <img src="/assets/front/imgs/1/7.png" alt="Cornea Care">
-                    <div class="nxsvc-image-overlay"></div>
-                    <span class="nxsvc-number">03</span>
-                    <a href="#" class="nxsvc-arrow">
-                        <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <div class="nxsvc-content">
-                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Retina & Vitreous Care</h3>
-                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
-                    <p class="highlight">Retina Surgery</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Intravitreal Injections</p>
-                </div>
-            </article>
-
-
-            <!-- 04 -->
-            <article class="nxsvc-card">
-
-                <div class="nxsvc-image">
-                    <img src="/assets/front/imgs/1/3.png" alt="Cataract Care">
-
-                    <div class="nxsvc-image-overlay"></div>
-
-                    <span class="nxsvc-number">04</span>
-
-                    <a href="#" class="nxsvc-arrow">
-                        <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-
-                <div class="nxsvc-content">
-                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Retina & Vitreous Care</h3>
-                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
-                    <p class="highlight">Retina Surgery</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Intravitreal Injections</p>
-
-                </div>
-            </article>
-
-
-            <!-- 05 -->
-            <article class="nxsvc-card">
-
-                <div class="nxsvc-image">
-                    <img src="/assets/front/imgs/1/8.png" alt="Glaucoma Care">
-
-                    <div class="nxsvc-image-overlay"></div>
-
-                    <span class="nxsvc-number">05</span>
-
-                    <a href="#" class="nxsvc-arrow">
-                        <i class="fas fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-
-                <div class="nxsvc-content">
-
-                    <span class="nxsvc-tag">SPECIALIZED CARE</span>
-                    <h3>Retina & Vitreous Care</h3>
-                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
-                    <p class="highlight">Retina Surgery</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Intravitreal Injections</p>
-
-                </div>
-            </article>
-
-        </div>
-
-    </div>
-</section>
+</section> -->
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -1609,6 +1619,29 @@ $('.first-hero-section').slick({
     responsive: [{
         breakpoint: 768,
     }]
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const faqItems = document.querySelectorAll(".br-faq-item");
+    faqItems.forEach(function(item) {
+        const question = item.querySelector(".br-faq-question");
+        const icon = item.querySelector(".br-faq-icon");
+        question.addEventListener("click", function() {
+            const isActive = item.classList.contains("active");
+            faqItems.forEach(function(otherItem) {
+                otherItem.classList.remove("active");
+                const otherIcon =
+                    otherItem.querySelector(".br-faq-icon");
+                otherIcon.textContent = "+";
+            });
+            if (!isActive) {
+                item.classList.add("active");
+                icon.textContent = "−";
+            }
+        });
+    });
 });
 </script>
 

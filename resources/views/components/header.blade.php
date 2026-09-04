@@ -1,7 +1,7 @@
 <header class="topbar">
     <div class="container-fluid">
         <div class="row py-1">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-3">
                 <div class="logo text-start">
                     <a href="/">
                         <img src="/assets/logo.png" alt="Shubhanu eye Hospital logo" width="255px" class="text-center"
@@ -9,7 +9,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-12 col-md-8 d-flex align-items-center justify-content-end">
+            <div class="col-12 col-md-9 d-flex align-items-center justify-content-end">
                 <div class="social-info social-info-left d-flex">
                     <div class="icon-box me-3">
                         <a href="" class="d-flex align-items-center">

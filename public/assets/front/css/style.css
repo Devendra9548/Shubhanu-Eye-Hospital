@@ -1,10 +1,10 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Alexandria", sans-serif;
   color: #000;
 }
 
 p, ul, li, span, a, i, strong, div, body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #453d3d;
 }
 
@@ -58,8 +58,8 @@ p {
 
 .globalbtn {
   background: #24748c;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   color: #fff;
   padding: 6px 20px;
   border-radius: 10px;

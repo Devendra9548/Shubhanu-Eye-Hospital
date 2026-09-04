@@ -1,13 +1,4 @@
-$hcolor: #000
-$pcolor: #453d3d
-$brandcolor: #24748c
-$fontManrope: "Manrope", sans-serif
-$fontlato: "Lato", sans-serif
-$fontOpenSans: "Open Sans", sans-serif
-$fontPlusJakartaSans: "Plus Jakarta Sans", sans-serif
-$fontPoppins: "Poppins", sans-serif
-$fontKonkhmer: "Konkhmer Sleokchher", system-ui
-$fontAlexandria: "Alexandria", sans-serif
+@import 'style.sass'
 
 .two-clm-list
     display: grid
@@ -39,7 +30,7 @@ $fontAlexandria: "Alexandria", sans-serif
 
 .first-hero-section
     img
-        height: 82vh !important
+        height: auto !important
         object-fit: cover
     .slick-arrow
         z-index: 9 !important
@@ -304,7 +295,7 @@ $fontAlexandria: "Alexandria", sans-serif
         padding: 0px 30px!important
         .title
             font-size: 36px !important
-            font-family: $fontPlusJakartaSans
+            font-family: $fontAlexandria
             font-weight: bold
             span
                 color: yellow !important
@@ -651,7 +642,7 @@ $fontAlexandria: "Alexandria", sans-serif
     line-height: 1.2 !important
     color: #e5e5e5 !important
     margin-bottom: 20px !important
-    font-family: $fontPlusJakartaSans !important
+    font-family: $fontAlexandria !important
 
 .eyecta-title span
     color: #ffefd3 !important
@@ -664,7 +655,7 @@ $fontAlexandria: "Alexandria", sans-serif
     color: #fff !important
     font-size: 30px !important
     font-weight: 700 !important
-    font-family: $fontOpenSans !important
+    font-family: $fontPoppins !important
     margin-bottom: 30px !important
 
 .eyecta-desc
@@ -1110,7 +1101,7 @@ $fontAlexandria: "Alexandria", sans-serif
     -webkit-box-orient: vertical
     overflow: hidden
     text-overflow: ellipsis
-    font-family: $fontlato
+    font-family: $fontPoppins
 
 .zbg-blog-post-title a
     color: $brandcolor
@@ -1144,7 +1135,7 @@ $fontAlexandria: "Alexandria", sans-serif
     -webkit-box-orient: vertical
     overflow: hidden
     text-overflow: ellipsis
-    font-family: $fontlato
+    font-family: $fontPoppins
 
 @media(max-width:1199px)
 
@@ -1308,7 +1299,7 @@ $fontAlexandria: "Alexandria", sans-serif
     color: $brandcolor
     text-align: center
     line-height: 1.5
-    font-family: $fontlato
+    font-family: $fontPoppins
 
 .esec-vertical-text span::after
     content: ""
@@ -2150,28 +2141,6 @@ $fontAlexandria: "Alexandria", sans-serif
     background: #f6f3ed
     overflow: hidden
 
-.nxsvc-section::before
-    content: ""
-    position: absolute
-    width: 420px
-    height: 420px
-    border-radius: 50%
-    background: rgba(35, 132, 157, 0.07)
-    top: -180px
-    right: -120px
-    animation: nxsvcFloat 8s ease-in-out infinite
-
-.nxsvc-section::after
-    content: ""
-    position: absolute
-    width: 280px
-    height: 280px
-    border-radius: 50%
-    border: 1px solid rgba(35, 132, 157, 0.12)
-    bottom: -130px
-    left: -100px
-    animation: nxsvcFloat 10s ease-in-out infinite reverse
-
 .nxsvc-heading-left
     position: relative
 
@@ -2392,3 +2361,161 @@ $fontAlexandria: "Alexandria", sans-serif
     .nxsvc-card
         min-height: auto
         border-radius: 22px
+
+
+
+.br-faq-section
+    position: relative
+    width: 100%
+    padding-top: 40px
+    padding-bottom: 0px
+    overflow: hidden
+    background-color: #fff
+    background-image: radial-gradient(#eeeeee 1.2px, transparent 1.2px)
+    background-size: 8px 8px
+    border-bottom: 5px solid $brandcolor
+
+.br-faq-wrapper
+    max-width: 1250px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 42% 58%
+    align-items: center
+
+.br-faq-visual
+    position: relative
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+
+.br-question-mark
+    font-family: $fontAlexandria
+    font-size: 700px
+    line-height: 0.75
+    font-weight: 700
+    color: transparent
+    -webkit-text-stroke: 8px $brandcolor
+    transform: translateY(30px)
+    user-select: none
+    position: relative
+    bottom: -10px
+
+.br-faq-content
+    padding-left: 25px
+
+.br-faq-title
+    font-family: $fontPoppins
+    font-size: 52px
+    font-weight: 700
+    color: $brandcolor
+    margin-bottom: 20px
+
+.br-faq-item
+    border: 0
+    margin: 0
+    margin-bottom: 10px
+
+.br-faq-list
+    padding-bottom: 75px
+
+.br-faq-question
+    width: 100%
+    display: flex
+    align-items: center
+    gap: 12px
+    padding: 9px 0
+    border: 0
+    background: transparent
+    text-align: left
+    cursor: pointer
+    font-family: $fontPoppins
+    font-size: 16px
+    font-weight: bold
+    line-height: 1.5
+    color: #050505
+    transition: color 0.25s ease
+
+.br-faq-question:hover
+    color: $brandcolor
+
+.br-faq-icon
+    flex: 0 0 10px
+    width: 10px
+    height: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $brandcolor
+    font-size: 19px
+    font-weight: 400
+    line-height: 10px
+    transition: transform 0.3s ease
+
+.br-faq-answer
+    max-height: 0
+    overflow: hidden
+    padding-left: 22px
+    transition: max-height 0.4s ease, padding 0.3s ease
+
+.br-faq-answer p
+    margin: 0
+    padding: 0 0 12px
+    font-family: $fontPoppins
+    font-size: 16px
+    color: #000
+
+.br-faq-item.active .br-faq-answer
+    max-height: 200px
+
+.br-faq-item.active .br-faq-icon
+    transform: rotate(180deg)
+
+.br-faq-item.active .br-faq-question
+    color: $brandcolor
+
+@media (max-width: 991px)
+
+    .br-faq-section
+        padding: 60px 30px
+
+    .br-faq-wrapper
+        grid-template-columns: 30% 70%
+
+    .br-question-mark
+        font-size: 250px
+        -webkit-text-stroke: 6px $brandcolor
+
+    .br-faq-content
+        padding-left: 20px
+
+@media (max-width: 767px)
+
+    .br-faq-section
+        padding: 50px 20px
+
+    .br-faq-wrapper
+        display: block
+
+    .br-faq-visual
+        height: 150px
+        margin-bottom: 25px
+
+    .br-question-mark
+        font-size: 180px
+        transform: translateY(10px)
+
+    .br-faq-content
+        padding-left: 0
+
+    .br-faq-title
+        font-size: 22px
+        margin-bottom: 20px
+
+    .br-faq-question
+        font-size: 11px
+        padding: 11px 0
+
+    .br-faq-answer
+        padding-left: 20px
