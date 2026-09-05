@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<style>
+</style>
 @endsection
 @section('body')
 
@@ -250,7 +252,165 @@ $services=[
     </div>
 </section>
 
-<section class="doctor-section py-5">
+<section class="ct-doctor-section mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2 class="eqshow-title text-start">Doctors in the Spotlight</h2>
+            </div>
+            <div class="col-12 col-md-4 text-end d-flex align-items-center justify-content-end">
+                <a href="#" class="globalbtn">View All Doctors</a>
+            </div>
+        </div>
+
+        <div class="row ct-main-doctor-card ct-box-shadow">
+            <div class="col-12 col-md-6 d-flex align-items-end justify-content-center">
+                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp" alt="Dr. Bhanu Pratap Singh"
+                    width="100%">
+                <p class="title">Chairman</p>
+            </div>
+            <div class="col-12 col-md-6 inner-clms py-5 pe-3">
+                <div class="top-clms">
+                    <span class="awards">MS Ophthalmology | FICO | Vitreo-Retina Fellowship</span>
+                    <h3>Dr. Bhanu Pratap Singh Pangte</h3>
+                    <p class="subtitle">15+ Years of Experience</p>
+                    <p class="details"><strong>Specialisation:</strong> Experienced Vitreo-Retina Surgeon with expertise
+                        in the
+                        diagnosis and surgical management of complex retinal and
+                        vitreous disorders.</p>
+                </div>
+                <div class="row g-3 mt-5">
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <div class="iconbox">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div class="content">
+                                <strong>Specialty</strong>
+                                <span>Vitreo-Retina</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <div class="iconbox">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div class="content">
+                                <strong>Availability</strong>
+                                <span>Full-Time / Daily</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a href="#" class="appointment-btn">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ct-main-doctor-card ct-box-shadow">
+            <div class="col-12 col-md-6 d-flex align-items-end justify-content-center">
+                <img src="/assets/front/imgs/doctors/dr-shubha-raguram-pangtey.webp" alt="Dr. Bhanu Pratap Singh"
+                    width="100%">
+                <p class="title">Chairman</p>
+            </div>
+            <div class="col-12 col-md-6 inner-clms py-5 pe-3">
+                <div class="top-clms">
+                    <span class="awards">MS Ophthalmology | Fellowship in Orbit | Oculoplasty & Ocular Oncology</span>
+                    <h3>Dr. Shubha Raguram Pangtey</h3>
+                    <p class="subtitle">15+ Years of Experience</p>
+                    <p class="details"><strong>Specialisation:</strong> An experienced ophthalmic surgeon specializing
+                        in Orbit, Oculoplasty, Ocular
+                        Oncology, Neuro-Ophthalmology and Pediatric Eye Care, with expertise in managing
+                        complex eyelid, lacrimal, orbital and ocular tumour conditions.</p>
+                </div>
+                <div class="row g-3 mt-5">
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <div class="iconbox">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div class="content">
+                                <strong>Specialty</strong>
+                                <span>Orbit, Oculoplasty & Ocular Oncology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <div class="iconbox">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="content">
+                                <strong>Additional Expertise</strong>
+                                <span>Neuro-Ophthalmology & Pediatric Ophthalmology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a href="#" class="appointment-btn">Book Appointment</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row ct-main-doctor-card ct-other-doctor-card other-doctor-slider">
+            <div class="col-12 col-md-4 ct-inner-doctor-card">
+                <div class="img-clm">
+                    <p class="title">Chairman</p>
+                    <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp" alt="Dr. Shagun Sood">
+                </div>
+                <div class="inner-content pb-4 px-3">
+                    <span class="awards">MBBS | MS Ophthalmology | DNB | FICO</span>
+                    <h3>Dr. Shagun Sood</h3>
+                    <p class="subtitle">10+ Years of Experience</p>
+                    <p class="details"><strong>Specialisation:</strong> Experienced ophthalmic surgeon with expertise in
+                        cataract,
+                        squint and refractive procedures, with extensive surgical
+                        experience across adult and pediatric eye care.</p>
+                    <a href="#" class="appointment-btn">Know More</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 ct-inner-doctor-card">
+                <div class="img-clm">
+                    <p class="title">Chairman</p>
+                    <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp" alt="Dr. Mohd Sufyan Danish">
+                </div>
+                <div class="inner-content pb-4 px-3">
+                    <span class="awards">MBBS | DOMS | DNB Ophthalmology</span>
+                    <h3>Dr. Mohd Sufyan Danish</h3>
+                    <p class="subtitle">8+ Years of Experience</p>
+                    <p class="details"><strong>Specialisation:</strong> Experienced ophthalmic surgeon specializing in
+                        corneal
+                        diseases, cataract and refractive surgery, with extensive
+                        expertise in complex anterior segment procedures.</p>
+                    <a href="#" class="appointment-btn">Know More</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 ct-inner-doctor-card">
+                <div class="img-clm">
+                    <p class="title">Chairman</p>
+                    <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp" alt="Dr. Nabeel Firoz">
+                </div>
+                <div class="inner-content pb-4 px-3">
+                    <span class="awards">MBBS | DOMS | DNB Ophthalmology</span>
+                    <h3>Dr. Nabeel Firoz</h3>
+                    <p class="subtitle">8 Years of Experience</p>
+                    <p class="details"><strong>Specialisation:</strong> Experienced ophthalmologist with expertise in
+                        cataract
+                        surgery, medical retina and comprehensive eye care, with a
+                        special focus on retinal injections and laser procedures.</p>
+                    <a href="#" class="appointment-btn">Know More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- <section class="doctor-section py-5">
     <div class="container">
         <div class="mb-5">
             <h2 class="section-title">Dedicated doctors, <span>committed to your care</span> </h2>
@@ -666,7 +826,7 @@ $services=[
 
     </div>
 
-</section>
+</section> -->
 
 <section class="eqshow-section py-5">
     <div class="container">
@@ -738,7 +898,9 @@ $services=[
                 <div class="eqshow-content">
                     <h3 id="eqshowTitle">Alcon ARGOS Biometer with Image Guidance</h3>
                     <p id="eqshowDescription">
-                     A swept-source OCT biometry system designed for advanced cataract surgery planning and IOL power calculation. It captures detailed biometric measurements along with a reference image of the eye to support precise, image-guided surgical planning.
+                        A swept-source OCT biometry system designed for advanced cataract surgery planning and IOL power
+                        calculation. It captures detailed biometric measurements along with a reference image of the eye
+                        to support precise, image-guided surgical planning.
                     </p>
                     <div class="eqshow-features">
                         <div class="eqshow-feature">
@@ -748,7 +910,7 @@ $services=[
                         <div class="eqshow-feature">
                             <i class="fa-solid fa-circle-check"></i>
                             Rapid biometric data acquisition
-                
+
                         </div>
 
                         <div class="eqshow-feature">
@@ -779,7 +941,7 @@ $services=[
                             <i class="fa-solid fa-circle-check"></i>
                             Digital transfer of surgical planning data to compatible OR systems
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -1077,6 +1239,132 @@ $services=[
 </section>
 
 <?php 
+$toptestimonials = [
+    [
+        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
+        "name" => "Rakesh Joshi",
+        "role" => "Eye Care Patient",
+        "img" => "https://randomuser.me/api/portraits/men/32.jpg"
+    ],
+    [
+        "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
+        "name" => "Neha Sharma",
+        "role" => "Cataract Patient",
+        "img" => "https://randomuser.me/api/portraits/women/44.jpg"
+    ],
+    [
+        "desc" => "I visited Shubhanu Eye Hospital for a routine eye checkup and was impressed by the detailed consultation and professional approach of the doctors.",
+        "name" => "Amit Verma",
+        "role" => "Eye Checkup Patient",
+        "img" => "https://randomuser.me/api/portraits/men/46.jpg"
+    ],
+    [
+        "desc" => "Dr. Bhanu Pratap Singh Pangte gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand.",
+        "name" => "Pooja Rawat",
+        "role" => "Eye Care Patient",
+        "img" => "https://randomuser.me/api/portraits/women/65.jpg"
+    ],
+    [
+        "desc" => "The care at Shubhanu Eye Hospital was wonderful. Dr. Shubha Raguram Pangtey answered all my questions patiently and guided me throughout my treatment.",
+        "name" => "Sanjay Mehta",
+        "role" => "Eye Treatment Patient",
+        "img" => "https://randomuser.me/api/portraits/men/52.jpg"
+    ],
+    [
+        "desc" => "I am very satisfied with my visit to Shubhanu Eye Hospital. The doctors were approachable, attentive, and made the entire experience stress-free.",
+        "name" => "Kavita Joshi",
+        "role" => "Eye Care Patient",
+        "img" => "https://randomuser.me/api/portraits/women/33.jpg"
+    ],
+];
+
+$bottomtestimonials = [
+    [
+        "desc" => "Dr. Shubha Raguram Pangtey provided a detailed examination and explained my condition in simple words. I felt confident about following the recommended treatment.",
+        "name" => "Vikas Singh",
+        "role" => "Retina Care Patient",
+        "img" => "https://randomuser.me/api/portraits/men/41.jpg"
+    ],
+    [
+        "desc" => "My family had a great experience at Shubhanu Eye Hospital. The doctors were caring, the process was smooth, and everything was explained properly.",
+        "name" => "Anjali Bisht",
+        "role" => "Eye Care Patient",
+        "img" => "https://randomuser.me/api/portraits/women/49.jpg"
+    ],
+    [
+        "desc" => "Dr. Bhanu Pratap Singh Pangte took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature.",
+        "name" => "Deepak Kumar",
+        "role" => "Eye Treatment Patient",
+        "img" => "https://randomuser.me/api/portraits/men/55.jpg"
+    ],
+    [
+        "desc" => "I was impressed with Dr. Shubha Raguram Pangtey's professional approach. She explained my eye condition clearly and made the consultation very comfortable.",
+        "name" => "Ritu Negi",
+        "role" => "Eye Consultation Patient",
+        "img" => "https://randomuser.me/api/portraits/women/57.jpg"
+    ],
+    [
+        "desc" => "Shubhanu Eye Hospital provided a comfortable and welcoming experience. The examination was thorough, and the doctors patiently addressed every concern I had.",
+        "name" => "Manoj Rawat",
+        "role" => "Eye Checkup Patient",
+        "img" => "https://randomuser.me/api/portraits/men/61.jpg"
+    ],
+    [
+        "desc" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangte. His detailed explanation helped me understand my treatment and feel more confident.",
+        "name" => "Meena Joshi",
+        "role" => "Eye Care Patient",
+        "img" => "https://randomuser.me/api/portraits/women/68.jpg"
+    ],
+];
+?>
+
+
+<section class="eht-testimonials">
+    <div class="eht-testimonials-box">
+        <div class="eht-testimonials-head">
+            <h2>Words of praise from others<br> about our eye care.
+            </h2>
+        </div>
+        <div class="eht-marquee eht-marquee-top">
+            <div class="eht-marquee-track">
+                @foreach($toptestimonials as $toptestimonial)
+                <div class="eht-card">
+                    <div class="eht-quote">“</div>
+                    <p>{{ $toptestimonial['desc'] }}</p>
+                    <div class="eht-person">
+                        <img src="{{ $toptestimonial['img'] }}" alt="">
+                        <div>
+                            <strong>{{ $toptestimonial['name'] }}</strong>
+                            <small>{{ $toptestimonial['role'] }}</small>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <div class="eht-marquee eht-marquee-bottom">
+            <div class="eht-marquee-track">
+                @foreach($bottomtestimonials as $bottomtestimonial)
+                <div class="eht-card">
+                    <div class="eht-quote">“</div>
+                    <p>{{ $bottomtestimonial['desc'] }}</p>
+                    <div class="eht-person">
+                        <img src="{{ $bottomtestimonial['img'] }}" alt="">
+                        <div>
+                            <strong>{{ $bottomtestimonial['name'] }}</strong>
+                            <small>{{ $bottomtestimonial['role'] }}</small>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php 
 $faqs=[
     [
         "ques" => "Should I book an appointment before my checkup?",
@@ -1270,8 +1558,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-    const equipments = [
-        {
+    const equipments = [{
             image: "/assets/front/imgs/equipment/10.webp",
             title: "Alcon ARGOS Biometer with Image Guidance",
             desc: "A swept-source OCT biometry system designed for advanced cataract surgery planning and IOL power calculation. It captures detailed biometric measurements along with a reference image of the eye to support precise, image-guided surgical planning.",
@@ -1583,6 +1870,31 @@ $('.our-instagram-slider').slick({
     dots: true,
     infinite: true,
 
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+</script>
+
+<script>
+$('.other-doctor-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 500000,
+    arrows: false,
+    dots: false,
+    infinite: true,
     responsive: [{
             breakpoint: 992,
             settings: {

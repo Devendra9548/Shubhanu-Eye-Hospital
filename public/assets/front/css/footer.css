@@ -59,9 +59,9 @@ p {
 .globalbtn {
   background: #24748c;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
-  padding: 6px 20px;
+  padding: 15px 20px;
   border-radius: 10px;
   display: inline-block;
   font-size: 1rem;
