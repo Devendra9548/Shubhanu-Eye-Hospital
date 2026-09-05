@@ -1244,37 +1244,49 @@ $toptestimonials = [
         "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
         "role" => "Eye Care Patient",
-        "img" => "https://randomuser.me/api/portraits/men/32.jpg"
+        "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
         "name" => "Neha Sharma",
         "role" => "Cataract Patient",
-        "img" => "https://randomuser.me/api/portraits/women/44.jpg"
+        "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "I visited Shubhanu Eye Hospital for a routine eye checkup and was impressed by the detailed consultation and professional approach of the doctors.",
         "name" => "Amit Verma",
         "role" => "Eye Checkup Patient",
-        "img" => "https://randomuser.me/api/portraits/men/46.jpg"
+        "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "Dr. Bhanu Pratap Singh Pangte gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand.",
         "name" => "Pooja Rawat",
         "role" => "Eye Care Patient",
-        "img" => "https://randomuser.me/api/portraits/women/65.jpg"
+        "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "The care at Shubhanu Eye Hospital was wonderful. Dr. Shubha Raguram Pangtey answered all my questions patiently and guided me throughout my treatment.",
         "name" => "Sanjay Mehta",
         "role" => "Eye Treatment Patient",
-        "img" => "https://randomuser.me/api/portraits/men/52.jpg"
+        "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "I am very satisfied with my visit to Shubhanu Eye Hospital. The doctors were approachable, attentive, and made the entire experience stress-free.",
         "name" => "Kavita Joshi",
         "role" => "Eye Care Patient",
-        "img" => "https://randomuser.me/api/portraits/women/33.jpg"
+        "img" => "/assets/front/imgs/female.png"
+    ],
+    [
+        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
+        "name" => "Rakesh Joshi",
+        "role" => "Eye Care Patient",
+        "img" => "/assets/front/imgs/male.png"
+    ],
+    [
+        "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
+        "name" => "Neha Sharma",
+        "role" => "Cataract Patient",
+        "img" => "/assets/front/imgs/female.png"
     ],
 ];
 
@@ -1283,37 +1295,49 @@ $bottomtestimonials = [
         "desc" => "Dr. Shubha Raguram Pangtey provided a detailed examination and explained my condition in simple words. I felt confident about following the recommended treatment.",
         "name" => "Vikas Singh",
         "role" => "Retina Care Patient",
-        "img" => "https://randomuser.me/api/portraits/men/41.jpg"
+        "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "My family had a great experience at Shubhanu Eye Hospital. The doctors were caring, the process was smooth, and everything was explained properly.",
         "name" => "Anjali Bisht",
         "role" => "Eye Care Patient",
-        "img" => "https://randomuser.me/api/portraits/women/49.jpg"
+        "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "Dr. Bhanu Pratap Singh Pangte took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature.",
         "name" => "Deepak Kumar",
         "role" => "Eye Treatment Patient",
-        "img" => "https://randomuser.me/api/portraits/men/55.jpg"
+        "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "I was impressed with Dr. Shubha Raguram Pangtey's professional approach. She explained my eye condition clearly and made the consultation very comfortable.",
         "name" => "Ritu Negi",
         "role" => "Eye Consultation Patient",
-        "img" => "https://randomuser.me/api/portraits/women/57.jpg"
+        "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "Shubhanu Eye Hospital provided a comfortable and welcoming experience. The examination was thorough, and the doctors patiently addressed every concern I had.",
         "name" => "Manoj Rawat",
         "role" => "Eye Checkup Patient",
-        "img" => "https://randomuser.me/api/portraits/men/61.jpg"
+        "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangte. His detailed explanation helped me understand my treatment and feel more confident.",
         "name" => "Meena Joshi",
         "role" => "Eye Care Patient",
-        "img" => "https://randomuser.me/api/portraits/women/68.jpg"
+        "img" => "/assets/front/imgs/female.png"
+    ],
+    [
+        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
+        "name" => "Rakesh Joshi",
+        "role" => "Eye Care Patient",
+        "img" => "/assets/front/imgs/male.png"
+    ],
+    [
+        "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
+        "name" => "Neha Sharma",
+        "role" => "Cataract Patient",
+        "img" => "/assets/front/imgs/female.png"
     ],
 ];
 ?>
