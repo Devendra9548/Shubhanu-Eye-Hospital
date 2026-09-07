@@ -8,6 +8,220 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 <style>
+    .mediclaim-section {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    min-height: 550px;
+}
+
+.mediclaim-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.mediclaim-title {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #20252b;
+    margin: 15px 0 18px;
+}
+
+.mediclaim-text {
+    max-width: 820px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.mediclaim-text a {
+    color: #4b8dbd;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.mediclaim-note {
+    max-width: 820px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 28px;
+}
+
+.mediclaim-note strong {
+    color: #4b8dbd;
+    font-weight: 500;
+}
+
+.mediclaim-btn {
+    display: inline-block;
+    padding: 13px 27px;
+    background: #f9bf35;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.mediclaim-btn:hover {
+    background: #e9aa18;
+    color: #222;
+    transform: translateY(-2px);
+}
+
+
+/* RIGHT SIDE IMAGE */
+
+.mediclaim-image-wrap {
+    position: static;
+    min-height: 445px;
+}
+
+.mediclaim-family {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 540px;
+    max-width: 42%;
+    height: auto;
+    z-index: 1;
+}
+
+
+/* LOGO AREA */
+
+.insurance-logo-area {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    overflow: hidden;
+    background: #f4f4f3;
+    padding: 12px 0;
+}
+
+/* Important: no wrapping */
+.insurance-track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    /* LEFT -> RIGHT */
+    animation: insuranceMove 28s linear infinite;
+}
+
+/* Pause on hover - remove this if you want it always moving */
+.insurance-logo-area:hover .insurance-track {
+    animation-play-state: paused;
+}
+
+.insurance-logo {
+    width: 115px;
+    min-width: 115px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 8px;
+}
+
+.insurance-logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 38px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/*
+   Since the second set is an exact duplicate,
+   moving the track by 50% creates a seamless loop.
+*/
+@keyframes insuranceMove {
+
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 991px) {
+
+    .mediclaim-section {
+        min-height: auto;
+    }
+
+    .mediclaim-title {
+        font-size: 34px;
+    }
+
+    .mediclaim-text,
+    .mediclaim-note {
+        max-width: 100%;
+    }
+
+    .mediclaim-image-wrap {
+        display: none;
+    }
+
+    .mediclaim-section .container {
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 575px) {
+
+    .mediclaim-title {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .mediclaim-text,
+    .mediclaim-note {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .mediclaim-btn {
+        padding: 11px 23px;
+    }
+
+    .insurance-logo {
+        width: 95px;
+        min-width: 95px;
+        margin: 0 5px;
+    }
+
+    .insurance-logo img {
+        max-height: 32px;
+    }
+
+    .insurance-track {
+        animation-duration: 22s;
+    }
+
+}
 </style>
 @endsection
 @section('body')
@@ -952,6 +1166,147 @@ $services=[
 
     </div>
 
+</section>
+
+<?php 
+$partners=[
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/1.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/2.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/3.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/4.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/5.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/6.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/7.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/8.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/3.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/4.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/5.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/6.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/7.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/3.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/4.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/5.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/6.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/7.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/3.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/4.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/5.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/6.webp"
+    ],
+    [
+        "name" => "Bank Image",
+        "img" => "/assets/front/imgs/partners/7.webp"
+    ],
+];
+?>
+<section class="mediclaim-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 position-relative z-2">
+                <h2 class="mediclaim-title">
+                    Mediclaim Cashless Services
+                </h2>
+
+                <p class="mediclaim-text">
+                    Mediclaim Cashless Services can be easily availed at Eye-Q
+                    hospitals across India. Cashless mediclaim services provide
+                    flexibility of availing medical treatment by an Insured person
+                    without worrying about the Finances. Cashless mediclaim service
+                    providers offer ease to patients in case of medical emergency
+                    by settling Medical bills directly with hospitals. List of TPA
+                    (Third party administrator), Government panels and insurance
+                    companies for availing cashless Mediclaim at EYE-Q hospital.
+                </p>
+
+                <p class="mediclaim-note">
+                    <strong>NOTE:</strong>
+                    Prior approval of TPA is required in case of availing cashless
+                    mediclaim. Check all the conditions and procedures insurance
+                    before availing cashless mediclaim.
+                </p>
+                <a href="#" class="mediclaim-btn">Apply Now</a>
+            </div>
+            <div class="col-lg-4 mediclaim-image-wrap">
+                <img src="/assets/front/imgs/left-cashless.webp" class="mediclaim-family" alt="Mediclaim Cashless Services">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="insurance-logo-area">
+        <div class="insurance-track">
+            @foreach($partners as $partner)
+            <div class="insurance-logo">
+                <img src="{{$partner['img']}}" alt="{{$partner['name']}}">
+            </div>
+            @endforeach
+        </div>
+    </div>
 </section>
 
 <section class="our-services our-instagram-section pb-5">
