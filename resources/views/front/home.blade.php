@@ -8,220 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 <style>
-    .mediclaim-section {
-    position: relative;
-    background: #fff;
-    overflow: hidden;
-    min-height: 550px;
-}
-
-.mediclaim-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-.mediclaim-title {
-    font-size: 42px;
-    line-height: 1.2;
-    font-weight: 600;
-    color: #20252b;
-    margin: 15px 0 18px;
-}
-
-.mediclaim-text {
-    max-width: 820px;
-    font-size: 16px;
-    line-height: 1.75;
-    color: #333;
-    text-align: justify;
-    margin-bottom: 25px;
-}
-
-.mediclaim-text a {
-    color: #4b8dbd;
-    font-weight: 500;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.mediclaim-note {
-    max-width: 820px;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #333;
-    margin-bottom: 28px;
-}
-
-.mediclaim-note strong {
-    color: #4b8dbd;
-    font-weight: 500;
-}
-
-.mediclaim-btn {
-    display: inline-block;
-    padding: 13px 27px;
-    background: #f9bf35;
-    color: #222;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all .3s ease;
-}
-
-.mediclaim-btn:hover {
-    background: #e9aa18;
-    color: #222;
-    transform: translateY(-2px);
-}
-
-
-/* RIGHT SIDE IMAGE */
-
-.mediclaim-image-wrap {
-    position: static;
-    min-height: 445px;
-}
-
-.mediclaim-family {
-    position: absolute;
-    right: -30px;
-    top: 0;
-    width: 540px;
-    max-width: 42%;
-    height: auto;
-    z-index: 1;
-}
-
-
-/* LOGO AREA */
-
-.insurance-logo-area {
-    position: relative;
-    z-index: 5;
-    width: 100%;
-    overflow: hidden;
-    background: #f4f4f3;
-    padding: 12px 0;
-}
-
-/* Important: no wrapping */
-.insurance-track {
-    display: flex;
-    width: max-content;
-    align-items: center;
-    flex-wrap: nowrap;
-
-    /* LEFT -> RIGHT */
-    animation: insuranceMove 28s linear infinite;
-}
-
-/* Pause on hover - remove this if you want it always moving */
-.insurance-logo-area:hover .insurance-track {
-    animation-play-state: paused;
-}
-
-.insurance-logo {
-    width: 115px;
-    min-width: 115px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 8px;
-}
-
-.insurance-logo img {
-    display: block;
-    max-width: 100%;
-    max-height: 38px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
-
-
-/*
-   Since the second set is an exact duplicate,
-   moving the track by 50% creates a seamless loop.
-*/
-@keyframes insuranceMove {
-
-    from {
-        transform: translateX(-50%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-
-}
-
-
-/* TABLET */
-
-@media (max-width: 991px) {
-
-    .mediclaim-section {
-        min-height: auto;
-    }
-
-    .mediclaim-title {
-        font-size: 34px;
-    }
-
-    .mediclaim-text,
-    .mediclaim-note {
-        max-width: 100%;
-    }
-
-    .mediclaim-image-wrap {
-        display: none;
-    }
-
-    .mediclaim-section .container {
-        padding-top: 25px;
-        padding-bottom: 35px;
-    }
-
-}
-
-
-/* MOBILE */
-
-@media (max-width: 575px) {
-
-    .mediclaim-title {
-        font-size: 28px;
-        margin-top: 10px;
-    }
-
-    .mediclaim-text,
-    .mediclaim-note {
-        font-size: 14px;
-        line-height: 1.65;
-    }
-
-    .mediclaim-btn {
-        padding: 11px 23px;
-    }
-
-    .insurance-logo {
-        width: 95px;
-        min-width: 95px;
-        margin: 0 5px;
-    }
-
-    .insurance-logo img {
-        max-height: 32px;
-    }
-
-    .insurance-track {
-        animation-duration: 22s;
-    }
-
-}
 </style>
 @endsection
 @section('body')
@@ -1267,32 +1053,31 @@ $partners=[
 <section class="mediclaim-section py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8 position-relative z-2">
+            <div class="col-md-6 position-relative z-2">
                 <h2 class="mediclaim-title">
-                    Mediclaim Cashless Services
+                    Mediclaim & Cashless Services
                 </h2>
 
                 <p class="mediclaim-text">
-                    Mediclaim Cashless Services can be easily availed at Eye-Q
-                    hospitals across India. Cashless mediclaim services provide
-                    flexibility of availing medical treatment by an Insured person
-                    without worrying about the Finances. Cashless mediclaim service
-                    providers offer ease to patients in case of medical emergency
-                    by settling Medical bills directly with hospitals. List of TPA
-                    (Third party administrator), Government panels and insurance
-                    companies for availing cashless Mediclaim at EYE-Q hospital.
+                    Shubhanu Eye Hospital offers cashless mediclaim facilities for eligible patients through empanelled
+                    TPAs, insurance companies and government health panels. These services help patients access quality
+                    eye care and surgical treatment without the need to pay the entire eligible treatment cost upfront.
+                    Our dedicated team assists patients with the cashless process, including insurance verification,
+                    documentation, pre-authorisation and claim coordination with the concerned TPA or insurance
+                    provider. Cashless approval and coverage depend on the terms and conditions of the patient’s policy
+                    and the treatment covered under it.
                 </p>
-
-                <p class="mediclaim-note">
+                <p class="mediclaim-note mt-3">
                     <strong>NOTE:</strong>
-                    Prior approval of TPA is required in case of availing cashless
-                    mediclaim. Check all the conditions and procedures insurance
-                    before availing cashless mediclaim.
+                    Prior approval/pre-authorisation from the concerned TPA or insurance company may be required before
+                    availing cashless treatment. Patients are advised to confirm their policy coverage, eligibility,
+                    exclusions and applicable terms before treatment.
                 </p>
-                <a href="#" class="mediclaim-btn">Apply Now</a>
+                <a href="#" class="appointment-btn">Apply Now</a>
             </div>
-            <div class="col-lg-4 mediclaim-image-wrap">
-                <img src="/assets/front/imgs/left-cashless.webp" class="mediclaim-family" alt="Mediclaim Cashless Services">
+            <div class="col-md-6 mediclaim-image-wrap">
+                <img src="/assets/front/imgs/left-cashless.webp" class="mediclaim-family"
+                    alt="Mediclaim Cashless Services">
             </div>
 
         </div>
@@ -1746,9 +1531,25 @@ $bottomtestimonials = [
 <?php 
 $faqs=[
     [
-        "ques" => "Should I book an appointment before my checkup?",
-        "ans" => "We like to make sure that & patients are not made to wait for long. Some consultations can take longer than normal or there may be a sudden emergency needing attention. Hence, yes, we request you to make prior appointments."
+        "ques" => "This is my first visit to your clinic. Should I bring my old prescription glasses?",
+        "ans" => "Yes, please bring your glass / contact lens prescription and your old glasses and a list of your current medications or simply bring your medicines along. This helps us to understand your medical history. Here is a Step by Step Guide for a new patient."
     ],
+    [
+        "ques" => "Will my eyes be dilated for the Eye check-up?",
+        "ans" => "For most ailments of the eye, dilating the eye helps in the diagnosis and hence your eyes have to be dilated. Dilatation drops will be applied to both your eyes, at intervals of ten minutes. While eyes are being dilated, you may experience mild discomfort after the first drop. Dilatation may take between 15-30 minutes and you can be comfortably seated in our lobby."
+    ],
+    [
+        "ques" => "Can I drive my car or ride a two-wheeler after dilation?",
+        "ans" => "After dilatation of the eyes, the pupil of the eye will stay slightly dilated for a couple of hours. So avoid driving vehicles after dilatation. It is always safe to have an attendant with you."
+    ],
+    [
+        "ques" => "I want to under go Cataract Surgery in Shubhanu Eye Hospital. What should I do?",
+        "ans" => "We will first evaluate your eyes. You will undergo a series of investigations and tests to see if surgery can be recommended to you. Next, we provide Counseling to prepare you for surgery and choose a new lens also called Intraocular Lens (IOL) for the implant. An IOL (Foldable) is a clear, plastic lens that requires no care and becomes a permanent part of your eye. You can select from a wide choice of IOLs based on physiological and occupational needs."
+    ],
+];
+
+
+$faqs22=[
     [
         "ques" => "This is my first visit to your clinic. Should I bring my old prescription glasses?",
         "ans" => "Yes, please bring your glass / contact lens prescription and your old glasses and a list of your current medications or simply bring your medicines along. This helps us to understand your medical history. Here is a Step by Step Guide for a new patient."
@@ -1773,96 +1574,52 @@ $faqs=[
         "ques" => "How long will the surgery take? Can I go home the same day?",
         "ans" => "The whole procedure usually takes 30 minutes. You will be monitored in our recovery room for a couple of hours and then you will be discharged right away. With proper post operative care, you can get back to normal life in a week’s time."
     ],
-]
+];
 
 ?>
 
 <section class="br-faq-section">
-    <div class="br-faq-wrapper">
-        <div class="br-faq-visual">
-            <div class="br-question-mark">?</div>
-        </div>
-        <div class="br-faq-content">
-            <h2 class="br-faq-title">FAQs</h2>
-            <div class="br-faq-list">
-                @foreach($faqs as $faq)
-                <div class="br-faq-item">
-                    <button class="br-faq-question">
-                        <span class="br-faq-icon">+</span>
-                        <span>{{$faq['ques']}}</span>
-                    </button>
-                    <div class="br-faq-answer">
-                        <p>{{$faq['ans']}}</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 left-clm">
+                <h2 class="br-faq-title">Frequently asked questions</h2>
+                <div class="bottom-cta-left">
+                    <h2>Still have a questions?</h2>
+                    <p class="mt-4 mb-5">Can't find a the answer to your questions? Send us an email and we'll get back to you soon as possible.</p>
+                    <a href="#" class="globalbtn">Send Email</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="br-faq-content">
+                    <div class="br-faq-list">
+                        <div class="br-faq-item active">
+                            <button class="br-faq-question">
+                                <span class="br-faq-icon">+</span>
+                                <span>Should I book an appointment before my checkup?</span>
+                            </button>
+                            <div class="br-faq-answer">
+                                <p>We like to make sure that & patients are not made to wait for long. Some consultations can take longer than normal or there may be a sudden emergency needing attention. Hence, yes, we request you to make prior appointments.</p>
+                            </div>
+                        </div>
+                        @foreach($faqs as $faq)
+                        <div class="br-faq-item">
+                            <button class="br-faq-question">
+                                <span class="br-faq-icon">+</span>
+                                <span>{{$faq['ques']}}</span>
+                            </button>
+                            <div class="br-faq-answer">
+                                <p>{{$faq['ans']}}</p>
+                            </div>
+                        </div>
+                        @endforeach
                     </div>
                 </div>
-                @endforeach
             </div>
         </div>
+
     </div>
 </section>
 
-<!-- 
-<section class="shbapp-section">
-    <div class="layercolor">
-        <div class="container">
-            <div class="row align-items-end mt-5">
-                <div class="col-lg-6">
-                    <h2 class="shbapp-title"> We Are Always Ready To Help You. Book An Appointment</h2>
-                    <form class="shbapp-form">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control shbapp-control" placeholder="Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control shbapp-control" placeholder="Email">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control shbapp-control" placeholder="Phone">
-                            </div>
-                            <div class="col-md-6">
-                                <select class="form-select shbapp-control">
-                                    <option selected>Department</option>
-                                    <option>Cataract</option>
-                                    <option>Retina</option>
-                                    <option>LASIK</option>
-                                    <option>Glaucoma</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-6">
-                                <select class="form-select shbapp-control">
-                                    <option selected>Doctor</option>
-                                    <option>Dr. Shubhanu</option>
-                                    <option>Dr. Rakesh</option>
-                                    <option>Dr. Pooja</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="datetime-local" class="form-control shbapp-control">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control shbapp-control shbapp-textarea"
-                                    placeholder="Write Your Message Here......"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="d-lg-flex align-items-center">
-                                    <button type="submit" class="btn shbapp-btn">Book An Appointment <i
-                                            class="fa-solid fa-arrow-right-long"></i></button>
-                                    <span class="shbapp-note">( We will be confirm by an SMS )</span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <div class="shbapp-image">
-                        <img src="/assets/front/imgs/bottom-doctor.png" class="img-fluid" alt="Doctors">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
