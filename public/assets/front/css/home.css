@@ -1424,13 +1424,6 @@ p {
 }
 
 @media (max-width: 1199px) {
-  .zbg-blog-thumb {
-    flex: 0 0 240px;
-    max-width: 240px;
-  }
-  .zbg-blog-thumb img {
-    height: 170px;
-  }
   .zbg-blog-post-title {
     font-size: 30px;
   }
@@ -1439,28 +1432,11 @@ p {
   .zbg-blog-item {
     flex-direction: column;
   }
-  .zbg-blog-thumb {
-    width: 100%;
-    max-width: 100%;
-  }
-  .zbg-blog-thumb img {
-    width: 100%;
-    height: 250px;
-  }
-  .zbg-blog-title {
-    font-size: 38px;
-  }
   .zbg-blog-post-title {
     font-size: 28px;
   }
 }
 @media (max-width: 767px) {
-  .zbg-blog-title {
-    font-size: 30px;
-  }
-  .zbg-blog-thumb img {
-    height: 220px;
-  }
   .zbg-blog-post-title {
     font-size: 24px;
   }
@@ -1469,12 +1445,6 @@ p {
   }
 }
 @media (max-width: 575px) {
-  .zbg-blog-thumb img {
-    height: 200px;
-  }
-  .zbg-blog-title {
-    font-size: 26px;
-  }
   .zbg-blog-post-title {
     font-size: 22px;
   }
@@ -3102,15 +3072,19 @@ p {
     padding-left: 0;
   }
   .br-faq-title {
-    font-size: 22px;
+    font-size: 34px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .br-faq-question {
-    font-size: 11px;
+    font-size: 14px;
     padding: 11px 0;
   }
   .br-faq-answer {
     padding-right: 30px;
+  }
+  .br-faq-answer p {
+    font-size: 13px !important;
   }
 }
 .mediclaim-section {
@@ -3273,17 +3247,36 @@ p {
     max-width: 100%;
   }
   .mediclaim-image-wrap {
-    display: none;
+    display: block;
+    position: relative;
+  }
+  .mediclaim-section .container .row {
+    flex-direction: column-reverse;
+  }
+  .mediclaim-family {
+    position: relative;
+    right: 10px;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-bottom: -80px;
   }
   .mediclaim-section .container {
     padding-top: 25px;
-    padding-bottom: 35px;
+    padding-bottom: 5px;
   }
 }
 @media (max-width: 575px) {
   .mediclaim-title {
-    font-size: 28px;
+    font-size: 34px;
     margin-top: 10px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .mediclaim-section .appointment-btn {
+    width: 100%;
   }
   .mediclaim-text, .mediclaim-note {
     font-size: 14px;
@@ -3300,5 +3293,467 @@ p {
   .insurance-track {
     -webkit-animation-duration: 22s;
             animation-duration: 22s;
+  }
+}
+.deva-review-section {
+  width: 100%;
+  background: #fff;
+  padding: 55px 0 65px;
+  overflow: hidden;
+}
+
+.deva-review-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.deva-review-left {
+  width: 30%;
+  flex: 0 0 30%;
+  padding-left: 7%;
+  padding-top: 15px;
+}
+
+.deva-review-right {
+  width: 70%;
+  flex: 0 0 70%;
+  min-width: 0;
+}
+
+.deva-review-quote {
+  width: 45px;
+  height: 50px;
+  margin-bottom: 0px;
+  color: #b8b8b8;
+  font-family: Georgia, serif;
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.deva-review-left-title {
+  margin: 0;
+  color: #111;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+.deva-review-arrows {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  margin-top: 35px;
+}
+
+.deva-review-arrows button {
+  width: 20px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #222;
+  font-size: 19px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.deva-review-arrows button:hover {
+  color: #000;
+}
+
+.deva-review-arrow-line {
+  width: 62px;
+  height: 1px;
+  margin: 3px 10px;
+  background: #777;
+  position: relative;
+  top: 2.2px;
+}
+
+.deva-review-heading {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.deva-review-heading span {
+  font-weight: bold;
+  display: block;
+}
+
+.deva-review-heading h2 {
+  font-size: 64px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: "Alexandria", sans-serif !important;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.deva-review-heading h2 strong {
+  font-weight: 700;
+}
+
+.deva-review-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  color: #111;
+  font-size: 16px;
+}
+
+.deva-review-rating {
+  margin-right: 5px;
+}
+
+.deva-review-trust-star {
+  margin-right: 5px;
+  color: #00b67a;
+  font-size: 24px;
+  line-height: 20px;
+  margin: 0px 8px;
+}
+
+.deva-review-trust strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.deva-review-based {
+  margin-left: 10px;
+  color: #555;
+  font-size: 16px;
+}
+
+.deva-review-slider {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 8px 5px 20px 0;
+  box-sizing: border-box;
+}
+
+.deva-review-track {
+  display: flex;
+  align-items: stretch;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 12px;
+  transform: translateX(0);
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.deva-review-slide {
+  width: 330px;
+  min-width: 330px;
+  flex: 0 0 330px;
+}
+
+.deva-review-card {
+  width: 320px;
+  min-height: 330px;
+  box-sizing: border-box;
+  padding: 21px 18px 16px;
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.deva-review-card p {
+  margin: 0;
+  color: #333;
+  font-size: 10.5px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.deva-review-stars {
+  margin-top: 18px;
+  color: #00a878;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.deva-review-user {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 17px;
+}
+
+.deva-review-user img {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 35px;
+  margin-right: 9px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.deva-review-user strong {
+  display: block;
+  margin: 0;
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.deva-review-user span {
+  display: block;
+  margin-top: 3px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 1300px) {
+  .deva-review-slide {
+    width: 280px;
+    min-width: 280px;
+    flex: 0 0 280px;
+  }
+  .deva-review-card {
+    width: 270px;
+    min-height: 280px;
+    padding: 21px 18px 16px;
+  }
+}
+@media (max-width: 991px) {
+  .deva-review-section {
+    padding: 50px 20px 60px;
+  }
+  .deva-review-container {
+    display: block;
+  }
+  .deva-review-left {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .deva-review-right {
+    width: 100%;
+  }
+  .deva-review-quote {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+  .deva-review-arrows {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .deva-review-heading {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .deva-review-slider {
+    width: 100%;
+  }
+  .deva-review-slide {
+    width: calc((100vw - 42px) / 2);
+    min-width: calc((100vw - 42px) / 2);
+  }
+  .deva-review-card {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .deva-review-slide {
+    width: calc(100vw - 40px);
+    min-width: calc(100vw - 40px);
+  }
+  .deva-review-card {
+    width: 100%;
+  }
+  .deva-review-heading h2 {
+    font-size: 34px;
+  }
+  .deva-review-trust {
+    flex-wrap: wrap;
+  }
+  .deva-review-based {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mediclaim-section .mb-width {
+    padding: 0px 25px;
+  }
+  .info-cta-section .left-clm {
+    padding: 0px 0px;
+  }
+  .nxsvc-tag {
+    font-size: 14px;
+  }
+  .bottom-cta-left {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .deva-review-left-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .deva-review-heading span {
+    display: inline;
+  }
+  .our-services h2, .zbg-blog-title {
+    font-size: 34px !important;
+  }
+  .info-cta-section .d-flex {
+    flex-direction: column !important;
+  }
+  .info-cta-section .number {
+    font-size: 150px;
+  }
+  .info-cta-section .right-clm {
+    border-top: 2px solid #fff;
+    padding: 30px 0px !important;
+    margin-top: 30px;
+    border-left: 0px !important;
+  }
+  .info-cta-section .right-clm .title {
+    font-size: 26px !important;
+  }
+  .info-cta-section .right-clm .inner-clm:nth-last-child(2) {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .info-cta-section .right-clm .inner-clm:not(:first-child) {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .info-cta-section .right-clm .inner-number {
+    font-size: 35px !important;
+  }
+  .info-cta-section .left-clm {
+    text-align: center;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .info-cta-section .dicon {
+    right: 70px;
+    top: 6px;
+  }
+  .info-cta-section .right-clm .inner-desc {
+    width: 100%;
+  }
+  .info-cta-section .right-clm .inner-desc br {
+    display: none;
+  }
+  .eye-about h2 {
+    font-size: 34px !important;
+    line-height: 37px !important;
+  }
+  .eye-about p {
+    font-size: 22px !important;
+    line-height: 32px !important;
+  }
+  .eye-about .lastline {
+    font-size: 26px !important;
+    line-height: 36px !important;
+    margin-top: 8px;
+  }
+  .eye-icon i {
+    font-size: 34px;
+  }
+  .eye-icon {
+    width: 65px;
+    height: 65px;
+    margin-top: -30px;
+  }
+  .view-all-doctors {
+    display: none !important;
+  }
+  .ct-main-doctor-card img {
+    height: 300px;
+  }
+  .ct-box-shadow {
+    border-radius: 25px;
+    width: 98%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .ct-main-doctor-card {
+    margin-top: 20px !important;
+    position: relative;
+  }
+  .ct-main-doctor-card .top-clms {
+    padding: 10px;
+  }
+  .ct-main-doctor-card .awards {
+    font-size: 12px;
+  }
+  .ct-main-doctor-card h3 {
+    font-size: 24px;
+  }
+  .ct-main-doctor-card .subtitle {
+    font-size: 16px !important;
+    margin: 8px 0px !important;
+  }
+  .ct-main-doctor-card .details {
+    font-size: 14px !important;
+  }
+  .appointment-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .ct-main-doctor-card .title, .ct-main-doctor-card .title-2 {
+    font-size: 13px !important;
+    padding: 12px 18px 12px 25px;
+  }
+  .ct-other-doctor-card .slick-dots {
+    width: 100% !important;
+  }
+  .eqshow-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    width: 100%;
+  }
+  .eqshow-title {
+    font-size: 34px;
+  }
+  .eqshow-nav {
+    justify-content: start !important;
+  }
+  .eqshow-item.active {
+    transform: translateY(0px);
+  }
+  .eqshow-image-area img {
+    max-width: 85% !important;
+    height: auto !important;
+  }
+  .eqshow-content p, .eqshow-content div {
+    font-size: 15px !important;
+  }
+  .zbg-blog-thumb img {
+    height: 235px;
+  }
+  .zbg-blog-thumb {
+    flex: 0 0 235px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .zbg-blog-item {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: start;
+    align-items: start;
   }
 }/*# sourceMappingURL=home.css.map */

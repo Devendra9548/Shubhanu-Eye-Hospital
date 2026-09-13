@@ -53,6 +53,12 @@
     <div class="container-fluid">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-12 col-md-12 d-flex align-items-center justify-content-between">
+                <div class="logo text-start mb-header-logo">
+                    <a href="/">
+                        <img src="/assets/logo.png" alt="Shubhanu eye Hospital logo" width="255px" class="text-center"
+                            fetchpriority="high" loading="eager" decoding="async">
+                    </a>
+                </div>
                 <div class="left-side">
                     <nav class="navb" id="mbnav">
                         <ul class="d-flex justify-content-start align-items-center m-0 p-0" style="list-style:none">
@@ -82,6 +88,7 @@
                             <li><a href="{{route('gallery')}}" class="{{ request()->routeIs('gallery') ? 'active' : '' }}">Gallery</a></li>
                             <li><a href="{{route('casestudies')}}" class="{{ request()->routeIs('casestudies') ? 'active' : '' }}">Case Studies</a></li>
                             <li><a href="{{route('contact')}}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact Us</a></li>
+                            <li class="mb-book-an-appointment"><a href="javascript:void(0)" id="showBookAppointment" class="globalbtn"><i class="fa-regular fa-calendar-days me-2"></i> Book an Appointment</a></li>
                         </ul>
 
                     </nav>

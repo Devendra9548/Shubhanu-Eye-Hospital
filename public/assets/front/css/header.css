@@ -259,6 +259,14 @@ header a:hover {
   width: 195px;
 }
 
+.mb-header-logo {
+  display: none;
+}
+
+.mb-book-an-appointment {
+  display: none;
+}
+
 @media only screen and (max-width: 1300px) {
   .navb ul li:not(:last-child) {
     margin-right: 35px;
@@ -268,6 +276,32 @@ header a:hover {
   }
 }
 @media only screen and (max-width: 768px) {
+  .ds-header #mbnav .mb-book-an-appointment .globalbtn {
+    background: linear-gradient(90deg, #2fa6d7, #0b2f63) !important;
+    color: #fff !important;
+  }
+  .p-menu {
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .mb-book-an-appointment {
+    display: block;
+  }
+  .ds-header .p-menu i {
+    color: #000 !important;
+  }
+  .ds-header, .ds-header .container-fluid {
+    background: #fff !important;
+  }
+  .mb-header-logo {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .ds-header .right-side {
+    display: none;
+  }
   .topbar {
     display: none;
   }
@@ -294,7 +328,8 @@ header a:hover {
   }
   #mbnav ul li a {
     font-size: 1rem !important;
-    font-weight: 800 !important;
+    color: #000 !important;
+    font-weight: 500 !important;
   }
   .container-fluid {
     width: 100% !important;
@@ -303,7 +338,9 @@ header a:hover {
     display: block;
   }
   #menuburgar i {
-    font-size: 18px;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
     margin-right: 10px;
   }
   .mb-header {
@@ -317,9 +354,11 @@ header a:hover {
     margin-right: 20px;
   }
   header .logo img {
-    height: 70px;
+    height: 66px;
     -o-object-fit: contain;
        object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
   }
   header .row {
     height: 70px;

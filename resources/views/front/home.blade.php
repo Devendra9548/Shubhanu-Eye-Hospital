@@ -13,317 +13,6 @@
 
 <style>
 
-.deva-review-section {
-    width: 100%;
-    background: #fff;
-    padding: 55px 0 65px;
-    overflow: hidden;
-}
-
-.deva-review-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.deva-review-left {
-    width: 30%;
-    flex: 0 0 30%;
-    padding-left: 7%;
-    padding-top: 45px;
-}
-
-.deva-review-right {
-    width: 70%;
-    flex: 0 0 70%;
-    min-width: 0;
-}
-
-.deva-review-quote {
-    width: 45px;
-    height: 50px;
-    margin-bottom: 30px;
-    color: #b8b8b8;
-    font-family: Georgia, serif;
-    font-size: 78px;
-    font-weight: 700;
-    line-height: 65px;
-}
-
-.deva-review-left-title {
-    margin: 0;
-    color: #111;
-    font-size: 23px;
-    font-weight: 500;
-    line-height: 1.28;
-}
-
-.deva-review-arrows {
-    display: flex;
-    align-items: center;
-    width: 110px;
-    margin-top: 35px;
-}
-
-.deva-review-arrows button {
-    width: 20px;
-    height: 25px;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    color: #222;
-    font-size: 19px;
-    line-height: 25px;
-    cursor: pointer;
-}
-
-.deva-review-arrows button:hover {
-    color: #000;
-}
-
-.deva-review-arrow-line {
-    width: 62px;
-    height: 1px;
-    margin: 0 3px;
-    background: #777;
-}
-
-.deva-review-heading {
-    width: 600px;
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 38px;
-}
-
-.deva-review-heading h2 {
-    margin: 0;
-    color: #111;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 1.15;
-}
-
-.deva-review-heading h2 strong {
-    font-weight: 700;
-}
-
-.deva-review-trust {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
-    color: #111;
-    font-size: 12px;
-}
-
-.deva-review-rating {
-    margin-right: 5px;
-}
-
-.deva-review-trust-star {
-    margin-right: 5px;
-    color: #00b67a;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-.deva-review-trust strong {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.deva-review-based {
-    margin-left: 10px;
-    color: #555;
-    font-size: 10px;
-}
-
-.deva-review-slider {
-    width: 90%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    padding: 8px 5px 20px 0;
-    box-sizing: border-box;
-}
-
-.deva-review-track {
-    display: flex;
-    align-items: stretch;
-    width: max-content;
-    gap: 12px;
-    transform: translateX(0);
-    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
-}
-
-.deva-review-slide {
-    width: 330px;
-    min-width: 330px;
-    flex: 0 0 330px;
-}
-
-.deva-review-card {
-    width: 320px;
-    min-height: 330px;
-    box-sizing: border-box;
-    padding: 21px 18px 16px;
-    background: #fff;
-    border-radius: 11px;
-    box-shadow:0 4px 18px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-}
-
-.deva-review-card p {
-    margin: 0;
-    color: #333;
-    font-size: 10.5px;
-    font-weight: 400;
-    line-height: 1.55;
-}
-
-
-.deva-review-stars {
-    margin-top: 18px;
-    color: #00a878;
-    font-size: 13px;
-    line-height: 1;
-    letter-spacing: 2px;
-}
-
-.deva-review-user {
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 17px;
-}
-
-.deva-review-user img {
-    width: 35px;
-    height: 35px;
-    flex: 0 0 35px;
-    margin-right: 9px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.deva-review-user strong {
-    display: block;
-    margin: 0;
-    color: #111;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-.deva-review-user span {
-    display: block;
-    margin-top: 3px;
-    color: #777;
-    font-size: 8.5px;
-    line-height: 1.2;
-}
-
-
-@media only screen and (max-width:1300px)
-{
-.deva-review-slide {
-    width: 280px;
-    min-width: 280px;
-    flex: 0 0 280px;
-}
-
-
-.deva-review-card {
-    width: 270px;
-    min-height: 280px;
-    padding: 21px 18px 16px;
-}
-}
-
-
-@media (max-width: 991px) {
-
-    .deva-review-section {
-        padding: 50px 20px 60px;
-    }
-
-    .deva-review-container {
-        display: block;
-    }
-
-    .deva-review-left {
-        width: 100%;
-        padding: 0;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .deva-review-right {
-        width: 100%;
-    }
-
-    .deva-review-quote {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-
-    .deva-review-arrows {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .deva-review-heading {
-        width: 100%;
-    }
-
-}
-
-
-@media (max-width: 650px) {
-    .deva-review-slider {
-        width: 100%;
-    }
-    .deva-review-slide {
-        width: calc((100vw - 42px) / 2);
-        min-width: calc((100vw - 42px) / 2);
-    }
-    .deva-review-card {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .deva-review-slide {
-        width: calc(100vw - 40px);
-        min-width: calc(100vw - 40px);
-    }
-
-    .deva-review-card {
-        width: 100%;
-    }
-
-    .deva-review-heading h2 {
-        font-size: 24px;
-    }
-
-    .deva-review-trust {
-        flex-wrap: wrap;
-    }
-
-    .deva-review-based {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 5px;
-
-        text-align: center;
-    }
-
-}
 </style>
 @endsection
 @section('body')
@@ -574,7 +263,7 @@ $services=[
             <div class="col-12 col-md-8">
                 <h2 class="eqshow-title text-start">Doctors in the Spotlight</h2>
             </div>
-            <div class="col-12 col-md-4 text-end d-flex align-items-center justify-content-end">
+            <div class="col-12 col-md-4 text-end d-md-flex align-items-center justify-content-end view-all-doctors">
                 <a href="#" class="globalbtn">View All Doctors</a>
             </div>
         </div>
@@ -595,7 +284,7 @@ $services=[
                         diagnosis and surgical management of complex retinal and
                         vitreous disorders.</p>
                 </div>
-                <div class="row g-3 mt-5">
+                <div class="row g-3 mt-2 mt-md-5">
                     <div class="col-md-6">
                         <div class="info-box">
                             <div class="iconbox">
@@ -641,7 +330,7 @@ $services=[
                         Oncology, Neuro-Ophthalmology and Pediatric Eye Care, with expertise in managing
                         complex eyelid, lacrimal, orbital and ocular tumour conditions.</p>
                 </div>
-                <div class="row g-3 mt-5">
+                <div class="row g-3 mt-2 mt-md-5">
                     <div class="col-md-6">
                         <div class="info-box">
                             <div class="iconbox">
@@ -1361,7 +1050,7 @@ $partners=[
 <section class="mediclaim-section py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 position-relative z-2">
+            <div class="col-md-6 position-relative z-2 mb-width">
                 <h2 class="mediclaim-title">
                     Mediclaim & Cashless Services
                 </h2>
@@ -1529,7 +1218,7 @@ $partners=[
 </section>
 
 <section class="mb-5 zbg-blog-section py-5">
-    <div class="container">
+    <div class="container py-5">
 
         <div class="row">
             <div class="col-12 text-center mb-5">
@@ -1538,7 +1227,7 @@ $partners=[
         </div>
 
         <div class="row g-5">
-            <div class="col-lg-6">
+            <div class="mt-3 col-12 col-lg-6">
                 <div class="zbg-blog-item">
 
                     <div class="zbg-blog-thumb">
@@ -1573,8 +1262,7 @@ $partners=[
                 </div>
             </div>
 
-            <!-- Blog Item -->
-            <div class="col-lg-6">
+            <div class="mt-md-3 col-12 col-lg-6">
                 <div class="zbg-blog-item">
 
                     <div class="zbg-blog-thumb">
@@ -1787,6 +1475,17 @@ $toptestimonials = [
 ];
 ?>
 <section class="deva-review-section">
+    <div class="container">
+        <div class="deva-review-heading">
+            <h2>Read reviews, <span>ride with confidence.</span></h2>
+            <div class="deva-review-trust">
+                <span class="deva-review-rating">4.2/5</span>
+                <span class="deva-review-trust-star">★</span>
+                <strong>Trustpilot</strong>
+                <span class="deva-review-based">Based on 1210 reviews</span>
+            </div>
+        </div>
+    </div>
 
     <div class="deva-review-container">
         <div class="deva-review-left">
@@ -1811,40 +1510,7 @@ $toptestimonials = [
 
         </div>
 
-
-        <!-- RIGHT SIDE -->
         <div class="deva-review-right">
-
-            <!-- TOP HEADING -->
-            <div class="deva-review-heading">
-
-                <h2>
-                    Read reviews,<br>
-                    <strong>ride with confidence.</strong>
-                </h2>
-
-                <div class="deva-review-trust">
-
-                    <span class="deva-review-rating">
-                        4.2/5
-                    </span>
-
-                    <span class="deva-review-trust-star">
-                        ★
-                    </span>
-
-                    <strong>
-                        Trustpilot
-                    </strong>
-
-                    <span class="deva-review-based">
-                        Based on 5210 reviews
-                    </span>
-
-                </div>
-
-            </div>
-
 
             <!-- CUSTOM SLIDER -->
             <div class="deva-review-slider">
@@ -1852,7 +1518,7 @@ $toptestimonials = [
                 <div class="deva-review-track">
 
 
-                @foreach($toptestimonials as $toptestimonials)
+                    @foreach($toptestimonials as $toptestimonials)
                     <div class="deva-review-slide">
 
                         <div class="deva-review-card">
@@ -1879,7 +1545,7 @@ $toptestimonials = [
                         </div>
 
                     </div>
-                @endforeach
+                    @endforeach
 
                 </div>
 
@@ -2398,18 +2064,13 @@ $('.other-doctor-slider').slick({
     dots: false,
     infinite: true,
     responsive: [{
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 1
-            }
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
         }
-    ]
+    }]
 });
 </script>
 
