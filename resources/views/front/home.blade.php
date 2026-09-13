@@ -248,7 +248,7 @@ $services=[
                 <p class="lastline">Preserving sight. Improving lives.</p>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-ct-center">
                 <div class="eye-icon">
                     <i class="fa-solid fa-arrow-right-long"></i>
                 </div>
@@ -261,7 +261,7 @@ $services=[
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
-                <h2 class="eqshow-title text-start">Doctors in the Spotlight</h2>
+                <h2 class="eqshow-title text-center text-md-start">Doctors in the Spotlight</h2>
             </div>
             <div class="col-12 col-md-4 text-end d-md-flex align-items-center justify-content-end view-all-doctors">
                 <a href="#" class="globalbtn">View All Doctors</a>
@@ -2093,6 +2093,11 @@ $('.first-hero-section').slick({
     infinite: true,
     responsive: [{
         breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+        }
     }]
 });
 </script>
