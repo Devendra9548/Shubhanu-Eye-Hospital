@@ -7,7 +7,323 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <style>
+
+.deva-review-section {
+    width: 100%;
+    background: #fff;
+    padding: 55px 0 65px;
+    overflow: hidden;
+}
+
+.deva-review-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.deva-review-left {
+    width: 30%;
+    flex: 0 0 30%;
+    padding-left: 7%;
+    padding-top: 45px;
+}
+
+.deva-review-right {
+    width: 70%;
+    flex: 0 0 70%;
+    min-width: 0;
+}
+
+.deva-review-quote {
+    width: 45px;
+    height: 50px;
+    margin-bottom: 30px;
+    color: #b8b8b8;
+    font-family: Georgia, serif;
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.deva-review-left-title {
+    margin: 0;
+    color: #111;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.deva-review-arrows {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    margin-top: 35px;
+}
+
+.deva-review-arrows button {
+    width: 20px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #222;
+    font-size: 19px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.deva-review-arrows button:hover {
+    color: #000;
+}
+
+.deva-review-arrow-line {
+    width: 62px;
+    height: 1px;
+    margin: 0 3px;
+    background: #777;
+}
+
+.deva-review-heading {
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.deva-review-heading h2 {
+    margin: 0;
+    color: #111;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.deva-review-heading h2 strong {
+    font-weight: 700;
+}
+
+.deva-review-trust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    color: #111;
+    font-size: 12px;
+}
+
+.deva-review-rating {
+    margin-right: 5px;
+}
+
+.deva-review-trust-star {
+    margin-right: 5px;
+    color: #00b67a;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.deva-review-trust strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.deva-review-based {
+    margin-left: 10px;
+    color: #555;
+    font-size: 10px;
+}
+
+.deva-review-slider {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 8px 5px 20px 0;
+    box-sizing: border-box;
+}
+
+.deva-review-track {
+    display: flex;
+    align-items: stretch;
+    width: max-content;
+    gap: 12px;
+    transform: translateX(0);
+    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.deva-review-slide {
+    width: 330px;
+    min-width: 330px;
+    flex: 0 0 330px;
+}
+
+.deva-review-card {
+    width: 320px;
+    min-height: 330px;
+    box-sizing: border-box;
+    padding: 21px 18px 16px;
+    background: #fff;
+    border-radius: 11px;
+    box-shadow:0 4px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.deva-review-card p {
+    margin: 0;
+    color: #333;
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+
+.deva-review-stars {
+    margin-top: 18px;
+    color: #00a878;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.deva-review-user {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 17px;
+}
+
+.deva-review-user img {
+    width: 35px;
+    height: 35px;
+    flex: 0 0 35px;
+    margin-right: 9px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.deva-review-user strong {
+    display: block;
+    margin: 0;
+    color: #111;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.deva-review-user span {
+    display: block;
+    margin-top: 3px;
+    color: #777;
+    font-size: 8.5px;
+    line-height: 1.2;
+}
+
+
+@media only screen and (max-width:1300px)
+{
+.deva-review-slide {
+    width: 280px;
+    min-width: 280px;
+    flex: 0 0 280px;
+}
+
+
+.deva-review-card {
+    width: 270px;
+    min-height: 280px;
+    padding: 21px 18px 16px;
+}
+}
+
+
+@media (max-width: 991px) {
+
+    .deva-review-section {
+        padding: 50px 20px 60px;
+    }
+
+    .deva-review-container {
+        display: block;
+    }
+
+    .deva-review-left {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .deva-review-right {
+        width: 100%;
+    }
+
+    .deva-review-quote {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .deva-review-arrows {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .deva-review-heading {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .deva-review-slider {
+        width: 100%;
+    }
+    .deva-review-slide {
+        width: calc((100vw - 42px) / 2);
+        min-width: calc((100vw - 42px) / 2);
+    }
+    .deva-review-card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .deva-review-slide {
+        width: calc(100vw - 40px);
+        min-width: calc(100vw - 40px);
+    }
+
+    .deva-review-card {
+        width: 100%;
+    }
+
+    .deva-review-heading h2 {
+        font-size: 24px;
+    }
+
+    .deva-review-trust {
+        flex-wrap: wrap;
+    }
+
+    .deva-review-based {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5px;
+
+        text-align: center;
+    }
+
+}
 </style>
 @endsection
 @section('body')
@@ -958,95 +1274,87 @@ $services=[
 $partners=[
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/1.webp"
+        "img" => "/assets/front/imgs/partners/11.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/2.webp"
+        "img" => "/assets/front/imgs/partners/12.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/3.webp"
+        "img" => "/assets/front/imgs/partners/13.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/4.webp"
+        "img" => "/assets/front/imgs/partners/14.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/5.webp"
+        "img" => "/assets/front/imgs/partners/15.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/6.webp"
+        "img" => "/assets/front/imgs/partners/16.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/7.webp"
+        "img" => "/assets/front/imgs/partners/17.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/8.webp"
+        "img" => "/assets/front/imgs/partners/18.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/3.webp"
+        "img" => "/assets/front/imgs/partners/19.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/4.webp"
+        "img" => "/assets/front/imgs/partners/20.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/5.webp"
+        "img" => "/assets/front/imgs/partners/21.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/6.webp"
+        "img" => "/assets/front/imgs/partners/22.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/7.webp"
+        "img" => "/assets/front/imgs/partners/23.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/3.webp"
+        "img" => "/assets/front/imgs/partners/24.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/4.webp"
+        "img" => "/assets/front/imgs/partners/25.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/5.webp"
+        "img" => "/assets/front/imgs/partners/26.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/6.webp"
+        "img" => "/assets/front/imgs/partners/27.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/7.webp"
+        "img" => "/assets/front/imgs/partners/28.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/3.webp"
+        "img" => "/assets/front/imgs/partners/29.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/4.webp"
+        "img" => "/assets/front/imgs/partners/30.webp"
     ],
     [
         "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/5.webp"
-    ],
-    [
-        "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/6.webp"
-    ],
-    [
-        "name" => "Bank Image",
-        "img" => "/assets/front/imgs/partners/7.webp"
+        "img" => "/assets/front/imgs/partners/31.webp"
     ],
 ];
 ?>
@@ -1383,150 +1691,205 @@ $toptestimonials = [
     [
         "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
-        "role" => "Eye Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
         "name" => "Neha Sharma",
-        "role" => "Cataract Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "I visited Shubhanu Eye Hospital for a routine eye checkup and was impressed by the detailed consultation and professional approach of the doctors.",
         "name" => "Amit Verma",
-        "role" => "Eye Checkup Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "Dr. Bhanu Pratap Singh Pangte gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand.",
         "name" => "Pooja Rawat",
-        "role" => "Eye Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "The care at Shubhanu Eye Hospital was wonderful. Dr. Shubha Raguram Pangtey answered all my questions patiently and guided me throughout my treatment.",
         "name" => "Sanjay Mehta",
-        "role" => "Eye Treatment Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "I am very satisfied with my visit to Shubhanu Eye Hospital. The doctors were approachable, attentive, and made the entire experience stress-free.",
         "name" => "Kavita Joshi",
-        "role" => "Eye Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
-        "role" => "Eye Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
         "name" => "Neha Sharma",
-        "role" => "Cataract Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
-];
-
-$bottomtestimonials = [
     [
         "desc" => "Dr. Shubha Raguram Pangtey provided a detailed examination and explained my condition in simple words. I felt confident about following the recommended treatment.",
         "name" => "Vikas Singh",
-        "role" => "Retina Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "My family had a great experience at Shubhanu Eye Hospital. The doctors were caring, the process was smooth, and everything was explained properly.",
         "name" => "Anjali Bisht",
-        "role" => "Eye Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "Dr. Bhanu Pratap Singh Pangte took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature.",
         "name" => "Deepak Kumar",
-        "role" => "Eye Treatment Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "I was impressed with Dr. Shubha Raguram Pangtey's professional approach. She explained my eye condition clearly and made the consultation very comfortable.",
         "name" => "Ritu Negi",
-        "role" => "Eye Consultation Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "Shubhanu Eye Hospital provided a comfortable and welcoming experience. The examination was thorough, and the doctors patiently addressed every concern I had.",
         "name" => "Manoj Rawat",
-        "role" => "Eye Checkup Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangte. His detailed explanation helped me understand my treatment and feel more confident.",
         "name" => "Meena Joshi",
-        "role" => "Eye Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
     [
         "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
-        "role" => "Eye Care Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.png"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
         "name" => "Neha Sharma",
-        "role" => "Cataract Patient",
+        "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.png"
     ],
 ];
 ?>
+<section class="deva-review-section">
 
-
-<section class="eht-testimonials">
-    <div class="eht-testimonials-box">
-        <div class="eht-testimonials-head">
-            <h2>Words of praise from others<br> about our eye care.
-            </h2>
-        </div>
-        <div class="eht-marquee eht-marquee-top">
-            <div class="eht-marquee-track">
-                @foreach($toptestimonials as $toptestimonial)
-                <div class="eht-card">
-                    <div class="eht-quote">“</div>
-                    <p>{{ $toptestimonial['desc'] }}</p>
-                    <div class="eht-person">
-                        <img src="{{ $toptestimonial['img'] }}" alt="">
-                        <div>
-                            <strong>{{ $toptestimonial['name'] }}</strong>
-                            <small>{{ $toptestimonial['role'] }}</small>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
+    <div class="deva-review-container">
+        <div class="deva-review-left">
+            <div class="deva-review-quote">
+                “
             </div>
+
+            <h3 class="deva-review-left-title"> What our<br> customers are<br> saying</h3>
+            <div class="deva-review-arrows">
+
+                <button type="button" class="deva-review-prev" aria-label="Previous reviews">
+                    ←
+                </button>
+
+                <div class="deva-review-arrow-line"></div>
+
+                <button type="button" class="deva-review-next" aria-label="Next reviews">
+                    →
+                </button>
+
+            </div>
+
         </div>
 
-        <div class="eht-marquee eht-marquee-bottom">
-            <div class="eht-marquee-track">
-                @foreach($bottomtestimonials as $bottomtestimonial)
-                <div class="eht-card">
-                    <div class="eht-quote">“</div>
-                    <p>{{ $bottomtestimonial['desc'] }}</p>
-                    <div class="eht-person">
-                        <img src="{{ $bottomtestimonial['img'] }}" alt="">
-                        <div>
-                            <strong>{{ $bottomtestimonial['name'] }}</strong>
-                            <small>{{ $bottomtestimonial['role'] }}</small>
-                        </div>
-                    </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="deva-review-right">
+
+            <!-- TOP HEADING -->
+            <div class="deva-review-heading">
+
+                <h2>
+                    Read reviews,<br>
+                    <strong>ride with confidence.</strong>
+                </h2>
+
+                <div class="deva-review-trust">
+
+                    <span class="deva-review-rating">
+                        4.2/5
+                    </span>
+
+                    <span class="deva-review-trust-star">
+                        ★
+                    </span>
+
+                    <strong>
+                        Trustpilot
+                    </strong>
+
+                    <span class="deva-review-based">
+                        Based on 5210 reviews
+                    </span>
+
                 </div>
-                @endforeach
+
             </div>
+
+
+            <!-- CUSTOM SLIDER -->
+            <div class="deva-review-slider">
+
+                <div class="deva-review-track">
+
+
+                @foreach($toptestimonials as $toptestimonials)
+                    <div class="deva-review-slide">
+
+                        <div class="deva-review-card">
+
+                            <p>
+                                {{$toptestimonials['desc']}}
+                            </p>
+
+                            <div class="deva-review-stars">
+                                ★★★★★
+                            </div>
+
+                            <div class="deva-review-user">
+
+                                <img src="{{$toptestimonials['img']}}" alt="Karan">
+
+                                <div>
+                                    <strong>{{$toptestimonials['name']}}</strong>
+                                    <span>{{$toptestimonials['time']}}</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                @endforeach
+
+                </div>
+
+            </div>
+
         </div>
+
     </div>
-</section>
 
+</section>
 
 <?php 
 $faqs=[
@@ -1585,7 +1948,8 @@ $faqs22=[
                 <h2 class="br-faq-title">Frequently asked questions</h2>
                 <div class="bottom-cta-left">
                     <h2>Still have a questions?</h2>
-                    <p class="mt-4 mb-5">Can't find a the answer to your questions? Send us an email and we'll get back to you soon as possible.</p>
+                    <p class="mt-4 mb-5">Can't find a the answer to your questions? Send us an email and we'll get back
+                        to you soon as possible.</p>
                     <a href="#" class="globalbtn">Send Email</a>
                 </div>
             </div>
@@ -1598,7 +1962,9 @@ $faqs22=[
                                 <span>Should I book an appointment before my checkup?</span>
                             </button>
                             <div class="br-faq-answer">
-                                <p>We like to make sure that & patients are not made to wait for long. Some consultations can take longer than normal or there may be a sudden emergency needing attention. Hence, yes, we request you to make prior appointments.</p>
+                                <p>We like to make sure that & patients are not made to wait for long. Some
+                                    consultations can take longer than normal or there may be a sudden emergency needing
+                                    attention. Hence, yes, we request you to make prior appointments.</p>
                             </div>
                         </div>
                         @foreach($faqs as $faq)
@@ -2071,6 +2437,19 @@ $('.first-hero-section').slick({
 </script>
 
 <script>
+$('.dsc-review-slider').slick({
+    slidesToShow: 3,
+    arrows: true,
+    infinite: true,
+    responsive: [{
+        breakpoint: 768,
+    }]
+});
+</script>
+
+
+
+<script>
 document.addEventListener("DOMContentLoaded", function() {
     const faqItems = document.querySelectorAll(".br-faq-item");
     faqItems.forEach(function(item) {
@@ -2093,4 +2472,201 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const slider = document.querySelector(".deva-review-slider");
+    const track = document.querySelector(".deva-review-track");
+
+    const prevButton = document.querySelector(".deva-review-prev");
+    const nextButton = document.querySelector(".deva-review-next");
+
+    const slides = document.querySelectorAll(".deva-review-slide");
+
+
+    /* ================================================
+       SAFETY CHECK
+    ================================================ */
+
+    if (
+        !slider ||
+        !track ||
+        !prevButton ||
+        !nextButton ||
+        slides.length === 0
+    ) {
+        return;
+    }
+
+
+    let currentIndex = 0;
+
+
+    /* ================================================
+       GET SLIDE WIDTH
+    ================================================ */
+
+    function getSlideStep() {
+
+        const slide = slides[0];
+
+        const slideWidth = slide.getBoundingClientRect().width;
+
+        const trackStyle = window.getComputedStyle(track);
+
+        const gap = parseFloat(trackStyle.gap) || 0;
+
+        return slideWidth + gap;
+    }
+
+
+    /* ================================================
+       HOW MANY CARDS ARE VISIBLE
+    ================================================ */
+
+    function getVisibleSlides() {
+
+        const screenWidth = window.innerWidth;
+
+
+        /* Desktop = EXACTLY 3 */
+
+        if (screenWidth > 991) {
+            return 3;
+        }
+
+
+        /* Tablet = 2 */
+
+        if (screenWidth > 650) {
+            return 2;
+        }
+
+
+        /* Mobile = 1 */
+
+        return 1;
+    }
+
+
+    /* ================================================
+       MAXIMUM INDEX
+    ================================================ */
+
+    function getMaxIndex() {
+
+        const visibleSlides = getVisibleSlides();
+
+        return Math.max(
+            0,
+            slides.length - visibleSlides
+        );
+    }
+
+
+    /* ================================================
+       MOVE SLIDER
+    ================================================ */
+
+    function moveSlider() {
+
+        const step = getSlideStep();
+
+        const move = step * currentIndex;
+
+
+        track.style.transform =
+            "translate3d(-" + move + "px, 0, 0)";
+
+    }
+
+
+    /* ================================================
+       NEXT BUTTON
+    ================================================ */
+
+    nextButton.addEventListener("click", function() {
+
+        const maxIndex = getMaxIndex();
+
+
+        if (currentIndex < maxIndex) {
+
+            currentIndex++;
+
+        } else {
+
+            /*
+             * Last slide ke baad
+             * wapas first slide
+             */
+
+            currentIndex = 0;
+
+        }
+
+
+        moveSlider();
+
+    });
+
+
+    /* ================================================
+       PREVIOUS BUTTON
+    ================================================ */
+
+    prevButton.addEventListener("click", function() {
+
+        const maxIndex = getMaxIndex();
+
+
+        if (currentIndex > 0) {
+
+            currentIndex--;
+
+        } else {
+
+            /*
+             * First se last visible position
+             */
+
+            currentIndex = maxIndex;
+
+        }
+
+
+        moveSlider();
+
+    });
+
+
+    /* ================================================
+       RESIZE
+    ================================================ */
+
+    window.addEventListener("resize", function() {
+
+        const maxIndex = getMaxIndex();
+
+
+        if (currentIndex > maxIndex) {
+
+            currentIndex = maxIndex;
+
+        }
+
+
+        moveSlider();
+
+    });
+
+
+    /* ================================================
+       INITIAL
+    ================================================ */
+
+    moveSlider();
+
+});
+</script>
 @endsection
