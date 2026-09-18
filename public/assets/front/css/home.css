@@ -3069,6 +3069,9 @@ p {
   }
 }
 @media (max-width: 767px) {
+  .info-cta-section .dicon {
+    right: 28px !important;
+  }
   .zbg-blog-section {
     padding: 0px 10px;
   }
