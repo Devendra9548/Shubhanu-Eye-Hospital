@@ -1,4 +1,233 @@
 <style>
+:root {
+    --hcolor: #000000;
+    --pcolor: #453d3d;
+    --brandcolor: #24748c;
+}
+
+/* ==============================
+   MOBILE BOTTOM NAVIGATION
+================================ */
+
+.mobile-bottom-nav {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 72px;
+
+    background: #ffffff;
+    border: 1px solid rgba(36, 116, 140, 0.15);
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 5px 7px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.14),
+        0 2px 8px rgba(36, 116, 140, 0.08);
+
+    z-index: 99999;
+}
+
+
+/* Individual Item */
+
+.mobile-nav-item {
+    position: relative;
+
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: var(--pcolor);
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+
+/* Icon */
+
+.nav-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-icon i {
+    font-size: 18px;
+}
+
+
+/* Label */
+
+.nav-label {
+    margin-top: 3px;
+
+    font-size: 10px;
+    line-height: 1;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    color: var(--pcolor);
+}
+
+
+/* Hover / Active */
+
+.mobile-nav-item:hover {
+    color: var(--brandcolor);
+}
+
+.mobile-nav-item:hover .nav-icon {
+    background: rgba(36, 116, 140, 0.10);
+    color: var(--brandcolor);
+    transform: translateY(-2px);
+}
+
+.mobile-nav-item:hover .nav-label {
+    color: var(--brandcolor);
+}
+
+
+/* ==============================
+   CENTER APPOINTMENT BUTTON
+================================ */
+
+.appointment-nav {
+    flex: 1.35;
+
+    margin-top: -25px;
+
+    height: auto;
+
+    color: #ffffff;
+}
+
+
+/* Big Circle */
+
+.appointment-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--brandcolor);
+
+    border: 5px solid #ffffff;
+
+    box-shadow:
+        0 5px 15px rgba(36, 116, 140, 0.30);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.appointment-icon i {
+    font-size: 21px;
+}
+
+
+/* Appointment Text */
+
+.appointment-label {
+    margin-top: 5px;
+
+    font-size: 9px;
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    color: var(--hcolor);
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* Appointment Hover */
+
+.appointment-nav:hover .appointment-icon {
+    transform: translateY(-3px) scale(1.04);
+
+    box-shadow:
+        0 8px 20px rgba(36, 116, 140, 0.38);
+}
+
+.appointment-nav:hover .appointment-label {
+    color: var(--brandcolor);
+}
+
+
+/* ==============================
+   SMALL MOBILE SCREEN
+================================ */
+
+@media (max-width: 360px) {
+
+    .mobile-bottom-nav {
+        left: 6px;
+        right: 6px;
+        bottom: 7px;
+        height: 68px;
+        padding: 4px;
+    }
+
+    .nav-label {
+        font-size: 9px;
+    }
+
+    .nav-icon {
+        width: 31px;
+        height: 31px;
+    }
+
+    .nav-icon i {
+        font-size: 16px;
+    }
+
+    .appointment-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .appointment-label {
+        font-size: 8px;
+    }
+}    
+</style>
+
+<style>
     /* =========================================
    UNIQUE EYE DISEASE FOOTER
 ========================================= */
@@ -212,7 +441,7 @@
 
                 <ul>
                     <li><a href="{{route('blogs')}}">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="{{route('career')}}">Career</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
@@ -432,6 +661,46 @@
     </div>
 </div>
 
+<!-- Mobile Bottom Navigation -->
+<div class="mobile-bottom-nav d-md-none">
+
+    <a href="/" class="mobile-nav-item">
+        <span class="nav-icon">
+             <i class="fa-solid fa-house"></i>
+        </span>
+        <span class="nav-label">Home</span>
+    </a>
+
+    <a href="tel:+911234567890" class="mobile-nav-item">
+        <span class="nav-icon">
+           <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="nav-label">Phone</span>
+    </a>
+
+    <a href="https://appointment.sgrh.com/" class="mobile-nav-item appointment-nav">
+        <span class="appointment-icon">
+<i class="fa-solid fa-calendar-check"></i>
+        </span>
+        <span class="appointment-label">Book Appointment</span>
+    </a>
+
+    <a href="mailto:info@example.com" class="mobile-nav-item">
+        <span class="nav-icon">
+            <i class="fa-solid fa-envelope"></i>
+        </span>
+        <span class="nav-label">Email</span>
+    </a>
+
+    <a href="#timing" class="mobile-nav-item">
+        <span class="nav-icon">
+            <i class="fa-solid fa-clock"></i>
+        </span>
+        <span class="nav-label">Timing</span>
+    </a>
+
+</div>
+
 <script>
 document.querySelector("#showBookAppointment").addEventListener('click', function(){
     document.querySelector("#bookAppointment").style.display="flex";
@@ -445,3 +714,4 @@ function hideBookAnAppointment(){
 }
 
 </script>
+

@@ -15,6 +15,7 @@ use App\Livewire\Back\Users;
 Route::get('/', [frontendController::class, 'home'])->name('home');
 Route::get('about', [frontendController::class, 'about'])->name('about');
 Route::get('contact-us', [frontendController::class, 'contact'])->name('contact');
+Route::get('career', [frontendController::class, 'career'])->name('career');
 Route::get('gallery', [frontendController::class, 'gallery'])->name('gallery');
 Route::get('case-studies', [frontendController::class, 'casestudies'])->name('casestudies');
 Route::get('blog', [frontendController::class, 'blogs'])->name('blogs');

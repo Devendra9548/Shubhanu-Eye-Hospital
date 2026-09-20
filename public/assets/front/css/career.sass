@@ -1,0 +1,191 @@
+$hcolor: #000
+$pcolor: #453d3d
+$brandcolor: #24748c
+$fontPoppins: "Poppins", sans-serif
+$fontKonkhmer: "Konkhmer Sleokchher", system-ui
+$fontAlexandria: "Alexandria", sans-serif
+
+.career-section
+    background: #f7faf8
+    overflow: hidden
+
+.career-content
+    padding-right: 35px
+
+.career-tag
+    display: inline-block
+    font-size: 13px
+    font-weight: 700
+    letter-spacing: 1.8px
+    color: $brandcolor
+    margin-bottom: 15px
+
+.career-content h2
+    font-size: 48px
+    line-height: 1.15
+    font-weight: 700
+    color: #17324d
+    margin-bottom: 20px
+
+.career-description
+    max-width: 540px
+    color: #65717c
+    font-size: 16px
+    line-height: 1.8
+    margin-bottom: 30px
+
+.career-image
+    position: relative
+    border-radius: 24px
+    overflow: hidden
+    max-width: 550px
+
+.career-image img
+    width: 100%
+    height: 300px
+    object-fit: cover
+    display: block
+
+.career-form-box
+    background: #ffffff
+    padding: 38px
+    border-radius: 24px
+    box-shadow: 0 15px 45px rgba(23, 50, 77, 0.09)
+    border: 1px solid rgba(117, 172, 57, 0.12)
+
+.form-heading
+    margin-bottom: 25px
+
+.form-heading h3
+    color: #17324d
+    font-size: 27px
+    font-weight: 700
+    margin-bottom: 7px
+
+.form-heading p
+    color: #7b858e
+    font-size: 14px
+    margin: 0
+
+.form-group
+    margin-bottom: 18px
+
+.form-group label
+    display: block
+    font-size: 14px
+    font-weight: 600
+    color: #34495e
+    margin-bottom: 8px
+
+.form-control, .form-select
+    height: 48px
+    border: 1px solid #dfe6e1
+    border-radius: 10px
+    padding: 0 15px
+    font-size: 14px
+    color: #34495e
+    background-color: #fff
+    box-shadow: none
+    transition: all 0.25s ease
+
+.form-control::placeholder
+    color: #a5adb3
+
+.form-control:focus, .form-select:focus
+    border-color: rgb(117, 172, 57)
+    box-shadow: 0 0 0 3px rgba(117, 172, 57, 0.10)
+
+.cv-upload
+    position: relative
+    height: 85px
+    border: 1.5px dashed #cdd8d0
+    border-radius: 12px
+    background: #fafcfb
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    transition: all 0.25s ease
+
+.cv-upload:hover
+    border-color: rgb(117, 172, 57)
+    background: #f8fbf6
+
+.cv-upload input[type="file"]
+    position: absolute
+    inset: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    cursor: pointer
+    z-index: 2
+
+.upload-text
+    display: flex
+    align-items: center
+    gap: 10px
+    color: #5f6c76
+
+.upload-text i
+    font-size: 25px
+    color: rgb(117, 172, 57)
+
+.upload-text span
+    font-size: 14px
+    font-weight: 600
+
+.upload-text small
+    font-size: 11px
+    color: #9aa3aa
+
+.career-submit
+    width: 100%
+    height: 50px
+    border: 0
+    border-radius: 10px
+    background: rgb(117, 172, 57)
+    color: #ffffff
+    font-size: 15px
+    font-weight: 600
+    cursor: pointer
+    transition: all 0.3s ease
+
+.career-submit i
+    margin-left: 7px
+    transition: transform 0.3s ease
+
+.career-submit:hover
+    background: #17324d
+
+.career-submit:hover i
+    transform: translateX(5px)
+
+@media (max-width: 991px)
+
+    .career-content
+        padding-right: 0
+
+    .career-content h2
+        font-size: 40px
+
+    .career-image
+        max-width: 100%
+
+@media (max-width: 575px)
+
+    .career-section
+        padding-top: 45px !important
+        padding-bottom: 45px !important
+
+    .career-content h2
+        font-size: 34px
+
+    .career-form-box
+        padding: 25px 20px
+        border-radius: 18px
+
+    .form-heading h3
+        font-size: 23px
+
+    .career-image img
+        height: 230px

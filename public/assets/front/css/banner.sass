@@ -1,0 +1,68 @@
+$hcolor: #000
+$pcolor: #453d3d
+$brandcolor: #24748c
+$fontPoppins: "Poppins", sans-serif
+$fontKonkhmer: "Konkhmer Sleokchher", system-ui
+$fontAlexandria: "Alexandria", sans-serif
+
+.career-page-banner
+    position: relative
+    background-image: url(/assets/front/imgs/eye-banner-2.webp)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    .bglayer
+        background: #24748cf2
+        h1
+            color: #fff
+
+.career-banner-content
+    position: relative
+    z-index: 2
+    text-align: left
+    padding: 100px 12px
+    padding-bottom: 120px
+
+.career-banner-content h1
+    color: #ffffff
+    font-size: 48px
+    font-weight: 700
+    line-height: 1.1
+    margin: 0 0 18px
+
+.career-breadcrumb
+    display: flex
+    align-items: center
+    justify-content: start
+    gap: 9px
+    color: rgba(255, 255, 255, 0.75)
+    font-size: 14px
+
+.career-breadcrumb a
+    color: #ffffff
+    text-decoration: none
+    transition: 0.3s ease
+    font-size: 16px
+
+.career-breadcrumb a:hover
+    color: #dff2c9
+
+.career-breadcrumb i
+    font-size: 10px
+    opacity: 0.7
+
+.career-breadcrumb strong
+    color: #dff2c9
+    font-weight: 600
+
+@media (max-width: 767px)
+
+    .career-page-banner
+        min-height: 210px
+
+    .career-banner-content h1
+        font-size: 38px
+
+    .career-banner-content > span
+        font-size: 11px
+        letter-spacing: 2px

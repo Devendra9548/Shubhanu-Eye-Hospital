@@ -2079,6 +2079,9 @@ $('.doctor-slider').slick({
     slidesToShow: 1,
     arrows: false,
     dots: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     infinite: true,
     responsive: [{
         breakpoint: 768,
@@ -2090,6 +2093,9 @@ $('.doctor-slider').slick({
 $('.first-hero-section').slick({
     slidesToShow: 1,
     arrows: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     infinite: true,
     responsive: [{
         breakpoint: 768,

@@ -57,6 +57,12 @@ class frontendController extends Controller
         $gseo = GlobalSeo::find(1);
         return view('front.contact', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
+    function career(){
+        $pageseo = PageSeo::where('pagename', 'career')->get();
+        $homepageseo = PageSeo::where('pagename', 'career')->first();
+        $gseo = GlobalSeo::find(1);
+        return view('front.career', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
 
     function casestudies(){
         $pageseo = PageSeo::where('pagename', 'case-studies')->get();
