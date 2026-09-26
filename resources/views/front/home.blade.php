@@ -123,7 +123,7 @@ $services=[
     <div class="container">
         <div class="nxsvc-heading mb-4">
             <div class="nxsvc-heading-left text-center">
-                <h2>Our Services</h2>
+                <h2 data-animate="fade-left" data-delay="2">Our Services</h2>
             </div>
         </div>
         <div class="nxsvc-grid slider">
@@ -243,9 +243,9 @@ $services=[
     <div class="container py-5">
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
-                <h2 class="fw-bold mb-4">Vision & Mission</h2>
-                <p class="">Advanced eye care with a human touch.</p>
-                <p class="lastline">Preserving sight. Improving lives.</p>
+                <h2 class="fw-bold mb-4" data-animate="fade-left" data-delay="2">Vision & Mission</h2>
+                <p class="" data-animate="fade-left" data-delay="4">Advanced eye care with a human touch.</p>
+                <p class="lastline" data-animate="fade-left" data-delay="6">Preserving sight. Improving lives.</p>
             </div>
 
             <div class="col-lg-6 mb-ct-center">

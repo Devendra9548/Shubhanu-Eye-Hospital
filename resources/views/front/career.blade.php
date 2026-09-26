@@ -28,7 +28,7 @@
                     </p>
 
                     <div class="career-image">
-                        <img src="assets/images/career.jpg"
+                        <img src="assets/front/imgs/career.jpeg"
                              alt="Career Opportunities"
                              class="img-fluid">
                     </div>
