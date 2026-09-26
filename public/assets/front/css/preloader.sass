@@ -1,0 +1,409 @@
+$hcolor: #000
+$pcolor: #453d3d
+$brandcolor: #24748c
+$fontPoppins: "Poppins", sans-serif
+$fontKonkhmer: "Konkhmer Sleokchher", system-ui
+$fontAlexandria: "Alexandria", sans-serif
+
+#shubhanuPreloader
+    position: fixed
+    inset: 0
+    width: 100%
+    height: 100%
+    min-height: 100vh
+    background: radial-gradient(circle at center, #f7fcfd 0%, #ffffff 48%, #f4f9fa 100%)
+    z-index: 999999999
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    opacity: 1
+    visibility: visible
+    transition: opacity 0.9s cubic-bezier(.77,0,.18,1),visibility 0.9s
+
+#shubhanuPreloader.sh-preloader-hide
+    opacity: 0
+    visibility: hidden
+    pointer-events: none
+
+.sh-preloader-bg
+    position: absolute
+    inset: 0
+    pointer-events: none
+
+.sh-preloader-bg span
+    position: absolute
+    width: 7px
+    height: 7px
+    border-radius: 50%
+    background: $brandcolor
+    opacity: 0.12
+    animation: shFloat 7s infinite ease-in-out
+
+.sh-preloader-bg span:nth-child(1)
+    left: 12%
+    top: 25%
+    animation-delay: 0s
+
+.sh-preloader-bg span:nth-child(2)
+    left: 82%
+    top: 18%
+    animation-delay: 1s
+
+.sh-preloader-bg span:nth-child(3)
+    left: 76%
+    top: 76%
+    animation-delay: 2s
+
+.sh-preloader-bg span:nth-child(4)
+    left: 18%
+    top: 72%
+    animation-delay: 3s
+
+.sh-preloader-bg span:nth-child(5)
+    left: 50%
+    top: 10%
+    animation-delay: 4s
+
+.sh-preloader-bg span:nth-child(6)
+    left: 91%
+    top: 52%
+    animation-delay: 5s
+
+@keyframes shFloat
+
+    0%, 100%
+        transform: translate(0, 0) scale(1)
+
+    50%
+        transform: translate(20px, -35px) scale(1.8)
+
+.sh-loader-wrapper
+    position: relative
+    z-index: 5
+    width: min(650px, 90%)
+    text-align: center
+
+.sh-eye-system
+    width: 300px
+    height: 220px
+    margin: 0 auto 35px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+
+.sh-orbit
+    position: absolute
+    border: 1px solid rgba(36, 116, 140, 0.18)
+    border-radius: 50%
+
+.sh-orbit-1
+    width: 210px
+    height: 210px
+    border-top-color: $brandcolor
+    animation: shRotate 7s linear infinite
+
+.sh-orbit-2
+    width: 260px
+    height: 145px
+    transform: rotate(25deg)
+    border-right-color: $brandcolor
+    animation: shRotateReverse 5s linear infinite
+
+.sh-orbit-3
+    width: 280px
+    height: 100px
+    transform: rotate(-20deg)
+    border-left-color: rgba(36, 116, 140, .5)
+    animation: shRotate 9s linear infinite
+
+@keyframes shRotate
+    from
+        transform: rotate(0deg)
+
+    to
+        transform: rotate(360deg)
+
+@keyframes shRotateReverse
+    from
+        transform: rotate(360deg)
+
+    to
+        transform: rotate(0deg)
+
+.sh-eye-glow
+    position: absolute
+    width: 145px
+    height: 145px
+    border-radius: 50%
+    background: rgba(36, 116, 140, .15)
+    filter: blur(25px)
+    animation: shGlow 2.5s ease-in-out infinite
+
+@keyframes shGlow
+
+    0%, 100%
+        transform: scale(.85)
+        opacity: .4
+
+    50%
+        transform: scale(1.2)
+        opacity: .8
+
+.sh-eye
+    width: 190px
+    height: 125px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+
+.sh-eye-outline
+    width: 185px
+    height: 105px
+    border: 4px solid $brandcolor
+    border-radius: 80% 15% 80% 15%
+    transform: rotate(45deg)
+    position: relative
+    background: rgba(255, 255, 255, .8)
+    box-shadow: 0 0 0 8px rgba(36, 116, 140, .04), 0 15px 45px rgba(36, 116, 140, .12)
+    animation: shEyeBreathe 3s ease-in-out infinite
+
+@keyframes shEyeBreathe
+
+    0%, 100%
+        transform: rotate(45deg) scaleY(1)
+
+    50%
+        transform: rotate(45deg) scaleY(.94)
+
+.sh-iris
+    width: 72px
+    height: 72px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotate(-45deg)
+    border-radius: 50%
+    background: radial-gradient(circle, #0e5368 0%, $brandcolor 38%, #56a8bc 60%, #d5eef3 61%, $brandcolor 68%, #0d5267 100%)
+    box-shadow: 0 0 25px rgba(36, 116, 140, .55), inset 0 0 15px rgba(255, 255, 255, .3)
+    animation: shIrisPulse 2.2s ease-in-out infinite
+
+@keyframes shIrisPulse
+
+    0%, 100%
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1)
+
+    50%
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1.08)
+
+.sh-iris-ring
+    position: absolute
+    inset: 7px
+    border: 1px dashed rgba(255, 255, 255, .7)
+    border-radius: 50%
+    animation: shIrisRotate 4s linear infinite
+
+.sh-iris-ring.ring-2
+    inset: 15px
+    border-style: solid
+    border-color: rgba(255, 255, 255, .35)
+    animation-direction: reverse
+    animation-duration: 3s
+
+@keyframes shIrisRotate
+
+    from
+        transform: rotate(0deg)
+
+    to
+        transform: rotate(360deg)
+
+.sh-pupil
+    position: absolute
+    width: 27px
+    height: 27px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 50%
+    background: #082f3c
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3)
+    animation: shPupil 2.5s ease-in-out infinite
+
+@keyframes shPupil
+    0%, 100%
+        transform: translate(-50%, -50%) scale(1)
+
+    50%
+        transform: translate(-50%, -50%) scale(.72)
+
+.sh-eye-highlight
+    position: absolute
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background: #fff
+    top: 17px
+    left: 18px
+    opacity: .9
+
+.sh-scan-line
+    position: absolute
+    width: 180px
+    height: 2px
+    background: linear-gradient(90deg, transparent, $brandcolor, transparent)
+    top: 50%
+    opacity: .8
+    animation: shScan 2.2s ease-in-out infinite
+
+@keyframes shScan
+    0%
+        transform: translateY(-55px)
+        opacity: 0
+
+    20%
+        opacity: 1
+
+    80%
+        opacity: 1
+
+    100%
+        transform: translateY(55px)
+        opacity: 0
+
+.sh-brand
+    overflow: hidden
+
+.sh-brand-name
+    display: flex
+    justify-content: center
+    gap: 7px
+    color: $brandcolor
+    font-size: clamp(50px, 10vw, 75px)
+    font-weight: 700
+    letter-spacing: 7px
+    line-height: 1
+
+.sh-brand-name span
+    display: inline-block
+    color: $brandcolor
+    opacity: 0
+    transform: translateY(35px)
+    animation: shLetterReveal .7s cubic-bezier(.2,.8,.2,1) forwards
+
+.sh-brand-name span:nth-child(1)
+    animation-delay: .15s
+
+.sh-brand-name span:nth-child(2)
+    animation-delay: .20s
+
+.sh-brand-name span:nth-child(3)
+    animation-delay: .25s
+
+.sh-brand-name span:nth-child(4)
+    animation-delay: .30s
+
+.sh-brand-name span:nth-child(5)
+    animation-delay: .35s
+
+.sh-brand-name span:nth-child(6)
+    animation-delay: .40s
+
+.sh-brand-name span:nth-child(7)
+    animation-delay: .45s
+
+.sh-brand-name span:nth-child(8)
+    animation-delay: .50s
+
+@keyframes shLetterReveal
+
+    to
+        opacity: 1
+        transform: translateY(0)
+
+.sh-brand-subtitle
+    margin-top: 12px
+    color: #4b5559
+    font-size: 32px
+    letter-spacing: 8px
+    font-weight: 500
+    opacity: 0
+    transform: translateY(15px)
+    animation: shSubtitle .8s .75s forwards
+
+@keyframes shSubtitle
+
+    to
+        opacity: 1
+        transform: translateY(0)
+
+.sh-loading
+    width: min(420px, 85%)
+    margin: 45px auto 0
+    opacity: 0
+    animation: shLoadingReveal .8s 1s forwards
+
+@keyframes shLoadingReveal
+
+    to
+        opacity: 1
+
+.sh-loading-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 9px
+    font-size: 16px
+    letter-spacing: 2px
+    color: #7c8588
+
+.sh-loading-top strong
+    color: $brandcolor
+    font-size: 11px
+
+.sh-progress
+    width: 100%
+    height: 3px
+    overflow: hidden
+    background: rgba(36, 116, 140, .1)
+    border-radius: 50px
+
+#shProgressBar
+    width: 0
+    height: 100%
+    background: linear-gradient(90deg, $brandcolor, #5bb2c5, $brandcolor)
+    background-size: 200% 100%
+    border-radius: inherit
+    transition: width .12s linear
+    animation: shProgressGlow 2s linear infinite
+
+@keyframes shProgressGlow
+
+    from
+        background-position: 0% 0
+
+    to
+        background-position: 200% 0
+
+@media (max-width: 600px)
+
+    .sh-eye-system
+        transform: scale(.78)
+        margin-bottom: 5px
+
+    .sh-brand-name
+        font-size: 34px
+        letter-spacing: 5px
+
+    .sh-brand-subtitle
+        font-size: 18px
+        letter-spacing: 5px
+
+    .sh-loading
+        margin-top: 35px
+
+@media only screen and (max-width:768px)
+    .sh-loading-top
+        font-size: 12px

@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+<style>
+</style>
+
 @if(!empty($pageseo[0]->title))
 <title>{{ $pageseo[0]->title }}</title>
 @endif
@@ -38,6 +41,7 @@
 @if(!empty($pageseo[0]->smarkup))
 {!! $pageseo[0]->smarkup !!}
 @endif
+<link rel="stylesheet" href="/assets/front/css/preloader.css">
 <link rel="stylesheet" href="/assets/front/css/header.css">
 <link rel="stylesheet" href="/assets/front/css/style.css">
 <link rel="stylesheet" href="/assets/front/css/footer.css">
@@ -68,6 +72,90 @@
 </head>
 
 <body>
+    <!-- ==============================
+     SHUBHANU PREMIUM PRELOADER
+================================ -->
+
+<div id="shubhanuPreloader">
+
+<div class="sh-preloader-bg">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="sh-loader-wrapper">
+
+    <!-- Animated Eye -->
+    <div class="sh-eye-system">
+
+        <div class="sh-orbit sh-orbit-1"></div>
+        <div class="sh-orbit sh-orbit-2"></div>
+        <div class="sh-orbit sh-orbit-3"></div>
+
+        <div class="sh-eye-glow"></div>
+
+        <div class="sh-eye">
+
+            <div class="sh-eye-outline">
+
+                <div class="sh-iris">
+                    <div class="sh-iris-ring"></div>
+                    <div class="sh-iris-ring ring-2"></div>
+                    <div class="sh-pupil"></div>
+                    <span class="sh-eye-highlight"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sh-scan-line"></div>
+
+    </div>
+
+
+    <!-- Brand -->
+    <div class="sh-brand">
+
+        <div class="sh-brand-name">
+            <span>S</span>
+            <span>H</span>
+            <span>U</span>
+            <span>B</span>
+            <span>H</span>
+            <span>A</span>
+            <span>N</span>
+            <span>U</span>
+        </div>
+
+        <div class="sh-brand-subtitle">
+            EYE HOSPITAL
+        </div>
+
+    </div>
+
+
+    <!-- Loading -->
+    <div class="sh-loading">
+
+        <div class="sh-loading-top">
+            <span>PREPARING YOUR EXPERIENCE</span>
+            <strong id="shProgress">0%</strong>
+        </div>
+
+        <div class="sh-progress">
+            <div id="shProgressBar"></div>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
 
     <x-header 
     facebook="{{ isset($gseo->facebook) ? $gseo->facebook : '' }}"
@@ -103,4 +191,116 @@
 
 </body>
 <script src="/assets/front/js/animation.js"></script>
+<script>
+(function () {
+
+    const preloader = document.getElementById("shubhanuPreloader");
+    const progressBar = document.getElementById("shProgressBar");
+    const progressText = document.getElementById("shProgress");
+
+    const startTime = Date.now();
+
+    let progress = 0;
+
+    /*
+    |--------------------------------------------------------------------------
+    | Smooth fake progress
+    |--------------------------------------------------------------------------
+    */
+
+    const progressInterval = setInterval(function () {
+
+        if (progress < 90) {
+
+            /*
+             * Starting fast,
+             * ending slowly.
+             */
+
+            const increment =
+                progress < 30 ? 2.2 :
+                progress < 60 ? 1.2 :
+                progress < 80 ? .6 :
+                .2;
+
+            progress += increment;
+
+            if (progress > 90) {
+                progress = 90;
+            }
+
+            progressBar.style.width = progress + "%";
+            progressText.textContent = Math.floor(progress) + "%";
+        }
+
+    }, 45);
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Hide Preloader
+    |--------------------------------------------------------------------------
+    */
+
+    function hidePreloader() {
+
+        clearInterval(progressInterval);
+
+        const minimumTime = 1500;
+
+        const elapsed = Date.now() - startTime;
+
+        const remaining =
+            Math.max(0, minimumTime - elapsed);
+
+
+        setTimeout(function () {
+
+            progress = 100;
+
+            progressBar.style.width = "100%";
+            progressText.textContent = "100%";
+
+
+            setTimeout(function () {
+
+                preloader.classList.add(
+                    "sh-preloader-hide"
+                );
+
+                /*
+                 * Remove completely after animation
+                 */
+
+                setTimeout(function () {
+                    preloader.remove();
+                }, 1000);
+
+            }, 250);
+
+        }, remaining);
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Wait for complete page
+    |--------------------------------------------------------------------------
+    */
+
+    if (document.readyState === "complete") {
+
+        hidePreloader();
+
+    } else {
+
+        window.addEventListener(
+            "load",
+            hidePreloader
+        );
+
+    }
+
+})();
+</script>
 </html>

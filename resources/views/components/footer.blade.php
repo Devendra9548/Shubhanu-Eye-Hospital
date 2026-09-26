@@ -1,168 +1,3 @@
-<style>
-
-</style>
-
-<style>
-    /* =========================================
-   UNIQUE EYE DISEASE FOOTER
-========================================= */
-
-.ed-footer {
-    position: relative;
-    overflow: hidden;
-    background: #1d3d66;
-    padding: 48px 0 42px;
-    color: #fff;
-}
-
-/* Subtle background decoration */
-.ed-footer::before {
-    content: "";
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    border: 1px solid rgba(255,255,255,0.035);
-    border-radius: 50%;
-    top: -220px;
-    right: -120px;
-    pointer-events: none;
-}
-
-.ed-footer::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    border: 1px solid rgba(255,255,255,0.025);
-    border-radius: 50%;
-    bottom: -180px;
-    left: -100px;
-    pointer-events: none;
-}
-
-
-/* Main group */
-.ed-footer-group {
-    position: relative;
-    z-index: 2;
-}
-
-
-/* Section heading */
-.ed-footer-title {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 22px;
-    padding-left: 14px;
-
-    color: rgba(255,255,255,0.28);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-/* Small vertical accent */
-.ed-footer-title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 3px;
-    height: 12px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.18);
-}
-
-
-/* Links wrapper */
-.ed-footer-links {
-    display: block;
-    line-height: 1.75;
-}
-
-
-/* Individual links */
-.ed-footer-links a {
-    position: relative;
-    display: inline;
-    color: rgba(255,255,255,0.88);
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.8;
-    text-decoration: none;
-    transition: color 0.25s ease;
-}
-
-
-/* Separator */
-.ed-footer-links a:not(:last-child)::after {
-    content: "|";
-    margin: 0 6px;
-    color: rgba(255,255,255,0.38);
-    pointer-events: none;
-}
-
-
-/* Hover */
-.ed-footer-links a:hover {
-    color: #ffffff;
-}
-
-
-/* Space between sections */
-.ed-footer-treatment {
-    margin-top: 52px;
-    padding-bottom: 48px;
-}
-
-
-/* Bottom elegant line */
-.ed-footer-treatment::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    height: 1px;
-    background: linear-gradient(
-        90deg,
-        rgba(255,255,255,0.08),
-        rgba(255,255,255,0.18),
-        rgba(255,255,255,0.08)
-    );
-}
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 767px) {
-
-    .ed-footer {
-        padding: 35px 0 30px;
-    }
-
-    .ed-footer-title {
-        margin-bottom: 17px;
-    }
-
-    .ed-footer-links a {
-        font-size: 14px;
-        line-height: 1.9;
-    }
-
-    .ed-footer-treatment {
-        margin-top: 38px;
-        padding-bottom: 35px;
-    }
-
-}
-</style>
-
 <footer class="footer">
     <div class="container">
 
@@ -362,7 +197,7 @@
     </p>
 </div>
 
-<div class="book-an-appointment" id="bookAppointment">
+<div class="book-an-appointment bookAppointmentdiv" id="bookAppointment">
     <div class="inner-rows">
         <div class="left-clm both-clms">
             <img src="/assets/front/imgs/12.jpg" alt="12" width="100%">
@@ -452,7 +287,7 @@
         </span>
         <span class="nav-label">Phone</span>
     </a>
-    <a href="javascript:void(0)" id="showBookAppointment2" class="mobile-nav-item">
+    <a href="javascript:void(0)" id="showBookAppointment2" class="mobile-nav-item showBookAppointment">
         <span class="nav-icon">
            <i class="fa-solid fa-calendar-check"></i>
         </span>
@@ -476,16 +311,14 @@
 </div>
 
 <script>
-document.querySelector("#showBookAppointment").addEventListener('click', function(){
-    document.querySelector("#bookAppointment").style.display="flex";
-});
-document.querySelector("#showBookAppointment2").addEventListener('click', function(){
-    document.querySelector("#bookAppointment").style.display="flex";
+document.querySelectorAll(".showBookAppointment").forEach(function(button) {
+    button.onclick = function() {
+        document.querySelector(".bookAppointmentdiv").style.display = "flex";
+    };
 });
 
-function hideBookAnAppointment(){
-    document.querySelector("#bookAppointment").style.display="none";
+function hideBookAnAppointment() {
+    document.querySelector(".bookAppointmentdiv").style.display = "none";
 }
-
 </script>
 

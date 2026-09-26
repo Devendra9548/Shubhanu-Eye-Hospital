@@ -1,6 +1,5 @@
 @extends('templates.front.main')
 @section('customcss')
-<link rel="stylesheet" href="/assets/css/front/home.css">
 <title>Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
 <link rel="stylesheet" href="/assets/front/css/home.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -10,25 +9,21 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<style>
-
-</style>
 @endsection
 @section('body')
 
 <section class="first-hero-section">
-    <picture>
+    <picture class="showBookAppointment">
         <source media="(max-width: 767px)" srcset="/assets/front/imgs/banners/1-mb.webp">
         <source media="(min-width: 768px)" srcset="/assets/front/imgs/banners/1.webp">
         <img src="/assets/front/imgs/banners/1.webp" alt="Banner" width="100%">
     </picture>
-    <picture>
+    <picture class="showBookAppointment">
         <source media="(max-width: 767px)" srcset="/assets/front/imgs/banners/2-mb.webp">
         <source media="(min-width: 768px)" srcset="/assets/front/imgs/banners/2.webp">
         <img src="/assets/front/imgs/banners/2.webp" alt="Banner" width="100%">
     </picture>
-    <picture>
+    <picture class="showBookAppointment">
         <source media="(max-width: 767px)" srcset="/assets/front/imgs/banners/3-mb.webp">
         <source media="(min-width: 768px)" srcset="/assets/front/imgs/banners/3.webp">
         <img src="/assets/front/imgs/banners/3.webp" alt="Banner" width="100%">
@@ -133,7 +128,7 @@ $services=[
                     <img src="{{$service['img']}}" alt="Orbit & Oculoplasty">
                     <div class="nxsvc-image-overlay"></div>
                     <span class="nxsvc-number">0{{ $loop->iteration }}</span>
-                    <a href="#" class="nxsvc-arrow">
+                    <a href="javascript:void(0)" class="nxsvc-arrow">
                         <i class="fas fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
@@ -152,93 +147,6 @@ $services=[
 </section>
 
 
-<!-- <section class="our-services bg-yellow pb-5">
-    <div class="container">
-        <h2 class="text-center">Our Services</h2>
-        <div class="row slider">
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Retina & Vitreous Care</h3>
-                    <p class="mb-3"> Advanced diagnosis and treatment for retinal and vitreous disorders.</p>
-                    <p class="highlight">Retina Surgery</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Intravitreal Injections</p>
-                </div>
-                <img src="/assets/front/imgs/1/4.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Orbit & Oculoplasty</h3>
-                    <p class="mb-3">Specialized care for eyelid, tear duct and orbital conditions.</p>
-                    <p class="highlight">Eyelid Surgery</p>
-                    <p class="highlight">Watering Eye Treatment</p>
-                    <p class="highlight">Orbital Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/6.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Cornea Care</h3>
-                    <p class="mb-3">Specialized diagnosis and treatment for corneal diseases and disorders.</p>
-                    <p class="highlight">Corneal Disorders</p>
-                    <p class="highlight">Keratoconus & C3R</p>
-                    <p class="highlight">Corneal Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/7.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Glaucoma Care</h3>
-                    <p class="mb-3">Comprehensive care to detect and manage glaucoma at every stage.</p>
-                    <p class="highlight">Glaucoma Diagnosis</p>
-                    <p class="highlight">Laser Treatment</p>
-                    <p class="highlight">Glaucoma Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/3.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Squint Care</h3>
-                    <p class="mb-3">Expert evaluation and treatment for eye alignment problems in children and adults.
-                    </p>
-                    <p class="highlight">Squint Evaluation</p>
-                    <p class="highlight">Amblyopia Management</p>
-                    <p class="highlight">Squint Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/8.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Eye Trauma & Emergency</h3>
-                    <p class="mb-3">Prompt and specialized care for urgent eye conditions and injuries.</p>
-                    <p class="highlight">Eye Injuries</p>
-                    <p class="highlight">Foreign Body & Chemical Injuries</p>
-                    <p class="highlight">Emergency Eye Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/9.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-            <div class="col-12 col-md-4 service-card">
-                <div class="text-clm">
-                    <div class="icon-top"><i class="fa-solid fa-eye"></i></div>
-                    <h3>Cataract & Lens Surgery</h3>
-                    <p class="mb-3">Advanced cataract treatment for clear and better-quality vision.</p>
-                    <p class="highlight">AI-Guided Cataract Surgery</p>
-                    <p class="highlight">Premium IOLs</p>
-                    <p class="highlight">MICS / Phaco Surgery</p>
-                </div>
-                <img src="/assets/front/imgs/1/5.png" alt="Artificial & Prosthetic eyes" width="100%">
-            </div>
-        </div>
-    </div>
-
-</section> -->
-
 <section class="eye-about py-5">
     <div class="container py-5">
         <div class="row align-items-center g-5">
@@ -249,9 +157,11 @@ $services=[
             </div>
 
             <div class="col-lg-6 mb-ct-center">
-                <div class="eye-icon">
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                </div>
+                <a href="{{route('about')}}">
+                    <div class="eye-icon">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -264,7 +174,7 @@ $services=[
                 <h2 class="eqshow-title text-center text-md-start">Doctors in the Spotlight</h2>
             </div>
             <div class="col-12 col-md-4 text-end d-md-flex align-items-center justify-content-end view-all-doctors">
-                <a href="#" class="globalbtn">View All Doctors</a>
+                <a href="javascript:void(0)" class="globalbtn">View All Doctors</a>
             </div>
         </div>
 
@@ -308,7 +218,7 @@ $services=[
                         </div>
                     </div>
                     <div class="col-12">
-                        <a href="#" class="appointment-btn">Book Appointment</a>
+                        <a href="javascript:void(0)" class="appointment-btn showBookAppointment">Book Appointment</a>
                     </div>
                 </div>
             </div>
@@ -354,7 +264,7 @@ $services=[
                         </div>
                     </div>
                     <div class="col-12">
-                        <a href="#" class="appointment-btn">Book Appointment</a>
+                        <a href="javascript:void(0)" class="appointment-btn showBookAppointment">Book Appointment</a>
                     </div>
 
                 </div>
@@ -375,7 +285,7 @@ $services=[
                         cataract,
                         squint and refractive procedures, with extensive surgical
                         experience across adult and pediatric eye care.</p>
-                    <a href="#" class="appointment-btn">Know More</a>
+                    <a href="javascript:void(0)" class="appointment-btn">Know More</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 ct-inner-doctor-card">
@@ -391,7 +301,7 @@ $services=[
                         corneal
                         diseases, cataract and refractive surgery, with extensive
                         expertise in complex anterior segment procedures.</p>
-                    <a href="#" class="appointment-btn">Know More</a>
+                    <a href="javascript:void(0)" class="appointment-btn">Know More</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 ct-inner-doctor-card">
@@ -407,431 +317,13 @@ $services=[
                         cataract
                         surgery, medical retina and comprehensive eye care, with a
                         special focus on retinal injections and laser procedures.</p>
-                    <a href="#" class="appointment-btn">Know More</a>
+                    <a href="javascript:void(0)" class="appointment-btn">Know More</a>
                 </div>
             </div>
         </div>
 
     </div>
 </section>
-
-<!-- <section class="doctor-section py-5">
-    <div class="container">
-        <div class="mb-5">
-            <h2 class="section-title">Dedicated doctors, <span>committed to your care</span> </h2>
-        </div>
-        <div class="doctor-slider">
-
-            <div>
-                <div class="doctor-card">
-                    <div class="row g-4">
-                        <div class="col-lg-5">
-                            <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp"
-                                    class="img-fluid" width="100%">
-                                <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp"
-                                        alt="Dr. Bhanu Pratap Singh">
-                                    <div class="short-doctor-infor">
-                                        <h5>Dr. Bhanu Pratap Singh</h5>
-                                        <p>Vitreo-Retina</p>
-                                    </div>
-                                    <a href="#" class="profile-btn"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="doctor-content">
-                                <h3>About Dr. Bhanu Pratap Singh Pangtey</h3>
-                                <p>Experienced Vitreo-Retina Surgeon with expertise in the
-                                    diagnosis and surgical management of complex retinal and
-                                    vitreous disorders.
-                                </p>
-                                <div class="row g-3 mt-5">
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Specialty</strong>
-                                                <span>Vitreo-Retina</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-award"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Experience</strong>
-                                                <span>15+ Years</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-user-graduate"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Qualification</strong>
-                                                <span>MS Ophthalmology, FICO, Vitreo-Retina Fellowship</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-calendar-check"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Availability</strong>
-                                                <span>Full-Time / Daily</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <a href="#" class="appointment-btn">
-                                    Book Appointment
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="doctor-card">
-                    <div class="row g-4">
-                        <div class="col-lg-5">
-                            <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-shubha-raguram-pangtey.webp" class="img-fluid"
-                                    width="100%">
-                                <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-shubha-raguram-pangtey.webp"
-                                        alt="Dr. Shubha Raguram Pangtey">
-                                    <div class="short-doctor-infor">
-                                        <h5>Dr. Shubha Raguram</h5>
-                                        <p>Orbit, Oculoplasty & Ocular Oncology Surgeon</p>
-                                    </div>
-                                    <a href="#" class="profile-btn"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="doctor-content">
-                                <h3>About Dr. Shubha Raguram Pangtey:</h3>
-                                <p>An experienced ophthalmic surgeon specializing in Orbit, Oculoplasty, Ocular
-                                    Oncology, Neuro-Ophthalmology and Pediatric Eye Care, with expertise in managing
-                                    complex eyelid, lacrimal, orbital and ocular tumour conditions.
-                                </p>
-                                <div class="row g-3 mt-4">
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Specialty</strong>
-                                                <span>Orbit, Oculoplasty & Ocular Oncology</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-award"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Experience</strong>
-                                                <span>15+ Years</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-user-graduate"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Qualification</strong>
-                                                <span>MS Ophthalmology, Fellowship in Orbit, Oculoplasty & Ocular
-                                                    Oncology</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-eye"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Additional Expertise</strong>
-                                                <span>Neuro-Ophthalmology & Pediatric Ophthalmology</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <a href="#" class="appointment-btn">
-                                    Book Appointment
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="doctor-card">
-                    <div class="row g-4">
-                        <div class="col-lg-5">
-                            <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp" class="img-fluid"
-                                    width="100%">
-                                <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-shagun-sood.webp" alt="Dr. Shagun Sood">
-                                    <div class="short-doctor-infor">
-                                        <h5>Dr. Shagun Sood</h5>
-                                        <p>Visiting Consultant – Cataract, Squint & Refractive Surgery</p>
-                                    </div>
-                                    <a href="#" class="profile-btn"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="doctor-content">
-                                <h3>About Dr. Shagun Sood</h3>
-                                <p>Experienced ophthalmic surgeon with expertise in cataract,
-                                    squint and refractive procedures, with extensive surgical
-                                    experience across adult and pediatric eye care.
-                                </p>
-                                <div class="row g-3 mt-5">
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Specialty</strong>
-                                                <span>Cataract, Squint & Refractive Surgery</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-award"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Experience</strong>
-                                                <span>10+ Years</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-user-graduate"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Qualification</strong>
-                                                <span>MBBS, MS Ophthalmology, DNB, FICO</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-eye"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Advanced Training</strong>
-                                                <span>LASIK & Refractive Surgery</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <a href="#" class="appointment-btn">
-                                    Book Appointment
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="doctor-card">
-                    <div class="row g-4">
-                        <div class="col-lg-5">
-                            <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp" class="img-fluid"
-                                    width="100%">
-                                <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp"
-                                        alt="Dr. Mohd Sufyan Danish">
-                                    <div class="short-doctor-infor">
-                                        <h5>Dr. Mohd Sufyan Danish</h5>
-                                        <p>Consultant – Cornea, Cataract & Refractive Surgery</p>
-                                    </div>
-                                    <a href="#" class="profile-btn"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="doctor-content">
-                                <h3>About Dr. Mohd Sufyan Danish</h3>
-                                <p>Experienced ophthalmic surgeon specializing in corneal
-                                    diseases, cataract and refractive surgery, with extensive
-                                    expertise in complex anterior segment procedures.
-                                </p>
-                                <div class="row g-3 mt-5">
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Specialty</strong>
-                                                <span>Cornea, Cataract & Refractive Surgery</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-award"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Experience</strong>
-                                                <span>8+ Years</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-user-graduate"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Qualification</strong>
-                                                <span>MBBS, DOMS, DNB Ophthalmology</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-eye"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Advanced Training</strong>
-                                                <span>Fellowship in Cornea & Anterior Segment</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <a href="#" class="appointment-btn">
-                                    Book Appointment
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="doctor-card">
-                    <div class="row g-4">
-                        <div class="col-lg-5">
-                            <div class="doctor-image">
-                                <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp" class="img-fluid"
-                                    width="100%">
-                                <div class="doctor-info">
-                                    <img src="/assets/front/imgs/doctors/dr-nabeel-firoz.webp" alt="Dr. Nabeel Firoz">
-                                    <div class="short-doctor-infor">
-                                        <h5>Dr. Nabeel Firoz</h5>
-                                        <p>Consultant – Cataract & Medical Retina</p>
-                                    </div>
-                                    <a href="#" class="profile-btn"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="doctor-content">
-                                <h3>About Dr. Nabeel Firoz</h3>
-                                <p>Experienced ophthalmologist with expertise in cataract
-                                    surgery, medical retina and comprehensive eye care, with a
-                                    special focus on retinal injections and laser procedures.
-                                </p>
-                                <div class="row g-3 mt-4">
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-stethoscope"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Specialty</strong>
-                                                <span>Cataract, Medical Retina & Comprehensive Ophthalmology</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-award"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Experience</strong>
-                                                <span>8 Years</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-user-graduate"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Qualification</strong>
-                                                <span>MBBS, DOMS, DNB Ophthalmology</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-box">
-                                            <div class="iconbox">
-                                                <i class="fa-solid fa-eye"></i>
-                                            </div>
-                                            <div class="content">
-                                                <strong>Advanced Training</strong>
-                                                <span>Cataract, Medical Retina & Anterior Segment</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <a href="#" class="appointment-btn">
-                                    Book Appointment
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section> -->
 
 <section class="eqshow-section py-5">
     <div class="container">
@@ -1070,7 +562,7 @@ $partners=[
                     availing cashless treatment. Patients are advised to confirm their policy coverage, eligibility,
                     exclusions and applicable terms before treatment.
                 </p>
-                <a href="#" class="appointment-btn">Apply Now</a>
+                <a href="javascript:void(0)" class="appointment-btn showBookAppointment">Apply Now</a>
             </div>
             <div class="col-md-6 mediclaim-image-wrap">
                 <img src="/assets/front/imgs/left-cashless.webp" class="mediclaim-family"
@@ -1231,7 +723,7 @@ $partners=[
                 <div class="zbg-blog-item">
 
                     <div class="zbg-blog-thumb">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800"
                                 alt="shubhanu eye hospital icon">
                         </a>
@@ -1240,7 +732,7 @@ $partners=[
                     <div class="zbg-blog-content">
 
                         <h3 class="zbg-blog-post-title">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Should You Be Worried About Microplastics in Your Food?
                             </a>
                         </h3>
@@ -1266,7 +758,7 @@ $partners=[
                 <div class="zbg-blog-item">
 
                     <div class="zbg-blog-thumb">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
                                 alt="shubhanu eye hospital icon">
                         </a>
@@ -1275,7 +767,7 @@ $partners=[
                     <div class="zbg-blog-content">
 
                         <h3 class="zbg-blog-post-title">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 What to Expect During and After a Breast Biopsy
                             </a>
                         </h3>
@@ -1302,7 +794,7 @@ $partners=[
                 <div class="zbg-blog-item">
 
                     <div class="zbg-blog-thumb">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800"
                                 alt="shubhanu eye hospital icon">
                         </a>
@@ -1311,7 +803,7 @@ $partners=[
                     <div class="zbg-blog-content">
 
                         <h3 class="zbg-blog-post-title">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 How Heart Attack Signs Differ in Men & Women
                             </a>
                         </h3>
@@ -1338,7 +830,7 @@ $partners=[
                 <div class="zbg-blog-item">
 
                     <div class="zbg-blog-thumb">
-                        <a href="#">
+                        <a href="javascript:void(0)">
                             <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800"
                                 alt="shubhanu eye hospital icon">
                         </a>
@@ -1347,7 +839,7 @@ $partners=[
                     <div class="zbg-blog-content">
 
                         <h3 class="zbg-blog-post-title">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Prenatal Infections and How to Avoid Them
                             </a>
                         </h3>
@@ -1616,7 +1108,7 @@ $faqs22=[
                     <h2>Still have a questions?</h2>
                     <p class="mt-4 mb-5">Can't find a the answer to your questions? Send us an email and we'll get back
                         to you soon as possible.</p>
-                    <a href="#" class="globalbtn">Send Email</a>
+                    <a href="{{route('contact')}}" class="globalbtn">Send Email</a>
                 </div>
             </div>
             <div class="col-12 col-md-6">
@@ -1657,71 +1149,6 @@ $faqs22=[
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script async src="//www.instagram.com/embed.js"></script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const testimonialSwiper = new Swiper(".tsw-slider", {
-        loop: true,
-        speed: 800,
-        spaceBetween: 30,
-        centeredSlides: true,
-        grabCursor: true,
-        watchOverflow: true,
-        autoplay: {
-            delay: 3500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-
-        navigation: {
-            nextEl: ".tsw-next",
-            prevEl: ".tsw-prev",
-        },
-
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-
-        keyboard: {
-            enabled: true,
-        },
-
-        breakpoints: {
-
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-
-            576: {
-                slidesPerView: 1.2,
-                spaceBetween: 20
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 25
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            }
-        }
-    });
-    const playBtn = document.querySelector(".tsw-play");
-    let playing = true;
-    playBtn.addEventListener("click", function() {
-        if (playing) {
-            testimonialSwiper.autoplay.stop();
-            this.innerHTML = '<i class="fa-solid fa-play"></i>';
-        } else {
-            testimonialSwiper.autoplay.start();
-            this.innerHTML = '<i class="fa-solid fa-pause"></i>';
-        }
-        playing = !playing;
-    });
-});
-</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -1936,7 +1363,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         current = index;
 
-        startProgress();
 
     }
 
@@ -1957,22 +1383,6 @@ document.addEventListener("DOMContentLoaded", function() {
         clearInterval(timer);
 
         timer = setInterval(nextEquipment, 5000000);
-
-    }
-
-    function startProgress() {
-
-        clearInterval(progressTimer);
-
-        progress.style.transition = "none";
-        progress.style.width = "0%";
-
-        setTimeout(function() {
-
-            progress.style.transition = "width 5s linear";
-            progress.style.width = "100%";
-
-        }, 50);
 
     }
 
