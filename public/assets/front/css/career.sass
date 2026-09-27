@@ -8,6 +8,8 @@ $fontAlexandria: "Alexandria", sans-serif
 .career-section
     background: #f7faf8
     overflow: hidden
+    .row
+        position: relative
 
 .career-content
     padding-right: 35px
@@ -17,15 +19,17 @@ $fontAlexandria: "Alexandria", sans-serif
     font-size: 13px
     font-weight: 700
     letter-spacing: 1.8px
-    color: $brandcolor
+    color: #444
     margin-bottom: 15px
 
 .career-content h2
     font-size: 48px
     line-height: 1.15
     font-weight: 700
-    color: #17324d
+    color: $brandcolor
     margin-bottom: 20px
+    span
+        color: #000
 
 .career-description
     max-width: 540px
@@ -35,14 +39,14 @@ $fontAlexandria: "Alexandria", sans-serif
     margin-bottom: 30px
 
 .career-image
-    position: relative
-    border-radius: 24px
+    position: absolute
     overflow: hidden
-    max-width: 550px
+    max-width: 53%
+    bottom: 0px
+    left: -80px
 
 .career-image img
     width: 100%
-    height: 300px
     object-fit: cover
     display: block
 
@@ -57,10 +61,10 @@ $fontAlexandria: "Alexandria", sans-serif
     margin-bottom: 25px
 
 .form-heading h3
-    color: #17324d
-    font-size: 27px
+    color: $brandcolor
+    font-size: 28px
     font-weight: 700
-    margin-bottom: 7px
+    margin-bottom: 10px
 
 .form-heading p
     color: #7b858e
@@ -69,12 +73,14 @@ $fontAlexandria: "Alexandria", sans-serif
 
 .form-group
     margin-bottom: 18px
+    input, select, textarea
+        border: 1px solid #0005
 
 .form-group label
     display: block
     font-size: 14px
-    font-weight: 600
-    color: #34495e
+    font-weight: 500
+    color: #444
     margin-bottom: 8px
 
 .form-control, .form-select
@@ -98,7 +104,7 @@ $fontAlexandria: "Alexandria", sans-serif
 .cv-upload
     position: relative
     height: 85px
-    border: 1.5px dashed #cdd8d0
+    border: 1.5px dashed #0005
     border-radius: 12px
     background: #fafcfb
     display: flex
@@ -108,7 +114,7 @@ $fontAlexandria: "Alexandria", sans-serif
     transition: all 0.25s ease
 
 .cv-upload:hover
-    border-color: rgb(117, 172, 57)
+    border-color: #000
     background: #f8fbf6
 
 .cv-upload input[type="file"]
@@ -175,7 +181,7 @@ $fontAlexandria: "Alexandria", sans-serif
 
     .career-section
         padding-top: 45px !important
-        padding-bottom: 45px !important
+        padding-bottom: 0px !important
 
     .career-content h2
         font-size: 34px
@@ -187,5 +193,33 @@ $fontAlexandria: "Alexandria", sans-serif
     .form-heading h3
         font-size: 23px
 
+@media only screen and (min-width:1570px)
+    .career-image
+        max-width: 50%
+        left: -58px
+
+@media only screen and (min-width:1700px)
+    .career-image
+        max-width: 48%
+        left: -58px
+
+@media only screen and (max-width:1400px)
+    .career-image
+        max-width: 60%
+        left: -76px
+
+@media only screen and (max-width: 1300px)
+    .career-image
+        max-width: 62%
+        left: -75px
+
+@media only screen and (max-width:768px)
     .career-image img
-        height: 230px
+        height: 300px !important
+    .career-image
+        max-width: 100%
+        left: 0px
+        position: relative
+        margin-bottom: -49px
+    .form-heading p
+        font-size: 13px!important

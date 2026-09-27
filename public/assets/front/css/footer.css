@@ -619,4 +619,22 @@ p {
     margin-top: 38px;
     padding-bottom: 35px;
   }
+  .book-an-appointment {
+    padding: 5px;
+    background: rgba(36, 116, 140, 0.95) !important;
+  }
+  .book-an-appointment textarea {
+    height: 110px;
+  }
+  .book-an-appointment .inner-rows .right-clm {
+    padding: 40px 14px;
+    padding-bottom: 10px;
+  }
+  .book-an-appointment .inner-rows {
+    border-radius: 15px;
+  }
+  .book-an-appointment .inner-rows .right-clm h2 {
+    text-align: center !important;
+    color: #000 !important;
+  }
 }/*# sourceMappingURL=footer.css.map */
