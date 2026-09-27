@@ -605,6 +605,26 @@ p {
 }
 
 @media (max-width: 767px) {
+  #mb-location {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10003;
+    top: 0px;
+    background: #24748c;
+    padding: 5px;
+  }
+  #mb-location iframe {
+    height: 96%;
+    border-radius: 15px;
+  }
+  #closeLocation {
+    display: block;
+    text-align: end;
+  }
+  #closeLocation i {
+    color: #fff;
+  }
   .ed-footer {
     padding: 35px 0 30px;
   }

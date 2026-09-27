@@ -3,94 +3,11 @@
 <link rel="stylesheet" href="/assets/front/css/banner.css">
 <link rel="stylesheet" href="/assets/front/css/career.css">
 <style>
-    .cv-upload {
-    position: relative;
-    border: 1px dashed #ccc;
-    border-radius: 10px;
-    padding: 25px;
-    cursor: pointer;
-}
-
-.cv-upload input[type="file"] {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.upload-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-}
-
-.upload-text i {
-    font-size: 32px;
-}
-
-.upload-text span {
-    font-weight: 600;
-}
-
-.upload-text small {
-    color: #777;
-}
-
-.selected-file {
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-.file-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    min-width: 0;
-}
-
-.file-info > i {
-    font-size: 30px;
-}
-
-.file-info div {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-}
-
-.file-name {
-    font-weight: 600;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.file-info small {
-    color: #777;
-    margin-top: 3px;
-}
-
-.remove-file {
-    flex-shrink: 0;
-    border: 0;
-    background: transparent;
-    color: #dc3545;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.remove-file:hover {
-    color: #a71d2a;
-}
 </style>
 <title>Career | Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
 @endsection
 @section('body')
-<x-mainbanner />
+<x-mainbanner img="/assets/front/imgs/career/career-banner.webp" pagename="Career" />
 <section class="career-section pt-5 mt-3">
     <div class="container-fluid">
         <div class="row g-5">

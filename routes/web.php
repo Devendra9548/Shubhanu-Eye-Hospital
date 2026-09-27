@@ -18,6 +18,8 @@ Route::get('contact-us', [frontendController::class, 'contact'])->name('contact'
 Route::get('career', [frontendController::class, 'career'])->name('career');
 Route::get('gallery', [frontendController::class, 'gallery'])->name('gallery');
 Route::get('case-studies', [frontendController::class, 'casestudies'])->name('casestudies');
+Route::get('privacy-policy', [frontendController::class, 'privacypolicy'])->name('privacypolicy');
+Route::get('terms-and-conditions', [frontendController::class, 'termsConditions'])->name('termsConditions');
 Route::get('blog', [frontendController::class, 'blogs'])->name('blogs');
 Route::get('blog/{slug}', [frontendController::class, 'singleblog'])->name('singleblog');
 

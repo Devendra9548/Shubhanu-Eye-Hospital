@@ -11,9 +11,12 @@ class mainbanner extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $img;
+    public $pagename;
+    public function __construct($img,$pagename)
     {
-        //
+        $this->img=$img;
+        $this->pagename=$pagename;
     }
 
     /**

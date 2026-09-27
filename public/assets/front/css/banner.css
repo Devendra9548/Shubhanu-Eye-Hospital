@@ -1,9 +1,21 @@
 .career-page-banner {
   position: relative;
-  background-image: url(/assets/front/imgs/career/career-banner.webp);
+  background-image: url();
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.career-page-banner img {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+  height: 315px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.1;
 }
 .career-page-banner .bglayer {
   background: rgba(36, 116, 140, 0.9490196078);
@@ -61,6 +73,13 @@
 @media (max-width: 767px) {
   .career-page-banner {
     min-height: 150px;
+  }
+  .career-page-banner img {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    height: 178px;
   }
   .career-banner-content h1 {
     font-size: 38px;

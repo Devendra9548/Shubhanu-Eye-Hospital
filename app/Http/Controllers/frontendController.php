@@ -57,6 +57,21 @@ class frontendController extends Controller
         $gseo = GlobalSeo::find(1);
         return view('front.contact', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
+
+    function termsConditions(){
+        $pageseo = PageSeo::where('pagename', 'terms-and-conditions')->get();
+        $homepageseo = PageSeo::where('pagename', 'terms-and-conditions')->first();
+        $gseo = GlobalSeo::find(1);
+        return view('front.terms-conditions', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
+    
+    function privacypolicy(){
+        $pageseo = PageSeo::where('pagename', 'privacy-policy')->get();
+        $homepageseo = PageSeo::where('pagename', 'privacy-policy')->first();
+        $gseo = GlobalSeo::find(1);
+        return view('front.privacy-policy', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
+
     function career(){
         $pageseo = PageSeo::where('pagename', 'career')->get();
         $homepageseo = PageSeo::where('pagename', 'career')->first();

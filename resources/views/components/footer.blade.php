@@ -52,8 +52,8 @@
                 <ul>
                     <li><a href="{{route('blogs')}}">Blog</a></li>
                     <li><a href="{{route('career')}}">Career</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="{{route('termsConditions')}}">Terms & Conditions</a></li>
+                    <li><a href="{{route('privacypolicy')}}">Privacy Policy</a></li>
                 </ul>
             </div>
 
@@ -204,7 +204,7 @@
         </div>
         <div class="right-clm both-clms">
             <a href="javascript:void(0)" id="closebookAppointmentbtn" onclick="hideBookAnAppointment()">
-               <i class="fa-regular fa-circle-xmark"></i>
+                <i class="fa-regular fa-circle-xmark"></i>
             </a>
             <h2>Book an Appointment</h2>
             <form action="#" method="POST">
@@ -262,7 +262,7 @@
 
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary w-100 text-center">
-                       <i class="fa-regular fa-calendar-days"></i> Book Now
+                        <i class="fa-regular fa-calendar-days"></i> Book Now
                     </button>
                 </div>
 
@@ -276,41 +276,58 @@
 
     <a href="/" class="mobile-nav-item">
         <span class="nav-icon">
-             <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house"></i>
         </span>
         <span class="nav-label">Home</span>
     </a>
 
-    <a href="tel:+911234567890" class="mobile-nav-item">
+    <a href="tel:+919068991180" class="mobile-nav-item">
         <span class="nav-icon">
-           <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-phone"></i>
         </span>
         <span class="nav-label">Phone</span>
     </a>
     <a href="javascript:void(0)" id="showBookAppointment2" class="mobile-nav-item showBookAppointment">
         <span class="nav-icon">
-           <i class="fa-solid fa-calendar-check"></i>
+            <i class="fa-solid fa-calendar-check"></i>
         </span>
         <span class="nav-label">Appointment</span>
     </a>
 
-    <a href="mailto:info@example.com" class="mobile-nav-item">
+    <a href="mailto:shubhanueyehospital@gmail.com" class="mobile-nav-item">
         <span class="nav-icon">
             <i class="fa-solid fa-envelope"></i>
         </span>
         <span class="nav-label">Email</span>
     </a>
 
-    <a href="#timing" class="mobile-nav-item">
+    <a href="javascript:void(0)" class="mobile-nav-item" onclick="showLocation()">
         <span class="nav-icon">
-            <i class="fa-solid fa-clock"></i>
+        <i class="fa-solid fa-location-dot"></i>
         </span>
-        <span class="nav-label">Timing</span>
+        <span class="nav-label">Location</span>
     </a>
 
 </div>
+<div id="mb-location" style="display:none">
+    <a href="javascript:void(0)" id="closeLocation" onclick="hideLocation()">
+        <i class="fa-regular fa-circle-xmark"></i>
+    </a>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6963.364872471937!2d79.532105!3d29.232894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09bf5e693f3dd%3A0x77c370655b81b1cd!2sShubhanu%20Eye%20Hospital!5e0!3m2!1sen!2sin!4v1790485450315!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
 
 <script>
+
+function showLocation(){
+    document.querySelector("#mb-location").style.display="block";
+}
+function hideLocation(){
+    document.querySelector("#mb-location").style.display="none";
+}
+
 document.querySelectorAll(".showBookAppointment").forEach(function(button) {
     button.onclick = function() {
         document.querySelector(".bookAppointmentdiv").style.display = "flex";
@@ -321,4 +338,3 @@ function hideBookAnAppointment() {
     document.querySelector(".bookAppointmentdiv").style.display = "none";
 }
 </script>
-
