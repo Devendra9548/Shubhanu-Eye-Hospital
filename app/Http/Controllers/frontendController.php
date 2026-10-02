@@ -13,13 +13,14 @@ use App\Models\PageSeo;
 use App\Models\Contact;
 use App\Models\EnquireLead;
 use App\Models\HomePage;
+use App\Models\Career;
 use Illuminate\Support\Facades\DB;
 use Mail;
 use App\Mail\ContactMail;
 use App\Mail\EnquireLeadMail;
 use App\Models\ClientReview;
 use Intervention\Image\Facades\Image;
-
+use App\Mail\CareerMail;
 
 class frontendController extends Controller
 {
@@ -64,6 +65,7 @@ class frontendController extends Controller
         $gseo = GlobalSeo::find(1);
         return view('front.terms-conditions', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
+  
     
     function privacypolicy(){
         $pageseo = PageSeo::where('pagename', 'privacy-policy')->get();
@@ -102,4 +104,128 @@ class frontendController extends Controller
         $gseo = GlobalSeo::find(1);
         return view('front.gallery', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
     }
+
+    function thankyou(){
+        $pageseo = PageSeo::where('pagename', 'thank-you')->get();
+        $homepageseo = PageSeo::where('pagename', 'thank-you')->first();
+        $gseo = GlobalSeo::find(1);
+        return view('front.thank-you', ['pageseo'=>$pageseo,'gseo'=>$gseo,'homepageseo'=>$homepageseo]);
+    }
+    
+    function submitcareer(Request $req)
+    {
+        $dbs = new Career();
+        $name = $req->name;
+        $email = $req->email;
+        $phone = $req->phone;
+        $designation = $req->designation;
+        $dbs->name = $name;
+        $dbs->email = $email;
+        $dbs->phone = $phone;
+        $dbs->designation = $designation;
+        $origname = '';
+        $originalFileName = '';
+
+        if ($req->hasFile('cv')) {
+            $file = $req->file('cv');
+            $allowedExtensions = ['pdf', 'doc', 'docx'];
+            $extension = strtolower($file->getClientOriginalExtension());
+            if (!in_array($extension, $allowedExtensions)) {
+                return back()->with('error', 'Only PDF, DOC and DOCX files are allowed.');
+            }
+    
+            $t = time();
+            $d = date('Y-m-d', $t);
+    
+            $originalFileName = $file->getClientOriginalName();
+    
+            $origname = $d . '-' . $t . '-' . $originalFileName;
+    
+            $customFolderPath = public_path('cv');
+    
+            if (!file_exists($customFolderPath)) {
+                mkdir($customFolderPath, 0755, true);
+            }
+    
+            $file->move($customFolderPath, $origname);
+    
+            $dbs->cv = $origname;
+        }
+    
+        $dbs->save();
+    
+        $mailData = [
+            'name' => $name,
+            'email' => $email,
+            'phone' => $phone,
+            'designation' => $designation,
+            'origname' => $origname,
+        ];
+    
+      
+
+        if (function_exists('fastcgi_finish_request')) {
+
+        // Browser ko response bhej do
+        echo true;
+
+        if (ob_get_level() > 0) {
+            ob_end_flush();
+        }
+
+        flush();
+
+        fastcgi_finish_request();
+
+        // Ab mail send hoga
+        $mail = Mail::to('web.thakurdeva@gmail.com');
+
+        if (!empty($origname)) {
+
+            $mail->send(
+                (new CareerMail($mailData))
+                    ->attach(public_path('cv/' . $origname), [
+                        'as' => $originalFileName,
+                        'mime' => mime_content_type(
+                            public_path('cv/' . $origname)
+                        ),
+                    ])
+            );
+
+        } else {
+
+            $mail->send(
+                new CareerMail($mailData)
+            );
+        }
+
+        return;
+        }
+
+    
+
+        $mail = Mail::to('web.thakurdeva@gmail.com');
+
+        if (!empty($origname)) {
+
+        $mail->send(
+            (new CareerMail($mailData))
+                ->attach(public_path('cv/' . $origname), [
+                    'as' => $originalFileName,
+                    'mime' => mime_content_type(
+                        public_path('cv/' . $origname)
+                    ),
+                ])
+        );
+
+        } else {
+
+        $mail->send(
+            new CareerMail($mailData)
+        );
+        }
+
+        return true;
+    }
+
 }

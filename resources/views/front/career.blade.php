@@ -12,7 +12,6 @@
     <div class="container-fluid">
         <div class="row g-5">
 
-            <!-- LEFT CONTENT -->
             <div class="col-lg-6">
                 <div class="career-content">
 
@@ -38,7 +37,6 @@
             </div>
 
 
-            <!-- RIGHT FORM -->
             <div class="col-lg-6 mb-5">
                 <div class="career-form-box mb-5">
 
@@ -47,74 +45,50 @@
                         <p>Fill in your details and submit your CV.</p>
                     </div>
 
-                    <form action="#" method="POST" enctype="multipart/form-data">
+                    <form action="" method="POST" id="careerform" enctype="multipart/form-data">
+                        @csrf
 
-                        <!-- Full Name -->
                         <div class="form-group">
                             <label for="full_name">Full Name</label>
-                            <input type="text" id="full_name" name="full_name" class="form-control"
+                            <input type="text" id="full_name" name="name" class="form-control"
                                 placeholder="Enter your full name" required>
                         </div>
 
-                        <!-- Email -->
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" class="form-control"
                                 placeholder="Enter your email address" required>
                         </div>
 
-                        <!-- Phone -->
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" class="form-control"
                                 placeholder="Enter your phone number" required>
                         </div>
 
-                        <!-- Designation -->
                         <div class="form-group">
                             <label for="designation">Select Designation</label>
 
                             <select id="designation" name="designation" class="form-select" required>
-
-                                <option value="" selected disabled>
-                                    Select a designation
-                                </option>
-
-                                <option value="orthotist">Orthotist</option>
-                                <option value="hr">HR</option>
-                                <option value="optm">OPTM</option>
-                                <option value="pharmacist">Pharmacist</option>
-                                <option value="receptionist">Receptionist</option>
-                                <option value="marketing-executive">
-                                    Marketing Executive
-                                </option>
-                                <option value="lab-technician">
-                                    Lab Technician
-                                </option>
-                                <option value="ausman-mitra">
-                                    Ayushman Mitra
-                                </option>
-                                <option value="tpa-associate">
-                                    TPA Associate
-                                </option>
-                                <option value="surgery-counsellor">
-                                    Surgery Counsellor
-                                </option>
-                                <option value="doctor-assistant">
-                                    Doctor Assistant
-                                </option>
-                                <option value="admin">Admin</option>
-                                <option value="admin-manager">
-                                    Admin Manager
-                                </option>
-
+                                <option value="" selected disabled>Select a designation</option>
+                                <option value="Orthotist">Orthotist</option>
+                                <option value="HR">HR</option>
+                                <option value="OPTM">OPTM</option>
+                                <option value="Pharmacist">Pharmacist</option>
+                                <option value="Receptionist">Receptionist</option>
+                                <option value="Marketing Executive">Marketing Executive</option>
+                                <option value="Lab Technician">Lab Technician</option>
+                                <option value="Ayushman Mitra">Ayushman Mitra</option>
+                                <option value="TPA Associate">TPA Associate</option>
+                                <option value="Surgery Counsellor">Surgery Counsellor</option>
+                                <option value="Doctor Assistant">Doctor Assistant</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Admin Manager">Admin Manager</option>
                             </select>
                         </div>
 
-                        <!-- CV -->
                         <div class="form-group">
                             <label for="cv">Upload CV</label>
-
                             <div class="cv-upload" id="cvUpload">
                                 <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
 
@@ -134,7 +108,8 @@
                                         </div>
                                     </div>
 
-                                    <button type="button" class="remove-file" id="removeFile" style="position: relative;z-index: 9;">
+                                    <button type="button" class="remove-file" id="removeFile"
+                                        style="position: relative;z-index: 9;">
                                         <i class="bi bi-x-lg"></i>
                                         Remove
                                     </button>
@@ -142,10 +117,10 @@
                             </div>
                         </div>
 
-                        <!-- Submit -->
                         <button type="submit" class="career-submit">
-                            Submit Application
-                            <i class="bi bi-arrow-right"></i>
+                            <span class="text-white" id="prebuttontext">Submit Application</span>
+                            <span class="text-white" id="CtSpinner"><img src="/assets/front/imgs/spinner.gif"
+                                    width="20px"> Waiting</span>
                         </button>
 
                     </form>
@@ -156,47 +131,78 @@
         </div>
     </div>
 </section>
+@endsection
+@section('customjs')
 <script>
-    const cvInput = document.getElementById('cv');
-    const uploadText = document.getElementById('uploadText');
-    const selectedFile = document.getElementById('selectedFile');
-    const fileName = document.getElementById('fileName');
-    const fileSize = document.getElementById('fileSize');
-    const removeFile = document.getElementById('removeFile');
+const cvInput = document.getElementById('cv');
+const uploadText = document.getElementById('uploadText');
+const selectedFile = document.getElementById('selectedFile');
+const fileName = document.getElementById('fileName');
+const fileSize = document.getElementById('fileSize');
+const removeFile = document.getElementById('removeFile');
 
-    cvInput.addEventListener('change', function () {
-        const file = this.files[0];
+cvInput.addEventListener('change', function() {
+    const file = this.files[0];
 
-        if (!file) return;
+    if (!file) return;
 
-        fileName.textContent = file.name;
-        fileSize.textContent = formatFileSize(file.size);
+    fileName.textContent = file.name;
+    fileSize.textContent = formatFileSize(file.size);
 
-        uploadText.style.display = 'none';
-        selectedFile.style.display = 'block';
-        selectedFile.style.textAlign = 'center';
-    });
+    uploadText.style.display = 'none';
+    selectedFile.style.display = 'block';
+    selectedFile.style.textAlign = 'center';
+});
 
-    removeFile.addEventListener('click', function () {
-        cvInput.value = '';
+removeFile.addEventListener('click', function() {
+    cvInput.value = '';
 
-        fileName.textContent = '';
-        fileSize.textContent = '';
+    fileName.textContent = '';
+    fileSize.textContent = '';
 
-        selectedFile.style.display = 'none';
-        uploadText.style.display = 'flex';
-    });
+    selectedFile.style.display = 'none';
+    uploadText.style.display = 'flex';
+});
 
-    function formatFileSize(bytes) {
-        if (bytes < 1024) {
-            return bytes + ' B';
-        }
-
-        if (bytes < 1024 * 1024) {
-            return (bytes / 1024).toFixed(1) + ' KB';
-        }
-
-        return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+function formatFileSize(bytes) {
+    if (bytes < 1024) {
+        return bytes + ' B';
     }
+
+    if (bytes < 1024 * 1024) {
+        return (bytes / 1024).toFixed(1) + ' KB';
+    }
+
+    return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+}
+</script>
+
+<script>
+$(document).ready(function() {
+    $("#careerform").submit(function(event) {
+        event.preventDefault();
+        document.querySelector("#prebuttontext").style.display = "none";
+        document.querySelector("#CtSpinner").style.display = "block";
+        var formData = new FormData(this);
+        $.ajax({
+            type: "POST",
+            url: "/career",
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(res) {
+                if (res == true || res == 1 || res === "1" || res === "true") {
+                    $("#careerform")[0].reset();
+                    $("#CtSpinner").hide();
+                    window.location.href = "/thank-you";
+                } else {
+                    $("#CtSpinner").hide();
+                    $("#prebuttontext").show();
+                    alert("Error! " + res);
+                }
+            }
+        });
+    });
+});
 </script>
 @endsection

@@ -252,8 +252,13 @@
                 </div>
 
                 <div class="mb-3">
-                    <input type="datetime-local" class="form-control" id="date" name="date">
+                    <input type="text" class="form-control" id="date_display" placeholder="Appointment Date & Time"
+                        readonly onclick="document.getElementById('date').showPicker()">
+
+                    <input type="datetime-local" id="date" name="date"
+                        style="position:absolute; opacity:0; pointer-events:none;">
                 </div>
+
 
                 <div class="mb-3">
                     <textarea class="form-control" id="comment" name="comment" rows="5" maxlength="2000"
@@ -303,7 +308,7 @@
 
     <a href="javascript:void(0)" class="mobile-nav-item" onclick="showLocation()">
         <span class="nav-icon">
-        <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot"></i>
         </span>
         <span class="nav-label">Location</span>
     </a>
@@ -320,12 +325,12 @@
 </div>
 
 <script>
-
-function showLocation(){
-    document.querySelector("#mb-location").style.display="block";
+function showLocation() {
+    document.querySelector("#mb-location").style.display = "block";
 }
-function hideLocation(){
-    document.querySelector("#mb-location").style.display="none";
+
+function hideLocation() {
+    document.querySelector("#mb-location").style.display = "none";
 }
 
 document.querySelectorAll(".showBookAppointment").forEach(function(button) {
@@ -337,4 +342,24 @@ document.querySelectorAll(".showBookAppointment").forEach(function(button) {
 function hideBookAnAppointment() {
     document.querySelector(".bookAppointmentdiv").style.display = "none";
 }
+</script>
+
+<script>
+const dateInput = document.getElementById('date');
+const dateDisplay = document.getElementById('date_display');
+
+dateInput.addEventListener('change', function () {
+    if (!this.value) return;
+
+    const date = new Date(this.value);
+
+    dateDisplay.value = date.toLocaleString('en-IN', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+    });
+});
 </script>
