@@ -22,7 +22,7 @@
 
             <!-- Contact -->
             <div class="col-lg-4 col-md-12 footer-box text-center">
-                <h5>CONTACT</h5>
+                <h2>CONTACT</h2>
 
                 <p>+91 90689 91180</p>
                 <p>shubhanueyehospital@gmail.com</p>
@@ -35,7 +35,7 @@
 
             <!-- Hours -->
             <div class="col-lg-4 col-md-12 footer-box text-center">
-                <h5>HOURS</h5>
+                <h2>HOURS</h2>
 
                 <p><strong>*By appointment only</strong></p>
 
@@ -47,7 +47,7 @@
 
             <!-- Information -->
             <div class="col-lg-4 col-md-12 footer-box text-center">
-                <h5>INFORMATION</h5>
+                <h2>INFORMATION</h2>
 
                 <ul>
                     <li><a href="{{route('blogs')}}">Blog</a></li>

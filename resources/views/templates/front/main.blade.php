@@ -4,43 +4,12 @@
 <head>
     <style>
     </style>
-
-    @if(!empty($pageseo[0]->title))
-    <title>{{ $pageseo[0]->title }}</title>
-    @endif
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    @if(!empty($pageseo[0]->description))
-    <meta name="description" content="{{ $pageseo[0]->description }}">
-    <meta name="keywords" content="{{ $pageseo[0]->keywords }}">
-    <meta name="author" content="{{ $pageseo[0]->author }}">
-    @if($pageseo[0]->slug == 'home')
-    <link rel="canonical" href="{{ url('/') }}" />
-    @else
-    <link rel="canonical" href="{{ url('/') }}/{{$pageseo[0]->slug}}" />
-    @endif
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ $pageseo[0]->title }}" />
-    <meta property="og:description" content="{{ $pageseo[0]->description }}" />
-    @if($pageseo[0]->slug == 'home')
-    <meta property="og:url" content="{{ url('/') }}" />
-    @else
-    <meta property="og:url" content="{{ url('/') }}/{{$pageseo[0]->slug}}" />
-    @endif
-    <meta property="og:site_name" content="{{ $gseo->sitename }}" />
-    <meta property="article:publisher" content="{{ $gseo->facebook }}" />
-    <meta property="article:published_time" content="{{ $pageseo[0]->created_at }}" />
-    <meta property="article:modified_time" content="{{ $pageseo[0]->updated_at }}" />
-    <meta property="og:image" content="{{ url('/') }}/pages/{{$pageseo[0]->file}}" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="720" />
-    <meta property="og:image:type" content="image/webp" />
-    @endif
-    @if(!empty($pageseo[0]->smarkup))
-    {!! $pageseo[0]->smarkup !!}
-    @endif
+    @yield('metainfo')
+    <!-- <meta property="article:publisher" content="" />
+    <meta property="article:published_time" content="" />
+    <meta property="article:modified_time" content="" /> -->
     <link rel="stylesheet" href="/assets/front/css/header.css">
     <link rel="stylesheet" href="/assets/front/css/style.css">
     <link rel="stylesheet" href="/assets/front/css/footer.css">

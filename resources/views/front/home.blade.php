@@ -1,6 +1,23 @@
 @extends('templates.front.main')
-@section('customcss')
+@section('metainfo')
 <title>Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
+<meta name="description" content="Shubhanu Eye Hospital is the leading eye hospital in Haldwani. We offer excellent and affordable treatment for various eye problems.">
+<meta name="keywords" content="Shubhanu Eye Hospital, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
+<meta name="author" content="Shubhanu Eye Hospital">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Shubhanu Eye Hospital, Haldwani | Uttarakhand" />
+<meta property="og:description" content="Shubhanu Eye Hospital is the leading eye hospital in Haldwani. We offer excellent and affordable treatment for various eye problems." />
+<meta property="og:url" content="https://shubhanueyehospital.com" />
+<meta property="og:site_name" content="Shubhanu Eye Hospital" />
+<meta property="og:image" content="https://shubhanueyehospital.com/assets/front/imgs/banners/1.webp" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:image:type" content="image/webp" />
+<link rel="canonical" href="https://shubhanueyehospital.com" />
+@endsection
+
+@section('customcss')
 <link rel="stylesheet" href="/assets/front/css/home.css">
 <link rel="stylesheet" href="/assets/front/css/preloader.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -121,7 +138,7 @@
                 <div class="text">Years of Experience</div>
             </div>
             <div class="right-clm">
-                <p class="title">Stronger <span>- A Legacy of Better Vision</span></p>
+                <h1 class="title">Stronger <span>- A Legacy of Better Vision</span></h1>
                 <p class="desc">Years of experience. Thousands of lives touched.</p>
                 <div class="d-flex inner-row mt-3">
                     <div class="inner-clm">
@@ -1638,19 +1655,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
     const slider = document.querySelector(".deva-review-slider");
     const track = document.querySelector(".deva-review-track");
-
     const prevButton = document.querySelector(".deva-review-prev");
     const nextButton = document.querySelector(".deva-review-next");
-
     const slides = document.querySelectorAll(".deva-review-slide");
-
-
-    /* ================================================
-       SAFETY CHECK
-    ================================================ */
 
     if (
         !slider ||
@@ -1666,10 +1675,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
 
 
-    /* ================================================
-       GET SLIDE WIDTH
-    ================================================ */
-
     function getSlideStep() {
 
         const slide = slides[0];
@@ -1683,39 +1688,19 @@ document.addEventListener("DOMContentLoaded", function() {
         return slideWidth + gap;
     }
 
-
-    /* ================================================
-       HOW MANY CARDS ARE VISIBLE
-    ================================================ */
-
     function getVisibleSlides() {
 
         const screenWidth = window.innerWidth;
-
-
-        /* Desktop = EXACTLY 3 */
 
         if (screenWidth > 991) {
             return 3;
         }
 
-
-        /* Tablet = 2 */
-
         if (screenWidth > 650) {
             return 2;
         }
-
-
-        /* Mobile = 1 */
-
         return 1;
     }
-
-
-    /* ================================================
-       MAXIMUM INDEX
-    ================================================ */
 
     function getMaxIndex() {
 
@@ -1727,10 +1712,6 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
-
-    /* ================================================
-       MOVE SLIDER
-    ================================================ */
 
     function moveSlider() {
 
@@ -1745,10 +1726,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    /* ================================================
-       NEXT BUTTON
-    ================================================ */
-
     nextButton.addEventListener("click", function() {
 
         const maxIndex = getMaxIndex();
@@ -1760,10 +1737,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         } else {
 
-            /*
-             * Last slide ke baad
-             * wapas first slide
-             */
+     
 
             currentIndex = 0;
 
@@ -1774,10 +1748,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-
-    /* ================================================
-       PREVIOUS BUTTON
-    ================================================ */
 
     prevButton.addEventListener("click", function() {
 
@@ -1790,9 +1760,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         } else {
 
-            /*
-             * First se last visible position
-             */
 
             currentIndex = maxIndex;
 
@@ -1802,11 +1769,6 @@ document.addEventListener("DOMContentLoaded", function() {
         moveSlider();
 
     });
-
-
-    /* ================================================
-       RESIZE
-    ================================================ */
 
     window.addEventListener("resize", function() {
 
@@ -1825,10 +1787,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-    /* ================================================
-       INITIAL
-    ================================================ */
-
     moveSlider();
 
 });
@@ -1844,20 +1802,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let progress = 0;
 
-    /*
-    |--------------------------------------------------------------------------
-    | Smooth fake progress
-    |--------------------------------------------------------------------------
-    */
+    
 
     const progressInterval = setInterval(function() {
 
         if (progress < 90) {
 
-            /*
-             * Starting fast,
-             * ending slowly.
-             */
 
             const increment =
                 progress < 30 ? 2.2 :
@@ -1877,12 +1827,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }, 45);
 
-
-    /*
-    |--------------------------------------------------------------------------
-    | Hide Preloader
-    |--------------------------------------------------------------------------
-    */
 
     function hidePreloader() {
 
@@ -1910,9 +1854,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     "sh-preloader-hide"
                 );
 
-                /*
-                 * Remove completely after animation
-                 */
 
                 setTimeout(function() {
                     preloader.remove();
@@ -1923,12 +1864,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }, remaining);
     }
 
-
-    /*
-    |--------------------------------------------------------------------------
-    | Wait for complete page
-    |--------------------------------------------------------------------------
-    */
 
     if (document.readyState === "complete") {
 
