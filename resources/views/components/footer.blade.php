@@ -9,11 +9,11 @@
         <!-- Top Navigation -->
         <div class="footer-menu">
             <div class="row g-0 text-center">
-                <div class="col"><a href="#">ABOUT US</a></div>
-                <div class="col"><a href="#">GALLERY</a></div>
-                <div class="col"><a href="#">CONSULTATIONS</a></div>
-                <div class="col"><a href="#">CASE STUDIES</a></div>
-                <div class="col"><a href="#">FAQ</a></div>
+                <div class="col"><a href="{{route('about')}}">ABOUT US</a></div>
+                <div class="col"><a href="{{route('gallery')}}">GALLERY</a></div>
+                <div class="col"><a href="{{route('contact')}}">CONSULTATIONS</a></div>
+                <div class="col"><a href="{{route('casestudies')}}">CASE STUDIES</a></div>
+                <div class="col"><a href="{{route('home')}}#FAQs">FAQ</a></div>
             </div>
         </div>
 
@@ -70,11 +70,10 @@
                         Let's connect
                     </span>
 
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/shubhanueyehospital"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/shubhanueyehospital"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@shubhanueyehospital"><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" href="https://pin.it/63bt5cuV3"><i class="fab fa-pinterest-p"></i></a>
 
                 </div>
 

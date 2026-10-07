@@ -1,4 +1,8 @@
 @extends('templates.front.main')
+@section('metainfo')
+<title>Thank you | Shubhanu Eye Hospital</title>
+@endsection
+
 @section('customcss')
 <link rel="stylesheet" href="/assets/front/css/banner.css">
 <link rel="stylesheet" href="/assets/front/css/career.css">

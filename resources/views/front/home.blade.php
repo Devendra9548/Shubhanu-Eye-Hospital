@@ -2,7 +2,7 @@
 @section('metainfo')
 <title>Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
 <meta name="description" content="Shubhanu Eye Hospital is the leading eye hospital in Haldwani. We offer excellent and affordable treatment for various eye problems.">
-<meta name="keywords" content="Shubhanu Eye Hospital, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
+<meta name="keywords" content="Shubhanu Eye Hospital, eye hospital in Haldwani, eye specialist in Haldwani, eye care hospital, cataract surgery, LASIK surgery in Haldwani, retina specialist, glaucoma treatment, glaucoma surgery, refractive eye surgery, Implantable Collamer Lens (ICL), cornea transplant, oculoplasty, pediatric ophthalmology, dry eye treatment, retinal laser photocoagulation, retina injection therapy, glaucoma shunt surgery, Contoura LASIK, robotic cataract surgery">
 <meta name="author" content="Shubhanu Eye Hospital">
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
@@ -1198,7 +1198,7 @@ $faqs22=[
 
 ?>
 
-<section class="br-faq-section">
+<section class="br-faq-section" id="FAQs">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 left-clm">

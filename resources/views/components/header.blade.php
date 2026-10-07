@@ -12,7 +12,7 @@
             <div class="col-12 col-md-9 d-flex align-items-center justify-content-end">
                 <div class="social-info social-info-left d-flex">
                     <div class="icon-box me-3">
-                        <a href="" class="d-flex align-items-center">
+                        <a href="tel:+919068991180" class="d-flex align-items-center">
                             <div class="left-img">
                                 <img src="/assets/front/imgs/smartphone.png" alt="smartphone" width="100%">
                             </div>
@@ -23,7 +23,7 @@
                         </a>
                     </div>
                     <div class="icon-box me-3">
-                        <a href="" class="d-flex align-items-center">
+                        <a href="mailto:shubhanueyehospital@gmail.com" class="d-flex align-items-center">
                             <div class="left-img">
                                 <img src="/assets/front/imgs/tick.png" alt="smartphone" width="100%">
                             </div>
@@ -34,7 +34,7 @@
                         </a>
                     </div>
                     <div class="icon-box me-3">
-                        <a href="" class="d-flex align-items-center">
+                        <a href="/contact-us" class="d-flex align-items-center">
                             <div class="left-img">
                                 <img src="/assets/front/imgs/location-pin.png" alt="smartphone" width="100%">
                             </div>
@@ -86,7 +86,7 @@
                                 </div>
                             </li>
                             <li><a href="{{route('gallery')}}" class="{{ request()->routeIs('gallery') ? 'active' : '' }}">Gallery</a></li>
-                            <li><a href="{{route('casestudies')}}" class="{{ request()->routeIs('casestudies') ? 'active' : '' }}">Our Doctors</a></li>
+                            <li><a href="/" class="">Our Doctors</a></li>
                             <li><a href="{{route('contact')}}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact Us</a></li>
                             <li class="mb-book-an-appointment"><a href="javascript:void(0)" id="showBookAppointment" class="globalbtn showBookAppointment"><i class="fa-regular fa-calendar-days me-2"></i> Book an Appointment</a></li>
                         </ul>

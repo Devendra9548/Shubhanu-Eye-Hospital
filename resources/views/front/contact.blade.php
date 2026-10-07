@@ -1,6 +1,22 @@
 @extends('templates.front.main')
+@section('metainfo')
+<title>Contact us | Shubhanu Eye Hospital</title>
+<meta name="description" content="Book your appointment, Call us today. Visit website, https://shubhanueyehospital.com/contacts/ for more information. Phone: +91 90689 91180">
+<meta name="keywords" content="Shubhanu Eye Hospital, Contact Us, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
+<meta name="author" content="Shubhanu Eye Hospital">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact us | Shubhanu Eye Hospital" />
+<meta property="og:description" content="Book your appointment, Call us today. Visit website, https://shubhanueyehospital.com/contacts/ for more information. Phone: +91 90689 91180" />
+<meta property="og:url" content="https://shubhanueyehospital.com/contact-us" />
+<meta property="og:site_name" content="Shubhanu Eye Hospital" />
+<meta property="og:image" content="https://shubhanueyehospital.com/assets/front/imgs/banners/1.webp" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:image:type" content="image/webp" />
+<link rel="canonical" href="https://shubhanueyehospital.com/contact-us" />
+@endsection
 @section('customcss')
-<title>Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
 <link rel="stylesheet" href="/assets/front/css/contact.css">
 @endsection
 @section('body')
@@ -9,13 +25,12 @@
 
         <div class="row">
             <div class="col-lg-8 mx-auto text-center mb-5">
-                <h2 class="contact-sec-title">
-                    We're Connected All Time To Help Our Patients
-                </h2>
+                <h1 class="contact-sec-title">
+                    Get In Touch With Us
+                </h1>
                 <div class="contact-sec-divider"></div>
                 <p class="contact-sec-subtitle">
-                    There are many variations of passages of Lorem Ipsum available,
-                    but the majority have suffered alteration in some form.
+                For general questions, please send us a message and we’ll get right back to you. You can also call us directly to speak with a member of our service team or insurance expert.
                 </p>
             </div>
         </div>
@@ -24,9 +39,9 @@
             <div class="col-lg-8">
                 <div class="contact-sec-box">
 
-                    <h3 class="contact-sec-heading">
+                    <h2 class="contact-sec-heading">
                         Feel free to contact us for any query.
-                    </h3>
+                    </h2>
 
                     <form>
 
@@ -71,9 +86,9 @@
 
                 <div class="contact-sec-box">
 
-                    <h3 class="contact-sec-heading mb-4">
+                    <h2 class="contact-sec-heading mb-4">
                         Contact Information
-                    </h3>
+                    </h2>
 
                     <!-- Address -->
                     <div class="contact-sec-info">
@@ -82,7 +97,7 @@
                         </div>
 
                         <div>
-                            <h5>Address</h5>
+                            <h3>Address</h3>
                             <p>
                                 Shubhanu Eye Hospital <br>
                                 Kholi tower, Thandi Sadak, Civil Lines,<br>
@@ -98,7 +113,7 @@
                         </div>
 
                         <div>
-                            <h5>Opening Hours</h5>
+                            <h3>Opening Hours</h3>
                             <p>
                                 Tue, Thur & Fri | 11AM - 5PM <br>
                                 Wed & Sat | 11AM - 7PM
@@ -113,7 +128,7 @@
                         </div>
 
                         <div>
-                            <h5>Contact</h5>
+                            <h3>Contact</h3>
                             <p>
                               +91 90689 91180 <br>
                               shubhanueyehospital@gmail.com
@@ -129,19 +144,17 @@
                         </div>
 
                         <div>
-                            <h5>Social Contact</h5>
+                            <h3>Social Contact</h3>
 
                             <div class="contact-sec-social">
 
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/shubhanueyehospital"><i class="fab fa-facebook-f"></i></a>
 
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/shubhanueyehospital"><i class="fab fa-instagram"></i></a>
 
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a target="_blank" href="https://pin.it/63bt5cuV3"><i class="fab fa-pinterest-p"></i></a>
 
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-
-                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a target="_blank" href="https://www.youtube.com/@shubhanueyehospital"><i class="fab fa-youtube"></i></a>
 
                             </div>
 

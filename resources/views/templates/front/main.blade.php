@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @yield('metainfo')
-    <!-- <meta property="article:publisher" content="" />
-    <meta property="article:published_time" content="" />
-    <meta property="article:modified_time" content="" /> -->
+    <meta property="article:publisher" content="Shubhanu Eye Hospital" />
+    <meta property="article:published_time" content="2026-10-07T00:00:00+05:30" />
+    <meta property="article:modified_time" content="2026-10-07T00:00:00+05:30" />
     <link rel="stylesheet" href="/assets/front/css/header.css">
     <link rel="stylesheet" href="/assets/front/css/style.css">
     <link rel="stylesheet" href="/assets/front/css/footer.css">

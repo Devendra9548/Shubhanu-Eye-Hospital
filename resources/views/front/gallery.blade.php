@@ -1,6 +1,22 @@
 @extends('templates.front.main')
+@section('metainfo')
+<title>Gallery | Shubhanu Eye Hospital</title>
+<meta name="description" content="Explore the gallery of Shubhanu Eye Hospital, Haldwani, showcasing our modern eye care facilities, advanced technology, experienced team, and patient care environment.">
+<meta name="keywords" content="Shubhanu Eye Hospital, Our Gallery, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
+<meta name="author" content="Shubhanu Eye Hospital">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Gallery | Shubhanu Eye Hospital" />
+<meta property="og:description" content="Explore the gallery of Shubhanu Eye Hospital, Haldwani, showcasing our modern eye care facilities, advanced technology, experienced team, and patient care environment." />
+<meta property="og:url" content="https://shubhanueyehospital.com/gallery" />
+<meta property="og:site_name" content="Shubhanu Eye Hospital" />
+<meta property="og:image" content="https://shubhanueyehospital.com/assets/front/imgs/banners/1.webp" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:image:type" content="image/webp" />
+<link rel="canonical" href="https://shubhanueyehospital.com/gallery" />
+@endsection
 @section('customcss')
-<title>Shubhanu Eye Hospital, Haldwani | Uttarakhand</title>
 <link rel="stylesheet" href="/assets/front/css/gallery.css">
 @endsection
 
@@ -16,13 +32,12 @@ for($i = 1; $i <= 12; $i++){ $galleryImages[]=asset("assets/front/imgs/gallery/{
 
         <div class="row">
             <div class="col-lg-8 mx-auto text-center mb-5">
-                <h2 class="contact-sec-title">
+                <h1 class="contact-sec-title">
                     Our Gallery
-                </h2>
+                </h1>
                 <div class="contact-sec-divider"></div>
                 <p class="contact-sec-subtitle">
-                    There are many variations of passages of Lorem Ipsum available,
-                    but the majority have suffered alteration in some form.
+                  EYE CAMP AT SHRI AGRAWAL DHARAMSHALA -RUDRAPUR
                 </p>
             </div>
         </div>

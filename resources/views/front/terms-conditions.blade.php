@@ -1,4 +1,21 @@
 @extends('templates.front.main')
+@section('metainfo')
+<title>Terms & Conditions | Shubhanu Eye Hospital</title>
+<meta name="description" content="Read Shubhanu Eye Hospital’s Terms and Conditions to understand the rules, guidelines, and terms governing the use of our website and services">
+<meta name="keywords" content="Shubhanu Eye Hospital, Contact Us, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
+<meta name="author" content="Shubhanu Eye Hospital">
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Terms & Conditions | Shubhanu Eye Hospital" />
+<meta property="og:description" content="Read Shubhanu Eye Hospital’s Terms and Conditions to understand the rules, guidelines, and terms governing the use of our website and services" />
+<meta property="og:url" content="https://shubhanueyehospital.com/terms-and-conditions" />
+<meta property="og:site_name" content="Shubhanu Eye Hospital" />
+<meta property="og:image" content="https://shubhanueyehospital.com/assets/front/imgs/banners/1.webp" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:image:type" content="image/webp" />
+<link rel="canonical" href="https://shubhanueyehospital.com/terms-and-conditions" />
+@endsection
 @section('customcss')
 <link rel="stylesheet" href="/assets/front/css/banner.css">
 <link rel="stylesheet" href="/assets/front/css/case-studies.css">
@@ -30,113 +47,48 @@
             <div class="col-12 col-md-12 left-clm">
                 <div class="main-content">
 
-                    <p>Your privacy is important to us. It is Shubhanu Eye Hospital policy to respect your privacy
-                        regarding any information
-                        we may collect from you across our website, https://shubhanueyehospital.com/ and other sites we
-                        own and operate.</p>
-                    <p>We only ask for personal information when we truly need it to provide a service to you. We
-                        collect it by fair and
-                        lawful means, with your knowledge and consent. We also let you know why we’re collecting it and
-                        how it will be used.
-                    </p>
-                    <p>We only retain collected information for as long as necessary to provide you with your requested
-                        service. What data
-                        we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well
-                        as unauthorised
-                        access, disclosure, copying, use or modification.</p>
-                    <p>We don’t share any personally identifying information publicly or with third-parties, except when
-                        required to by law.
-                    </p>
-                    <p>Our website may link to external sites that are not operated by us. Please be aware that we have
-                        no control over the
-                        content and practices of these sites, and cannot accept responsibility or liability for their
-                        respective privacy
-                        policies.</p>
-                    <p>You are free to refuse our request for your personal information, with the understanding that we
-                        may be unable to
-                        provide you with some of your desired services.</p>
-                    <p>Your continued use of our website will be regarded as acceptance of our practices around privacy
-                        and personal
-                        information. If you have any questions about how we handle user data and personal information,
-                        feel free to contact
-                        us.</p>
-                    <p>This policy is effective as of 1 January 2022.</p>
-                    <h2>Terms of Service</h2>
-                    <p>Terms By accessing the website at https://shubhanueyehospital.com/ you are agreeing to be bound by
-                        these terms of service,
-                        all applicable laws and regulations, and agree that you are responsible for compliance with any
-                        applicable local
-                        laws. If you do not agree with any of these terms, you are prohibited from using or accessing
-                        this site. The
-                        materials contained in this website are protected by applicable copyright and trademark law.</p>
-                    <h2>Use Licence</h2>
-                    <p>Permission is granted to temporarily download one copy of the materials (information or software)
-                        on Shubhanu Eye
-                        Hospital website for personal, non-commercial transitory viewing only. This is the grant of a
-                        licence, not a
-                        transfer of title, and under this licence you may not: modify or copy the materials; use the materials for any commercial purpose, or for any public display (commercial or
-                        non-commercial); attempt to decompile or reverse engineer any software contained on Shubhanu Eye Hsopital website;
-                        remove any
-                        copyright or other proprietary notations from the materials; or transfer the materials to
-                        another person or “mirror”
-                        the materials on any other server.</p>
-                    <p>This licence shall automatically terminate if you violate any of these restrictions and may be
-                        terminated by Shubhanu
-                        Eye Hospital at any time. Upon terminating your viewing of these materials or upon the
-                        termination of this licence,
-                        you must destroy any downloaded materials in your possession whether in electronic or printed
-                        format.</p>
-                    <h2>Disclaimer</h2>
-                    <p>The materials on Shubhanu Eye Hsopital website are provided on an ‘as is’ basis. Shubhanu Eye
-                        Hsopital makes no
-                        warranties, expressed or implied, and hereby disclaims and negates all other warranties
-                        including, without
-                        limitation, implied warranties or conditions of merchantability, fitness for a particular
-                        purpose, or
-                        non-infringement of intellectual property or other violation of rights.</p>
-                    <p>Further, Shubhanu Eye Hospital does not warrant or make any representations concerning the
-                        accuracy, likely results,
-                        or reliability of the use of the materials on its website or otherwise relating to such
-                        materials or on any sites
-                        linked to this site.</p>
-                    <h2>Limitations</h2>
-                    <p>In no event shall Shubhanu Eye Hospital or its suppliers be liable for any damages (including,
-                        without limitation,
-                        damages for loss of data or profit, or due to business interruption) arising out of the use or
-                        inability to use the
-                        materials on Shubhanu Eye Hospital website, even if Shubhanu Eye Hospital or a Shubhanu Eye
-                        Hospital authorised
-                        representative has been notified orally or in writing of the possibility of such damage. Because
-                        some jurisdictions
-                        do not allow limitations on implied warranties, or limitations of liability for consequential or
-                        incidental damages,
-                        these limitations may not apply to you.</p>
-                    <h2>Accuracy of materials</h2>
-                    <p>The materials appearing on Shubhanu Eye Hospital website could include technical, typographical,
-                        or photographic
-                        errors. Shubhanu Eye Hospital does not warrant that any of the materials on its website are
-                        accurate, complete or
-                        current. Shubhanu Eye Hospital may make changes to the materials contained on its website at any
-                        time without
-                        notice. However Shubhanu Eye Hospital does not make any commitment to update the materials on an
-                        ongoing basis.</p>
-                    <h2>Links</h2>
-                    <p>Shubhanu Eye Hospital has not reviewed all of the sites linked to its website and is not
-                        responsible for the contents
-                        of any such linked site. The inclusion of any link does not imply endorsement by Shubhanu Eye
-                        Hospital of the site.
-                        Use of any such linked website is at the user’s own risk.</p>
-                    <h2>Modifications</h2>
-                    <p>Shubhanu Eye Hospital may revise these terms of service for its website at any time without
-                        notice. By using this
-                        website you are agreeing to be bound by the then current version of these terms of service.</p>
+                    <p>By accessing and using the Shubhanu Eye Hospital website, you agree to comply with and be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our website.</p>
+
+                    <h2>Use of Website</h2>
+                    <p>The content and information provided on this website are intended for general informational purposes. You agree to use the website only for lawful purposes and in a manner that does not harm, restrict, or interfere with the website or its services.</p>
+
+                    <h2>Medical Information</h2>
+                    <p>The information available on this website is provided for general awareness and informational purposes only. It should not be considered a substitute for professional medical advice, diagnosis, or treatment. Please consult a qualified eye care professional for medical concerns or treatment recommendations.</p>
+
+                    <h2>Appointments and Services</h2>
+                    <p>Any appointment request or enquiry submitted through this website is subject to confirmation by Shubhanu Eye Hospital. Submitting an appointment request does not guarantee the availability of a doctor, time slot, or specific medical service.</p>
+
+                    <h2>Intellectual Property</h2>
+                    <p>All content available on this website, including text, images, graphics, logos, designs, and other materials, is the property of Shubhanu Eye Hospital or its respective owners and is protected by applicable copyright and intellectual property laws.</p>
+
+                    <p>You may not copy, reproduce, modify, distribute, publish, or use any content from this website for commercial purposes without prior written permission from Shubhanu Eye Hospital.</p>
+
+                    <h2>Website Availability</h2>
+                    <p>We make reasonable efforts to keep the website available and functioning properly. However, Shubhanu Eye Hospital does not guarantee that the website will always be available, uninterrupted, secure, or free from errors.</p>
+
+                    <h2>External Links</h2>
+                    <p>Our website may contain links to third-party websites for your convenience or additional information. Shubhanu Eye Hospital does not control or take responsibility for the content, privacy practices, or availability of external websites.</p>
+
+                    <h2>Limitation of Liability</h2>
+                    <p>Shubhanu Eye Hospital shall not be liable for any direct, indirect, incidental, or consequential loss or damage arising from your use of, or inability to use, this website or any information provided through it.</p>
+
+                    <h2>Accuracy of Information</h2>
+                    <p>We make reasonable efforts to keep the information on this website accurate and up to date. However, Shubhanu Eye Hospital does not guarantee that all information is complete, accurate, or current. Information, services, and website content may be updated or changed without prior notice.</p>
+
+                    <h2>Changes to These Terms</h2>
+                    <p>Shubhanu Eye Hospital reserves the right to modify or update these Terms and Conditions at any time without prior notice. Any changes will become effective when posted on this page. Your continued use of the website after such changes constitutes your acceptance of the updated terms.</p>
+
                     <h2>Governing Law</h2>
-                    <p>These terms and conditions are governed by and construed in accordance with the laws of
-                        Uttarakhand , India and you
-                        irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+                    <p>These Terms and Conditions shall be governed by and interpreted in accordance with the applicable laws of India. Any disputes arising in connection with the use of this website shall be subject to the jurisdiction of the courts in Uttarakhand, India.</p>
+
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or concerns regarding these Terms and Conditions, please contact Shubhanu Eye Hospital through the contact details provided on our website.</p>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 @endsection
