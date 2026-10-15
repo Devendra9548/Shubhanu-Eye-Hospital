@@ -16,20 +16,15 @@
 <meta property="og:image:type" content="image/webp" />
 <link rel="canonical" href="https://shubhanueyehospital.com" />
 @endsection
-
 @section('customcss')
 <link rel="stylesheet" href="/assets/front/css/home.css">
 <link rel="stylesheet" href="/assets/front/css/preloader.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 @endsection
 @section('body')
-
 
 <div id="shubhanuPreloader">
     <div class="sh-preloader-bg">
@@ -40,41 +35,26 @@
         <span></span>
         <span></span>
     </div>
-
     <div class="sh-loader-wrapper">
-
-        <!-- Animated Eye -->
         <div class="sh-eye-system">
-
             <div class="sh-orbit sh-orbit-1"></div>
             <div class="sh-orbit sh-orbit-2"></div>
             <div class="sh-orbit sh-orbit-3"></div>
-
             <div class="sh-eye-glow"></div>
-
             <div class="sh-eye">
-
                 <div class="sh-eye-outline">
-
                     <div class="sh-iris">
                         <div class="sh-iris-ring"></div>
                         <div class="sh-iris-ring ring-2"></div>
                         <div class="sh-pupil"></div>
                         <span class="sh-eye-highlight"></span>
                     </div>
-
                 </div>
-
             </div>
-
             <div class="sh-scan-line"></div>
-
         </div>
 
-
-        <!-- Brand -->
         <div class="sh-brand">
-
             <div class="sh-brand-name">
                 <span>S</span>
                 <span>H</span>
@@ -85,30 +65,21 @@
                 <span>N</span>
                 <span>U</span>
             </div>
-
             <div class="sh-brand-subtitle">
                 EYE HOSPITAL
             </div>
-
         </div>
 
-
-        <!-- Loading -->
         <div class="sh-loading">
-
             <div class="sh-loading-top">
                 <span>PREPARING YOUR EXPERIENCE</span>
                 <strong id="shProgress">0%</strong>
             </div>
-
             <div class="sh-progress">
                 <div id="shProgressBar"></div>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 <section class="first-hero-section">
@@ -162,49 +133,49 @@
 <?php
 $services=[
     [
-        "img" => "/assets/front/imgs/1/4.png",
+        "img" => "/assets/front/imgs/1/4.webp",
         "title" => "Specialized Care",
         "name" => "Retina & Vitreous Care",
         "para" => "Advanced diagnosis and treatment for retinal and vitreous disorders.",
         "points" => ["Retina Surgery", "Laser Treatment", "Intravitreal Injections"]
     ],
     [
-        "img" => "/assets/front/imgs/1/6.png",
+        "img" => "/assets/front/imgs/1/6.webp",
         "title" => "Specialized Care",
         "name" => "Orbit & Oculoplasty",
         "para" => "Specialized care for eyelid, tear duct and orbital conditions.",
         "points" => ["Eyelid Surgery", "Watering Eye Treatment", "Orbital Surgery"]
     ],
     [
-        "img" => "/assets/front/imgs/1/7.png",
+        "img" => "/assets/front/imgs/1/7.webp",
         "title" => "Specialized Care",
         "name" => "Cornea Care",
         "para" => "Specialized diagnosis and treatment for corneal diseases and disorders.",
         "points" => ["Corneal Disorders", "Keratoconus & C3R", "Corneal Surgery"]
     ],
     [
-        "img" => "/assets/front/imgs/1/3.png",
+        "img" => "/assets/front/imgs/1/3.webp",
         "title" => "Specialized Care",
         "name" => "Glaucoma Care",
         "para" => "Comprehensive care to detect and manage glaucoma at every stage.",
         "points" => ["Glaucoma Diagnosis", "Laser Treatment", "Glaucoma Surgery"]
     ],
     [
-        "img" => "/assets/front/imgs/1/8.png",
+        "img" => "/assets/front/imgs/1/8.webp",
         "title" => "Specialized Care",
         "name" => "Squint Care",
         "para" => "Expert evaluation and treatment for eye alignment problems in children and adults.",
         "points" => ["Squint Evaluation", "Amblyopia Management", "Squint Surgery"]
     ],
     [
-        "img" => "/assets/front/imgs/1/9.png",
+        "img" => "/assets/front/imgs/1/9.webp",
         "title" => "Specialized Care",
         "name" => "Eye Trauma & Emergency",
         "para" => "Prompt and specialized care for urgent eye conditions and injuries.",
         "points" => ["Eye Injuries", "Foreign Body & Chemical Injuries", "Emergency Eye Surgery"]
     ],
     [
-        "img" => "/assets/front/imgs/1/5.png",
+        "img" => "/assets/front/imgs/1/5.webp",
         "title" => "Specialized Care",
         "name" => "Cataract & Lens Surgery",
         "para" => "Advanced cataract treatment for clear and better-quality vision.",
@@ -971,97 +942,97 @@ $toptestimonials = [
         "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
         "name" => "Neha Sharma",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
     [
         "desc" => "I visited Shubhanu Eye Hospital for a routine eye checkup and was impressed by the detailed consultation and professional approach of the doctors.",
         "name" => "Amit Verma",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "Dr. Bhanu Pratap Singh Pangte gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand.",
         "name" => "Pooja Rawat",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
     [
         "desc" => "The care at Shubhanu Eye Hospital was wonderful. Dr. Shubha Raguram Pangtey answered all my questions patiently and guided me throughout my treatment.",
         "name" => "Sanjay Mehta",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "I am very satisfied with my visit to Shubhanu Eye Hospital. The doctors were approachable, attentive, and made the entire experience stress-free.",
         "name" => "Kavita Joshi",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
     [
         "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
         "name" => "Neha Sharma",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey provided a detailed examination and explained my condition in simple words. I felt confident about following the recommended treatment.",
         "name" => "Vikas Singh",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "My family had a great experience at Shubhanu Eye Hospital. The doctors were caring, the process was smooth, and everything was explained properly.",
         "name" => "Anjali Bisht",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
     [
         "desc" => "Dr. Bhanu Pratap Singh Pangte took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature.",
         "name" => "Deepak Kumar",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "I was impressed with Dr. Shubha Raguram Pangtey's professional approach. She explained my eye condition clearly and made the consultation very comfortable.",
         "name" => "Ritu Negi",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
     [
         "desc" => "Shubhanu Eye Hospital provided a comfortable and welcoming experience. The examination was thorough, and the doctors patiently addressed every concern I had.",
         "name" => "Manoj Rawat",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangte. His detailed explanation helped me understand my treatment and feel more confident.",
         "name" => "Meena Joshi",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
     [
         "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/male.png"
+        "img" => "/assets/front/imgs/male.webp"
     ],
     [
         "desc" => "Dr. Shubha Raguram Pangtey listened carefully to my concerns and explained every step clearly. The staff at Shubhanu Eye Hospital was very supportive.",
         "name" => "Neha Sharma",
         "time" => "1 week ago",
-        "img" => "/assets/front/imgs/female.png"
+        "img" => "/assets/front/imgs/female.webp"
     ],
 ];
 ?>
@@ -1197,7 +1168,6 @@ $faqs22=[
 ];
 
 ?>
-
 <section class="br-faq-section" id="FAQs">
     <div class="container">
         <div class="row">
@@ -1243,11 +1213,8 @@ $faqs22=[
     </div>
 </section>
 
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script async src="//www.instagram.com/embed.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -1584,21 +1551,6 @@ $('.other-doctor-slider').slick({
 </script>
 
 <script>
-$('.doctor-slider').slick({
-    slidesToShow: 1,
-    arrows: false,
-    dots: true,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    infinite: true,
-    responsive: [{
-        breakpoint: 768,
-    }]
-});
-</script>
-
-<script>
 $('.first-hero-section').slick({
     slidesToShow: 1,
     arrows: true,
@@ -1627,8 +1579,6 @@ $('.dsc-review-slider').slick({
     }]
 });
 </script>
-
-
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -1671,27 +1621,19 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-
     let currentIndex = 0;
 
 
     function getSlideStep() {
-
         const slide = slides[0];
-
         const slideWidth = slide.getBoundingClientRect().width;
-
         const trackStyle = window.getComputedStyle(track);
-
         const gap = parseFloat(trackStyle.gap) || 0;
-
         return slideWidth + gap;
     }
 
     function getVisibleSlides() {
-
         const screenWidth = window.innerWidth;
-
         if (screenWidth > 991) {
             return 3;
         }
@@ -1703,112 +1645,60 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function getMaxIndex() {
-
         const visibleSlides = getVisibleSlides();
-
         return Math.max(
             0,
             slides.length - visibleSlides
         );
     }
 
-
     function moveSlider() {
-
         const step = getSlideStep();
-
         const move = step * currentIndex;
-
-
-        track.style.transform =
-            "translate3d(-" + move + "px, 0, 0)";
+        track.style.transform = "translate3d(-" + move + "px, 0, 0)";
 
     }
 
-
     nextButton.addEventListener("click", function() {
-
         const maxIndex = getMaxIndex();
-
-
         if (currentIndex < maxIndex) {
-
             currentIndex++;
-
         } else {
-
-     
-
             currentIndex = 0;
-
         }
-
-
         moveSlider();
-
     });
 
-
     prevButton.addEventListener("click", function() {
-
         const maxIndex = getMaxIndex();
-
-
         if (currentIndex > 0) {
-
             currentIndex--;
-
         } else {
-
-
-            currentIndex = maxIndex;
-
+           currentIndex = maxIndex;
         }
-
-
         moveSlider();
-
     });
 
     window.addEventListener("resize", function() {
-
         const maxIndex = getMaxIndex();
-
-
         if (currentIndex > maxIndex) {
-
             currentIndex = maxIndex;
-
         }
-
-
         moveSlider();
-
     });
-
-
     moveSlider();
 
 });
 </script>
 <script>
 (function() {
-
     const preloader = document.getElementById("shubhanuPreloader");
     const progressBar = document.getElementById("shProgressBar");
     const progressText = document.getElementById("shProgress");
-
     const startTime = Date.now();
-
     let progress = 0;
-
-    
-
     const progressInterval = setInterval(function() {
-
         if (progress < 90) {
-
-
             const increment =
                 progress < 30 ? 2.2 :
                 progress < 60 ? 1.2 :
@@ -1826,35 +1716,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     }, 45);
-
-
     function hidePreloader() {
-
         clearInterval(progressInterval);
-
         const minimumTime = 1500;
-
         const elapsed = Date.now() - startTime;
-
-        const remaining =
-            Math.max(0, minimumTime - elapsed);
-
-
+        const remaining = Math.max(0, minimumTime - elapsed);
         setTimeout(function() {
-
             progress = 100;
-
             progressBar.style.width = "100%";
             progressText.textContent = "100%";
-
-
             setTimeout(function() {
-
                 preloader.classList.add(
                     "sh-preloader-hide"
                 );
-
-
                 setTimeout(function() {
                     preloader.remove();
                 }, 1000);
@@ -1864,20 +1738,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }, remaining);
     }
 
-
     if (document.readyState === "complete") {
-
         hidePreloader();
-
     } else {
-
         window.addEventListener(
             "load",
             hidePreloader
         );
-
     }
-
 })();
 </script>
 @endsection

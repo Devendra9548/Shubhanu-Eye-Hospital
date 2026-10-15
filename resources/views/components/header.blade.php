@@ -14,7 +14,7 @@
                     <div class="icon-box me-3">
                         <a href="tel:+919068991180" class="d-flex align-items-center">
                             <div class="left-img">
-                                <img src="/assets/front/imgs/smartphone.png" alt="smartphone" width="100%">
+                                <img src="/assets/front/imgs/smartphone.webp" alt="smartphone" width="100%">
                             </div>
                             <div class="right">
                                 <p class="heading">Phone: </p>
@@ -25,7 +25,7 @@
                     <div class="icon-box me-3">
                         <a href="mailto:shubhanueyehospital@gmail.com" class="d-flex align-items-center">
                             <div class="left-img">
-                                <img src="/assets/front/imgs/tick.png" alt="smartphone" width="100%">
+                                <img src="/assets/front/imgs/tick.webp" alt="smartphone" width="100%">
                             </div>
                             <div class="right">
                                 <p class="heading">Email: </p>
@@ -36,7 +36,7 @@
                     <div class="icon-box me-3">
                         <a href="/contact-us" class="d-flex align-items-center">
                             <div class="left-img">
-                                <img src="/assets/front/imgs/location-pin.png" alt="smartphone" width="100%">
+                                <img src="/assets/front/imgs/location-pin.webp" alt="smartphone" width="100%">
                             </div>
                             <div class="right">
                                 <p class="heading">Address: </p>
@@ -131,7 +131,6 @@ document.querySelectorAll(".menu-toggle").forEach(function(toggle) {
         const submenu = parent.querySelector(".submenu");
         const arrow = this.querySelector(".darrow");
 
-        // Close other menus
         document.querySelectorAll(".p-menu").forEach(function(item) {
             if (item !== parent) {
                 item.querySelector(".submenu").style.display = "none";
@@ -143,7 +142,6 @@ document.querySelectorAll(".menu-toggle").forEach(function(toggle) {
             }
         });
 
-        // Toggle current menu
         if (submenu.style.display === "block") {
             submenu.style.display = "none";
             arrow.classList.remove("drotate");

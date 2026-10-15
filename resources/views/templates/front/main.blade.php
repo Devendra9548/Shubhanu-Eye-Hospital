@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <style>
     </style>
@@ -14,12 +13,8 @@
     <link rel="stylesheet" href="/assets/front/css/style.css">
     <link rel="stylesheet" href="/assets/front/css/footer.css">
     @yield('customcss')
-
-    <!-- end -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -42,7 +37,6 @@
 
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script>
 </head>
-
 <body>
     <x-header facebook="{{ isset($gseo->facebook) ? $gseo->facebook : '' }}"
         linkedin="{{ isset($gseo->linkedin) ? $gseo->linkedin : '' }}"
@@ -60,16 +54,10 @@
     @if (!empty($gseo->gfbs))
     {!! $gseo->gfbs !!}
     @endif
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     @yield('customjs')
     @if (!empty($gseo->gfas))
     {!! $gseo->gfas !!}
     @endif
-
 </body>
 <script src="/assets/front/js/animation.js"></script>
 </html>
