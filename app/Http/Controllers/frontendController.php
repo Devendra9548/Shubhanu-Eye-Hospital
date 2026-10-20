@@ -178,7 +178,7 @@ class frontendController extends Controller
         fastcgi_finish_request();
 
         // Ab mail send hoga
-        $mail = Mail::to('web.thakurdeva@gmail.com');
+        $mail = Mail::to('shubhanuforwebsite@gmail.com');
 
         if (!empty($origname)) {
 
@@ -204,7 +204,7 @@ class frontendController extends Controller
 
     
 
-        $mail = Mail::to('web.thakurdeva@gmail.com');
+        $mail = Mail::to('shubhanuforwebsite@gmail.com');
 
         if (!empty($origname)) {
 
