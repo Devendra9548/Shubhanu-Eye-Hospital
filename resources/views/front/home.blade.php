@@ -27,47 +27,37 @@
 @section('body')
 
 <div id="shubhanuPreloader">
+
     <div class="sh-preloader-bg">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
     </div>
+
     <div class="sh-loader-wrapper">
-        <div class="sh-eye-system">
-            <div class="sh-orbit sh-orbit-1"></div>
-            <div class="sh-orbit sh-orbit-2"></div>
-            <div class="sh-orbit sh-orbit-3"></div>
-            <div class="sh-eye-glow"></div>
-            <div class="sh-eye">
-                <div class="sh-eye-outline">
-                    <div class="sh-iris">
-                        <div class="sh-iris-ring"></div>
-                        <div class="sh-iris-ring ring-2"></div>
-                        <div class="sh-pupil"></div>
-                        <span class="sh-eye-highlight"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="sh-scan-line"></div>
+
+        <div class="sh-logo-stage">
+
+            <div class="sh-orbit sh-orbit-one"></div>
+            <div class="sh-orbit sh-orbit-two"></div>
+            <div class="sh-orbit sh-orbit-three"></div>
+            <div class="sh-logo-glow"></div>
+
+            <img
+                class="sh-logo-svg"
+                src="logo.png"
+                alt="Shubhanu Eye Hospital logo"
+                width="371"
+                height="359"
+            />
         </div>
 
         <div class="sh-brand">
             <div class="sh-brand-name">
-                <span>S</span>
-                <span>H</span>
-                <span>U</span>
-                <span>B</span>
-                <span>H</span>
-                <span>A</span>
-                <span>N</span>
-                <span>U</span>
+                <span>S</span><span>H</span><span>U</span><span>B</span>
+                <span>H</span><span>A</span><span>N</span><span>U</span>
             </div>
-            <div class="sh-brand-subtitle">
-                EYE HOSPITAL
-            </div>
+
+            <div class="sh-brand-subtitle">EYE HOSPITAL</div>
         </div>
 
         <div class="sh-loading">
@@ -75,10 +65,12 @@
                 <span>PREPARING YOUR EXPERIENCE</span>
                 <strong id="shProgress">0%</strong>
             </div>
+
             <div class="sh-progress">
                 <div id="shProgressBar"></div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -1691,61 +1683,73 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <script>
-(function() {
+(function () {
     const preloader = document.getElementById("shubhanuPreloader");
     const progressBar = document.getElementById("shProgressBar");
     const progressText = document.getElementById("shProgress");
+
+    if (!preloader || !progressBar || !progressText) return;
+
     const startTime = Date.now();
+    const minimumTime = 3000;
+
     let progress = 0;
-    const progressInterval = setInterval(function() {
+    let finished = false;
+    let progressInterval;
+    let hideTimeout;
+
+    function updateProgress() {
+        if (finished) return;
+
         if (progress < 90) {
             const increment =
                 progress < 30 ? 2.2 :
                 progress < 60 ? 1.2 :
-                progress < 80 ? .6 :
-                .2;
+                progress < 80 ? 0.6 : 0.2;
 
-            progress += increment;
-
-            if (progress > 90) {
-                progress = 90;
-            }
-
+            progress = Math.min(90, progress + increment);
             progressBar.style.width = progress + "%";
             progressText.textContent = Math.floor(progress) + "%";
         }
+    }
 
-    }, 45);
+    progressInterval = setInterval(updateProgress, 45);
+
     function hidePreloader() {
+        if (finished) return;
+        finished = true;
+
         clearInterval(progressInterval);
-        const minimumTime = 1500;
-        const elapsed = Date.now() - startTime;
-        const remaining = Math.max(0, minimumTime - elapsed);
-        setTimeout(function() {
-            progress = 100;
+
+        const remaining = Math.max(
+            0,
+            minimumTime - (Date.now() - startTime)
+        );
+
+        hideTimeout = setTimeout(function () {
             progressBar.style.width = "100%";
             progressText.textContent = "100%";
-            setTimeout(function() {
-                preloader.classList.add(
-                    "sh-preloader-hide"
-                );
-                setTimeout(function() {
-                    preloader.remove();
-                }, 1000);
 
+            setTimeout(function () {
+                preloader.classList.add("sh-preloader-hide");
+
+                setTimeout(function () {
+                    if (preloader.parentNode) {
+                        preloader.parentNode.removeChild(preloader);
+                    }
+                }, 850);
             }, 250);
-
         }, remaining);
     }
 
     if (document.readyState === "complete") {
         hidePreloader();
     } else {
-        window.addEventListener(
-            "load",
-            hidePreloader
-        );
+        window.addEventListener("load", hidePreloader, { once: true });
     }
+
+    /* Fallback if page resources take too long */
+    setTimeout(hidePreloader, 12000);
 })();
 </script>
 @endsection

@@ -11,7 +11,7 @@
                     <td width="120"
                         style="font-weight:bold; color:#111827; border:1px solid #e5e7eb;">
                         Name:
-                    </td>
+                    </td> 
 
                     <td style="color:#374151; border:1px solid #e5e7eb;">
                         {{ $mailData['name'] }}
