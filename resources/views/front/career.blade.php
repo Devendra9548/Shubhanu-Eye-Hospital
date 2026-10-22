@@ -62,9 +62,8 @@
                         <p>Fill in your details and submit your CV.</p>
                     </div>
 
-                    <form action="" method="POST" id="careerform" enctype="multipart/form-data">
+                    <form method="POST" id="careerform" enctype="multipart/form-data">
                         @csrf
-
                         <div class="form-group">
                             <label for="full_name">Full Name</label>
                             <input type="text" id="full_name" name="name" class="form-control"
@@ -79,8 +78,8 @@
 
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" class="form-control"
-                                placeholder="Enter your phone number" required>
+                            <input type="tel" class="form-control phone-input" name="phone" placeholder="Enter 10 digit mobile number" inputmode="numeric" autocomplete="tel-national" maxlength="10" pattern="[6-9][0-9]{9}" required>
+                            <small class="phone-error text-danger" aria-live="polite"></small>
                         </div>
 
                         <div class="form-group">
@@ -151,6 +150,62 @@
 @endsection
 @section('customjs')
 <script>
+$(function () {
+    const form = $("#careerform");
+    if (!form.length) {
+        console.error("Career form not found.");
+        return;
+    }
+    form.on("submit", function (event) {
+        event.preventDefault();
+        const submitButton = form.find(".career-submit");
+        const buttonText = $("#prebuttontext");
+        const spinner = $("#CtSpinner");
+        buttonText.hide();
+        spinner.css("display", "inline-flex");
+        submitButton.prop("disabled", true);
+        $.ajax({
+            type: "POST",
+            url: "/career",
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            success: function (res) {
+                const success =
+                    res === true ||
+                    res === 1 ||
+                    res === "1" ||
+                    res === "true" ||
+                    (res && res.success === true);
+                if (success) {
+                    window.location.href = "/thank-you";
+                    return;
+                }
+                console.error("Unexpected server response:", res);
+                alert("Application submit nahi hui. Server response check karein.");
+            },
+            error: function (xhr) {
+                console.error("Career form error:", xhr.status, xhr.responseText);
+                if (xhr.status === 419) {
+                    alert("Session expire ho gaya hai. Page refresh karke dobara try karein.");
+                } else if (xhr.status === 422) {
+                    alert("Please form details aur CV file check karein.");
+                } else {
+                    alert("Application submit nahi hui. Please dobara try karein.");
+                }
+            },
+            complete: function () {
+                spinner.hide();
+                buttonText.show();
+                submitButton.prop("disabled", false);
+            }
+        });
+    });
+});
+</script>
+
+
+<script>
 const cvInput = document.getElementById('cv');
 const uploadText = document.getElementById('uploadText');
 const selectedFile = document.getElementById('selectedFile');
@@ -194,32 +249,4 @@ function formatFileSize(bytes) {
 }
 </script>
 
-<script>
-$(document).ready(function() {
-    $("#careerform").submit(function(event) {
-        event.preventDefault();
-        document.querySelector("#prebuttontext").style.display = "none";
-        document.querySelector("#CtSpinner").style.display = "block";
-        var formData = new FormData(this);
-        $.ajax({
-            type: "POST",
-            url: "/career",
-            data: formData,
-            contentType: false,
-            processData: false,
-            success: function(res) {
-                if (res == true || res == 1 || res === "1" || res === "true") {
-                    $("#careerform")[0].reset();
-                    $("#CtSpinner").hide();
-                    window.location.href = "/thank-you";
-                } else {
-                    $("#CtSpinner").hide();
-                    $("#prebuttontext").show();
-                    alert("Error! " + res);
-                }
-            }
-        });
-    });
-});
-</script>
 @endsection

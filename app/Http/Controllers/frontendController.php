@@ -14,9 +14,11 @@ use App\Models\Contact;
 use App\Models\EnquireLead;
 use App\Models\HomePage;
 use App\Models\Career;
+use App\Models\Booking;
 use Illuminate\Support\Facades\DB;
 use Mail;
 use App\Mail\ContactMail;
+use App\Mail\BookingMail;
 use App\Mail\EnquireLeadMail;
 use App\Models\ClientReview;
 use Intervention\Image\Facades\Image;
@@ -227,5 +229,111 @@ class frontendController extends Controller
 
         return true;
     }
+
+    
+    public function SubmitBooking(Request $req)
+    {
+        $req->validate([
+           'name'       => 'required|string|max:255',
+           'email'      => 'required|email|max:255',
+           'phone'      => 'nullable|string|max:20',
+           'service'    => 'nullable|string|max:255',
+           'date'       => 'nullable',
+           'comment'    => 'nullable|string|max:2000',
+        ]);
+
+        $dbs = new Booking();
+    
+        $dbs->name = $req->name;
+        $dbs->email = $req->email;
+        $dbs->phone = $req->phone;
+        $dbs->service = $req->service;
+        $dbs->date = $req->date;
+        $dbs->comment = $req->comment;
+    
+        $dbs->save();
+        
+        $mailData = [
+            'name'    => $req->name,
+            'email'   => $req->email,
+            'phone'   => $req->phone,
+            'service' => $req->service,
+            'date'    => $req->date,
+            'comment' => $req->comment,
+        ];
+    
+        if (function_exists('fastcgi_finish_request')) {
+            echo true;
+
+        if (ob_get_level() > 0) {
+            ob_end_flush();
+        }
+
+        flush();
+        fastcgi_finish_request();
+
+        Mail::to('shubhanuforwebsite@gmail.com')
+            ->send(new BookingMail($mailData));
+
+        return;
+        }
+    
+        Mail::to('shubhanuforwebsite@gmail.com')
+            ->send(new BookingMail($mailData));
+    
+        return true;
+    }
+
+    function SubmitContact(Request $req)
+    {
+        $req->validate([
+            'fullname'       => 'required|string|max:255',
+            'email'      => 'required|email|max:255',
+            'phone'      => 'nullable|string|max:20',
+            'subject'    => 'nullable|string|max:255',
+            'message'    => 'nullable|string|max:2000',
+         ]);
+ 
+         $dbs = new Contact();
+     
+         $dbs->fullname = $req->fullname;
+         $dbs->email = $req->email;
+         $dbs->phone = $req->phone;
+         $dbs->subject = $req->subject;
+         $dbs->message = $req->message;
+     
+         $dbs->save();
+         
+         $mailData = [
+             'fullname' => $req->fullname,
+             'email'    => $req->email,
+             'phone'    => $req->phone,
+             'subject'  => $req->subject,
+             'message'  => $req->message,
+         ];
+     
+         if (function_exists('fastcgi_finish_request')) {
+             echo true;
+ 
+         if (ob_get_level() > 0) {
+             ob_end_flush();
+         }
+ 
+         flush();
+         fastcgi_finish_request();
+ 
+         Mail::to('shubhanuforwebsite@gmail.com')
+             ->send(new ContactMail($mailData));
+ 
+         return;
+         }
+     
+         Mail::to('shubhanuforwebsite@gmail.com')
+             ->send(new ContactMail($mailData));
+     
+         return true;
+
+    }
+
 
 }

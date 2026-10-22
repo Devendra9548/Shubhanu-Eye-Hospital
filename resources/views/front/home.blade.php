@@ -15,6 +15,7 @@
 <meta property="og:image:height" content="720" />
 <meta property="og:image:type" content="image/webp" />
 <link rel="canonical" href="https://shubhanueyehospital.com" />
+<link rel="preload" as="image" href="/assets/logo-icon.png" fetchpriority="high">
 @endsection
 @section('customcss')
 <link rel="stylesheet" href="/assets/front/css/home.css">
@@ -41,14 +42,7 @@
             <div class="sh-orbit sh-orbit-two"></div>
             <div class="sh-orbit sh-orbit-three"></div>
             <div class="sh-logo-glow"></div>
-
-            <img
-                class="sh-logo-svg"
-                src="logo.png"
-                alt="Shubhanu Eye Hospital logo"
-                width="371"
-                height="359"
-            />
+            <img class="sh-logo-svg" src="/assets/logo-icon.png" alt="Shubhanu Eye Hospital logo" width="371" height="359" fetchpriority="high" decoding="async"/>
         </div>
 
         <div class="sh-brand">
@@ -645,131 +639,55 @@ $partners=[
     </div>
 </section>
 
+<?php 
+$instagram=[
+    [
+        "img" => "/instagram/1.webp",
+        "link" => "https://www.instagram.com/reel/Da4olhqJ734/",
+    ],
+    [
+        "img" => "/instagram/2.webp",
+        "link" => "https://www.instagram.com/reel/DMsKo72I_ZV/",
+    ],
+    [
+        "img" => "/instagram/3.webp",
+        "link" => "https://www.instagram.com/reel/DPA-Tu5DJTm/",
+    ],
+    [
+        "img" => "/instagram/4.webp",
+        "link" => "https://www.instagram.com/reel/DRPPSoQEXZd/",
+    ],
+    [
+        "img" => "/instagram/5.webp",
+        "link" => "https://www.instagram.com/reel/DSH7lPECS1J/",
+    ],
+    [
+        "img" => "/instagram/6.webp",
+        "link" => "https://www.instagram.com/reel/DSMuoUOEwxd/",
+    ],
+];
+?>
+
 <section class="our-services our-instagram-section pb-5">
     <div class="container">
-
         <div class="our-instagram-title-wrap">
             <h2 class="text-center">Instagram</h2>
         </div>
-
         <div class="row our-instagram-slider">
-
+            @foreach($instagram as $instagram)
             <div class="our-instagram-slide">
                 <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/Da4olhqJ734/" target="_blank" rel="noopener noreferrer"
-                        class="our-instagram-image-wrap">
-
-                        <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/1.jpeg') }}" width="400" height="500">
-                            <source src="{{ asset('/instagram/1.mp4') }}" type="video/mp4">
-                        </video>
-
-                        <span class="our-instagram-reel-icon">
-                            <i class="fas fa-play"></i>
-                        </span>
-
+                    <a href="{{$instagram['link']}}" target="_blank" rel="noopener noreferrer" class="our-instagram-image-wrap">
+                        <img src="{{$instagram['img']}}" alt="Shubhanu Eye Hospital Instagram Reel" height="500" loading="lazy" decoding="async">
+                        <span class="our-instagram-reel-icon"><i class="fas fa-play"></i></span>
                     </a>
                 </div>
             </div>
-
-
-            <div class="our-instagram-slide">
-                <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DMsKo72I_ZV/" target="_blank" rel="noopener noreferrer"
-                        class="our-instagram-image-wrap">
-
-                        <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/2.jpeg') }}" width="400" height="500">
-                            <source src="{{ asset('/instagram/2.mp4') }}" type="video/mp4">
-                        </video>
-
-                        <span class="our-instagram-reel-icon">
-                            <i class="fas fa-play"></i>
-                        </span>
-
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="our-instagram-slide">
-                <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DPA-Tu5DJTm/" target="_blank" rel="noopener noreferrer"
-                        class="our-instagram-image-wrap">
-
-                        <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/3.jpeg') }}" width="400" height="500">
-                            <source src="{{ asset('/instagram/3.mp4') }}" type="video/mp4">
-                        </video>
-
-                        <span class="our-instagram-reel-icon">
-                            <i class="fas fa-play"></i>
-                        </span>
-
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="our-instagram-slide">
-                <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DRPPSoQEXZd/" target="_blank" rel="noopener noreferrer"
-                        class="our-instagram-image-wrap">
-
-                        <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/4.jpeg') }}" width="400" height="500">
-                            <source src="{{ asset('/instagram/4.mp4') }}" type="video/mp4">
-                        </video>
-
-                        <span class="our-instagram-reel-icon">
-                            <i class="fas fa-play"></i>
-                        </span>
-
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="our-instagram-slide">
-                <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DSH7lPECS1J/" target="_blank" rel="noopener noreferrer"
-                        class="our-instagram-image-wrap">
-
-                        <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/5.jpeg') }}" width="400" height="500">
-                            <source src="{{ asset('/instagram/5.mp4') }}" type="video/mp4">
-                        </video>
-
-                        <span class="our-instagram-reel-icon">
-                            <i class="fas fa-play"></i>
-                        </span>
-
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="our-instagram-slide">
-                <div class="our-instagram-card">
-                    <a href="https://www.instagram.com/reel/DSMuoUOEwxd/" target="_blank" rel="noopener noreferrer"
-                        class="our-instagram-image-wrap">
-
-                        <video autoplay muted loop playsinline preload="metadata"
-                            poster="{{ asset('/instagram/6.jpeg') }}" width="400" height="500">
-                            <source src="{{ asset('/instagram/6.mp4') }}" type="video/mp4">
-                        </video>
-
-                        <span class="our-instagram-reel-icon">
-                            <i class="fas fa-play"></i>
-                        </span>
-
-                    </a>
-                </div>
-            </div>
-
+            @endforeach
         </div>
     </div>
 </section>
+
 
 <section class="mb-5 zbg-blog-section py-5">
     <div class="container py-5">
@@ -1682,74 +1600,64 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 </script>
+
 <script>
 (function () {
     const preloader = document.getElementById("shubhanuPreloader");
     const progressBar = document.getElementById("shProgressBar");
     const progressText = document.getElementById("shProgress");
-
     if (!preloader || !progressBar || !progressText) return;
-
-    const startTime = Date.now();
-    const minimumTime = 3000;
-
     let progress = 0;
-    let finished = false;
-    let progressInterval;
-    let hideTimeout;
-
-    function updateProgress() {
-        if (finished) return;
-
-        if (progress < 90) {
-            const increment =
-                progress < 30 ? 2.2 :
-                progress < 60 ? 1.2 :
-                progress < 80 ? 0.6 : 0.2;
-
-            progress = Math.min(90, progress + increment);
-            progressBar.style.width = progress + "%";
-            progressText.textContent = Math.floor(progress) + "%";
-        }
+    let animationFrame = null;
+    let hideTimer = null;
+    let removed = false;
+    const startTime = performance.now();
+    const minimumTime = 400;
+    const fallbackTime = 2500;
+    function renderProgress(value) {
+        const rounded = Math.floor(value);
+        progressBar.style.width = rounded + "%";
+        progressText.textContent = rounded + "%";
     }
-
-    progressInterval = setInterval(updateProgress, 45);
+    function animateProgress() {
+        if (removed) return;
+        const elapsed = performance.now() - startTime;
+        const target = Math.min(
+            90,
+            90 * (1 - Math.exp(-elapsed / 1000))
+        );
+        progress += (target - progress) * 0.08;
+        renderProgress(progress);
+        animationFrame = requestAnimationFrame(animateProgress);
+    }
 
     function hidePreloader() {
-        if (finished) return;
-        finished = true;
-
-        clearInterval(progressInterval);
-
-        const remaining = Math.max(
-            0,
-            minimumTime - (Date.now() - startTime)
-        );
-
-        hideTimeout = setTimeout(function () {
-            progressBar.style.width = "100%";
-            progressText.textContent = "100%";
-
+        if (removed) return;
+        removed = true;
+        if (animationFrame) {
+            cancelAnimationFrame(animationFrame);
+        }
+        clearTimeout(hideTimer);
+        const elapsed = performance.now() - startTime;
+        const remaining = Math.max(0, minimumTime - elapsed);
+        hideTimer = setTimeout(function () {
+            renderProgress(100);
+            preloader.classList.add("sh-preloader-hide");
             setTimeout(function () {
-                preloader.classList.add("sh-preloader-hide");
-
-                setTimeout(function () {
-                    if (preloader.parentNode) {
-                        preloader.parentNode.removeChild(preloader);
-                    }
-                }, 850);
-            }, 250);
+                if (preloader.parentNode) {
+                    preloader.parentNode.removeChild(preloader);
+                }
+        }, 500);
         }, remaining);
     }
-
+    animateProgress();
     if (document.readyState === "complete") {
         hidePreloader();
     } else {
         window.addEventListener("load", hidePreloader, { once: true });
     }
-
-    /* Fallback if page resources take too long */
-    setTimeout(hidePreloader, 12000);
+    setTimeout(hidePreloader, fallbackTime);
 })();
 </script>
+
 @endsection

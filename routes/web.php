@@ -17,6 +17,8 @@ Route::get('about', [frontendController::class, 'about'])->name('about');
 Route::get('contact-us', [frontendController::class, 'contact'])->name('contact');
 Route::get('career', [frontendController::class, 'career'])->name('career');
 Route::post('career', [frontendController::class, 'submitcareer']);
+Route::post('booking', [frontendController::class, 'SubmitBooking']);
+Route::post('contact', [frontendController::class, 'SubmitContact']);
 Route::get('gallery', [frontendController::class, 'gallery'])->name('gallery');
 Route::get('case-studies', [frontendController::class, 'casestudies'])->name('casestudies');
 Route::get('privacy-policy', [frontendController::class, 'privacypolicy'])->name('privacypolicy');

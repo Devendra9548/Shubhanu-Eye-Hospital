@@ -1,13 +1,16 @@
 @extends('templates.front.main')
 @section('metainfo')
 <title>Contact us | Shubhanu Eye Hospital</title>
-<meta name="description" content="Book your appointment, Call us today. Visit website, https://shubhanueyehospital.com/contacts/ for more information. Phone: +91 90689 91180">
-<meta name="keywords" content="Shubhanu Eye Hospital, Contact Us, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
+<meta name="description"
+    content="Book your appointment, Call us today. Visit website, https://shubhanueyehospital.com/contacts/ for more information. Phone: +91 90689 91180">
+<meta name="keywords"
+    content="Shubhanu Eye Hospital, Contact Us, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
 <meta name="author" content="Shubhanu Eye Hospital">
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Contact us | Shubhanu Eye Hospital" />
-<meta property="og:description" content="Book your appointment, Call us today. Visit website, https://shubhanueyehospital.com/contacts/ for more information. Phone: +91 90689 91180" />
+<meta property="og:description"
+    content="Book your appointment, Call us today. Visit website, https://shubhanueyehospital.com/contacts/ for more information. Phone: +91 90689 91180" />
 <meta property="og:url" content="https://shubhanueyehospital.com/contact-us" />
 <meta property="og:site_name" content="Shubhanu Eye Hospital" />
 <meta property="og:image" content="https://shubhanueyehospital.com/assets/front/imgs/banners/1.webp" />
@@ -30,7 +33,8 @@
                 </h1>
                 <div class="contact-sec-divider"></div>
                 <p class="contact-sec-subtitle">
-                For general questions, please send us a message and we’ll get right back to you. You can also call us directly to speak with a member of our service team or insurance expert.
+                    For general questions, please send us a message and we’ll get right back to you. You can also call
+                    us directly to speak with a member of our service team or insurance expert.
                 </p>
             </div>
         </div>
@@ -43,34 +47,40 @@
                         Feel free to contact us for any query.
                     </h2>
 
-                    <form>
+                    <form method="POST" id="contactForm">
+                        @csrf
 
                         <div class="row g-3">
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control contact-sec-input" placeholder="Your Name">
+                                <input type="text" name="fullname" class="form-control contact-sec-input" placeholder="Your Name" required>
                             </div>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control contact-sec-input" placeholder="Your Subject">
+                                <input type="text" name="subject" class="form-control contact-sec-input" placeholder="Your Subject" required>
                             </div>
 
                             <div class="col-md-6">
-                                <input type="email" class="form-control contact-sec-input" placeholder="Your Email">
+                                <input type="email" name="email" class="form-control contact-sec-input" placeholder="Your Email" required>
                             </div>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control contact-sec-input" placeholder="Your Phone">
+                                <input type="tel" class="form-control contact-sec-input phone-input" name="phone"
+                                    placeholder="Enter 10 digit mobile number" inputmode="numeric"
+                                    autocomplete="tel-national" maxlength="10" pattern="[6-9][0-9]{9}" required>
+                                <small class="phone-error text-danger" aria-live="polite"></small>
                             </div>
 
                             <div class="col-12">
-                                <textarea rows="6" class="form-control contact-sec-input"
-                                    placeholder="Your Message"></textarea>
+                                <textarea rows="6" name="message" class="form-control contact-sec-input"
+                                    placeholder="Your Message" required></textarea>
                             </div>
 
                             <div class="col-12">
-                                <button class="btn contact-sec-btn">
-                                    Submit Message
+                                <button type="submit" class="contact-submit contact-sec-btn">
+                                    <span class="text-white" id="prebuttontext">Submit Message</span>
+                                    <span class="text-white" id="CtSpinner"><img src="/assets/front/imgs/spinner.gif"
+                                            width="20px"> Waiting</span>
                                 </button>
                             </div>
 
@@ -130,8 +140,8 @@
                         <div>
                             <h3>Contact</h3>
                             <p>
-                              +91 90689 91180 <br>
-                              shubhanueyehospital@gmail.com
+                                +91 90689 91180 <br>
+                                shubhanueyehospital@gmail.com
                             </p>
                         </div>
                     </div>
@@ -148,13 +158,17 @@
 
                             <div class="contact-sec-social">
 
-                                <a target="_blank" href="https://www.facebook.com/shubhanueyehospital"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/shubhanueyehospital"><i
+                                        class="fab fa-facebook-f"></i></a>
 
-                                <a target="_blank" href="https://www.instagram.com/shubhanueyehospital"><i class="fab fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/shubhanueyehospital"><i
+                                        class="fab fa-instagram"></i></a>
 
-                                <a target="_blank" href="https://pin.it/63bt5cuV3"><i class="fab fa-pinterest-p"></i></a>
+                                <a target="_blank" href="https://pin.it/63bt5cuV3"><i
+                                        class="fab fa-pinterest-p"></i></a>
 
-                                <a target="_blank" href="https://www.youtube.com/@shubhanueyehospital"><i class="fab fa-youtube"></i></a>
+                                <a target="_blank" href="https://www.youtube.com/@shubhanueyehospital"><i
+                                        class="fab fa-youtube"></i></a>
 
                             </div>
 
@@ -176,4 +190,56 @@
         width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </section>
+@endsection
+@section('customjs')
+<script>
+$(function () {
+    const form = $("#contactForm");
+    if (!form.length) {
+        console.error("contact form not found.");
+        return;
+    }
+    form.on("submit", function (event) {
+        event.preventDefault();
+        const submitButton = form.find(".contact-submit");
+        const buttonText = $("#prebuttontext");
+        const spinner = $("#CtSpinner");
+        buttonText.hide();
+        spinner.css("display", "block");
+        submitButton.prop("disabled", true);
+        $.ajax({
+            type: "POST",
+            url: "/contact",
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            success: function (res) {
+                const success =
+                    res === true ||
+                    res === 1 ||
+                    res === "1" ||
+                    res === "true" ||
+                    (res && res.success === true);
+                if (success) {
+                    window.location.href = "/thank-you";
+                    return;
+                }
+                console.error("Unexpected server response:", res);
+                alert("Application submit nahi hui. Server response check karein.");
+            },
+            error: function (xhr) {
+                console.error("Contact form error:", xhr.status, xhr.responseText);
+                if (xhr.status === 419) {
+                    alert("Session expire ho gaya hai. Page refresh karke dobara try karein.");
+                }
+            },
+            complete: function () {
+                spinner.hide();
+                buttonText.show();
+                submitButton.prop("disabled", false);
+            }
+        });
+    });
+});
+</script>
 @endsection

@@ -54,10 +54,139 @@
     @if (!empty($gseo->gfbs))
     {!! $gseo->gfbs !!}
     @endif
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(function () {
+    const form = $("#bookingAppointmentForm");
+    if (!form.length) {
+        console.error("Booking form not found.");
+        return;
+    }
+    form.on("submit", function (event) {
+        event.preventDefault();
+        const submitButton = form.find(".booking-submit");
+        const buttonText = $("#prebuttontext2");
+        const spinner = $("#CtSpinner2");
+        buttonText.hide();
+        spinner.css("display", "block");
+        submitButton.prop("disabled", true);
+        $.ajax({
+            type: "POST",
+            url: "/booking",
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            success: function (res) {
+                const success =
+                    res === true ||
+                    res === 1 ||
+                    res === "1" ||
+                    res === "true" ||
+                    (res && res.success === true);
+                if (success) {
+                    window.location.href = "/thank-you";
+                    return;
+                }
+                console.error("Unexpected server response:", res);
+                alert("Application submit nahi hui. Server response check karein.");
+            },
+            error: function (xhr) {
+                console.error("Career form error:", xhr.status, xhr.responseText);
+                if (xhr.status === 419) {
+                    alert("Session expire ho gaya hai. Page refresh karke dobara try karein.");
+                }
+            },
+            complete: function () {
+                spinner.hide();
+                buttonText.show();
+                submitButton.prop("disabled", false);
+            }
+        });
+    });
+});
+</script>
+
     @yield('customjs')
     @if (!empty($gseo->gfas))
     {!! $gseo->gfas !!}
     @endif
 </body>
 <script src="/assets/front/js/animation.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.phone-input').forEach(function (input) {
+        const message = input.parentElement.querySelector('.phone-error');
+        let startedTyping = false;
+
+        // Initially koi message nahi
+        message.textContent = '';
+        input.setCustomValidity('');
+
+        function validatePhone() {
+            let digits = input.value.replace(/\D/g, '').slice(0, 10);
+            input.value = digits;
+
+            // User ne abhi type nahi kiya
+            if (!startedTyping) return;
+
+            if (digits.length === 0) {
+                message.textContent = '';
+                input.setCustomValidity('');
+                return;
+            }
+
+            if (digits.length < 10) {
+                message.textContent =
+                    `Enter ${10 - digits.length} more digit(s).`;
+                message.className = 'phone-error text-danger small';
+                input.setCustomValidity('Enter a complete 10 digit mobile number.');
+                return;
+            }
+
+            if (!/^[6-9]\d{9}$/.test(digits)) {
+                message.textContent =
+                    'Enter a valid Indian mobile number starting with 6, 7, 8 or 9.';
+                message.className = 'phone-error text-danger small';
+                input.setCustomValidity('Enter a valid Indian mobile number.');
+                return;
+            }
+
+            message.textContent = 'Valid 10 digit mobile number.';
+            message.className = 'phone-error text-success small';
+            input.setCustomValidity('');
+        }
+
+        input.addEventListener('input', function () {
+            startedTyping = true;
+            validatePhone();
+        });
+
+        input.addEventListener('blur', validatePhone);
+
+        const form = input.closest('form');
+
+        if (form) {
+            form.addEventListener('submit', function (event) {
+                if (input.value.trim() === '') {
+                    if (input.required) {
+                        event.preventDefault();
+                        input.reportValidity();
+                    }
+                    return;
+                }
+
+                startedTyping = true;
+                validatePhone();
+
+                if (!input.checkValidity()) {
+                    event.preventDefault();
+                    input.reportValidity();
+                }
+            }, true);
+        }
+    });
+});
+</script>
 </html>

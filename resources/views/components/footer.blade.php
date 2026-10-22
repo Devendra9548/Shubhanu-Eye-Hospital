@@ -157,7 +157,7 @@
                 <i class="fa-regular fa-circle-xmark"></i>
             </a>
             <h2>Book an Appointment</h2>
-            <form action="#" method="POST">
+            <form action="#" method="POST" id="bookingAppointmentForm">
                 @csrf
 
                 <div class="mb-3">
@@ -170,8 +170,8 @@
                         required>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="phone" name="phone"
-                        placeholder="Enter your phone number">
+                    <input type="tel" class="form-control phone-input" name="phone" placeholder="Enter 10 digit mobile number" inputmode="numeric" autocomplete="tel-national" maxlength="10" pattern="[6-9][0-9]{9}" required>
+                    <small class="phone-error text-danger" aria-live="polite"></small>
                 </div>
                 <div class="mb-3">
                     <select class="form-select" id="service" name="service">
@@ -212,12 +212,14 @@
 
                 <div class="mb-3">
                     <textarea class="form-control" id="comment" name="comment" rows="5" maxlength="2000"
-                        placeholder="Enter your comment"></textarea>
+                        placeholder="Type Message"></textarea>
                 </div>
 
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-primary w-100 text-center">
-                        <i class="fa-regular fa-calendar-days"></i> Book Now
+                    <button type="submit" class="booking-submit btn btn-primary w-100 text-center">
+                            <span class="text-white" id="prebuttontext2"><i class="fa-regular fa-calendar-days"></i> Book Now</span>
+                            <span class="text-white" id="CtSpinner2"><img src="/assets/front/imgs/spinner.gif"
+                                    width="15px"> Waiting</span>
                     </button>
                 </div>
 

@@ -170,8 +170,16 @@ header .row {
   height: 70px;
 }
 
-#CtSpinner {
+#CtSpinner, #CtSpinner2 {
   display: none;
+}
+
+.iti {
+  width: 100% !important;
+}
+
+#phone.is-invalid {
+  border-color: #dc3545 !important;
 }
 
 .navb ul li:not(:last-child) {

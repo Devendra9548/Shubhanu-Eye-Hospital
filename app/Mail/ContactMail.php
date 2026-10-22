@@ -13,13 +13,14 @@ use Illuminate\Queue\SerializesModels;
 class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
-
+    
+    public $mailData;
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($mailData)
     {
-        //
+        $this->mailData = $mailData;
     }
 
     /**
@@ -38,7 +39,7 @@ class ContactMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'templates.mail.career',
+            view: 'templates.mail.contact',
         );
     }
 
