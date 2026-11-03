@@ -22,6 +22,8 @@ Route::post('contact', [frontendController::class, 'SubmitContact']);
 Route::get('gallery', [frontendController::class, 'gallery'])->name('gallery');
 Route::get('case-studies', [frontendController::class, 'casestudies'])->name('casestudies');
 Route::get('privacy-policy', [frontendController::class, 'privacypolicy'])->name('privacypolicy');
+Route::get('doctors', [frontendController::class, 'doctors'])->name('doctors');
+Route::get('/doctors/{slug}', [frontendController::class, 'doctor'])->name('doctor.single');
 Route::get('thank-you', [frontendController::class, 'thankyou'])->name('thankyou');
 Route::get('terms-and-conditions', [frontendController::class, 'termsConditions'])->name('termsConditions');
 Route::get('blog', [frontendController::class, 'blogs'])->name('blogs');
