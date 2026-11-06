@@ -1,16 +1,19 @@
 @extends('templates.front.main')
 @section('metainfo')
-<title>Our Doctors | Shubhanu Eye Hospital, Haldwani</title>
-<meta name="description"
-    content="Meet the experienced eye specialists of Shubhanu Eye Hospital, Haldwani - retina, oculoplasty, cataract, cornea and pediatric ophthalmology experts.">
-<meta name="keywords"
-    content="eye doctor in Haldwani, eye specialist in Haldwani, retina specialist, oculoplasty surgeon, cataract surgeon, cornea specialist, Shubhanu Eye Hospital doctors">
+<title>Our Doctors | Shubhanu Eye Hospital</title>
+<meta name="description" content="Meet the expert eye specialists at Shubhanu Eye Hospital, Haldwani. Our experienced doctors provide trusted, world-class eye care and advanced treatments.">
+<meta name="keywords" content="Shubhanu Eye Hospital, doctors us, Our Vision, Our Mission, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
 <meta name="author" content="Shubhanu Eye Hospital">
+<meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Our Doctors | Shubhanu Eye Hospital, Haldwani" />
-<meta property="og:description" content="Meet the experienced eye specialists of Shubhanu Eye Hospital, Haldwani." />
+<meta property="og:title" content="Our Doctors | Shubhanu Eye Hospital" />
+<meta property="og:description" content="Meet the expert eye specialists at Shubhanu Eye Hospital, Haldwani. Our experienced doctors provide trusted, world-class eye care and advanced treatments." />
 <meta property="og:url" content="https://shubhanueyehospital.com/doctors" />
 <meta property="og:site_name" content="Shubhanu Eye Hospital" />
+<meta property="og:image" content="https://shubhanueyehospital.com/assets/front/imgs/banners/1.webp" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:image:type" content="image/webp" />
 <link rel="canonical" href="https://shubhanueyehospital.com/doctors" />
 @endsection
 
@@ -36,7 +39,7 @@
     color: #fff !important;
 }
 .dr-stat .dr-count {
-    font-size: 20px !important;
+    font-size: 26px !important;
 }
 .dr-title
 {
@@ -842,6 +845,13 @@
         transform: none !important;
     }
 }
+
+.dr-page .dr-btn-ghost i{
+    color: #25708D !important;
+}
+.dr-page .dr-btn-ghost:hover i{
+    color: #fff !important;
+}
 </style>
 @endsection
 
@@ -853,6 +863,7 @@ $doctors = [
         "img" => "/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp",
         "role" => "Chairman",
         "name" => "Dr. Bhanu Pratap Singh Pangtey",
+        "url" => "/doctors/dr-bhanu-pratap-singh-pangte",
         "quals" => "MS Ophthalmology | FICO | Vitreo-Retina Fellowship",
         "exp" => "15+ Years of Experience",
         "spec" => "Experienced Vitreo-Retina Surgeon with expertise in the diagnosis and surgical management of complex retinal and vitreous disorders.",
@@ -869,6 +880,7 @@ $doctors = [
         "img" => "/assets/front/imgs/doctors/dr-shubha-raguram-pangtey.webp",
         "role" => "Chairman",
         "name" => "Dr. Shubha Raguram Pangtey",
+        "url" => "/doctors",
         "quals" => "MS Ophthalmology | Fellowship in Orbit | Oculoplasty & Ocular Oncology",
         "exp" => "15+ Years of Experience",
         "spec" => "An experienced ophthalmic surgeon specializing in Orbit, Oculoplasty, Ocular Oncology, Neuro-Ophthalmology and Pediatric Eye Care, with expertise in managing complex eyelid, lacrimal, orbital and ocular tumour conditions.",
@@ -885,6 +897,7 @@ $doctors = [
         "img" => "/assets/front/imgs/doctors/dr-shagun-sood.webp",
         "role" => "Consultant",
         "name" => "Dr. Shagun Sood",
+        "url" => "/doctors",
         "quals" => "MBBS | MS Ophthalmology | DNB | FICO",
         "exp" => "10+ Years of Experience",
         "spec" => "Experienced ophthalmic surgeon with expertise in cataract, squint and refractive procedures, with extensive surgical experience across adult and pediatric eye care.",
@@ -900,6 +913,7 @@ $doctors = [
         "slug" => "sufyan",
         "img" => "/assets/front/imgs/doctors/dr-mohd-sufyan-danish.webp",
         "role" => "Consultant",
+        "url" => "/doctors",
         "name" => "Dr. Mohd Sufyan Danish",
         "quals" => "MBBS | DOMS | DNB Ophthalmology",
         "exp" => "8+ Years of Experience",
@@ -917,6 +931,7 @@ $doctors = [
         "img" => "/assets/front/imgs/doctors/dr-nabeel-firoz.webp",
         "role" => "Consultant",
         "name" => "Dr. Nabeel Firoz",
+        "url" => "/doctors",
         "quals" => "MBBS | DOMS | DNB Ophthalmology",
         "exp" => "8 Years of Experience",
         "spec" => "Experienced ophthalmologist with expertise in cataract surgery, medical retina and comprehensive eye care, with a special focus on retinal injections and laser procedures.",
@@ -1002,10 +1017,8 @@ $others = array_values(array_filter($doctors, fn($d) => !$d['featured']));
                     </div>
 
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="javascript:void(0)" class="dr-btn showBookAppointment"><i
-                                class="fa-solid fa-calendar-check"></i> Book Appointment</a>
-                        <button type="button" class="dr-btn dr-btn-ghost dr-open" data-doc="{{ $doc['slug'] }}">View
-                            Profile</button>
+                        <a href="javascript:void(0)" class="dr-btn showBookAppointment"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+                        <a href="{{ $doc['url'] }}" class="dr-btn dr-btn-ghost"><i class="fa-solid fa-calendar-check"></i> View Profile</a>
                     </div>
                 </div>
             </article>

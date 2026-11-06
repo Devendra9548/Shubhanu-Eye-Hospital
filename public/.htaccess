@@ -5,6 +5,25 @@
 
     RewriteEngine On
 
+    # ============ 1. Doctor page (old -> new doctor page) ============
+    RewriteRule ^dr-bhanu-p-s-pangtey-2/?$ https://shubhanueyehospital.com/doctors/dr-bhanu-pratap-singh-pangte [R=301,L]
+
+    # ============ 2. Gallery fix ============
+    RewriteRule ^gallery-2/?$ https://shubhanueyehospital.com/gallery [R=301,L]
+
+    # ============ 3. Jis URL me "contact" ho -> /contact-us ============
+    # (/contact-us aur /contact-us/ ko chhod kar, warna loop ban jayega)
+    RewriteCond %{REQUEST_URI} !^/contact-us/?$ [NC]
+    RewriteRule contact https://shubhanueyehospital.com/contact-us [R=301,L,NC]
+
+    # ============ 4. Baaki purane pages -> Home ============
+    RewriteRule ^(doctortry|dry-eye-problem|dr-shubha-r-k-pangtey|tooth-fairy-traditions|eye-tumors|appointment|testimonials|thyroid-eye-disease|neuro-ophthalmology|orbital-surgery|artificial-prosthetic-eyes|treatment-of-watering-eyes|retinal-surgery-injection|retinal-detachment-symptoms|retina-detachment-lakshan|cataract-symptoms-causes-treatment|blurred-vision-after-cataract-surgery-pco|motiyabind-cataract-lakshan-karan-ilaj|motiyabind-surgery-baad-dhundhli-nazar-pco|our-serviceswith-home|medclinic-layout-main-slider|ophthalmology-home-page-img-2-2|02-quicklinks-working-time|03-quicklinks-appointment|01-quicklinks-location|06-quicklinks-emergency-case|fda-approves-generic-version-of-cyclosporine-ophthalmic-emulsion-as-dry-eye-treatment|scientists-construct-a-first-single-cell-atlas-of-human-porcine-eyes-maps-genes-involved-in-eye-disorders|extremely-preterm-babies-have-higher-risk-of-eye-problems-as-adults|nei-supported-study-to-focus-on-causes-of-cataracts)/?$ https://shubhanueyehospital.com/ [R=301,L]
+
+    # Category, tag, author aur date archive pages -> Home
+    RewriteRule ^(category|tag|author)(/.*)?$ https://shubhanueyehospital.com/ [R=301,L]
+    RewriteRule ^20[0-9]{2}(/.*)?$ https://shubhanueyehospital.com/ [R=301,L]
+
+    # ============ Laravel default rules ============
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
