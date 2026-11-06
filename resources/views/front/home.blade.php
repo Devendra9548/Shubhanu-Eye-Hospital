@@ -361,7 +361,7 @@ $services=[
         "points" => ["Corneal Disorders", "Keratoconus & C3R", "Corneal Surgery"]
     ],
     [
-        "img" => "/assets/front/imgs/1/3.webp",
+        "img" => "/assets/front/imgs/1/glaucoma-care.jpeg",
         "title" => "Specialized Care",
         "name" => "Glaucoma Care",
         "para" => "Comprehensive care to detect and manage glaucoma at every stage.",
@@ -464,7 +464,7 @@ $services=[
             <div class="col-12 col-md-6 inner-clms py-5 pe-3">
                 <div class="top-clms">
                     <span class="awards">MS Ophthalmology | FICO | Vitreo-Retina Fellowship</span>
-                    <h3>Dr. Bhanu Pratap Singh Pangte</h3>
+                    <h3>Dr. Bhanu Pratap Singh Pangtey</h3>
                     <p class="subtitle">15+ Years of Experience</p>
                     <p class="details"><strong>Specialisation:</strong> Experienced Vitreo-Retina Surgeon with expertise
                         in the
@@ -1070,7 +1070,7 @@ $instagram=[
 <?php 
 $toptestimonials = [
     [
-        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
+        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangtey explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
         "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.webp"
@@ -1088,7 +1088,7 @@ $toptestimonials = [
         "img" => "/assets/front/imgs/male.webp"
     ],
     [
-        "desc" => "Dr. Bhanu Pratap Singh Pangte gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand.",
+        "desc" => "Dr. Bhanu Pratap Singh Pangtey gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand.",
         "name" => "Pooja Rawat",
         "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.webp"
@@ -1106,7 +1106,7 @@ $toptestimonials = [
         "img" => "/assets/front/imgs/female.webp"
     ],
     [
-        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
+        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangtey explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
         "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.webp"
@@ -1130,7 +1130,7 @@ $toptestimonials = [
         "img" => "/assets/front/imgs/female.webp"
     ],
     [
-        "desc" => "Dr. Bhanu Pratap Singh Pangte took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature.",
+        "desc" => "Dr. Bhanu Pratap Singh Pangtey took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature.",
         "name" => "Deepak Kumar",
         "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.webp"
@@ -1148,13 +1148,13 @@ $toptestimonials = [
         "img" => "/assets/front/imgs/male.webp"
     ],
     [
-        "desc" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangte. His detailed explanation helped me understand my treatment and feel more confident.",
+        "desc" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangtey. His detailed explanation helped me understand my treatment and feel more confident.",
         "name" => "Meena Joshi",
         "time" => "1 week ago",
         "img" => "/assets/front/imgs/female.webp"
     ],
     [
-        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable.",
+        "desc" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangtey explained my treatment patiently and made me feel completely comfortable.",
         "name" => "Rakesh Joshi",
         "time" => "1 week ago",
         "img" => "/assets/front/imgs/male.webp"

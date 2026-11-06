@@ -8,9 +8,9 @@
 |--------------------------------------------------------------------------
 */
 $d = [
-    "slug"        => "dr-bhanu-pratap-singh-pangte",
-    "name"        => "Dr. Bhanu Pratap Singh Pangte",
-    "sname"        => "Dr. Bhanu Pangte",
+    "slug"        => "dr-bhanu-pratap-singh-pangtey",
+    "name"        => "Dr. Bhanu Pratap Singh Pangtey",
+    "sname"        => "Dr. Bhanu Pangtey",
     "role"        => "Chairman",
     "headline"    => "Vitreo-Retina Surgeon in Haldwani",
     "img"         => "/assets/front/imgs/doctors/dr-bhanu-pratap-singh-pangtey.webp",
@@ -20,7 +20,7 @@ $d = [
     "availability"=> "Full-Time / Daily",
     "short"       => "Experienced Vitreo-Retina Surgeon with expertise in the diagnosis and surgical management of complex retinal and vitreous disorders.",
     "about"       => [
-        "Dr. Bhanu Pratap Singh Pangte is the Chairman of Shubhanu Eye Hospital, Haldwani, and an experienced Vitreo-Retina Surgeon. With more than 15 years of experience, he focuses on the diagnosis and surgical management of complex retinal and vitreous disorders.",
+        "Dr. Bhanu Pratap Singh Pangtey is the Chairman of Shubhanu Eye Hospital, Haldwani, and an experienced Vitreo-Retina Surgeon. With more than 15 years of experience, he focuses on the diagnosis and surgical management of complex retinal and vitreous disorders.",
         "Patients value his calm, patient approach, clear explanations and practical advice. Every treatment plan is discussed openly so that you understand your condition and feel confident about the next step.",
     ],
     "treatments"  => [
@@ -37,13 +37,13 @@ $d = [
         ["name" => "ZEISS OPMI LUMERA 700","text" => "Premium surgical microscope",   "img" => "/assets/front/imgs/equipment/1-mb.webp"],
     ],
     "reviews"     => [
-        ["name" => "Rakesh Joshi", "text" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangte explained my treatment patiently and made me feel completely comfortable."],
-        ["name" => "Pooja Rawat",  "text" => "Dr. Bhanu Pratap Singh Pangte gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand."],
-        ["name" => "Deepak Kumar", "text" => "Dr. Bhanu Pratap Singh Pangte took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature."],
-        ["name" => "Meena Joshi",  "text" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangte. His detailed explanation helped me understand my treatment and feel more confident."],
+        ["name" => "Rakesh Joshi", "text" => "My experience at Shubhanu Eye Hospital was excellent. Dr. Bhanu Pratap Singh Pangtey explained my treatment patiently and made me feel completely comfortable."],
+        ["name" => "Pooja Rawat",  "text" => "Dr. Bhanu Pratap Singh Pangtey gave me clear advice regarding my eye problem. The consultation was reassuring, professional, and easy to understand."],
+        ["name" => "Deepak Kumar", "text" => "Dr. Bhanu Pratap Singh Pangtey took time to understand my concerns and suggested the right approach. I truly appreciated his calm and caring nature."],
+        ["name" => "Meena Joshi",  "text" => "I highly appreciated the guidance from Dr. Bhanu Pratap Singh Pangtey. His detailed explanation helped me understand my treatment and feel more confident."],
     ],
     "faqs"        => [
-        ["q" => "Who is Dr. Bhanu Pratap Singh Pangte?", "a" => "Dr. Bhanu Pratap Singh Pangte is the Chairman of Shubhanu Eye Hospital in Haldwani and an experienced Vitreo-Retina Surgeon with more than 15 years of experience in managing retinal and vitreous disorders."],
+        ["q" => "Who is Dr. Bhanu Pratap Singh Pangtey?", "a" => "Dr. Bhanu Pratap Singh Pangtey is the Chairman of Shubhanu Eye Hospital in Haldwani and an experienced Vitreo-Retina Surgeon with more than 15 years of experience in managing retinal and vitreous disorders."],
         ["q" => "Which eye problems does a vitreo-retina specialist treat?", "a" => "A vitreo-retina specialist diagnoses and treats disorders of the retina and the vitreous, the gel inside the eye. Treatment may include medicines, laser, intravitreal injections or surgery depending on the condition."],
         ["q" => "Should I book an appointment before my checkup?", "a" => "Yes. We request prior appointments so that patients do not have to wait for long, as some consultations take longer than normal or an emergency may need attention."],
         ["q" => "Will my eyes be dilated for the retina check-up?", "a" => "For most eye ailments, dilating the eyes helps in diagnosis. Dilation takes about 15-30 minutes and your vision may stay blurred for a couple of hours, so please avoid driving afterwards and bring an attendant with you."],

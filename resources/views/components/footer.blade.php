@@ -22,10 +22,9 @@
             </div>
             <div class="col-lg-4 col-md-12 footer-box text-center">
                 <h2>HOURS</h2>
-                <p><strong>*By appointment only</strong></p>
-                <p>Tue, Thur & Fri | 11AM–5PM</p>
-                <p>Wed & Sat | 11AM–7PM</p>
-                <p><strong>CLOSED SUNDAY & MONDAY</strong></p>
+                <!--<p><strong>*By appointment only</strong></p>-->
+                <p>Monday-Saturday | 09AM-06PM</p>
+                <p>Sunday | 09AM-02PM</p>
             </div>
             <div class="col-lg-4 col-md-12 footer-box text-center">
                 <h2>INFORMATION</h2>
