@@ -86,7 +86,7 @@
                         <div class="mb-3">
                             <div class="d-flex justify-content-between align-items-center">
                                 <label for="slug" class="form-label">Category:</label>
-                                <a href="#" class="">+ Add New Category</a>
+                                <a href="{{route('admin.blogcategory')}}" class="">+ Add New Category</a>
                             </div>
                             <select name="category" id="" class="form-control">
                                 <option value="">Select Category</option>

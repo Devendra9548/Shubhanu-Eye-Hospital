@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\AdminInfo;
 use App\Models\Blog;
-use App\Models\BlogCategory;
+use App\Models\BlogsCategory;
 use App\Models\BlogSeo;
 use App\Models\GlobalSeo;
 use App\Models\category_blog_seo;

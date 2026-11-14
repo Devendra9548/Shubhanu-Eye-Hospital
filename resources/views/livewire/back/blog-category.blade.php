@@ -7,6 +7,8 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="left d-flex justify-content-start align-items-center">
             <h2>Blogs Category</h2>
+            <a href="javascript:void(0)" class="btn btn-secondary ms-2" data-bs-toggle="modal"
+                data-bs-target="#addBlog">+ Add Blog Category</a>
         </div>
         <div class="right d-flex">
             <form action="#" class="search-form">
@@ -18,163 +20,67 @@
     </div>
 
     <table class="table table-striped table-hover blog-table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th style="width: 395px;">Title</th>
-                <th>Category</th>
-                <th>Author</th>
-                <th style="width: 195px;">Date</th>
-                <th>Status</th>
-                <th style="width: 180px;">Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>#1</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#2</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>#3</td>
-                <td>The cell-by-cell atlas will help in the study of eye disorders and </td>
-                <td>Eye</td>
-                <td>Dev</td>
-                <td>3 June, 03:15pm, 2026</td>
-                <td>
-                    <a href="#" class="text-success fw-bold">Active</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-info text-white" title="View">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-success" title="Edit">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-danger" title="Delete">
-                        <i class="bi bi-trash-fill"></i>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Category Name</th>
+            <th>Sub Category</th>
+            <th>Date</th>
+            <th>Image</th>
+            <th>Status</th>
+            <th style="width: 180px;">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @forelse($dbs as $db)
+        <tr>
+            <td>#{{ $db->id }}</td>
+            <td>{{ $db->bcname }}</td>
+            <td>
+                @if($db->parent && $db->parent->id !== $db->id)
+                    {{ $db->parent->bcname }}
+                @else
+                    <span class="text-muted">—</span>
+                @endif
+            </td>
+            <td>{{ \Carbon\Carbon::parse($db['created_at'])->format('j F, h:ia, Y') }}</td>
+            <td>
+                @if(!empty($db->bcfile))
+                    <img src="{{ asset('blogs-category/' . $db->bcfile) }}"
+                         alt="{{ $db->bcname }}"
+                         width="60" height="60"
+                         style="object-fit: cover; border-radius: 6px;">
+                @else
+                    <span class="text-muted">No image</span>
+                @endif
+            </td>
+            
+            <td>
+                @if($db->status == 1)
+                    <span class="badge bg-success">Active</span>
+                @else
+                    <span class="badge bg-danger">Inactive</span>
+                @endif
+            </td>
+            <td>
+                <a href="#" class="btn btn-info text-white" title="View">
+                    <i class="bi bi-eye-fill"></i>
+                </a>
+                <a href="#" class="btn btn-success" title="Edit">
+                    <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="#" class="btn btn-danger" title="Delete">
+                    <i class="bi bi-trash-fill"></i>
+                </a>
+            </td>
+        </tr>
+        @empty
+        <tr>
+            <td colspan="8" class="text-center text-muted">No categories found</td>
+        </tr>
+        @endforelse
+    </tbody>
+</table>
 
 
     <!-- Modal For Add Blog-->

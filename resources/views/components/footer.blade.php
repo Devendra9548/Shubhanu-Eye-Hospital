@@ -201,13 +201,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="date_display" placeholder="Appointment Date & Time"
-                        readonly onclick="document.getElementById('date').showPicker()">
-
-                    <input type="datetime-local" id="date" name="date"
-                        style="position:absolute; opacity:0; pointer-events:none;">
+                    <input type="text" class="form-control" id="date" name="date" placeholder="Appointment Date & Time" readonly>
                 </div>
-
 
                 <div class="mb-3">
                     <textarea class="form-control" id="comment" name="comment" rows="5" maxlength="2000"
@@ -295,22 +290,37 @@ function hideBookAnAppointment() {
 }
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-const dateInput = document.getElementById('date');
-const dateDisplay = document.getElementById('date_display');
+const fp = flatpickr("#date", {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",        // server ko jayega (backend friendly)
+    altInput: true,                  // user ko friendly format dikhega
+    altFormat: "d M Y, h:i K",       // e.g. 14 Nov 2026, 02:30 PM
+    altInputClass: "form-control",   // Bootstrap style
+    minDate: "today",                // purani date block
+    time_24hr: false,
+    minuteIncrement: 5,
+    disableMobile: true,             // iPhone par bhi same custom picker
+    onReady: function (selectedDates, dateStr, instance) {
+        // Footer me buttons add karna
+        const footer = document.createElement("div");
+        footer.style.cssText = "display:flex;gap:8px;padding:8px;border-top:1px solid #e6e6e6;";
 
-dateInput.addEventListener('change', function () {
-    if (!this.value) return;
+        const clearBtn = document.createElement("button");
+        clearBtn.type = "button";
+        clearBtn.textContent = "Clear";
+        clearBtn.className = "btn btn-sm btn-outline-secondary flex-fill";
+        clearBtn.onclick = () => { instance.clear(); instance.close(); };
 
-    const date = new Date(this.value);
+        const setBtn = document.createElement("button");
+        setBtn.type = "button";
+        setBtn.textContent = "Set";
+        setBtn.className = "btn btn-sm btn-primary flex-fill";
+        setBtn.onclick = () => instance.close();
 
-    dateDisplay.value = date.toLocaleString('en-IN', {
-        day: '2-digit',
-        month: 'short',
-        year: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: true
-    });
+        footer.append(clearBtn, setBtn);
+        instance.calendarContainer.appendChild(footer);
+    }
 });
 </script>
