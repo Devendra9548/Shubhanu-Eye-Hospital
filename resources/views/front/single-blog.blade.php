@@ -1,14 +1,14 @@
 @extends('templates.front.main')
 @foreach($blog as $blog)
 @section('metainfo')
-<title>{{$blog->title}} | Shubhanu Eye Hospital</title>
-<meta name="description" content="Discover expert eye care advice, helpful health guides, treatment information, and the latest updates from Shubhanu Eye Hospital, Haldwani.">
-<meta name="keywords" content="Shubhanu Eye Hospital, About us, Our Vision, Our Mission, Eye Care Hospital, eye hospital in Haldwani, best eye hospital, eye specialist in Haldwani, eye care hospital, ophthalmology hospital, eye doctor, best eye doctor in Haldwani, cataract surgery, cataract treatment, advanced eye care, LASIK eye surgery, LASIK surgery in Haldwani, retina specialist, retina treatment, glaucoma treatment, glaucoma specialist, diabetic eye care, diabetic retinopathy treatment, pediatric eye care, eye checkup, comprehensive eye examination, refractive eye surgery, ICL eye surgery, squint eye treatment, cornea treatment, dry eye treatment, eye surgery in India, advanced eye hospital in India, super speciality eye hospital, comprehensive eye care, Retina & Vitreous Care, Orbit & Oculoplasty, Cornea Care, Glaucoma Care, Squint Care, Eye Trauma & Emergency, Cataract & Lens Surgery">
+<title>{{$blog->meta_title}}</title>
+<meta name="description" content="{{$blog->meta_desc}}">
+<meta name="keywords" content="{{$blog->meta_keys}}">
 <meta name="author" content="Shubhanu Eye Hospital">
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="{{$blog->title}} | Shubhanu Eye Hospital" />
-<meta property="og:description" content="Discover expert eye care advice, helpful health guides, treatment information, and the latest updates from Shubhanu Eye Hospital, Haldwani." />
+<meta property="og:title" content="{{$blog->meta_title}}" />
+<meta property="og:description" content="{{$blog->meta_desc}}" />
 <meta property="og:url" content="https://shubhanueyehospital.com/{{$blog->slug}}" />
 <meta property="og:site_name" content="Shubhanu Eye Hospital" />
 <meta property="og:image" content="https://shubhanueyehospital.com/assets/front/imgs/banners/1.webp" />
@@ -19,7 +19,6 @@
 @endsection
 @section('customcss')
 <link rel="stylesheet" href="/assets/front/css/singleblog.css">
-<title>{{$blog->title}} | Shubhanu Eye Hospital</title>
 @endsection
 @section('body')
 <section class="badge-section">
@@ -58,7 +57,7 @@
                             </div>
                             <div class="right">
                                 <h3>{{$allblog->title}}</h3>
-                                <p>{{ $allblog->created_at->format('d M, Y') }}</p>
+                                <p>{{ \Carbon\Carbon::parse($allblog->created_at)->format('d F Y') }}</p>
                             </div>
                         </div>
                     </a>

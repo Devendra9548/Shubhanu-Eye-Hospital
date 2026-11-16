@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     use HasFactory;
-    public function blogseo()
-    {
-        return $this->hasMany(BlogSeo::class);
-    }
+    public $table = 'blogs';
+    public $timestamps = false;
+    protected $guarded=[];
+    
 }

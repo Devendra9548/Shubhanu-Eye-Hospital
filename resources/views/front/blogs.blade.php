@@ -164,7 +164,7 @@
                         <img src="/blogs/{{ $item->file }}" class="blog-img" width="100%" alt="{{ $item->title }}">
 
                         <div class="p-4">
-                            <div class="blog-date">{{ $item->created_at->format('d F Y') }}</div>
+                        <div class="blog-date">{{ \Carbon\Carbon::parse($item->created_at)->format('d F Y') }}</div>
                             <h2 class="blog-title">{{ $item->title }}</h2>
                             <p class="blog-desc">
                                 {{ substr($item->shortdesc, 0, 550) }}

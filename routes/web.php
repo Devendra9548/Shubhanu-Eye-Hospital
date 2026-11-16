@@ -11,6 +11,8 @@ use App\Livewire\Back\Messages;
 use App\Livewire\Back\Profile;
 use App\Livewire\Back\Settings;
 use App\Livewire\Back\Users;
+use App\Models\Blog;
+use Carbon\Carbon;
 
 Route::get('/', [frontendController::class, 'home'])->name('home');
 Route::get('about', [frontendController::class, 'about'])->name('about');
@@ -28,6 +30,55 @@ Route::get('thank-you', [frontendController::class, 'thankyou'])->name('thankyou
 Route::get('terms-and-conditions', [frontendController::class, 'termsConditions'])->name('termsConditions');
 Route::get('blog', [frontendController::class, 'blogs'])->name('blogs');
 Route::get('blog/{slug}', [frontendController::class, 'singleblog'])->name('singleblog');
+Route::get('/sitemap.xml', function () {
+    $blogs = Blog::where('status', 1)->latest()->get();
+
+    $staticLastmod = '2026-10-06T18:30:00+00:00';
+
+    // [url, priority]
+    $pages = [
+        ['/',                    '1.0000'],
+        ['/contact-us',          '0.8000'],
+        ['/about',               '0.8000'],
+        ['/gallery',             '0.8000'],
+        ['/case-studies',        '0.8000'],
+        ['/blog',                '0.8000'],
+        ['/career',              '0.8000'],
+        ['/terms-and-conditions','0.8000'],
+        ['/privacy-policy',      '0.8000'],
+    ];
+
+    $xml  = '<' . '?xml version="1.0" encoding="UTF-8"?' . '>' . "\n\n";
+    $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' . "\n\n";
+
+    foreach ($pages as [$path, $priority]) {
+        $xml .= "  <url>\n";
+        $xml .= '       <loc>' . e(url($path)) . "</loc>\n";
+        $xml .= '       <lastmod>' . $staticLastmod . "</lastmod>\n";
+        $xml .= '       <priority>' . $priority . "</priority>\n";
+        $xml .= "  </url>\n";
+    }
+
+    foreach ($blogs as $blog) {
+      try {
+        $lastmod = $blog->updated_at
+            ? Carbon::parse($blog->updated_at)->utc()->format('Y-m-d\TH:i:sP')
+            : $staticLastmod;
+    } catch (\Exception $e) {
+        $lastmod = $staticLastmod;
+    }
+
+        $xml .= "  <url>\n";
+        $xml .= '       <loc>' . e(url('/blog/' . $blog->slug)) . "</loc>\n";
+        $xml .= '       <lastmod>' . $lastmod . "</lastmod>\n";
+        $xml .= "       <priority>0.6000</priority>\n";
+        $xml .= "  </url>\n";
+    }
+
+    $xml .= '</urlset>';
+
+    return response($xml, 200)->header('Content-Type', 'application/xml');
+});
 
 Route::get('/instagram-feed', [InstagramController::class, 'feed'])
     ->name('instagram.feed');
