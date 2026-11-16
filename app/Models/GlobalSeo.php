@@ -9,4 +9,5 @@ class GlobalSeo extends Model
 {
     use HasFactory;
     protected $fillable = ['ownername'];
+    
 }

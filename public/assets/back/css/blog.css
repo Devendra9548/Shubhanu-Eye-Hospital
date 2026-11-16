@@ -6,20 +6,25 @@
   color: #000 !important;
 }
 
-#addBlog label {
+#addBlog label, #updateBlog label {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
-#addBlog input, #addBlog select, #addBlog textarea {
+#addBlog input, #addBlog select, #addBlog textarea, #updateBlog input, #updateBlog select, #updateBlog textarea {
   border: 1px solid rgba(0, 0, 0, 0.4);
   padding: 8px 15px;
   font-size: 15px;
+  margin-bottom: 12px;
 }
-#addBlog .modal-content {
+#addBlog .modal-content, #updateBlog .modal-content {
   background: #f9f9f9;
 }
 
 .modal-backdrop.show {
   opacity: 0.9;
+}
+
+#CtSpinner, #CtSpinner2 {
+  display: none;
 }/*# sourceMappingURL=blog.css.map */

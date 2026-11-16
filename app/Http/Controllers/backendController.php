@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
+use App\Models\BlogsCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
@@ -70,10 +72,146 @@ class backendController extends Controller
             return redirect()->route('dashboard')
                     ->with('success', 'Account Createad Successfully.');
         }
-    
-        
-        
-    
-        
+     
     }
+
+    public function addBlogCategory(Request $request)
+{
+    $request->validate(
+        [
+            'bcname'     => 'required|string|max:255',
+            'bcslug'     => 'nullable|string|max:255',
+            'bccategory' => 'nullable|integer',
+            'bcfile'     => 'nullable|image|mimes:webp,jpg,jpeg,png|max:2048',
+            'status'     => 'required|in:0,1',
+        ],
+        [
+            'bcname.required' => 'Please enter the category name.',
+            'status.required' => 'Please select a status.',
+            'status.in'       => 'Please select a valid status.',
+            'bcfile.image'    => 'Please upload a valid image.',
+            'bcfile.mimes'    => 'Only webp, jpg, jpeg or png images are allowed.',
+            'bcfile.max'      => 'Image size must not be more than 2 MB.',
+        ],
+        [
+            'bcname'     => 'category name',
+            'bcslug'     => 'category slug',
+            'bccategory' => 'sub category',
+            'bcfile'     => 'feature image',
+            'status'     => 'status',
+        ]
+    );
+
+    $slug = Str::slug($request->bcslug ?: $request->bcname);
+
+    if (BlogsCategory::where('bcslug', $slug)->exists()) {
+        return response()->json('Slug already exists, please use a different one.');
+    }
+
+    $fileName = null;
+    if ($request->hasFile('bcfile')) {
+        $file = $request->file('bcfile');
+        $fileName = time() . '_' . Str::random(6) . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('blogs-category'), $fileName);
+    }
+
+    BlogsCategory::create([
+        'bcname'     => $request->bcname,
+        'bcslug'     => $slug,
+        'bccategory' => $request->bccategory ?: null, // parent category id
+        'bcfile'     => $fileName,
+        'status'     => $request->status,
+    ],
+    );
+
+    return response()->json(true);
+}
+
+public function updateBlogCategory(Request $request)
+{
+    $request->validate(
+    [
+        'id'         => 'required|exists:blogs_categories,id',
+        'bcname'     => 'required|string|max:255',
+        'bcslug'     => 'nullable|string|max:255',
+        'bccategory' => 'nullable|integer',
+        'bcfile'     => 'nullable|image|mimes:webp,jpg,jpeg,png|max:2048',
+        'status'     => 'required|in:0,1',
+    ],
+    [
+        'bcname.required' => 'Please enter the category name.',
+        'status.required' => 'Please select a status.',
+        'status.in'       => 'Please select a valid status.',
+        'bcfile.image'    => 'Please upload a valid image.',
+        'bcfile.mimes'    => 'Only webp, jpg, jpeg or png images are allowed.',
+        'bcfile.max'      => 'Image size must not be more than 2 MB.',
+    ],
+    [
+        'bcname'     => 'category name',
+        'bcslug'     => 'category slug',
+        'bccategory' => 'sub category',
+        'bcfile'     => 'feature image',
+        'status'     => 'status',
+    ]
+);
+
+$category = BlogsCategory::findOrFail($request->id);
+
+// Category apna hi parent nahi ban sakti
+if ($request->bccategory && (int) $request->bccategory === (int) $category->id) {
+    return response()->json('A category cannot be its own sub category.');
+}
+
+$slug = Str::slug($request->bcslug ?: $request->bcname);
+
+// Duplicate slug check (apni khud ki id ko chhodkar)
+if (BlogsCategory::where('bcslug', $slug)->where('id', '!=', $category->id)->exists()) {
+    return response()->json('Slug already exists, please use a different one.');
+}
+
+// Nayi image aayi to purani delete karke nayi save karo
+$fileName = $category->bcfile;
+if ($request->hasFile('bcfile')) {
+    if ($category->bcfile && file_exists(public_path('blogs-category/' . $category->bcfile))) {
+        @unlink(public_path('blogs-category/' . $category->bcfile));
+    }
+    $file = $request->file('bcfile');
+    $fileName = time() . '_' . Str::random(6) . '.' . $file->getClientOriginalExtension();
+    $file->move(public_path('blogs-category'), $fileName);
+}
+
+$category->update([
+    'bcname'     => $request->bcname,
+    'bcslug'     => $slug,
+    'bccategory' => $request->bccategory ?: null,
+    'bcfile'     => $fileName,
+    'status'     => $request->status,
+]);
+
+return response()->json(true);
+}
+
+public function deleteBlogCategory(Request $request)
+{
+    $request->validate([
+        'id' => 'required|exists:blogs_categories,id',
+    ]);
+
+    $category = BlogsCategory::findOrFail($request->id);
+
+    // Sub-categories hain to delete mat karo
+    if (BlogsCategory::where('bccategory', $category->id)->exists()) {
+        return response()->json('This category has sub categories. Please delete or move them first.');
+    }
+
+    // Image delete
+    if ($category->bcfile && file_exists(public_path('blogs-category/' . $category->bcfile))) {
+        @unlink(public_path('blogs-category/' . $category->bcfile));
+    }
+
+    $category->delete();
+
+    return response()->json(true);
+}
+
 }

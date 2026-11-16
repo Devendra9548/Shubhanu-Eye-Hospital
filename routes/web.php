@@ -38,6 +38,9 @@ Route::prefix('ds-admin')->group(function(){
   Route::get('dashboard', Dashboard::class)->name('dashboard')->middleware('auth');
   Route::get('blogs', Blogs::class)->name('admin.blogs')->middleware('auth');
   Route::get('blogs-category', BlogCategory::class)->name('admin.blogcategory')->middleware('auth');
+  Route::post('add-blog-category', [backendController::class, 'addBlogCategory'])->middleware('auth');
+  Route::post('delete-blog-category', [backendController::class, 'deleteBlogCategory'])->middleware('auth');
+  Route::post('update-blog-category', [backendController::class, 'updateBlogCategory'])->middleware('auth');
   Route::get('messages', Messages::class)->name('admin.messages')->middleware('auth');
   Route::get('profile', Profile::class)->name('admin.profile')->middleware('auth');
   Route::get('settings', Settings::class)->name('admin.settings')->middleware('auth');
