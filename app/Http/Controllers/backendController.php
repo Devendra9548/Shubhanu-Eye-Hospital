@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use App\Models\Blog;
 
 class backendController extends Controller
 {
@@ -210,6 +211,136 @@ public function deleteBlogCategory(Request $request)
     }
 
     $category->delete();
+
+    return response()->json(true);
+}
+
+
+public function addBlog(Request $request)
+{
+    $request->validate([
+        'title'       => 'required|string|max:255',
+        'slug'        => 'nullable|string|max:255',
+        'category'    => 'required|exists:blogs_categories,id',
+        'author'      => 'nullable|string|max:255',
+        'metatitle'   => 'nullable|string|max:255',
+        'metadesc'    => 'nullable|string|max:500',
+        'metakeys'    => 'nullable|string|max:500',
+        'date'        => 'nullable|date',
+        'status'      => 'required|in:0,1',
+        'description' => 'nullable|string',
+        'file'        => 'nullable|image|mimes:webp,jpg,jpeg,png|max:2048',
+    ], [
+        'title.required'    => 'Please enter the blog title.',
+        'category.required' => 'Please select a category.',
+        'status.required'   => 'Please select a status.',
+        'file.image'        => 'Please upload a valid image.',
+        'file.mimes'        => 'Only webp, jpg, jpeg or png images are allowed.',
+        'file.max'          => 'Image size must not be more than 2 MB.',
+    ]);
+
+    $slug = Str::slug($request->slug ?: $request->title);
+
+    if (Blog::where('slug', $slug)->exists()) {
+        return response()->json('Slug already exists, please use a different one.');
+    }
+
+    $fileName = null;
+    if ($request->hasFile('file')) {
+        $file = $request->file('file');
+        $fileName = time() . '_' . Str::random(6) . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('blogs'), $fileName);
+    }
+
+    Blog::create([
+        'title'       => $request->title,
+        'slug'        => $slug,
+        'category'    => $request->category,
+        'author'      => $request->author,
+        'metatitle'   => $request->metatitle,
+        'metadesc'    => $request->metadesc,
+        'metakeys'    => $request->metakeys,
+        'date'        => $request->date,
+        'status'      => $request->status,
+        'description' => $request->description,
+        'file'        => $fileName,
+    ]);
+
+    return response()->json(true);
+}
+
+public function updateBlog(Request $request)
+{
+    $request->validate([
+        'id'          => 'required|exists:blogs,id',
+        'title'       => 'required|string|max:255',
+        'slug'        => 'nullable|string|max:255',
+        'category'    => 'required|exists:blogs_categories,id',
+        'author'      => 'nullable|string|max:255',
+        'metatitle'   => 'nullable|string|max:255',
+        'metadesc'    => 'nullable|string|max:500',
+        'metakeys'    => 'nullable|string|max:500',
+        'date'        => 'nullable|date',
+        'status'      => 'required|in:0,1',
+        'description' => 'nullable|string',
+        'file'        => 'nullable|image|mimes:webp,jpg,jpeg,png|max:2048',
+    ], [
+        'title.required'    => 'Please enter the blog title.',
+        'category.required' => 'Please select a category.',
+        'status.required'   => 'Please select a status.',
+        'file.image'        => 'Please upload a valid image.',
+        'file.mimes'        => 'Only webp, jpg, jpeg or png images are allowed.',
+        'file.max'          => 'Image size must not be more than 2 MB.',
+    ]);
+
+    $blog = Blog::findOrFail($request->id);
+
+    $slug = Str::slug($request->slug ?: $request->title);
+
+    if (Blog::where('slug', $slug)->where('id', '!=', $blog->id)->exists()) {
+        return response()->json('Slug already exists, please use a different one.');
+    }
+
+    $fileName = $blog->file;
+    if ($request->hasFile('file')) {
+        if ($blog->file && file_exists(public_path('blogs/' . $blog->file))) {
+            @unlink(public_path('blogs/' . $blog->file));
+        }
+        $file = $request->file('file');
+        $fileName = time() . '_' . Str::random(6) . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('blogs'), $fileName);
+    }
+
+    $blog->update([
+        'title'       => $request->title,
+        'slug'        => $slug,
+        'category'    => $request->category,
+        'author'      => $request->author,
+        'metatitle'   => $request->metatitle,
+        'metadesc'    => $request->metadesc,
+        'metakeys'    => $request->metakeys,
+        'date'        => $request->date,
+        'status'      => $request->status,
+        'description' => $request->description,
+        'file'        => $fileName,
+    ]);
+
+    return response()->json(true);
+}
+
+public function deleteBlog(Request $request)
+{
+    $request->validate([
+        'id' => 'required|exists:blogs,id',
+    ]);
+
+    $blog = Blog::findOrFail($request->id);
+
+    if ($blog->file && file_exists(public_path('blogs/' . $blog->file))) {
+        @unlink(public_path('blogs/' . $blog->file));
+    }
+
+    $blog->delete();
 
     return response()->json(true);
 }

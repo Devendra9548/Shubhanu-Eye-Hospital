@@ -97,6 +97,9 @@ Route::prefix('ds-admin')->group(function(){
   Route::get('settings', Settings::class)->name('admin.settings')->middleware('auth');
   Route::get('users', Users::class)->name('admin.users')->middleware('auth');
   Route::get('logout', [backendController::class, 'logout'])->name('logout');
+  Route::post('add-blog', [backendController::class, 'addBlog']);
+  Route::post('update-blog', [backendController::class, 'updateBlog']);
+  Route::post('delete-blog', [backendController::class, 'deleteBlog']);
 });
 
 

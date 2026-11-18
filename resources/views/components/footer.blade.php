@@ -212,7 +212,7 @@
                 <div class="mb-3">
                     <button type="submit" class="booking-submit btn btn-primary w-100 text-center">
                             <span class="text-white" id="prebuttontext2"><i class="fa-regular fa-calendar-days"></i> Book Now</span>
-                            <span class="text-white" id="CtSpinner2"><img src="/assets/front/imgs/spinner.gif"
+                            <span class="text-white" id="CtSpinner2"><img src="/assets/front/imgs/spinner.gif"  alt="spinner"
                                     width="15px"> Waiting</span>
                     </button>
                 </div>
