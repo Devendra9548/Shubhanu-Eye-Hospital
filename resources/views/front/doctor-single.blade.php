@@ -1,12 +1,5 @@
 @extends('templates.front.main')
-
 <?php
-/*
-|--------------------------------------------------------------------------
-| DOCTOR DATA  (har doctor ke liye sirf ye array badalna hai)
-| Baad me isko controller/database se $d bana kar bhej sakte hain.
-|--------------------------------------------------------------------------
-*/
 $d = [
     "slug"        => "dr-bhanu-pratap-singh-pangtey",
     "name"        => "Dr. Bhanu Pratap Singh Pangtey",
@@ -118,19 +111,15 @@ $jsonFlags = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE;
 <meta name="twitter:description" content="{{ $pageDesc }}" />
 <meta name="twitter:image" content="{{ $imgUrl }}" />
 <script type="application/ld+json">
-{
-    !!json_encode($schemaPhysician, $jsonFlags) !!
-}
+{!! json_encode($schemaPhysician, $jsonFlags) !!}
 </script>
+
 <script type="application/ld+json">
-{
-    !!json_encode($schemaBreadcrumb, $jsonFlags) !!
-}
+{!! json_encode($schemaBreadcrumb, $jsonFlags) !!}
 </script>
+
 <script type="application/ld+json">
-{
-    !!json_encode($schemaFaq, $jsonFlags) !!
-}
+{!! json_encode($schemaFaq, $jsonFlags) !!}
 </script>
 @endsection
 

@@ -159,6 +159,7 @@
 
                 <!-- Blog -->
                 @foreach($blog as $item)
+                @if($item->status == 1)
                 <div class="col-12 col-md-4">
                     <div class="blog-card h-100">
                         <img src="/blogs/{{ $item->file }}" class="blog-img" width="100%" alt="{{ $item->title }}">
@@ -173,6 +174,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
                 @endforeach
 
             </div>

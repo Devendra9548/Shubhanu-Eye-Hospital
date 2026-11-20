@@ -191,7 +191,7 @@ class frontendController extends Controller
         fastcgi_finish_request();
 
         // Ab mail send hoga
-        $mail = Mail::to('shubhanuforwebsite@gmail.com');
+        $mail = Mail::to(['shubhanuforwebsite@gmail.com','Shubhnauhospital@gmail.com']);
 
         if (!empty($origname)) {
 
@@ -217,7 +217,7 @@ class frontendController extends Controller
 
     
 
-        $mail = Mail::to('shubhanuforwebsite@gmail.com');
+        $mail = Mail::to(['shubhanuforwebsite@gmail.com','Shubhnauhospital@gmail.com']);
 
         if (!empty($origname)) {
 
@@ -283,13 +283,13 @@ class frontendController extends Controller
         flush();
         fastcgi_finish_request();
 
-        Mail::to('shubhanuforwebsite@gmail.com')
+        Mail::to(['shubhanuforwebsite@gmail.com','Shubhnauhospital@gmail.com'])
             ->send(new BookingMail($mailData));
 
         return;
         }
     
-        Mail::to('shubhanuforwebsite@gmail.com')
+        Mail::to(['shubhanuforwebsite@gmail.com','Shubhnauhospital@gmail.com'])
             ->send(new BookingMail($mailData));
     
         return true;
@@ -333,13 +333,13 @@ class frontendController extends Controller
          flush();
          fastcgi_finish_request();
  
-         Mail::to('shubhanuforwebsite@gmail.com')
+         Mail::to(['shubhanuforwebsite@gmail.com','Shubhnauhospital@gmail.com'])
              ->send(new ContactMail($mailData));
  
          return;
          }
      
-         Mail::to('shubhanuforwebsite@gmail.com')
+         Mail::to(['shubhanuforwebsite@gmail.com','Shubhnauhospital@gmail.com'])
              ->send(new ContactMail($mailData));
      
          return true;

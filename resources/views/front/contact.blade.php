@@ -373,7 +373,7 @@ $(function () {
         submitButton.prop("disabled", true);
         $.ajax({
             type: "POST",
-            url: "/contact",
+            url: "/submit-form",
             data: new FormData(this),
             contentType: false,
             processData: false,

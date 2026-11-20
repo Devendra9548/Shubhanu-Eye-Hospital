@@ -6,8 +6,9 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="left d-flex justify-content-start align-items-center">
             <h2>Blogs Category</h2>
-            <a href="javascript:void(0)" class="btn btn-secondary ms-3" data-bs-toggle="modal"
+            <a href="javascript:void(0)" class="btn btn-primary ms-3" data-bs-toggle="modal"
                 data-bs-target="#addBlog">+ Add Blog Category</a>
+            <a href="/ds-admin/blogs" class="btn btn-secondary ms-3">+ Add Blog</a>
         </div>
         <div class="right d-flex">
             <input type="text" wire:model.live.debounce.300ms="search" placeholder="Search Blog Category..."
